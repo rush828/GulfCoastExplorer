@@ -2,9 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs/promises'
 import path from 'path'
 
-// GET - Fetch all businesses
-export async function GET() {
+// GET - Fetch businesses with pagination
+export async function GET(request: NextRequest) {
   try {
+    const { searchParams } = new URL(request.url)
+    const page = parseInt(searchParams.get('page') || '1')
+    const limit = parseInt(searchParams.get('limit') || '100')
+    const skip = (page - 1) * limit
+    
     const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
     const content = await fs.readFile(dataFile, 'utf-8')
     const data = JSON.parse(content)
@@ -32,10 +37,15 @@ export async function GET() {
       }))
     }
 
+    const total = businesses.length
+    const paginatedBusinesses = businesses.slice(skip, skip + limit)
+
     return NextResponse.json({ 
       success: true, 
-      businesses,
-      total: businesses.length 
+      businesses: paginatedBusinesses,
+      total,
+      page,
+      totalPages: Math.ceil(total / limit)
     })
   } catch (error) {
     console.error('Error loading businesses:', error)
