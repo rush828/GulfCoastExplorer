@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+.next/
 
 # production
 /build
@@ -68,4 +69,25 @@ Thumbs.db
 
 # Large data archive files (over 100MB)
 data/DATA ARCHIVE/
+
+# Data backups (too large for deployment)
+data/businesses-backup-*.json
+data/businesses-consolidated-*.json
+data/businesses-from-excel-final.json
+data/businesses-from-excel-corrected.json
+data/businesses-from-excel.json
+data/businesses-from-excel-fixed.json
+data/consolidated-businesses.json
+data/businesses-fallback-backup-*.json
+data/businesses-from-excel-corrected-ids-backup-*.json
+data/businesses-fallback.json
+data/*.xlsx
+data/duplicate-analysis-report.json
+data/database-businesses.json
+data/excel-database-comparison-report.json
+data/progress/*.json
+data/pensacola-comprehensive.json
+
+# Keep only the main data file
+!data/businesses-from-excel-corrected-ids.json
 
