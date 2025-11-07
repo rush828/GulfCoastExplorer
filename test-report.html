@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Browser Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .summary-card { padding: 20px; border-radius: 8px; text-align: center; }
+        .passed { background: #d4edda; color: #155724; }
+        .failed { background: #f8d7da; color: #721c24; }
+        .warnings { background: #fff3cd; color: #856404; }
+        .device-results { margin-bottom: 30px; }
+        .test-item { padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 4px solid; }
+        .test-pass { background: #d4edda; border-left-color: #28a745; }
+        .test-fail { background: #f8d7da; border-left-color: #dc3545; }
+        .test-warning { background: #fff3cd; border-left-color: #ffc107; }
+        .timestamp { color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Cross-Browser Test Report</h1>
+            <p class="timestamp">Generated: 9/5/2025, 1:45:14 PM</p>
+        </div>
+        
+        <div class="summary">
+            <div class="summary-card passed">
+                <h3>✅ Passed</h3>
+                <h2>84</h2>
+            </div>
+            <div class="summary-card failed">
+                <h3>❌ Failed</h3>
+                <h2>11</h2>
+            </div>
+            <div class="summary-card warnings">
+                <h3>⚠️ Warnings</h3>
+                <h2>13</h2>
+            </div>
+            <div class="summary-card">
+                <h3>📊 Total Tests</h3>
+                <h2>108</h2>
+            </div>
+        </div>
+
+        
+        <div class="device-results">
+            <h2>📱 Desktop Chrome</h2>
+            <div class="summary">
+                <div class="summary-card passed">✅ 0</div>
+                <div class="summary-card failed">❌ 0</div>
+                <div class="summary-card warnings">⚠️ 0</div>
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>URL Access - Homepage</strong><br>
+                <span>Error loading /: Navigation timeout of 10000 ms exceeded</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>URL Access - Alabama State Page</strong><br>
+                <span>Error loading /states/alabama: Navigation timeout of 10000 ms exceeded</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>URL Access - Florida State Page</strong><br>
+                <span>Error loading /states/florida: Navigation timeout of 10000 ms exceeded</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>URL Access - Dauphin Island City Page</strong><br>
+                <span>Error loading /alabama/dauphin-island: Navigation timeout of 10000 ms exceeded</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island (with space)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Dauphin Island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Orange Beach (URL encoded)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Orange%20Beach</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Bay St. Louis (with period)</strong><br>
+                <span>Successfully loaded http://localhost:3000/mississippi/bay-st.-louis</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search with Category</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Navigation Visibility</strong><br>
+                <span>Navigation is visible</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Styling</strong><br>
+                <span>Found 1 back links with proper styling</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Business Card Styling</strong><br>
+                <span>Found 20 business listing cards</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Form</strong><br>
+                <span>Search form found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Category Dropdown</strong><br>
+                <span>Category dropdown found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Results Display</strong><br>
+                <span>Found 20 search results</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Pagination</strong><br>
+                <span>No pagination detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Href</strong><br>
+                <span>Back link href: /states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Click</strong><br>
+                <span>Back link click successful</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Phone Number Links</strong><br>
+                <span>Found 38 phone number links</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Phone Link Styling</strong><br>
+                <span>Phone links may need styling</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Console Errors</strong><br>
+                <span>Found 5 console errors</span>
+                
+            </div>
+            
+        </div>
+        
+        <div class="device-results">
+            <h2>📱 Desktop Firefox</h2>
+            <div class="summary">
+                <div class="summary-card passed">✅ 0</div>
+                <div class="summary-card failed">❌ 0</div>
+                <div class="summary-card warnings">⚠️ 0</div>
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Homepage</strong><br>
+                <span>Successfully loaded http://localhost:3000/</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Alabama State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Florida State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island City Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/dauphin-island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island (with space)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Dauphin Island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Orange Beach (URL encoded)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Orange%20Beach</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Bay St. Louis (with period)</strong><br>
+                <span>Successfully loaded http://localhost:3000/mississippi/bay-st.-louis</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search with Category</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Navigation Visibility</strong><br>
+                <span>Navigation is visible</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Styling</strong><br>
+                <span>Found 1 back links with proper styling</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Business Card Styling</strong><br>
+                <span>Found 20 business listing cards</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Form</strong><br>
+                <span>Search form found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Category Dropdown</strong><br>
+                <span>Category dropdown found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Results Display</strong><br>
+                <span>Found 20 search results</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Pagination</strong><br>
+                <span>No pagination detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Href</strong><br>
+                <span>Back link href: /states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Click</strong><br>
+                <span>Back link click successful</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Phone Number Links</strong><br>
+                <span>Found 38 phone number links</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Phone Link Styling</strong><br>
+                <span>Phone links may need styling</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Console Errors</strong><br>
+                <span>Found 5 console errors</span>
+                
+            </div>
+            
+        </div>
+        
+        <div class="device-results">
+            <h2>📱 iPad</h2>
+            <div class="summary">
+                <div class="summary-card passed">✅ 0</div>
+                <div class="summary-card failed">❌ 0</div>
+                <div class="summary-card warnings">⚠️ 0</div>
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Homepage</strong><br>
+                <span>Successfully loaded http://localhost:3000/</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Alabama State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Florida State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island City Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/dauphin-island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island (with space)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Dauphin Island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Orange Beach (URL encoded)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Orange%20Beach</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Bay St. Louis (with period)</strong><br>
+                <span>Successfully loaded http://localhost:3000/mississippi/bay-st.-louis</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search with Category</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Navigation Visibility</strong><br>
+                <span>Navigation is visible</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Styling</strong><br>
+                <span>Found 1 back links with proper styling</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Business Card Styling</strong><br>
+                <span>Found 20 business listing cards</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Mobile Menu</strong><br>
+                <span>No mobile menu detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Form</strong><br>
+                <span>Search form found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Category Dropdown</strong><br>
+                <span>Category dropdown found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Results Display</strong><br>
+                <span>Found 20 search results</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Pagination</strong><br>
+                <span>No pagination detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Href</strong><br>
+                <span>Back link href: /states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Click</strong><br>
+                <span>Back link click successful</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Phone Number Links</strong><br>
+                <span>Found 38 phone number links</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Phone Link Styling</strong><br>
+                <span>Phone links may need styling</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Console Errors</strong><br>
+                <span>Found 5 console errors</span>
+                
+            </div>
+            
+        </div>
+        
+        <div class="device-results">
+            <h2>📱 iPhone 12</h2>
+            <div class="summary">
+                <div class="summary-card passed">✅ 0</div>
+                <div class="summary-card failed">❌ 0</div>
+                <div class="summary-card warnings">⚠️ 0</div>
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Homepage</strong><br>
+                <span>Successfully loaded http://localhost:3000/</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Alabama State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Florida State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island City Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/dauphin-island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island (with space)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Dauphin Island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Orange Beach (URL encoded)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Orange%20Beach</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Bay St. Louis (with period)</strong><br>
+                <span>Successfully loaded http://localhost:3000/mississippi/bay-st.-louis</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search with Category</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Navigation Visibility</strong><br>
+                <span>Navigation is not visible</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Styling</strong><br>
+                <span>Found 1 back links with proper styling</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Business Card Styling</strong><br>
+                <span>Found 20 business listing cards</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Mobile Menu</strong><br>
+                <span>No mobile menu detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Form</strong><br>
+                <span>Search form found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Category Dropdown</strong><br>
+                <span>Category dropdown found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Results Display</strong><br>
+                <span>Found 20 search results</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Pagination</strong><br>
+                <span>No pagination detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Href</strong><br>
+                <span>Back link href: /states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Click</strong><br>
+                <span>Back link click successful</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Phone Number Links</strong><br>
+                <span>Found 38 phone number links</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Phone Link Styling</strong><br>
+                <span>Phone links may need styling</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Console Errors</strong><br>
+                <span>Found 5 console errors</span>
+                
+            </div>
+            
+        </div>
+        
+        <div class="device-results">
+            <h2>📱 Samsung Galaxy</h2>
+            <div class="summary">
+                <div class="summary-card passed">✅ 0</div>
+                <div class="summary-card failed">❌ 0</div>
+                <div class="summary-card warnings">⚠️ 0</div>
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Homepage</strong><br>
+                <span>Successfully loaded http://localhost:3000/</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Alabama State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Florida State Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/states/florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island City Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/dauphin-island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Dauphin Island (with space)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Dauphin Island</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Orange Beach (URL encoded)</strong><br>
+                <span>Successfully loaded http://localhost:3000/alabama/Orange%20Beach</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Bay St. Louis (with period)</strong><br>
+                <span>Successfully loaded http://localhost:3000/mississippi/bay-st.-louis</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search Page</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>URL Access - Search with Category</strong><br>
+                <span>Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Navigation Visibility</strong><br>
+                <span>Navigation is not visible</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Styling</strong><br>
+                <span>Found 1 back links with proper styling</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Business Card Styling</strong><br>
+                <span>Found 20 business listing cards</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Mobile Menu</strong><br>
+                <span>No mobile menu detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Form</strong><br>
+                <span>Search form found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Category Dropdown</strong><br>
+                <span>Category dropdown found</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Search Results Display</strong><br>
+                <span>Found 20 search results</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Pagination</strong><br>
+                <span>No pagination detected</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Href</strong><br>
+                <span>Back link href: /states/alabama</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Back Link Click</strong><br>
+                <span>Back link click successful</span>
+                
+            </div>
+            
+            <div class="test-item test-pass">
+                <strong>Phone Number Links</strong><br>
+                <span>Found 38 phone number links</span>
+                
+            </div>
+            
+            <div class="test-item test-warning">
+                <strong>Phone Link Styling</strong><br>
+                <span>Phone links may need styling</span>
+                
+            </div>
+            
+            <div class="test-item test-fail">
+                <strong>Console Errors</strong><br>
+                <span>Found 5 console errors</span>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

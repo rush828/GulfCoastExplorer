@@ -1,0 +1,952 @@
+{
+  "timestamp": "2025-09-18T20:43:41.363Z",
+  "totalBusinesses": 4768,
+  "fixesApplied": 135,
+  "fixes": [
+    {
+      "id": "apalachicola_lodging_water_street_hotel_&_marina,_an_ascend_collection_hotel_3",
+      "name": "Water Street Hotel & Marina, an Ascend Collection Hotel",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bay_st._louis_beach_buccaneer_state_park_107",
+      "name": "Buccaneer State Park",
+      "oldCategory": "restaurant",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "bay_st._louis_beach_bay_marina_&_rv_park_121",
+      "name": "Bay Marina & RV Park",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bay_st._louis_beach_hollydeck_bar_&_marina_123",
+      "name": "Hollydeck Bar & Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bay_st._louis_beach_hollywood_casino_marina_125",
+      "name": "Hollywood Casino Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "comfort_inn___suites_biloxi_d_iberville_biloxi_lodging",
+      "name": "Comfort Inn & Suites Biloxi-D'Iberville",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "bolivar_peninsula_entertainment_stingaree_restaurant_&_marina_consolidated",
+      "name": "Stingaree Restaurant & Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bolivar_peninsula_marina_bolivar_marina_and_apartments_consolidated",
+      "name": "Bolivar Marina and Apartments",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bon_secour_beach_nelson_marina_313",
+      "name": "Nelson Marina",
+      "oldCategory": "tour_agency",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bon_secour_beach_magnolia_spring_marina_314",
+      "name": "Magnolia Spring Marina",
+      "oldCategory": "water-activities",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "captiva_island_beach_the_westin_cape_coral_resort_at_marina_village_329",
+      "name": "The Westin Cape Coral Resort at Marina Village",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "captiva_island_beach_the_waterfront_restaurant_&_marina_357",
+      "name": "The Waterfront Restaurant & Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "captiva_island_beach_cayo_costa_state_park_364",
+      "name": "Cayo Costa State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "captiva_island_beach_freedom_boat_club_-_pine_island_marina_380",
+      "name": "Freedom Boat Club - Pine Island Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "cedar_key_beach_sunset_isle_rv_resort_392",
+      "name": "Sunset Isle RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "cocodrie_marina_t-irv's_marina_consolidated",
+      "name": "T-Irv's Marina",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "holiday_inn_corpus_christi_downtown_marina_by_ihg_corpus_christi_lodging",
+      "name": "Holiday Inn Corpus Christi Downtown Marina by IHG",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "dauphin_island_beach_dockside_rv_resort_&_alabama_gulf_coast_campground_672",
+      "name": "Dockside RV Resort & Alabama Gulf Coast Campground",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "sundestin_beach_resort_by_scenic_stays_destin_lodging",
+      "name": "SunDestin Beach Resort by Scenic Stays",
+      "oldCategory": "tour_agency",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "destin_lodging_sandestin_golf_and_beach_resort_consolidated",
+      "name": "Sandestin Golf and Beach Resort",
+      "oldCategory": "tour_agency",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "henderson_beach_state_park_destin_historic_landmark",
+      "name": "Henderson Beach State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "dulac_beach_cypremort_point_state_park_consolidated",
+      "name": "Cypremort Point State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "channel_side_marina_and_campground_dulac_entertainment",
+      "name": "Channel Side Marina and Campground",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "elberta_lodging_gulf_breeze_rv_resort_901",
+      "name": "Gulf Breeze RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "elberta_beach_baldwin_county_heritage_museum_consolidated",
+      "name": "Baldwin County Heritage Museum",
+      "oldCategory": "park_recreation",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "elberta_beach_plantation_harbor_rv_resort_942",
+      "name": "Plantation Harbor RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "elberta_beaches-outdoors_lake_osprey_rv_resort_943",
+      "name": "Lake Osprey RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "elberta_marina_barber_marina_954",
+      "name": "Barber Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "everglades_city_beach_parkway_motel_&_marina_967",
+      "name": "Parkway Motel & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "everglades_city_beach_flamingo_marina_1018",
+      "name": "Flamingo Marina",
+      "oldCategory": "tour_agency",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "fort_myers_beach_beach_latitude_26_waterfront_resort_and_marina_-_fort_myers_beach_1089",
+      "name": "Latitude 26 Waterfront Resort and Marina - Fort Myers Beach",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "fort_myers_beach_beach_lovers_key_state_park_1124",
+      "name": "Lovers Key State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "marina_bay_resort_fort_walton_beach_marina",
+      "name": "Marina Bay Resort",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "galliano_marina_bayou_blue_marina_1250",
+      "name": "Bayou Blue Marina",
+      "oldCategory": "water-activities",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "bobby_lynn_s_marina_inc___rv_park_golden_meadow_marina",
+      "name": "Bobby Lynn's Marina Inc & RV Park",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "grand_isle_entertainment_bridge_side_cabins_and_marina_consolidated",
+      "name": "Bridge Side Cabins and Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "grand_isle_state_park_grand_isle_entertainment",
+      "name": "Grand Isle State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "grand_isle_marina_hurricane_hole_marina_&_resort_consolidated",
+      "name": "Hurricane Hole Marina & Resort",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "gulf_shores_beach_gulf_state_park_1534",
+      "name": "Gulf State Park",
+      "oldCategory": "marina",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "orange_beach_marina_hudson_marina_consolidated",
+      "name": "Hudson Marina",
+      "oldCategory": "tour_agency",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "legendary_marina___yacht_club_gulf_shores_alabama_gulf_shores_marina",
+      "name": "Legendary Marina & Yacht Club Gulf Shores Alabama",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_state_park_campground_1555",
+      "name": "Gulf State Park Campground",
+      "oldCategory": "lodging",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_the_cabins_at_gulf_state_park_1556",
+      "name": "The Cabins at Gulf State Park",
+      "oldCategory": "lodging",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_eagle_cottages_at_gulf_state_park_1557",
+      "name": "Eagle Cottages at Gulf State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_state_park_campground_1559",
+      "name": "Gulf State Park Campground",
+      "oldCategory": "lodging",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_luxury_rv_resort_1560",
+      "name": "Luxury RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "gulf_state_park_beach_sugar_sands_rv_resort_1561",
+      "name": "Sugar Sands RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_shores_rv_resort_1563",
+      "name": "Gulf Shores RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_state_park_pavillion_consolidated",
+      "name": "Gulf State Park Pavillion",
+      "oldCategory": "restaurant",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_state_park_1595",
+      "name": "Gulf State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_beach_gulf_state_park_pier_1607",
+      "name": "Gulf State Park Pier",
+      "oldCategory": "marina",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "key_west_beach_oceans_edge_resort_&_marina_1615",
+      "name": "Oceans Edge Resort & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "key_west_beach_the_perry_hotel_&_marina_key_west_1623",
+      "name": "The Perry Hotel & Marina Key West",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "key_west_beach_fort_zachary_taylor_historic_state_park_beach_1653",
+      "name": "Fort Zachary Taylor Historic State Park Beach",
+      "oldCategory": "restaurant",
+      "newCategory": "historic_landmark",
+      "reason": "Historic fort should be historic landmark, not restaurant"
+    },
+    {
+      "id": "key_west_beach_barefoot_billy's_watersports_at_casa_marina_1665",
+      "name": "Barefoot Billy's Watersports at Casa Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "long_beach_beach_majestic_oaks_rv_resort_1806",
+      "name": "Majestic Oaks RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "long_beach_beach_steve's_marina_restaurant_1812",
+      "name": "Steve's Marina Restaurant",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "moss_point_beach_shepard_state_park_2017",
+      "name": "Shepard State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "naples_water_sports_port_o_call_marina_2089",
+      "name": "Port O Call Marina",
+      "oldCategory": "tour_agency",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "beach_colony_resort_on_navarre_beach_navarre_beach_lodging",
+      "name": "Beach Colony Resort On Navarre Beach",
+      "oldCategory": "tour_agency",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "pirates__bay_guest_chambers_and_marina_navarre_beach_lodging",
+      "name": "Pirates' Bay Guest Chambers and Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "capt__anderson_s_marina_panama_city_beach_marina",
+      "name": "Capt. Anderson's Marina",
+      "oldCategory": "tour_agency",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "panama_city_beach_water-activities_lighthouse_marina_2342",
+      "name": "Lighthouse Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pascagoula_restaurant_tiki_restaurant_lounge_and_marina_2379",
+      "name": "Tiki Restaurant Lounge and Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pascagoula_marina_lighthouse_marina_2407",
+      "name": "Lighthouse Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pascagoula_marina_little_river_marina_&_rv_park_and_old_black_water_restaurant_2409",
+      "name": "Little River Marina & RV Park and Old Black Water Restaurant",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pensacola_rv_resort___marina_perdido_key_marina",
+      "name": "Perdido Key RV Resort & Marina",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "oyster_bar_restaurant_and_marina_perdido_key_bar",
+      "name": "Oyster Bar Restaurant and Marina",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pensacola_state_park_perdido_key_entertainment",
+      "name": "Perdido Key State Park",
+      "oldCategory": "beach",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "port_aransas_water-activities_island_moorings_yacht_club_&_marina_2589",
+      "name": "Island Moorings Yacht Club & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "port_fourchon_entertainment_fourchon_marina_and_motel_consolidated",
+      "name": "Fourchon Marina and Motel",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "port_fourchon_beach_moran's_marina_&_deli_consolidated",
+      "name": "Moran's Marina & Deli",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "indianola_fishing_marina__bait_shop__restaurant_bar___grill_in_port_lavaca_port_lavaca_entertainment",
+      "name": "Indianola Fishing Marina, Bait Shop, Restaurant Bar & Grill in Port Lavaca",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "indianola_fishing_marina_rv_park_port_lavaca_marina",
+      "name": "Indianola Fishing Marina RV Park",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "powderhorn_rv_park_boat_ramp_and_marina_port_lavaca_marina",
+      "name": "Powderhorn RV Park Boat Ramp and Marina",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "fort_myers_beach_beach_pink_shell_beach_resort_&_marina_2767",
+      "name": "Pink Shell Beach Resort & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "sanibel_island_beach_'tween_waters_inn_&_marina_2769",
+      "name": "'Tween Waters Inn & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "sanibel_island_beach_jensen's_twin_palm_cottages_&_marina_resort_2823",
+      "name": "Jensen's Twin Palm Cottages & Marina Resort",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "sarasota_marina_freedom_boat_club_-_sarasota_marina_jack_2888",
+      "name": "Freedom Boat Club - Sarasota Marina Jack",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "st._george_island_beach_coastline_rv_resort_2958",
+      "name": "Coastline RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "st._george_island_beach_carrabelle_beach_rv_resort_2960",
+      "name": "Carrabelle Beach RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "st._george_island_beach_dr._julian_g._bruce_st._george_island_state_park_2984",
+      "name": "Dr. Julian G. Bruce St. George Island State Park",
+      "oldCategory": "marina",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "surfside_marina_and_marine_service_center_surfside_beach_marina",
+      "name": "Surfside Marina and Marine Service Center",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "pensacola_art_gallery_pensacola_museum_of_art_3115",
+      "name": "Pensacola Museum of Art",
+      "oldCategory": "art_gallery",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "pensacola_historic_landmark_pensacola_museum_of_history,_at_the_university_of_west_florida_consolidated",
+      "name": "Pensacola Museum of History, at the University of West Florida",
+      "oldCategory": "tourist_attraction",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "broadwater_beach_marina_light_biloxi_marina",
+      "name": "Broadwater Beach Marina Light",
+      "oldCategory": "water-activities",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "biloxi_bay_rv_resort___marina_biloxi_marina",
+      "name": "Biloxi Bay RV Resort & Marina",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "coastal_mississippi_mardi_gras_museum_biloxi_historic_landmark",
+      "name": "Coastal Mississippi Mardi Gras Museum",
+      "oldCategory": "shopping",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "maritime___seafood_industry_museum_biloxi_historic_landmark",
+      "name": "Maritime & Seafood Industry Museum",
+      "oldCategory": "marina",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "bolivar_peninsula_historic_landmark_galveston_naval_museum_consolidated",
+      "name": "Galveston Naval Museum",
+      "oldCategory": "park_recreation",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "museum_of_the_gulf_coast_bolivar_peninsula_historic_landmark",
+      "name": "Museum of the Gulf Coast",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "bolivar_peninsula_historic_landmark_the_bryan_museum_consolidated",
+      "name": "The Bryan Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "bolivar_peninsula_historic_landmark_galveston_county_museum_consolidated",
+      "name": "Galveston County Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "lively_beach___resort_condominium_corpus_christi_lodging",
+      "name": "Lively Beach - Resort Condominium",
+      "oldCategory": "tour_agency",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "corpus_christi_museum_of_science_and_history_corpus_christi_historic_landmark",
+      "name": "Corpus Christi Museum of Science and History",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "selena_museum_corpus_christi_historic_landmark",
+      "name": "Selena Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "galveston_children_s_museum_crystal_beach_historic_landmark",
+      "name": "Galveston Children's Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "marina_cafe_destin_restaurant",
+      "name": "Marina Cafe",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "destin_history___fishing_museum_destin_entertainment",
+      "name": "Destin History & Fishing Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "destin_historic_landmark_camp_walton_schoolhouse_museum_consolidated",
+      "name": "Camp Walton Schoolhouse Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "destin_historic_landmark_heritage_museum_of_northwest_florida_consolidated",
+      "name": "Heritage Museum of Northwest Florida",
+      "oldCategory": "shopping",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "eden_gardens_state_park_destin_historic_landmark",
+      "name": "Eden Gardens State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "galveston_marina_the_west_end_marina_and_restaurants_consolidated",
+      "name": "The West End Marina and Restaurants",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "galveston_rv_resort_and_marina_galveston_marina",
+      "name": "Galveston RV Resort and Marina",
+      "oldCategory": "rv_park",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "marina_bar___grill_galveston_marina",
+      "name": "Marina Bar & Grill",
+      "oldCategory": "restaurant",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "gulf_shores_historic_landmark_gulf_shores_museum_consolidated",
+      "name": "Gulf Shores Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "orange_beach_historic_landmark_orange_beach_history_museum_consolidated",
+      "name": "Orange Beach History Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "national_maritime_museum_of_the_gulf_gulf_shores_historic_landmark",
+      "name": "National Maritime Museum of the Gulf",
+      "oldCategory": "marina",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "gulf_shores_historic_landmark_national_naval_aviation_museum_consolidated",
+      "name": "National Naval Aviation Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "foley_railroad_museum_gulf_shores_historic_landmark",
+      "name": "Foley Railroad Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "holmes_medical_museum_gulf_shores_historic_landmark",
+      "name": "Holmes Medical Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "lafitte_s_barataria_museum_and_wetland_trace_lafitte_historic_landmark",
+      "name": "Lafitte's Barataria Museum and Wetland Trace",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "navarre_beach_lodging_portofino_island_resort_consolidated",
+      "name": "Portofino Island Resort",
+      "oldCategory": "tour_agency",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "orange_beach_historic_landmark_pensacola_lighthouse_&_maritime_museum_consolidated",
+      "name": "Pensacola Lighthouse & Maritime Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "gulf_state_park_nature_center_orange_beach_historic_landmark",
+      "name": "Gulf State Park Nature Center",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "st__andrews_state_park_panama_city_beach_historic_landmark",
+      "name": "St. Andrews State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "man_in_the_sea_museum_panama_city_beach_historic_landmark",
+      "name": "Man in the Sea Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "bay_county_historical_museum_panama_city_beach_historic_landmark",
+      "name": "Bay County Historical Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "orange_beach_marina_watersports__beach_location__perdido_key_water_sports",
+      "name": "Orange Beach Marina Watersports (Beach Location)",
+      "oldCategory": "water_sports",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "east_perdido_key_state_park_perdido_key_historic_landmark",
+      "name": "East Perdido Key State Park",
+      "oldCategory": "beach",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "pensacola_state_park_west_parking_area_perdido_key_historic_landmark",
+      "name": "Perdido Key State Park West Parking Area",
+      "oldCategory": "beach",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "big_lagoon_state_park_perdido_key_entertainment",
+      "name": "Big Lagoon State Park",
+      "oldCategory": "beach",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "port_aransas_museum_port_aransas_historic_landmark",
+      "name": "Port Aransas Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "mustang_island_state_park_port_aransas_entertainment",
+      "name": "Mustang Island State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "texas_lakeside_rv_resort_port_lavaca_lodging",
+      "name": "Texas Lakeside RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "calhoun_county_museum_port_lavaca_entertainment",
+      "name": "Calhoun County Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "goose_island_state_park_rockport_entertainment",
+      "name": "Goose Island State Park",
+      "oldCategory": "shopping",
+      "newCategory": "park_recreation",
+      "reason": "State parks should be park_recreation, not restaurant"
+    },
+    {
+      "id": "texas_maritime_museum_rockport_entertainment",
+      "name": "Texas Maritime Museum",
+      "oldCategory": "marina",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "windwater_hotel___marina_south_padre_island_marina",
+      "name": "WindWater Hotel & Marina",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "south_padre_marina_condominium_south_padre_island_marina",
+      "name": "South Padre Marina Condominium",
+      "oldCategory": "lodging",
+      "newCategory": "marina",
+      "reason": "Marinas should be marina, not restaurant"
+    },
+    {
+      "id": "port_isabel_historical_museum_south_padre_island_historic_landmark",
+      "name": "Port Isabel Historical Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "treasures_of_the_gulf_museum_south_padre_island_historic_landmark",
+      "name": "Treasures of the Gulf Museum",
+      "oldCategory": "lodging",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "beachfront_rv_resort_surfside_beach_car_rental",
+      "name": "Beachfront RV Resort",
+      "oldCategory": "rv_park",
+      "newCategory": "lodging",
+      "reason": "Hotels/resorts should be lodging, not other categories"
+    },
+    {
+      "id": "surfside_historical_museum_surfside_beach_historic_landmark",
+      "name": "Surfside Historical Museum",
+      "oldCategory": "water_sports",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    },
+    {
+      "id": "pensacola_ChIJNzwIg7PAkIgRoIAwnoQCOPc",
+      "name": "Museum of Commerce",
+      "oldCategory": "tourist_attraction",
+      "newCategory": "museum",
+      "reason": "Museums should be museum, not restaurant"
+    }
+  ]
+}

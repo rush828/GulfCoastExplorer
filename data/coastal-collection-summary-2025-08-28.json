@@ -1,0 +1,267 @@
+{
+  "total_businesses": 3404,
+  "existing_businesses": 291,
+  "new_businesses": 3113,
+  "cities": {
+    "galveston": {
+      "name": "Galveston",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "south_padre": {
+      "name": "South Padre Island",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "port_aransas": {
+      "name": "Port Aransas",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "rockport": {
+      "name": "Rockport",
+      "state": "Texas",
+      "businesses": 59
+    },
+    "corpus_christi": {
+      "name": "Corpus Christi",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "port_lavaca": {
+      "name": "Port Lavaca",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "surfside_beach": {
+      "name": "Surfside Beach",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "bolivar_peninsula": {
+      "name": "Bolivar Peninsula",
+      "state": "Texas",
+      "businesses": 64
+    },
+    "crystal_beach": {
+      "name": "Crystal Beach",
+      "state": "Texas",
+      "businesses": 47
+    },
+    "grand_isle": {
+      "name": "Grand Isle",
+      "state": "Louisiana",
+      "businesses": 62
+    },
+    "lafitte": {
+      "name": "Lafitte",
+      "state": "Louisiana",
+      "businesses": 64
+    },
+    "port_fourchon": {
+      "name": "Port Fourchon",
+      "state": "Louisiana",
+      "businesses": 43
+    },
+    "cocodrie": {
+      "name": "Cocodrie",
+      "state": "Louisiana",
+      "businesses": 58
+    },
+    "dulac": {
+      "name": "Dulac",
+      "state": "Louisiana",
+      "businesses": 64
+    },
+    "montegut": {
+      "name": "Montegut",
+      "state": "Louisiana",
+      "businesses": 53
+    },
+    "golden_meadow": {
+      "name": "Golden Meadow",
+      "state": "Louisiana",
+      "businesses": 47
+    },
+    "cut_off": {
+      "name": "Cut Off",
+      "state": "Louisiana",
+      "businesses": 51
+    },
+    "galliano": {
+      "name": "Galliano",
+      "state": "Louisiana",
+      "businesses": 45
+    },
+    "biloxi": {
+      "name": "Biloxi",
+      "state": "Mississippi",
+      "businesses": 64
+    },
+    "gulfport": {
+      "name": "Gulfport",
+      "state": "Mississippi",
+      "businesses": 63
+    },
+    "ocean_springs": {
+      "name": "Ocean Springs",
+      "state": "Mississippi",
+      "businesses": 60
+    },
+    "pascagoula": {
+      "name": "Pascagoula",
+      "state": "Mississippi",
+      "businesses": 63
+    },
+    "bay_st_louis": {
+      "name": "Bay St. Louis",
+      "state": "Mississippi",
+      "businesses": 64
+    },
+    "long_beach": {
+      "name": "Long Beach",
+      "state": "Mississippi",
+      "businesses": 61
+    },
+    "pass_christian": {
+      "name": "Pass Christian",
+      "state": "Mississippi",
+      "businesses": 55
+    },
+    "diamondhead": {
+      "name": "Diamondhead",
+      "state": "Mississippi",
+      "businesses": 42
+    },
+    "waveland": {
+      "name": "Waveland",
+      "state": "Mississippi",
+      "businesses": 41
+    },
+    "moss_point": {
+      "name": "Moss Point",
+      "state": "Mississippi",
+      "businesses": 60
+    },
+    "gulf_shores": {
+      "name": "Gulf Shores",
+      "state": "Alabama",
+      "businesses": 64
+    },
+    "orange_beach": {
+      "name": "Orange Beach",
+      "state": "Alabama",
+      "businesses": 64
+    },
+    "dauphin_island": {
+      "name": "Dauphin Island",
+      "state": "Alabama",
+      "businesses": 64
+    },
+    "fairhope": {
+      "name": "Fairhope",
+      "state": "Alabama",
+      "businesses": 59
+    },
+    "gulf_state_park": {
+      "name": "Gulf State Park",
+      "state": "Alabama",
+      "businesses": 58
+    },
+    "bon_secour": {
+      "name": "Bon Secour",
+      "state": "Alabama",
+      "businesses": 64
+    },
+    "elberta": {
+      "name": "Elberta",
+      "state": "Alabama",
+      "businesses": 64
+    },
+    "lillian": {
+      "name": "Lillian",
+      "state": "Alabama",
+      "businesses": 56
+    },
+    "perdido_key": {
+      "name": "Perdido Key",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "navarre_beach": {
+      "name": "Navarre Beach",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "destin": {
+      "name": "Destin",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "fort_walton_beach": {
+      "name": "Fort Walton Beach",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "panama_city_beach": {
+      "name": "Panama City Beach",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "apalachicola": {
+      "name": "Apalachicola",
+      "state": "Florida",
+      "businesses": 63
+    },
+    "st_george_island": {
+      "name": "St. George Island",
+      "state": "Florida",
+      "businesses": 54
+    },
+    "cedar_key": {
+      "name": "Cedar Key",
+      "state": "Florida",
+      "businesses": 59
+    },
+    "sarasota": {
+      "name": "Sarasota",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "sanibel_island": {
+      "name": "Sanibel Island",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "captiva_island": {
+      "name": "Captiva Island",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "fort_myers_beach": {
+      "name": "Fort Myers Beach",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "marco_island": {
+      "name": "Marco Island",
+      "state": "Florida",
+      "businesses": 64
+    },
+    "naples": {
+      "name": "Naples",
+      "state": "Florida",
+      "businesses": 63
+    },
+    "everglades_city": {
+      "name": "Everglades City",
+      "state": "Florida",
+      "businesses": 63
+    },
+    "key_west": {
+      "name": "Key West",
+      "state": "Florida",
+      "businesses": 64
+    }
+  }
+}

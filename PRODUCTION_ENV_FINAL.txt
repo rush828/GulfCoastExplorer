@@ -1,0 +1,62 @@
+# ==============================================================================
+# PRODUCTION ENVIRONMENT - COPIED FROM YOUR DEV + WHAT YOU NEED TO ADD
+# ==============================================================================
+
+# ✅ FROM YOUR DEV ENVIRONMENT (Working values)
+# ==============================================================================
+ADMIN_SECRET=4320ce25c4877733d8a4cb9c039e0669b6ea94917c90491f979e8e08cb55999d
+ADMIN_PASSWORD=b0fab8865ff682cfaa217ea16ad5b5e4!2025#
+CONTACT_EMAIL=bendependent828@gmail.com
+
+# ✅ GENERATED FOR PRODUCTION
+# ==============================================================================
+NEXTAUTH_SECRET=n19p+PXbVI9hE2tdqcn4OTHv3TTcYNceknxpQmRvfvc=
+CSRF_SECRET=HGvP6ClruegCea1Jb+8Q13oCExxFjC4l9u3xHsqqRy0=
+
+# ✅ SITE CONFIG (I saw gulfcoastexplorer.com in your guide)
+# ==============================================================================
+NODE_ENV=production
+NEXTAUTH_URL=https://gulfcoastexplorer.com
+
+# ⚠️ YOU DON'T HAVE THESE IN DEV - NEED TO ADD FOR PRODUCTION
+# ==============================================================================
+# These were commented out in your .env.local because you haven't set them up yet
+
+# Google Maps (NOT in your dev - maps are disabled)
+GOOGLE_MAPS_API_KEY=GET_FROM_GOOGLE_CLOUD_CONSOLE
+GOOGLE_API_KEY=GET_FROM_GOOGLE_CLOUD_CONSOLE
+
+# PayPal (NOT in your dev - no payment testing yet)
+PAYPAL_CLIENT_ID=GET_FROM_PAYPAL_DEVELOPER_PORTAL
+PAYPAL_CLIENT_SECRET=GET_FROM_PAYPAL_DEVELOPER_PORTAL
+PAYPAL_ENVIRONMENT=production
+PAYPAL_WEBHOOK_ID=
+
+# Email SMTP (NOT in your dev - contact form hasn't been tested)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=bendependent828@gmail.com
+SMTP_PASS=GET_GMAIL_APP_PASSWORD
+
+# ==============================================================================
+# SUMMARY:
+# ==============================================================================
+# 
+# ✅ READY TO USE (from dev):
+#    - Admin login credentials
+#    - Contact email
+#    - Security secrets
+#    - Domain (gulfcoastexplorer.com)
+# 
+# ⚠️ NEED TO GET (not in dev):
+#    - Google Maps API key
+#    - PayPal credentials  
+#    - Gmail app password
+# 
+# WHY these aren't in dev:
+#    - Dev mode doesn't show maps (placeholder instead)
+#    - You haven't tested payments in dev
+#    - Contact form hasn't been tested in dev
+# 
+# ==============================================================================
+

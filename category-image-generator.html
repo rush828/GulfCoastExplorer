@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category Image Placeholders</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #f5f5f5;
+        }
+        .image-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+        }
+        .image-placeholder { 
+            width: 200px; 
+            height: 150px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+        .image-placeholder h3 { 
+            margin: 0 0 10px 0; 
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .image-placeholder p { 
+            margin: 0; 
+            font-size: 12px; 
+            opacity: 0.8;
+        }
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .download-btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Category Image Placeholders</h1>
+    <p>Right-click on each image and "Save image as..." to download them as JPG files.</p>
+    <p>Save them to: <code>public/images/categories/</code></p>
+    
+    <div class="image-grid">
+        <div class="image-placeholder">
+            <h3>Restaurant</h3>
+            <p>restaurant-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Coffee Shop</h3>
+            <p>coffee-shop-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Ice Cream</h3>
+            <p>ice-cream-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Seafood Market</h3>
+            <p>seafood-market-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Winery</h3>
+            <p>winery-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Bar</h3>
+            <p>bar-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Hotel</h3>
+            <p>hotel-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Water Sports</h3>
+            <p>water-sports-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Marina</h3>
+            <p>marina-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Beach</h3>
+            <p>beach-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Boat Tour</h3>
+            <p>boat-tour-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Fishing Charter</h3>
+            <p>fishing-charter-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Scuba Diving</h3>
+            <p>scuba-diving-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Surf Shop</h3>
+            <p>surf-shop-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Store</h3>
+            <p>store-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Shopping Mall</h3>
+            <p>shopping-mall-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Souvenir Shop</h3>
+            <p>souvenir-shop-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Farmers Market</h3>
+            <p>farmers-market-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Art Gallery</h3>
+            <p>art-gallery-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Outlet Mall</h3>
+            <p>outlet-mall-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Entertainment</h3>
+            <p>entertainment-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Music Venue</h3>
+            <p>music-venue-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Nightclub</h3>
+            <p>nightclub-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Park</h3>
+            <p>park-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Golf Course</h3>
+            <p>golf-course-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Spa</h3>
+            <p>spa-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Attraction</h3>
+            <p>attraction-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Tour Agency</h3>
+            <p>tour-agency-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Car Rental</h3>
+            <p>car-rental-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Services</h3>
+            <p>services-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Liquor Store</h3>
+            <p>liquor-store-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>24 Hours</h3>
+            <p>24-hours-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Historic Landmark</h3>
+            <p>historic-landmark-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Rv Park</h3>
+            <p>rv-park-default.jpg</p>
+        </div>
+        <div class="image-placeholder">
+            <h3>Default Business.Jpg</h3>
+            <p>default-business.jpg</p>
+        </div>
+    </div>
+    
+    <script>
+        const requiredImages = ["restaurant-default.jpg","coffee-shop-default.jpg","ice-cream-default.jpg","seafood-market-default.jpg","winery-default.jpg","bar-default.jpg","hotel-default.jpg","water-sports-default.jpg","marina-default.jpg","beach-default.jpg","boat-tour-default.jpg","fishing-charter-default.jpg","scuba-diving-default.jpg","surf-shop-default.jpg","store-default.jpg","shopping-mall-default.jpg","souvenir-shop-default.jpg","farmers-market-default.jpg","art-gallery-default.jpg","outlet-mall-default.jpg","entertainment-default.jpg","music-venue-default.jpg","nightclub-default.jpg","park-default.jpg","golf-course-default.jpg","spa-default.jpg","attraction-default.jpg","tour-agency-default.jpg","car-rental-default.jpg","services-default.jpg","liquor-store-default.jpg","24-hours-default.jpg","historic-landmark-default.jpg","rv-park-default.jpg","default-business.jpg"];
+        
+        // Add download functionality
+        document.querySelectorAll('.image-placeholder').forEach((placeholder, index) => {
+            placeholder.addEventListener('click', () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = 400;
+                canvas.height = 300;
+                const ctx = canvas.getContext('2d');
+                
+                // Create gradient background
+                const gradient = ctx.createLinearGradient(0, 0, 400, 300);
+                gradient.addColorStop(0, '#667eea');
+                gradient.addColorStop(1, '#764ba2');
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, 400, 300);
+                
+                // Add text
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 24px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(placeholder.querySelector('h3').textContent, 200, 150);
+                
+                // Download
+                const link = document.createElement('a');
+                link.download = requiredImages[index];
+                link.href = canvas.toDataURL('image/jpeg', 0.9);
+                link.click();
+            });
+        });
+    </script>
+</body>
+</html>

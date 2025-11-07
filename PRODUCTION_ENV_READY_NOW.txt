@@ -1,0 +1,61 @@
+# ==============================================================================
+# PRODUCTION ENVIRONMENT - READY TO DEPLOY NOW
+# ==============================================================================
+# ✅ These are your ACTUAL values from development
+# ✅ Site will work but WITHOUT maps, payments, and contact form
+# ==============================================================================
+
+# ADMIN & SECURITY (✅ From your dev environment)
+ADMIN_SECRET=4320ce25c4877733d8a4cb9c039e0669b6ea94917c90491f979e8e08cb55999d
+ADMIN_PASSWORD=b0fab8865ff682cfaa217ea16ad5b5e4!2025#
+NEXTAUTH_SECRET=n19p+PXbVI9hE2tdqcn4OTHv3TTcYNceknxpQmRvfvc=
+CSRF_SECRET=HGvP6ClruegCea1Jb+8Q13oCExxFjC4l9u3xHsqqRy0=
+
+# SITE CONFIGURATION
+NODE_ENV=production
+NEXTAUTH_URL=https://gulfcoastexplorer.com
+
+# CONTACT EMAIL
+CONTACT_EMAIL=bendependent828@gmail.com
+
+# ==============================================================================
+# ⚠️ OPTIONAL - NOT SET UP YET (Site works without these)
+# ==============================================================================
+# Uncomment and add these when you're ready:
+
+# Google Maps (Business pages will show maps)
+# NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_key_here
+# GOOGLE_MAPS_API_KEY=your_google_maps_key_here
+
+# PayPal (For accepting business listing payments)
+# PAYPAL_CLIENT_ID=your_paypal_client_id
+# PAYPAL_CLIENT_SECRET=your_paypal_secret
+# PAYPAL_ENVIRONMENT=production
+# PAYPAL_WEBHOOK_ID=
+
+# Email SMTP (For contact form to send emails)
+# SMTP_HOST=smtp.gmail.com
+# SMTP_PORT=587
+# SMTP_USER=bendependent828@gmail.com
+# SMTP_PASS=your_gmail_app_password
+
+# ==============================================================================
+# 🚀 DEPLOYMENT INSTRUCTIONS
+# ==============================================================================
+# 
+# OPTION 1: Deploy NOW with what you have
+# - Copy the uncommented variables above to your hosting provider
+# - Site will work fully EXCEPT:
+#   - No maps on business pages (will show placeholder)
+#   - No payment processing (business listings won't accept payments)
+#   - Contact form won't send emails (will show error)
+# 
+# OPTION 2: Add the optional services first (recommended)
+# - Takes about 20 minutes total
+# - Get Google Maps key (10 min): https://console.cloud.google.com/
+# - Get PayPal credentials (5 min): https://developer.paypal.com/
+# - Get Gmail app password (5 min): https://myaccount.google.com/apppasswords
+# - Then deploy with FULL functionality
+# 
+# ==============================================================================
+

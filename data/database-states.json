@@ -1,0 +1,47 @@
+{
+  "texas": {
+    "id": "state-texas",
+    "name": "Texas",
+    "slug": "texas",
+    "description": "The Lone Star State offers over 600 miles of Gulf Coast shoreline with diverse beaches, fishing, and coastal culture.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "createdAt": "2025-08-29T14:22:06.870Z",
+    "updatedAt": "2025-08-29T14:22:06.872Z"
+  },
+  "louisiana": {
+    "id": "state-louisiana",
+    "name": "Louisiana",
+    "slug": "louisiana",
+    "description": "The Pelican State features unique bayou culture, Cajun cuisine, and diverse coastal ecosystems.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "createdAt": "2025-08-29T14:22:06.872Z",
+    "updatedAt": "2025-08-29T14:22:06.872Z"
+  },
+  "mississippi": {
+    "id": "state-mississippi",
+    "name": "Mississippi",
+    "slug": "mississippi",
+    "description": "The Magnolia State offers 62 miles of Gulf Coast with casinos, beaches, and Southern hospitality.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "createdAt": "2025-08-29T14:22:06.872Z",
+    "updatedAt": "2025-08-29T14:22:06.872Z"
+  },
+  "alabama": {
+    "id": "state-alabama",
+    "name": "Alabama",
+    "slug": "alabama",
+    "description": "The Yellowhammer State features 60 miles of Gulf Coast with white sand beaches and family-friendly resorts.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "createdAt": "2025-08-29T14:22:06.872Z",
+    "updatedAt": "2025-08-29T14:22:06.872Z"
+  },
+  "florida": {
+    "id": "state-florida",
+    "name": "Florida",
+    "slug": "florida",
+    "description": "The Sunshine State offers the longest Gulf Coast with pristine beaches, crystal clear waters, and endless recreation.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "createdAt": "2025-08-29T14:22:06.872Z",
+    "updatedAt": "2025-08-29T14:22:06.872Z"
+  }
+}

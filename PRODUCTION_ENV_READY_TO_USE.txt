@@ -1,0 +1,92 @@
+# ==============================================================================
+# GULF COAST DIRECTORY - PRODUCTION ENVIRONMENT VARIABLES
+# ==============================================================================
+# ✅ THESE ARE YOUR REAL VALUES - Ready to copy/paste into your hosting provider
+# ==============================================================================
+
+# ==============================================================================
+# 1. ADMIN SECURITY (✅ Using your existing dev values)
+# ==============================================================================
+ADMIN_SECRET=4320ce25c4877733d8a4cb9c039e0669b6ea94917c90491f979e8e08cb55999d
+ADMIN_PASSWORD=b0fab8865ff682cfaa217ea16ad5b5e4!2025#
+
+# Newly generated for production:
+NEXTAUTH_SECRET=n19p+PXbVI9hE2tdqcn4OTHv3TTcYNceknxpQmRvfvc=
+CSRF_SECRET=HGvP6ClruegCea1Jb+8Q13oCExxFjC4l9u3xHsqqRy0=
+
+# ==============================================================================
+# 2. SITE CONFIGURATION (⚠️ UPDATE YOUR DOMAIN!)
+# ==============================================================================
+NODE_ENV=production
+NEXTAUTH_URL=https://REPLACE_WITH_YOUR_ACTUAL_DOMAIN.com
+
+# Example: https://gulfcoastexplorer.com
+# Example: https://www.gulfcoastdirectory.com
+# NO TRAILING SLASH!
+
+# ==============================================================================
+# 3. GOOGLE MAPS API (⚠️ YOU NEED TO ADD THESE)
+# ==============================================================================
+# Get from: https://console.cloud.google.com/
+# 1. Create/select project
+# 2. Enable "Maps JavaScript API"
+# 3. Create API key
+# 4. RESTRICT to your domain!
+
+GOOGLE_MAPS_API_KEY=REPLACE_WITH_YOUR_GOOGLE_MAPS_KEY
+GOOGLE_API_KEY=REPLACE_WITH_YOUR_GOOGLE_PLACES_KEY
+
+# You can use the SAME key for both if you want
+
+# ==============================================================================
+# 4. PAYPAL PAYMENT PROCESSING (⚠️ YOU NEED TO ADD THESE)
+# ==============================================================================
+# Get from: https://developer.paypal.com/
+# 1. Login to PayPal Business account
+# 2. My Apps & Credentials
+# 3. Click "LIVE" tab (not Sandbox!)
+# 4. Create App
+# 5. Copy Client ID and Secret
+
+PAYPAL_CLIENT_ID=REPLACE_WITH_LIVE_PAYPAL_CLIENT_ID
+PAYPAL_CLIENT_SECRET=REPLACE_WITH_LIVE_PAYPAL_SECRET
+PAYPAL_ENVIRONMENT=production
+PAYPAL_WEBHOOK_ID=
+
+# Leave PAYPAL_WEBHOOK_ID blank for now
+
+# ==============================================================================
+# 5. EMAIL CONFIGURATION (✅ Using your existing email)
+# ==============================================================================
+# Your contact email:
+CONTACT_EMAIL=bendependent828@gmail.com
+
+# ⚠️ YOU NEED TO ADD SMTP CREDENTIALS
+# For Gmail (bendependent828@gmail.com):
+# 1. Go to: https://myaccount.google.com/apppasswords
+# 2. Create App Password for "Mail"
+# 3. Copy the 16-character password
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=bendependent828@gmail.com
+SMTP_PASS=REPLACE_WITH_GMAIL_APP_PASSWORD
+
+# To get Gmail App Password:
+# - Must have 2-factor authentication enabled
+# - Go to Google Account → Security → App Passwords
+# - Generate for "Mail"
+
+# ==============================================================================
+# ✅ SUMMARY - What you still need to do:
+# ==============================================================================
+# 
+# 1. [ ] Replace NEXTAUTH_URL with your actual domain
+# 2. [ ] Get Google Maps API key and add it
+# 3. [ ] Get PayPal LIVE credentials and add them
+# 4. [ ] Generate Gmail App Password and add it
+# 
+# Everything else is READY TO USE!
+# 
+# ==============================================================================
+

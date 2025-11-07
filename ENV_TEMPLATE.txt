@@ -1,0 +1,33 @@
+# ==============================================================================
+# COPY THIS EXACTLY INTO YOUR HOSTING PROVIDER'S ENVIRONMENT VARIABLES
+# Then replace each "REPLACE_WITH_" value
+# ==============================================================================
+
+# 1. GENERATE THESE (Run: openssl rand -hex 32)
+ADMIN_SECRET=REPLACE_WITH_GENERATED_SECRET_1
+NEXTAUTH_SECRET=REPLACE_WITH_GENERATED_SECRET_2
+ADMIN_PASSWORD=REPLACE_WITH_YOUR_ADMIN_PASSWORD
+
+# 2. YOUR DOMAIN
+NEXTAUTH_URL=https://yourdomain.com
+NODE_ENV=production
+
+# 3. GOOGLE MAPS (Get from: https://console.cloud.google.com/)
+GOOGLE_MAPS_API_KEY=REPLACE_WITH_GOOGLE_MAPS_KEY
+GOOGLE_API_KEY=REPLACE_WITH_GOOGLE_PLACES_KEY
+
+# 4. PAYPAL (Get from: https://developer.paypal.com/)
+PAYPAL_CLIENT_ID=REPLACE_WITH_PAYPAL_CLIENT_ID
+PAYPAL_CLIENT_SECRET=REPLACE_WITH_PAYPAL_SECRET
+PAYPAL_ENVIRONMENT=production
+PAYPAL_WEBHOOK_ID=
+
+# 5. EMAIL (Gmail: https://myaccount.google.com/apppasswords)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=REPLACE_WITH_YOUR_EMAIL@gmail.com
+SMTP_PASS=REPLACE_WITH_GMAIL_APP_PASSWORD
+
+# 6. OPTIONAL
+CSRF_SECRET=REPLACE_WITH_GENERATED_SECRET_3
+

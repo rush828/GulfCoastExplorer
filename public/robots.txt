@@ -1,0 +1,245 @@
+# Gulf Coast Tourist Directory Robots.txt
+# Optimized for 2025 SEO best practices and maximum search engine visibility
+# Enhanced for AI search engines (Perplexity, ChatGPT, Claude, Gemini, etc.)
+
+# Allow all search engines by default
+User-agent: *
+Allow: /
+
+# Priority sitemap locations
+Sitemap: https://gulfcoastexplorer.com/sitemap.xml
+Sitemap: https://gulfcoastexplorer.com/sitemap-images.xml
+Sitemap: https://gulfcoastexplorer.com/sitemap-news.xml
+
+# Optimized crawl-delay for better indexing
+Crawl-delay: 0.5
+
+# ============================================
+# AI SEARCH ENGINES (2025+)
+# ============================================
+
+# Perplexity AI - AI-powered search engine
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0.5
+
+# OpenAI - ChatGPT Search & GPTBot
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0.5
+
+# Anthropic - Claude AI
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 0.5
+
+# Google AI - Gemini & Bard
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0.5
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+Crawl-delay: 0.5
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing AI / Copilot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0.5
+
+# Common Crawl (used by many AI companies for training)
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+# AI2Bot (Allen Institute for AI - powers semantic search)
+User-agent: AI2Bot
+Allow: /
+Crawl-delay: 0.5
+
+# Diffbot (AI-powered data extraction)
+User-agent: Diffbot
+Allow: /
+Crawl-delay: 1
+
+# YouBot (You.com AI search)
+User-agent: YouBot
+Allow: /
+Crawl-delay: 0.5
+
+# Grok (xAI - Elon Musk's AI)
+User-agent: Grokbot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: xAI-Grok
+Allow: /
+Crawl-delay: 0.5
+
+# Apple Intelligence (Siri, Apple Search)
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 0.5
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+Crawl-delay: 0.5
+
+# TikTok / ByteDance AI
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 0.5
+
+# Brave Search AI
+User-agent: brave-ai
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Brave-Indexer
+Allow: /
+Crawl-delay: 0.5
+
+# ============================================
+# TRADITIONAL SEARCH ENGINES
+# ============================================
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.avif$
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 1
+
+# Bing Search (additional)
+User-agent: msnbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Yandex (Russia)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# ============================================
+# SOCIAL MEDIA BOTS
+# ============================================
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# Disallow admin and technical areas
+Disallow: /admin/
+Disallow: /api/admin/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /api/
+Disallow: /_vercel/
+Disallow: /vercel/
+
+# Allow important content pages
+Allow: /states/
+Allow: /search
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /sitemap.xml
+
+# Allow all state and city pages
+Allow: /states/*/
+Allow: /*/*/
+
+# Block duplicate content and technical files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /favicon.ico
+Disallow: /robots.txt
+
+# Performance hints for search engines
+# Google recommends these settings for better crawling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# News bot optimization
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 1
+
+# Video bot optimization
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 1

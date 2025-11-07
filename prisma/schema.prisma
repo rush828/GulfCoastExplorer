@@ -1,0 +1,115 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ListingStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model State {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  cities City[]
+
+  @@map("states")
+}
+
+model City {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String
+  description String?
+  imageUrl    String?
+  stateId     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  state    State     @relation(fields: [stateId], references: [id], onDelete: Cascade)
+
+  @@unique([stateId, slug])
+  @@map("cities")
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  imageUrl    String?
+  parentId    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  parent     Category?   @relation("CategoryHierarchy", fields: [parentId], references: [id])
+  children   Category[]  @relation("CategoryHierarchy")
+  listings   ListingCategory[]
+
+  @@map("categories")
+}
+
+model Listing {
+  id          String        @id @default(cuid())
+  name        String
+  slug        String        @unique
+  description String?
+  address     String
+  city        String
+  state       String
+  zipCode     String?
+  phone       String?
+  website     String?
+  email       String?
+  latitude    Float?
+  longitude   Float?
+  placeId     String? // Google Places ID
+  status      ListingStatus @default(DRAFT)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  categories ListingCategory[]
+  media      Media[]
+
+  @@map("listings")
+}
+
+model ListingCategory {
+  id         String @id @default(cuid())
+  listingId  String
+  categoryId String
+  createdAt  DateTime @default(now())
+
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  category  Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([listingId, categoryId])
+  @@map("listing_categories")
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  url       String
+  altText   String?
+  listingId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@map("media")
+}

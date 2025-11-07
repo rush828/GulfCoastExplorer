@@ -1,0 +1,1120 @@
+{
+  "consolidation_date": "2025-09-23T16:46:58.665Z",
+  "total_businesses": 5073,
+  "total_cities": 54,
+  "city_breakdown": [
+    {
+      "name": "Pensacola",
+      "state": "Florida",
+      "slug": "pensacola",
+      "business_count": 373,
+      "categories": {
+        "lodging": 25,
+        "restaurant": 60,
+        "beach": 15,
+        "water_sport": 20,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12,
+        "spa_fitness": 15,
+        "professional_services": 10,
+        "golf_course": 8,
+        "fishing_charter": 12,
+        "art_gallery": 8,
+        "music_venue": 6,
+        "winery_brewery": 8,
+        "farmers_market": 5,
+        "park_recreation": 10,
+        "boat_tour": 8,
+        "scuba_diving": 6,
+        "surf_shop": 8,
+        "ice_cream": 12,
+        "coffee_shop": 15,
+        "seafood_market": 8,
+        "souvenir_shop": 10
+      },
+      "last_updated": "2025-09-23T16:46:56.242Z"
+    },
+    {
+      "name": "Galveston",
+      "state": "Texas",
+      "slug": "galveston",
+      "business_count": 195,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 22,
+        "restaurant": 39,
+        "beach": 12,
+        "water_sport": 15,
+        "marina": 12,
+        "shopping_mall": 7,
+        "outlet_mall": 3,
+        "car_rental": 7,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Corpus Christi",
+      "state": "Texas",
+      "slug": "corpus-christi",
+      "business_count": 192,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 22,
+        "restaurant": 46,
+        "beach": 8,
+        "water_sport": 18,
+        "marina": 9,
+        "shopping_mall": 6,
+        "outlet_mall": 3,
+        "car_rental": 4,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 6,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Destin",
+      "state": "Florida",
+      "slug": "destin",
+      "business_count": 192,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 23,
+        "restaurant": 39,
+        "beach": 7,
+        "water_sport": 20,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 2,
+        "car_rental": 6,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 5,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Fort Walton Beach",
+      "state": "Florida",
+      "slug": "fort-walton-beach",
+      "business_count": 189,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 21,
+        "restaurant": 37,
+        "beach": 3,
+        "water_sport": 20,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 7,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Orange Beach",
+      "state": "Alabama",
+      "slug": "orange-beach",
+      "business_count": 189,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 22,
+        "restaurant": 34,
+        "beach": 6,
+        "water_sport": 19,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 7,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Panama City Beach",
+      "state": "Florida",
+      "slug": "panama-city-beach",
+      "business_count": 186,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 39,
+        "beach": 2,
+        "water_sport": 20,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 4,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Montegut",
+      "state": "Louisiana",
+      "slug": "montegut",
+      "business_count": 184,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 24,
+        "restaurant": 49,
+        "water_sport": 18,
+        "marina": 7,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 5,
+        "tour_agency": 9,
+        "historic_landmark": 15,
+        "bar": 13,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Dulac",
+      "state": "Louisiana",
+      "slug": "dulac",
+      "business_count": 180,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 23,
+        "restaurant": 42,
+        "water_sport": 17,
+        "marina": 10,
+        "shopping_mall": 6,
+        "outlet_mall": 3,
+        "car_rental": 4,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 19,
+        "nightclub": 8,
+        "liquor_store": 6,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Port Fourchon",
+      "state": "Louisiana",
+      "slug": "port-fourchon",
+      "business_count": 180,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 19,
+        "restaurant": 50,
+        "water_sport": 14,
+        "marina": 10,
+        "shopping_mall": 4,
+        "outlet_mall": 3,
+        "car_rental": 3,
+        "tour_agency": 9,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Gulf Shores",
+      "state": "Alabama",
+      "slug": "gulf-shores",
+      "business_count": 177,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 22,
+        "restaurant": 32,
+        "beach": 1,
+        "water_sport": 18,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 6,
+        "tour_agency": 10,
+        "historic_landmark": 12,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Cocodrie",
+      "state": "Louisiana",
+      "slug": "cocodrie",
+      "business_count": 173,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 16,
+        "restaurant": 45,
+        "beach": 2,
+        "water_sport": 15,
+        "marina": 9,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 5,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 15,
+        "nightclub": 5,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Perdido Key",
+      "state": "Florida",
+      "slug": "perdido-key",
+      "business_count": 173,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 29,
+        "beach": 2,
+        "water_sport": 18,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 6,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 5,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Cut Off",
+      "state": "Louisiana",
+      "slug": "cut-off",
+      "business_count": 172,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 19,
+        "restaurant": 33,
+        "beach": 2,
+        "water_sport": 19,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 2,
+        "tour_agency": 9,
+        "historic_landmark": 15,
+        "bar": 17,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "New Orleans",
+      "state": "Louisiana",
+      "slug": "new-orleans",
+      "business_count": 172,
+      "categories": {
+        "accommodations": 24,
+        "food-dining": 49,
+        "beaches-outdoors": 2,
+        "water-activities": 32,
+        "shopping-retail": 8,
+        "tours-adventures": 10,
+        "history-culture": 15,
+        "nightlife-entertainment": 32
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Rockport",
+      "state": "Texas",
+      "slug": "rockport",
+      "business_count": 172,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 32,
+        "beach": 1,
+        "water_sport": 17,
+        "marina": 11,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 4,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 6,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Golden Meadow",
+      "state": "Louisiana",
+      "slug": "golden-meadow",
+      "business_count": 170,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 21,
+        "restaurant": 28,
+        "water_sport": 18,
+        "marina": 11,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 3,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Biloxi",
+      "state": "Mississippi",
+      "slug": "biloxi",
+      "business_count": 168,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 19,
+        "restaurant": 32,
+        "beach": 1,
+        "water_sport": 15,
+        "marina": 12,
+        "shopping_mall": 4,
+        "outlet_mall": 3,
+        "car_rental": 4,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Galliano",
+      "state": "Louisiana",
+      "slug": "galliano",
+      "business_count": 167,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 28,
+        "water_sport": 16,
+        "marina": 12,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 2,
+        "tour_agency": 10,
+        "historic_landmark": 15,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Port Aransas",
+      "state": "Texas",
+      "slug": "port-aransas",
+      "business_count": 162,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 18,
+        "restaurant": 30,
+        "beach": 3,
+        "water_sport": 17,
+        "marina": 10,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 12,
+        "bar": 20,
+        "nightclub": 1,
+        "liquor_store": 5,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Bolivar Peninsula",
+      "state": "Texas",
+      "slug": "bolivar-peninsula",
+      "business_count": 160,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 22,
+        "restaurant": 26,
+        "beach": 5,
+        "water_sport": 17,
+        "marina": 10,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 9,
+        "historic_landmark": 14,
+        "bar": 14,
+        "nightclub": 3,
+        "liquor_store": 4,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Surfside Beach",
+      "state": "Texas",
+      "slug": "surfside-beach",
+      "business_count": 160,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 23,
+        "restaurant": 28,
+        "water_sport": 15,
+        "marina": 8,
+        "shopping_mall": 7,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 9,
+        "bar": 19,
+        "nightclub": 8,
+        "liquor_store": 7,
+        "entertainment": 10
+      },
+      "last_updated": "2025-09-23T16:46:56.031Z"
+    },
+    {
+      "name": "Lafitte",
+      "state": "Louisiana",
+      "slug": "lafitte",
+      "business_count": 158,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 34,
+        "beach": 1,
+        "water_sport": 14,
+        "marina": 9,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 3,
+        "tour_agency": 10,
+        "historic_landmark": 7,
+        "bar": 16,
+        "nightclub": 8,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Crystal Beach",
+      "state": "Texas",
+      "slug": "crystal-beach",
+      "business_count": 157,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 26,
+        "beach": 1,
+        "water_sport": 12,
+        "marina": 9,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 9,
+        "historic_landmark": 14,
+        "bar": 20,
+        "nightclub": 8,
+        "liquor_store": 2,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Grand Isle",
+      "state": "Louisiana",
+      "slug": "grand-isle",
+      "business_count": 157,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 19,
+        "restaurant": 26,
+        "beach": 4,
+        "water_sport": 16,
+        "marina": 10,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 13,
+        "bar": 9,
+        "nightclub": 6,
+        "liquor_store": 8,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "South Padre Island",
+      "state": "Texas",
+      "slug": "south-padre-island",
+      "business_count": 157,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 19,
+        "restaurant": 31,
+        "beach": 3,
+        "water_sport": 12,
+        "marina": 8,
+        "shopping_mall": 5,
+        "outlet_mall": 3,
+        "car_rental": 8,
+        "tour_agency": 10,
+        "historic_landmark": 11,
+        "bar": 20,
+        "nightclub": 6,
+        "liquor_store": 4,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.031Z"
+    },
+    {
+      "name": "Navarre Beach",
+      "state": "Florida",
+      "slug": "navarre-beach",
+      "business_count": 149,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 20,
+        "restaurant": 26,
+        "beach": 1,
+        "water_sport": 15,
+        "marina": 9,
+        "shopping_mall": 8,
+        "outlet_mall": 3,
+        "car_rental": 2,
+        "tour_agency": 10,
+        "historic_landmark": 7,
+        "bar": 20,
+        "nightclub": 6,
+        "liquor_store": 5,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Port Lavaca",
+      "state": "Texas",
+      "slug": "port-lavaca",
+      "business_count": 142,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2,
+        "lodging": 21,
+        "restaurant": 26,
+        "beach": 1,
+        "water_sport": 17,
+        "marina": 9,
+        "shopping_mall": 5,
+        "outlet_mall": 3,
+        "car_rental": 1,
+        "tour_agency": 10,
+        "historic_landmark": 9,
+        "bar": 15,
+        "nightclub": 4,
+        "liquor_store": 4,
+        "entertainment": 12
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Apalachicola",
+      "state": "Florida",
+      "slug": "apalachicola",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.028Z"
+    },
+    {
+      "name": "Bay St. Louis",
+      "state": "Mississippi",
+      "slug": "bay-st.-louis",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.029Z"
+    },
+    {
+      "name": "Bon Secour",
+      "state": "Alabama",
+      "slug": "bon-secour",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Captiva Island",
+      "state": "Florida",
+      "slug": "captiva-island",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Cedar Key",
+      "state": "Florida",
+      "slug": "cedar-key",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Dauphin Island",
+      "state": "Alabama",
+      "slug": "dauphin-island",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Diamondhead",
+      "state": "Mississippi",
+      "slug": "diamondhead",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Elberta",
+      "state": "Alabama",
+      "slug": "elberta",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Everglades City",
+      "state": "Florida",
+      "slug": "everglades-city",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Fairhope",
+      "state": "Alabama",
+      "slug": "fairhope",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Fort Myers Beach",
+      "state": "Florida",
+      "slug": "fort-myers-beach",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Gulfport",
+      "state": "Mississippi",
+      "slug": "gulfport",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Gulf State Park",
+      "state": "Alabama",
+      "slug": "gulf-state-park",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Key West",
+      "state": "Florida",
+      "slug": "key-west",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Lillian",
+      "state": "Alabama",
+      "slug": "lillian",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Long Beach",
+      "state": "Mississippi",
+      "slug": "long-beach",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Marco Island",
+      "state": "Florida",
+      "slug": "marco-island",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Moss Point",
+      "state": "Mississippi",
+      "slug": "moss-point",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Naples",
+      "state": "Florida",
+      "slug": "naples",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Ocean Springs",
+      "state": "Mississippi",
+      "slug": "ocean-springs",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Pascagoula",
+      "state": "Mississippi",
+      "slug": "pascagoula",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Pass Christian",
+      "state": "Mississippi",
+      "slug": "pass-christian",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Sanibel Island",
+      "state": "Florida",
+      "slug": "sanibel-island",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.030Z"
+    },
+    {
+      "name": "Sarasota",
+      "state": "Florida",
+      "slug": "sarasota",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.031Z"
+    },
+    {
+      "name": "St. George Island",
+      "state": "Florida",
+      "slug": "st.-george-island",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.031Z"
+    },
+    {
+      "name": "Waveland",
+      "state": "Mississippi",
+      "slug": "waveland",
+      "business_count": 5,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 1,
+        "beaches-outdoors": 1,
+        "water-activities": 2
+      },
+      "last_updated": "2025-09-23T16:46:56.031Z"
+    }
+  ],
+  "duplicates_removed": 4331,
+  "sources": [
+    {
+      "name": "Consolidated Businesses",
+      "count": 4763,
+      "file": "data/consolidated-businesses.json"
+    },
+    {
+      "name": "Businesses Fallback",
+      "count": 4331,
+      "file": "data/businesses-fallback.json"
+    },
+    {
+      "name": "Pensacola Comprehensive",
+      "count": 373,
+      "file": "data/pensacola-comprehensive.json"
+    },
+    {
+      "name": "Database Businesses",
+      "count": 0,
+      "file": "data/database-businesses.json"
+    }
+  ]
+}

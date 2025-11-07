@@ -1,0 +1,45 @@
+{
+  "created_at": "2025-08-29T14:22:07.011Z",
+  "database_structure": {
+    "states": 5,
+    "cities": 53,
+    "businesses": 422
+  },
+  "state_breakdown": {
+    "texas": {
+      "name": "Texas",
+      "cities": 9,
+      "businesses": 554
+    },
+    "louisiana": {
+      "name": "Louisiana",
+      "cities": 10,
+      "businesses": 671
+    },
+    "mississippi": {
+      "name": "Mississippi",
+      "cities": 10,
+      "businesses": 573
+    },
+    "alabama": {
+      "name": "Alabama",
+      "cities": 8,
+      "businesses": 493
+    },
+    "florida": {
+      "name": "Florida",
+      "cities": 16,
+      "businesses": 1006
+    }
+  },
+  "category_breakdown": {
+    "accommodations": 74,
+    "food-dining": 99,
+    "beaches-outdoors": 52,
+    "water-activities": 132,
+    "shopping-retail": 8,
+    "tours-adventures": 10,
+    "history-culture": 15,
+    "nightlife-entertainment": 32
+  }
+}

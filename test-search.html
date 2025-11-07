@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Test</title>
+</head>
+<body>
+    <h1>Testing Search</h1>
+    <div id="results"></div>
+    
+    <script>
+        async function testSearch() {
+            try {
+                const response = await fetch('/api/google-data/retrieve?category=coffee_shop');
+                const data = await response.json();
+                document.getElementById('results').innerHTML = `
+                    <h2>API Response:</h2>
+                    <p>Success: ${data.success}</p>
+                    <p>Total: ${data.total}</p>
+                    <p>Businesses: ${data.businesses ? data.businesses.length : 0}</p>
+                    <h3>First 3 businesses:</h3>
+                    <ul>
+                        ${data.businesses ? data.businesses.slice(0, 3).map(b => `<li>${b.name} - ${b.category}</li>`).join('') : '<li>No businesses</li>'}
+                    </ul>
+                `;
+            } catch (error) {
+                document.getElementById('results').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+        
+        testSearch();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Gulf Coast Tourist Directory - Complete Travel Guide",
+  "short_name": "Gulf Coast Directory",
+  "description": "The Gulf Coast's most comprehensive tourist directory featuring 500+ verified local businesses across 50+ coastal cities from Texas to Florida. Find parasailing, jet ski rentals, boat tours, fishing charters, and water sports with expert travel recommendations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0ea5e9",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["travel", "tourism", "lifestyle", "business"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
+

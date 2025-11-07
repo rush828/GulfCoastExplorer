@@ -1,0 +1,907 @@
+{
+  "apalachicola": {
+    "id": "city-1",
+    "name": "Apalachicola",
+    "slug": "apalachicola",
+    "description": "Apalachicola, Florida offers 63 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 63,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 15
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "bay_st_louis": {
+    "id": "city-2",
+    "name": "Bay St. Louis",
+    "slug": "bay_st_louis",
+    "description": "Bay St. Louis, Mississippi offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "biloxi": {
+    "id": "city-3",
+    "name": "Biloxi",
+    "slug": "biloxi",
+    "description": "Biloxi, Mississippi offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "bolivar_peninsula": {
+    "id": "city-4",
+    "name": "Bolivar Peninsula",
+    "slug": "bolivar_peninsula",
+    "description": "Bolivar Peninsula, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "bon_secour": {
+    "id": "city-5",
+    "name": "Bon Secour",
+    "slug": "bon_secour",
+    "description": "Bon Secour, Alabama offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "captiva_island": {
+    "id": "city-6",
+    "name": "Captiva Island",
+    "slug": "captiva_island",
+    "description": "Captiva Island, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "cedar_key": {
+    "id": "city-7",
+    "name": "Cedar Key",
+    "slug": "cedar_key",
+    "description": "Cedar Key, Florida offers 59 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 59,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 3,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "cocodrie": {
+    "id": "city-8",
+    "name": "Cocodrie",
+    "slug": "cocodrie",
+    "description": "Cocodrie, Louisiana offers 58 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 58,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 20,
+      "beaches-outdoors": 8,
+      "water-activities": 15
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "corpus_christi": {
+    "id": "city-9",
+    "name": "Corpus Christi",
+    "slug": "corpus_christi",
+    "description": "Corpus Christi, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "crystal_beach": {
+    "id": "city-10",
+    "name": "Crystal Beach",
+    "slug": "crystal_beach",
+    "description": "Crystal Beach, Texas offers 47 businesses including accommodations, food dining, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 47,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 13,
+      "beaches-outdoors": 8,
+      "water-activities": 11
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "cut_off": {
+    "id": "city-11",
+    "name": "Cut Off",
+    "slug": "cut_off",
+    "description": "Cut Off, Louisiana offers 51 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 51,
+    "categories": {
+      "accommodations": 2,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "dauphin_island": {
+    "id": "city-12",
+    "name": "Dauphin Island",
+    "slug": "dauphin_island",
+    "description": "Dauphin Island, Alabama offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "destin": {
+    "id": "city-13",
+    "name": "Destin",
+    "slug": "destin",
+    "description": "Destin, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.873Z",
+    "updatedAt": "2025-08-29T14:22:06.873Z"
+  },
+  "diamondhead": {
+    "id": "city-14",
+    "name": "Diamondhead",
+    "slug": "diamondhead",
+    "description": "Diamondhead, Mississippi offers 42 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 42,
+    "categories": {
+      "accommodations": 1,
+      "food-dining": 21,
+      "beaches-outdoors": 8,
+      "water-activities": 12
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "dulac": {
+    "id": "city-15",
+    "name": "Dulac",
+    "slug": "dulac",
+    "description": "Dulac, Louisiana offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "elberta": {
+    "id": "city-16",
+    "name": "Elberta",
+    "slug": "elberta",
+    "description": "Elberta, Alabama offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "everglades_city": {
+    "id": "city-17",
+    "name": "Everglades City",
+    "slug": "everglades_city",
+    "description": "Everglades City, Florida offers 63 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 63,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 24,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "fairhope": {
+    "id": "city-18",
+    "name": "Fairhope",
+    "slug": "fairhope",
+    "description": "Fairhope, Alabama offers 59 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 59,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 11
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "fort_myers_beach": {
+    "id": "city-19",
+    "name": "Fort Myers Beach",
+    "slug": "fort_myers_beach",
+    "description": "Fort Myers Beach, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "fort_walton_beach": {
+    "id": "city-20",
+    "name": "Fort Walton Beach",
+    "slug": "fort_walton_beach",
+    "description": "Fort Walton Beach, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "galliano": {
+    "id": "city-21",
+    "name": "Galliano",
+    "slug": "galliano",
+    "description": "Galliano, Louisiana offers 45 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 45,
+    "categories": {
+      "accommodations": 2,
+      "food-dining": 19,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "galveston": {
+    "id": "city-22",
+    "name": "Galveston",
+    "slug": "galveston",
+    "description": "Galveston, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "golden_meadow": {
+    "id": "city-23",
+    "name": "Golden Meadow",
+    "slug": "golden_meadow",
+    "description": "Golden Meadow, Louisiana offers 47 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 47,
+    "categories": {
+      "accommodations": 1,
+      "food-dining": 25,
+      "beaches-outdoors": 5,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "grand_isle": {
+    "id": "city-24",
+    "name": "Grand Isle",
+    "slug": "grand_isle",
+    "description": "Grand Isle, Louisiana offers 62 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 62,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 23,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "gulfport": {
+    "id": "city-25",
+    "name": "Gulfport",
+    "slug": "gulfport",
+    "description": "Gulfport, Mississippi offers 63 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 63,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 15
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "gulf_shores": {
+    "id": "city-26",
+    "name": "Gulf Shores",
+    "slug": "gulf_shores",
+    "description": "Gulf Shores, Alabama offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "gulf_state_park": {
+    "id": "city-27",
+    "name": "Gulf State Park",
+    "slug": "gulf_state_park",
+    "description": "Gulf State Park, Alabama offers 58 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 58,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 2,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "key_west": {
+    "id": "city-28",
+    "name": "Key West",
+    "slug": "key_west",
+    "description": "Key West, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "lafitte": {
+    "id": "city-29",
+    "name": "Lafitte",
+    "slug": "lafitte",
+    "description": "Lafitte, Louisiana offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "lillian": {
+    "id": "city-30",
+    "name": "Lillian",
+    "slug": "lillian",
+    "description": "Lillian, Alabama offers 56 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 56,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 2,
+      "water-activities": 14
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "long_beach": {
+    "id": "city-31",
+    "name": "Long Beach",
+    "slug": "long_beach",
+    "description": "Long Beach, Mississippi offers 61 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 61,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 13
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "marco_island": {
+    "id": "city-32",
+    "name": "Marco Island",
+    "slug": "marco_island",
+    "description": "Marco Island, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "montegut": {
+    "id": "city-33",
+    "name": "Montegut",
+    "slug": "montegut",
+    "description": "Montegut, Louisiana offers 53 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 53,
+    "categories": {
+      "accommodations": 8,
+      "food-dining": 25,
+      "beaches-outdoors": 4,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "moss_point": {
+    "id": "city-34",
+    "name": "Moss Point",
+    "slug": "moss_point",
+    "description": "Moss Point, Mississippi offers 60 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 60,
+    "categories": {
+      "accommodations": 11,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "naples": {
+    "id": "city-35",
+    "name": "Naples",
+    "slug": "naples",
+    "description": "Naples, Florida offers 63 businesses including food dining, accommodations, water activities. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 63,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 15
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "navarre_beach": {
+    "id": "city-36",
+    "name": "Navarre Beach",
+    "slug": "navarre_beach",
+    "description": "Navarre Beach, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "new_orleans": {
+    "id": "city-37",
+    "name": "New Orleans",
+    "slug": "new_orleans",
+    "description": "New Orleans, Louisiana offers 184 businesses including food dining, water activities, nightlife entertainment. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 184,
+    "categories": {
+      "accommodations": 25,
+      "food-dining": 60,
+      "beaches-outdoors": 2,
+      "water-activities": 32,
+      "shopping-retail": 8,
+      "tours-adventures": 10,
+      "history-culture": 15,
+      "nightlife-entertainment": 32
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "ocean_springs": {
+    "id": "city-38",
+    "name": "Ocean Springs",
+    "slug": "ocean_springs",
+    "description": "Ocean Springs, Mississippi offers 60 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 60,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 4,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "orange_beach": {
+    "id": "city-39",
+    "name": "Orange Beach",
+    "slug": "orange_beach",
+    "description": "Orange Beach, Alabama offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/alabama/hero.jpg",
+    "stateId": "state-alabama",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "panama_city_beach": {
+    "id": "city-40",
+    "name": "Panama City Beach",
+    "slug": "panama_city_beach",
+    "description": "Panama City Beach, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "pascagoula": {
+    "id": "city-41",
+    "name": "Pascagoula",
+    "slug": "pascagoula",
+    "description": "Pascagoula, Mississippi offers 63 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 63,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 7,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "pass_christian": {
+    "id": "city-42",
+    "name": "Pass Christian",
+    "slug": "pass_christian",
+    "description": "Pass Christian, Mississippi offers 55 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 55,
+    "categories": {
+      "accommodations": 6,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "perdido_key": {
+    "id": "city-43",
+    "name": "Perdido Key",
+    "slug": "perdido_key",
+    "description": "Perdido Key, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "port_aransas": {
+    "id": "city-44",
+    "name": "Port Aransas",
+    "slug": "port_aransas",
+    "description": "Port Aransas, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "port_fourchon": {
+    "id": "city-45",
+    "name": "Port Fourchon",
+    "slug": "port_fourchon",
+    "description": "Port Fourchon, Louisiana offers 43 businesses including water activities, food dining, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/louisiana/hero.jpg",
+    "stateId": "state-louisiana",
+    "businessCount": 43,
+    "categories": {
+      "accommodations": 9,
+      "food-dining": 15,
+      "beaches-outdoors": 3,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "port_lavaca": {
+    "id": "city-46",
+    "name": "Port Lavaca",
+    "slug": "port_lavaca",
+    "description": "Port Lavaca, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "rockport": {
+    "id": "city-47",
+    "name": "Rockport",
+    "slug": "rockport",
+    "description": "Rockport, Texas offers 59 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 59,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 3,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "sanibel_island": {
+    "id": "city-48",
+    "name": "Sanibel Island",
+    "slug": "sanibel_island",
+    "description": "Sanibel Island, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "sarasota": {
+    "id": "city-49",
+    "name": "Sarasota",
+    "slug": "sarasota",
+    "description": "Sarasota, Florida offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "south_padre": {
+    "id": "city-50",
+    "name": "South Padre Island",
+    "slug": "south_padre",
+    "description": "South Padre Island, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "st_george_island": {
+    "id": "city-51",
+    "name": "St. George Island",
+    "slug": "st_george_island",
+    "description": "St. George Island, Florida offers 54 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/florida/hero.jpg",
+    "stateId": "state-florida",
+    "businessCount": 54,
+    "categories": {
+      "accommodations": 9,
+      "food-dining": 21,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "surfside_beach": {
+    "id": "city-52",
+    "name": "Surfside Beach",
+    "slug": "surfside_beach",
+    "description": "Surfside Beach, Texas offers 64 businesses including food dining, water activities, accommodations. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/texas/hero.jpg",
+    "stateId": "state-texas",
+    "businessCount": 64,
+    "categories": {
+      "accommodations": 15,
+      "food-dining": 25,
+      "beaches-outdoors": 8,
+      "water-activities": 16
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  },
+  "waveland": {
+    "id": "city-53",
+    "name": "Waveland",
+    "slug": "waveland",
+    "description": "Waveland, Mississippi offers 41 businesses including food dining, water activities, beaches outdoors. Discover the best of the Gulf Coast in this charming coastal destination.",
+    "imageUrl": "/images/states/mississippi/hero.jpg",
+    "stateId": "state-mississippi",
+    "businessCount": 41,
+    "categories": {
+      "accommodations": 3,
+      "food-dining": 17,
+      "beaches-outdoors": 8,
+      "water-activities": 13
+    },
+    "createdAt": "2025-08-29T14:22:06.874Z",
+    "updatedAt": "2025-08-29T14:22:06.874Z"
+  }
+}

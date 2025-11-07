@@ -1,0 +1,99 @@
+import { NextRequest, NextResponse } from 'next/server'
+import { Resend } from 'resend'
+import { addSubscriber } from '../../../lib/newsletter'
+
+// Initialize Resend only when needed to avoid build-time errors
+let resend: Resend | null = null
+
+export async function POST(request: NextRequest) {
+  try {
+    const formData = await request.json()
+    
+    // Validate required fields
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
+      return NextResponse.json(
+        { error: 'Missing required fields' },
+        { status: 400 }
+      )
+    }
+
+    // Handle newsletter signup if requested
+    if (formData.newsletter) {
+      try {
+        await addSubscriber({
+          email: formData.email,
+          firstName: formData.firstName,
+          lastName: formData.lastName
+        })
+      } catch (newsletterError) {
+        console.error('Newsletter signup error:', newsletterError)
+        // Don't fail the contact form if newsletter signup fails
+      }
+    }
+
+    // Initialize Resend if needed
+    if (!resend) {
+      const apiKey = process.env.RESEND_API_KEY
+      if (!apiKey) {
+        throw new Error('RESEND_API_KEY is not configured')
+      }
+      resend = new Resend(apiKey)
+    }
+
+    // Send email using Resend
+    const { data, error } = await resend.emails.send({
+      from: 'Gulf Coast Explorer <onboarding@resend.dev>', // This will be replaced with your domain
+      to: [process.env.CONTACT_EMAIL || 'admin@example.com'],
+      subject: `Contact Form: ${formData.subject}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 10px;">
+            New Contact Form Submission - Gulf Coast Explorer
+          </h2>
+          
+          <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p style="margin: 5px 0;"><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> ${formData.email}</p>
+            <p style="margin: 5px 0;"><strong>Subject:</strong> ${formData.subject}</p>
+            <p style="margin: 5px 0;"><strong>Newsletter Signup:</strong> ${formData.newsletter ? 'Yes' : 'No'}</p>
+            <p style="margin: 5px 0;"><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
+          </div>
+          
+          <h3 style="color: #374151; margin-top: 30px;">Message:</h3>
+          <div style="background-color: #ffffff; padding: 20px; border: 1px solid #e5e7eb; border-radius: 8px;">
+            <p style="white-space: pre-wrap; line-height: 1.6;">${formData.message}</p>
+          </div>
+          
+          <div style="margin-top: 30px; padding: 15px; background-color: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 4px;">
+            <p style="margin: 0; font-size: 14px; color: #0369a1;">
+              <strong>Reply to:</strong> ${formData.email}
+            </p>
+          </div>
+        </div>
+      `,
+      replyTo: formData.email, // This allows you to reply directly to the sender
+    })
+
+    if (error) {
+      console.error('Resend error:', error)
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      )
+    }
+
+    console.log('Email sent successfully:', data)
+
+    return NextResponse.json(
+      { success: true, message: 'Message sent successfully' },
+      { status: 200 }
+    )
+
+  } catch (error) {
+    console.error('Contact form error:', error)
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    )
+  }
+}

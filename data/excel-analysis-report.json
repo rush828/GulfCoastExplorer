@@ -1,0 +1,13 @@
+{
+  "analysis_date": "2025-09-23T21:00:36.560Z",
+  "total_rows": 4970,
+  "total_array_fields": 0,
+  "valid_arrays": 0,
+  "syntax_errors": [],
+  "basic_issues": [],
+  "summary": {
+    "has_errors": false,
+    "error_count": 0,
+    "is_ready": true
+  }
+}

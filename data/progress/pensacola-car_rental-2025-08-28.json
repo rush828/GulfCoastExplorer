@@ -1,0 +1,350 @@
+{
+  "category": "car_rental",
+  "businesses": [
+    {
+      "name": "American Rent-A-Car",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4762353,
+      "longitude": -87.1938816,
+      "rating": 4.9,
+      "reviews_count": 1598,
+      "website": "http://www.americanrentacar.com/",
+      "phone": "(850) 542-8600",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdh9whdsPs2ZusJ7nD6foaX5nphDspzCkZCVIo6cCIJJhHkt4v0rEcccQJwB_XmRY55RT53wc_Y2YVbaA47bwzRKcnMT5xLt3tpLdr0gJCzmjpXcKqKjv5cF-fsWusDCbL6sHMrB2Wh2kstYZ2sB9snPOkPtvEvibXQnSHeU5BWdxqi0hN1mQGX-0zmxmEs3AVEsT4opiz7zIsTtm2TNNGkfB4i8R7Rmk0ezUVqEZYG1AVdyWHPSdCqY32gpIqmRt9EK741pyARnxD0ExF_djJPlxqbEQ12snwL-8m6FH0X-A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc5u8_1CZAcpYGuXPiXyqvHrPAN4NGTi5g_JXQB0OZZozDrs-682DuwPrTJNUIamOzbW6UqEtHljY345TwPRsrGcdUn94LO-fTYRK0GCCg-pkVngkYKMBgtKiljOVZPO4XdCd2vxDfGmP2OuSxvSSlqk_K_fkJ3NJMWc8cB4SDjZ5yxmV_2SpmPXrhhI9tVifxan2AwQN27avgE7sVzp0iVMmpDeXMDFhWC2FaLGOaN8YlU4JP9RmJ0Jt5geJT9l2iqeV7Lnj54sE31W9jC3_XTzeKQTJMmJUFMO2VR2gvWe3Q0Z0EKZ35pgX9iWHiGL5eO934sGUUIZSeazsiO5Yguqbd84w0v8MHnfkKIpQK7FzneQjnq7-Y3a0j5pDPnjnY-EApJtvNVD3IIQTARg6PICix_fuiTjg1cuRTJjoKZBRqj&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeZESDHtd974AOlo4BePjkWO9Jnine11SevdpmAtFxwflNJXY1fQ1oxG6R9haeFEUEH8NUJ_JrEanWnRfYbnbGwNTPYwqSoqObDoVmLys2hyhpQn37JxZLfBCt45tLQBdY6Yo0eqGhKlmnnxsgcNZFo--HsAYt5VjKyXNdQoTlm0j5-apqjEFzNMtvzOTyYnzN-gQxHEUSEButUCiMNm1J-LR6PKGaegZRZqV8YzieCjsojlo8GQRRbrB_mfECHY9YCmZAzi6jIJMKc70ZtyO9ijSMnMvTqInl2T6DjnEtDl1KL17yZ-AJM2QC_bAG7Smf5G7PmigyGp6ilLSLSYgnb3djWvjpljZHWpXgClGy2G9WgiUnu5-O-68Vo5tXmqOh1QRQrjgMtiw5vpvKczjp0p4cpy2CJtHqjer-qRMvuKQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdc7yfVi1dUmbuHGAxhMiNiiB0i9dBkfHUGuOp7TeQIeW4GzqyjQxJIF6xKg2g6WffTYN_70PFNFLZGO3yj-HbHNTkd8w6Anoq0GNsnkRHuYnyQVlEtuAD5w1CJxpTxZRDa8z7l7q240twtiRH4imMsVsRHA4_kXIyp9aUE1jOsLzHXUSeJ9cJTlDFxNu7SrNN3yfW96tygr_sHfar86rpZezFFKnh5vGuJ3y5_6ZaQc5ZB3qZwc85w7i3d5yA4JBfNUgT8unZkPqjidPQh-bCcoBQpXyEC928AmgakFQUrSAq4ibNZdgCi3TnVwNhNzaf5hGsmVDiAxBWyNlZFx4aX70wvxPNHOSk-dbPg50qnovqLQsRRCW_C2TAy386UZ4K-KrTLwGHWWen3QKuJydEDIYHqTzUWV_ZUf6-O7vFNfg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfQZl2V4oGr83Zj4wnv5OpKWhdaiXZMkYykSL753nmbJerXCz7XwuBc10vxWT_faSOrS7jAsXpOijXFDwQlmMuOubWqcnQLVrmbSfUYUA3uzrC9lObDtRjYYRfhx8srwo6T9OOqt-QN1Er6kNmXu2KpBMTrWeG6T2h12sVEoTtQNS7ykGqMifoLTrMh-pQK6ynNc9bsvce_oswOZcCvrxEBcko5WSZdcdmCi11O1roiKmBA_RgGxaPwGRwls5ICpau4oSfl0V7F1k2NPfdsr_D8Rii2Y1BzaxjLsGvejPQ5E9orF5OeQRazkIdRHGb56UdHp7UOsq1b8qhmI1tPS3mi_gPg6k7zE3G-AhFGgG0MMmPK4HF8RSj3ag7QyvMHQycSBPL1TRXPa_yUU4KQoRKJgs3hTuP-iHtcLz4leKABcbBg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc32yYLthSiG_CTqbh_lHbIIS6CELte4jYzDR8UEx2tmQSTuTC5b-nz3mTSOdpyYaBzXpYbYQKQfhr_neLD2jwiwvyhQxcQhkXrKL5gTlqThqe49aIkgBTs1U_j13l0H2D6DEnGPZKzfhUk9EdV8XcA4YJE5rx8SLlFA-Ar6dYtFGT7qwIVnE0grfjUCJcq5EnVOTiShxksMJgg331fy9nhhpCPrGf1BroHf3VsPgyVjMu0M7OMMGEqih-n37epRhtKvsr0yCP44uhbPtuTHu912wCHDaZzrBd7m5evUJny7fsoBFnBeeKtYoIRHMuJjjXOisjpPE2svi0njpXepq7eMhYu7kK9Vv8ljgRxx3l1MrNGoWMikf4HBhhkgGDokJnrQ-w8wg5p2ppTmE12t9MxZyerS7MtLWl6toqid87FKOY&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfBYKKOWJGFiQgo6QYMV2BGP-dErCbEWFxwgAxAlGMmCj6_AObhAJCqmPyF0i3r_VJRKCNoWjlVuQyvpbMglBWjlORfUADJaw1B5YlpymQLQvW-lPbhin7FxF95314hBRrdjvTXOJETwe68oArRWeigUf4bJlVKJQdBDaF2jOB3VYQXKM3Zgt2HNh9MgMp9gZIeLmm2Ht7yqLhTkHYsCZxLOR1lHDaYwZJ6aMMyqpicL4ki5XndZDm1L2qrVoxFmXj9-ePnr9DUbkOrQDR1yMUNMFjx4JTNr1v3JOqO-k3v_Nm5hg2wu1v6pQDzt3dAdPT_4-xUZRRZC3PgF1eV6rVZ-0Tlp9_lY8yyB5oXZHveHOIqh9Nev3f1-z_LmAZtQGICNEa_lWWQyr_Tt072TqIN2GPohnmDZ9u2bdZjgDoh8OAf&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfqnqplOqBVEfUWOho1RaFSpFYvBTRU6F3eXShLLQRjFZaQkY79GEyQMXkV3EGiDf_WjWCeQh6JRV1c9WIwWphn7j860BJ51_352HroB4VB3PuaN8P_fm9SY1b4vowu3madllCjtTHtYyuGGIItsS6MMvo7BGaEWuo1nUSD2g19OIDmKrB4p0CmIwhe3z4MAK74rA87poC_RWuCPmiPCZTSp-72WAYzKiuvsGNBugnjdiJH1CrYa4Ppep64s6fCqD4ef5BWI1omtsINsNdw1-XJBkd6C1leTY4WeRbnxaTC5ylFbIcZ_QpdhLGf2L3ghJKg5wblJQw852DPCt8S8rEXIxwxWiUJfbbRWgbRFlA8i-_Jpjl_iMY2RIizDeb9fwJGgjfUHAsSDdmmMUOO4lGD-mssL8ELr1V7PfQKaUCSig&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpddyH_SETQxBkzfsq9Ri5KADr0tee0PVV65zRrCYuIIaD4hund5JVM3W_p18AdF6_jLfZlo643EmnPUSkIKKLvfViABxJgWYDdBHTRlQhLJ69tIx3iLUGyLxQ4JCU1PWux9YI18ragdcvdgbGpbVAe_n77CXPpaiFEOH1X4VsjemQmp7kE_j1JKJQU8FiMpo0uBO_sdZWeAJ0h0wV8eTZvWkokPZWqjQ4FdnLGWKCC0ozL6Fyp5GzPLI04p9L-2Xm3-iBXCIAAuI1kBbkuJuZTH1HNa_bNMIOIEoSEoyK64FCGE9gQ-gj2c0whqooTKU-pqF8kjQNKnjBhXhUV3RRIkQ6SSzmHDLW0odkFlh1giBmq2OadDJtfPJK3wcXrB1dCFBGCvoBC7x5stQD43TWTHx05todKwPSEPJlcPFPwLlQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfnzspHL9SRIsu6LRSNCLfGS9pb-LSzjPS4GNPzZ4lHilYXKKYHBfdRAaLiBKaV5EO1Er6NDZhBYaijSNnYfHyqhp6WLJO3CiMFcdfWN_-J2ngvuYKZFZHR3SaXZonKqjg4SBIzeVYv04NptXz1K8BCfZdk48rjIbscH9dFa_8NIg2A4CJEK_YbyblbGidpK2RdLDPWuNhzf66RGc9FcpJ-oAcJPt-bUtZGSqtOziicRfew4Y-Avt9x2f9M0eQ_HHKFXOvN3TlkaAwqSB3MopekdnV7GQDJ_WgJ643a0opxTx8ZgzSuuNShs1IU6Gbq_XLDhSEcbREQTJw7hhNOaOV_r8hPYw1oEptvquJGU1SBunqdzEmaoL1n0mdX0qhWp10lQ3aEuwR_YGYKMnfi7HhukfNXaoJO1sLIlAIvDBrXIwc&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 10:00 AM – 8:00 PM",
+        "Tuesday: 10:00 AM – 8:00 PM",
+        "Wednesday: 10:00 AM – 8:00 PM",
+        "Thursday: 10:00 AM – 8:00 PM",
+        "Friday: 10:00 AM – 8:00 PM",
+        "Saturday: 10:00 AM – 8:00 PM",
+        "Sunday: 10:00 AM – 8:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:35.320Z",
+      "updated_at": "2025-08-28T22:23:35.320Z"
+    },
+    {
+      "name": "Budget Car Rental",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4763156,
+      "longitude": -87.1936961,
+      "rating": 3.2,
+      "reviews_count": 718,
+      "website": "https://www.budget.com/en/locations/us/fl/pensacola/pns?utm_source=google&utm_medium=gbp&utm_campaign=budget_gbp",
+      "phone": "(850) 432-5499",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfM7Odzm_znzOO6PAgJw7-sRzY73wOumSD72qShQbXFIXLzVXtHIR2ObtcxrmkDtKnRoYEEA8IZWUjfrFZF5GKmwt2GGTX0OeTsLSJMtbC_TY0kHR8RoRegwXu3GK_FFcv1ZWepxHPkfmBfMNkb4QwCxa9Tugr93oG3ul3ctqIpLrh8iZ3aiIADA_KHBoKqhaOiNd2aXGBgsb6dFv7lS16RHwAD8TUe0rbog8MrjX7dP3pco3UR6Ijk-DjGZnJ4Dr3I_fGZJ3KUxrGqyqrfZp2krJw_eoDQSgtNq73rI5lZfw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdtL7yWcmp0WVOzmEkW-XAiv_Gf2xpIj6ocg2EJMmlPREUkdJ9AKoFEYYzBK9a8ehBmI2rWZWUZCPXJ3_f8_ZrhT0hiz-bYxfRDVDkIOkD84qkrQDZLFYJzco2dILXBDJa1S_xrPoojtYPeaoA0AkBIjXDQ_oTnInmMLbe9tyEw9J08D8xMQO2HGKHTD9PHdSriB63Pv5FdWO9sP3cLeSslHKN8KIHXw8soaCQPMVv-WbXXlL1_n_Hmzhq7GNlvt1989UhOlYlhrmlzsRzAdVg7OJL5xR-5WSkGZQR_SVMZ-W1CdpOfUXeZ3X_C7vnnrTNSuhcmQ7-PoDSgOE2VFoUan6SgaATenebKXuL883tbaBvIrZBWgFt2SKBvqccVMZQBG2uYNeWtM03RTS2V-zptvaYNW3uqbvmIKyw5OnulSl05&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe2MPZcJo_xJUaudDnbaVWVPD1zpXUnDCxgDRSKarMypu-e3WxKswDyQUNTVxGKc0m0CBIdNAomm44AmOk-zKm-nkYhogh41jlA_tyEr5LCZozhoQrJyWaEwwo4piMonmMqckQ-0l_66TJ1_6rRLYfJWf-feKaWgHv5ay5Y10veOVdXYQUC8nQNx0C_YSGx2yG9DfkA31zAgs9bbCIHlAljFoR_Vc0rkP_UKVi9Xl_Yzg_S3gbZkv9TYmhqi57p9XvO1z18dirOQBmMc0z8kaVXOqddzyuAFHpVtP1FuqxlHlLNAaAp_KChWs3Tk-WavFBCNYijiPE0iUMGglxiQTDjfhNStRETdyOdm1SFBbLMTm-zUVkw0ov05q63L0jjRa41eXMGGdCWFY_osvVcDgGkNe7sp2uCeZrgp6LK_duhWsdm&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeBg6R5zeLYgq2im4W_NcFY4M6YQ32FQ1CfMhIyiyIjNiXsOXrepBxdPP3wvfUj3aF5gFdniDCOheJqGRFkJpeMU4AGxikgJ3zT1SuGlg-53xvFh6ht1E9Z_xLr3HUzGkqBOHvyJUDFzBnmP39YsCqQY_CJcxc27hx6YXzEiiZBcgVSKWDGCyE0ojSfRxfqpo3tfmap3vy5WOr803I5KJpzPDXu4Xl1qrvxZMzHyltLKO1i2Y1l7yoyaSyp72LfsrkTZOUyysSnud4zHuy4EIVKO-PLvqO1bN8ZLqGpEeyjjZO5rEsPY3j83ezBHpWksC4-188zrol4OGtXPOVM5T-juogfEgEEe5rSuuxnhtZc8ArDWrPPkXEcGg-w1QdjyntCwE7tIShJwgKneoB68hxO6YyXXvc-dFOW0xnk8RiolQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfMn3_zqcLT_IErxwdBCIjWcXcf9chhOmFj7yAEyv2Sj-gey9MUvenfJ519Hjw2EEXFRviKq936zhCWoCuz-aiN5GfVjmXZkCpI5idC1SMZ1WTAUeCjqiwMsFO9TW-62LIbmOY2DRWQOIKy833Ydb_XqT5MTDr9pZKe806EOZ_DxLP08bvbPgnf-4Y4SP1b40MULcKZsn-rUzsGZk8pSm2liUGyptH2W2oixPCAxKeL8PH9t6qxFCQ6NDrAELWEiMePhTcBLNfLZ5zLekJHXqbE36pj7OTXsJ76oA_HE0hcQUmt0vWwkL5S-d6e3pbu9DoCGL-7JLiex9MYDkwwTU2fNj_KoQXtpa-_3mTeAGS6jdHDeONYxuNFLUt_r5soKbZGcQh01IATCx3w3uOmnxG0JNhfRAMqvZjToMpEMEqL8A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcCaJWuN08STI05runz62wrVNh9DMfrzs7RJFp0j-VBr18j36SjI9vtySIQOFlgGOsT8sXlPRQa9ohsDYEpSBbtx4Kco0Tzu_tGKGdr-BLqlOSvPzu5E8YSEwEfr5a1sKoqRHwR5K33mOTIYE3DoR6Jgl6pTnU87DY2SSKXDF4Ets5aArSCYmX01cmQphTun7wGsd4xv-D5nw26zSirVdyYFOJJoabxv9ZDbcruRA6JiK1hIxLztM9oGVcE64xfsIKKtiYbmsVbOfl0KqVZYuyvI5VNM2C7MCG-hXH8S8fmgxuTRty5H1S6If4YRl1tDJmLjEcOaPq42bSIT5E9Gk1PqNggqC39YGRw9FHW--jOXNZ_nr49wHgGaY8LYlt4Mo_5Xrbssx1kDHXP9CwJch8QM38F9RQa_5S4Eguum14acQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfqbt-cQDlaUG8fD2jPM0JdIhhY3f9MStiMtez2xvAUbJ6ouV_9aCb78XyZ4isNRzJEcmhrJNl-A1iQg9Hxn8jyma_xZinaUXcnb-sSdYt5SvoHutkVBDnteYbNk5Q7wESV7yWDsPckl-pb412kDZ4YtopftiGMjrNHvw1LEF1P8c6tjOItrebn4zaTKzR8c0mkWsCZABJ6wi6bq2KfkdWE5XcMtfcqMl6YjU4WaVeJuZbyLW-2Nwe0HMP4C7PtwMgcTaJ8LRTixI6uAqJu6IV4f2EgQ2ncVIudHzwgsJfaVdV7nhUkTZ1TTCoUJtkWiRh7y3C5KanoKwW5Zb1lOFY85uzOFXfBoIFecdfx4PeLkFp3orWxgeepAyWU69zXfGHNeuprz4JCiuJRYRXDOypS-ouyhD3DOijkF5OFK8DPOqOK&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe6YQEixwx6DYqiNcMiI-lceKUOOq2bdonsiTiAJzxNeH9uhqE86xmHCiGDE69vNSzb63X-HsqPTECeFimpQptIJu9kCmz-ZIKmVArR2h42ssNVmHWnKWCcaDxQjtAQOB_L5jq1J3lVOpMW6s_Ry5q8h1fiV2kN2vodpM9OYkqt4TnvmsHwU3aRIW9IMk67WR4B4i5hp9Mhcqu2qafLmy6EjVl-ajVsRJUYam8iAYYitGIv_5WUojpQn14dLzPhZRinPizzW5Rv9aFcQprE66YOLpccEUkDgTV0cKD0WQ3Uo2LrJ3hAYzS11VO1RFnxwjbuvU64D306PonggDSK9PqkuFBDablKbh8Q6Zvo5YfwXxCk7IuhCGNG2yA2OuMSwR0zDanf58LW0fJdFy-kvLZmY9w_PlqO_c2J0RFodJZmb2WE&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdFKwo_VvzrW4o86j2hSyPO-J0oAuBOq3wivNz1lznnNA4jfJ2jTNciImtRxfr83u7A2VJBDmji-V8uICgRAtwBFgi6VsGe3G-JCSoDEg9fvuOG2pKBQ7hIlc9u56PLuWJGKskZMNiQKuArQZ3nDZo7wq-a5LhAI6XcIOZt7yNCoILe04gtziNm_31a5JEcrf8fVFJwJ7K6mfo8mUZn01fxGZC2ZTojZSpwFXkd7W7JeMNTRET4KazgP4GnCKas6gdVanrHJ0M-TQmAWNsbz0-yDXZ7Khe6EfmtLE9KAkX0UZKeaWeARDAVp14LFK1AcIZ-5SziTNNovZIYIHPjqyxPed-E32i1Zwo4XtivU3kNF_Exb8KQxge2qVhZ6vXphEJ0vlO7eRr7d5x9ZdFnkspuRtp1EQY_J-oezS1ypLToIWg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdh5YNEyAa6QYlczx_hsfHqX-lBiUvp3Hp8A_Ub-jrLy2yPi1z7skyDfd4Ug_kqRiGf3-3pLwp8bkEoOpoEbvYMwysS_5cA7aveigWfYiCoue8d_6Ral141gPkC4_8ZiJfaSKCDTf3lUPM168yJVupyAQxGJVjf2zTlYQiahSHUt0nfOd4KTtAErH7lFZxVTEI6UfPKh7-GlmJoYzzYGf1gYaTRmGwUiDNOklDwgCe_ftgHdJre2BzSY23B7yJIJlTLpHk9e55wwPFpOhsqrxZ9_MFbFRDCn0ks5k2JlAP_4XfItoson6XqsGNdf15X8CTOWGMQ3qXPouEBSChUL9zkK-MlZ3Su_EZNWEmd47ioHhNRvH3QsCvN2TZK-a-RVAJejSiYuya3VMhAY_ip3hPemm9Hl-6owPImWyoQx2oTMqqq&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 7:00 AM – 11:00 PM",
+        "Tuesday: 7:00 AM – 11:00 PM",
+        "Wednesday: 7:00 AM – 11:00 PM",
+        "Thursday: 7:00 AM – 11:00 PM",
+        "Friday: 7:00 AM – 11:00 PM",
+        "Saturday: 7:00 AM – 11:00 PM",
+        "Sunday: 7:00 AM – 11:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:35.679Z",
+      "updated_at": "2025-08-28T22:23:35.679Z"
+    },
+    {
+      "name": "Avis Car Rental",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.47641539999999,
+      "longitude": -87.1936178,
+      "rating": 3.1,
+      "reviews_count": 486,
+      "website": "https://www.avis.com/en/locations/us/fl/pensacola/pns?utm_source=google&utm_medium=gbp&utm_campaign=avis_gbp",
+      "phone": "(850) 433-5614",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc_5toLyTkPvP2PqnJ3CJ1X4VR6-dXSDJuHyocoLIRVKBDPMZq7Q6OvBfKmsGaWj_d0eXDqnB93bHdwiryKWC0pzC6VnlI_nABZaIGiShabGNVU_a7GBDF7REKVzMuZ5fSY2hcutBsidwI1W9Kmh09chb8coAByvFiNr4MBxZ6zkplfOeHUIma43ymPW-35e7g35nQ3f8K4WO9pgjogrOgLuB9-N4-v6Vxjxo4zjLSN72BzRL_0qB2KcuJEBzLS5etyFGiiUuQRK1yeNpjGH2Ay2zAwI2MJHu5yMlLXnZ9efr0URO037-7RiniwaDjHNFEd47HIhIc_BMAv0XAOyUazzZVwAyVpTqsLcynr85kOM-EDhTXFcs9HZ7n5gLySlkwT31yt4zCBeJZFMxHpZBjzDszyaGnrCj-W8WV4VsGoM0C7&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf4G4agas2qP8Ep9XzRcJWTBgAY00MLXHTGR0g271sUA2qWWCouI-1uK5GOzmHz-1MksoaPbhb5BqJdkupcObsu-r8VTkv859WQAu08WM2V0Wmca1ekasQE-eYdYIDG-a3M5C3Dhv7CrPbraz_kFa8t-wzQf4r4LuswIzsQHJgSs5mUUDUXvPTs6ywIXRWboo0oxQLpa4T2pajSoAYb6Hw0YQbjqT12XF9wRN1wGEF-b3wqlV9D8qFZNqGCSLgWpRBdDHm33bKbuwicUrd7R0WLVDor5EPteRFoeCEaVQhsAqsCtDkNjazfZ6SRblakacULnV4ABQvEd8wrJacnbQBzCx0mNYqPw6kubwuV2ZETLR4KtLh0RZtNCUD_4OPACnmj68X8K6zFaUFS21eMMuh-tBLVFljHvTRTIiR_zHMptrtE3PNc4gVZ4VnEaUYt&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc2MGbOplUnZatVD3zM9vCr9O88sKXU9jqrgkrUiArHUJXuXT7-PmZU8g62HeR9YB04jN2v169OF11L87NsgliJraZhkhH5MLjzjTiOqRn6Xru0Ycq7VdcZ3crfNsi8WOcN7oI-RoIJa_Yy7g9JURPSB8FZnOnobI4VFSuVxCKRpf1bktH8VhEy5pipjcVl-rkcWFKaPIEoX3KbeGVvRgX8qZeta95RlRGdvYMI-sFqKTkWcB8LwOIsjTlJAfcMGlALlhumzntrlgrCRT8qAXmTzIVEM52RM2L7QFOmiOjaBXRdP8AKsLxLhm07pjw7WJ_KN7gvM2-5BRKGwT9Dt-xMcaAARNvgU5XBxnf_Xlrc1xfVPFBJHxZQbgez7GqHBcpEuTwrhu7QKjVez7FQHiv96x3EsTRNWOXAQ-48hWjjI1c-&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdrE8Jr3LARIxggtM9k-iHcNelFcwE3wKnCzMK0GpMxvUH3v7HQNe2mA78Fcj4Vc-nsNnWFh8pBRQQwaoWxWrPTDXX1j5YFw8U-e1CO6-u6wjtgVSR4bGx8ezeQyoGaSiIwc17Y3qr4Wa4jiLeM44G_BKVRPTZl4KgdlgTMgkdnPKHQ7z3W5YuSXVRvkcIEr7dMWGDBcgbAVKgKhP6JPb-hE7uBQrVOShFCrbuteQYj5RPmTOJ9SLfJd8qSL2DXLRE8EDq7vJlXddRzSP9PhNOWiApePLjcxnwi8PwuasybubVHUvW2ehlj7wZaV-vewZlfCYWwtoIQ4dKw3hzDAi29Qgh5qAwdopXeirWw6uB1phhcCkpyjeeUcmkIC2x58hZMtGaU5p7SBFHIkcyy7Z28Xdo4M-as_CUKB0XmirSFe9bD&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdGbJi27KRN3mq5HSy5Zk0FD0y-yyQ9HM49OAa2p3H-LjiF4BwqJoVqwjcYxWsMx9N8DtdDcvagjrROGp7vjRUcy_gpo5x_ZEQCfTTqdQxR3EcB0glZzHeFxQxrYkV1IZyX_vdLclFu73rD0DbXnIqhmMLTV5AWWd7mbRUjoroFBRgMnX_WVbFoxPA6WCIscGaQfcBN2HZYJT_40QN-v5iV-G4ETt9Fbsch7XGyZ7OizMpmTzpAaFzd1ZdnbAWF-vfljXVtZcXboeVu2Qh7mvR1gCGPaUKvjgzsQaBcdBcN_m3aPKnd8DVviZuVCyR5FSE8G-xYDouhbof0epfL9J4lg99Kwkgx6FUee4ntdas-HsFrsb9GZCC1N0LH7KyneaB4Dl1wUdx61HdB26CUSkC6LJYVll0mPay3HZHwTA5MIR3-&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcCWk1MOP7J3-I9bpwi2b2UuudgAQY1gjH-YMHO2v9o-ttKd2u05LMhzMJo9gHhKb6r-3JNt9h-0tTU0zNLAWAW4IMld5JiZRTtqnJG1xdUXn0qtQJjY5LBVKtqbmm_5RN3PT9t8373cb2fAeQj222yzeWh3i3fy-05O_xhr8CmrE0qPGeWHVJIbRt8n3R04O-gV8Vt46Pqd1oouggh2ZOJUQiy6L2uRRUmYNa_DBSvb9nhMdTbCeHnPDSbccnSpRXNVPd74bZU7vOn5BHqiluJmc53hO_1x61ixlMy9pKdcM_yAxieqWcxJMVkFa0SxfXlCu2gEGbwG4oDstkAg4wmE08nRs0o7rLbi3GPH6hTtiVOIJDTRDABg_W9I_R-MzIQX90GHnC-g_cLirPQL0zfsQXPs8GoSdSkskJJVO8&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfMj5H1t0_IfZDovkdRt9UtOf-89aQ1nZYxiGhJTWr9fgVk3EG-ZbyzITr-PlsSuDkKO8i07Bz427No83zrBgUi-RhhoMfsaJNbgI1VsZTXViLBFT-H3abGpdXoMaGB2wP0ZDLzrGVcefH7cVoMTvuyAeVGYT8qHoJfr7rI1wsl1XNGbrFRKCE0z8x-r4kI9myPN0vMroblUsBz5UQ86N5NrDztXYmeMbnEDPILEHX1t5Hwqa9Rj1SHqklitUxZOws8VMhskiFdmzbuRPoZy6jaTrAMLits9SGIKrRZ2irlT-J065tiKA_61yGC1g1utb1YV1GE_7ExblhrIHdoMpmwp_lgrnS4rLv2ZH_55lOxJpxTz6oagLKkO5bNjPBF6A-rac7qGMIchIbvJRRTbmetFe0dVAsVe18qD3DHs5Y&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdGeNEpLCuntxC9ZjrgLexq7IDRbGDftM7QjAWv0RbJxgk2jCAoyohm8vvA3e05VYcej1Ndk_7I7DZAgbIFxhFTirtlpJ_ncm2YFKTMaHsq2R4d_rOZrXLumS_AdkQbu-1ftWFipiXioNtlSGXwAD7W_UXAVoRX3ZPPWRO_iUjIKWNt9OJz_I3VXqUaNTigTaXbfxBSkGLwOagOe7FTGny_Vjfs0pBMK1j74Shd6_W0g-DYfAgyvjB0nkprWYRYzQM4sCJPpXb4iu7DluXFJ58R-jC3soqq1BubquMKmTHqqXPXmDU73noWg3fmmErvdo2JCnRXH1zO0rtzyrBb2aNH8TZcMjyjm7zEknQa7K5J-mA3I0E1nZ69nlbWDhUhESdDuJEbimKhLjUANz6Wn85kMzjswk28TGEVNfN6gXOQqHw8Uvo7ndi1YfDidg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfTDixh-1PboENNWNRcc_iWju1lwEirqG-Awgfx_uYMLDgpUYV82_3qRIbRNhNSgXHMaScNM0OinUn0bu3nvNOETO-dBKx5kwhMhiVVEKJBWSSduP0Ydi2zi4VRD6t5KahP_kU5ymiv5WpOpt8cBLPJYvMbqQXCDamMixh65lEYBgbOYX_usX0rALzzcW4lOlH0UJiT-4U1a1Iiytm0dVZH8AvWKr6xPufGlw06HCR5z8vpEab2WkXq6rXTTTn-GpQYTgk-a6nWns-6ZjJxghCRjFpmZEPcg1Ie39AXdevqZTKFHXtqshCZZcUHouFcEFqB0WIndaYN88TkorOWalSvSF0Mi_VLMu3TpfzZCZ0hH2quMWYxCyQ_zUqA7Ko7yKxTtaSjK56ZJT_ly5ICXen2uBaJO_BAQSTJIUM4Ux9UmQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfDnsdDwgfK9lCv60htdZbXeMQIDiiNIgjLl82Dj5YBIh3dh--GvbnYTD6epsB8zsr-U2lpFEdVAWhTbMbyu3ythoo5KBBNKelVv1QEZkC0JLpRWRzizSrcnRsqIrF_5elaprjsj2vqKSZeN1e0LhOkDxXe-AbLhr6Th5aO8hZsE-Buv2Py0BXFg2uSDi-p5hXgugQFRf-aJnyQnSdMJkKoOg9rclnqZiqCGjKZdzfVo9zo4b5YZLqi8HqShJjg9q425iXLeR4m95c480MT_GPgF4-dJlcf-hbp1LshXCUmo4xs6W-KCnuXZUzIFKN3YmCPoNCsWzGdgJgXlF6Y0poLKFnCycGQ-r51VpYUODcJ4O8Kw7V7oXkWS96JFXCUL4bXyE17QINqB7BE-8n1wX00-E6FIZgro1lVJWrWQitLfQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 7:00 AM – 11:00 PM",
+        "Tuesday: 7:00 AM – 11:00 PM",
+        "Wednesday: 7:00 AM – 11:00 PM",
+        "Thursday: 7:00 AM – 11:00 PM",
+        "Friday: 7:00 AM – 11:00 PM",
+        "Saturday: 7:00 AM – 11:00 PM",
+        "Sunday: 7:00 AM – 11:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:36.004Z",
+      "updated_at": "2025-08-28T22:23:36.004Z"
+    },
+    {
+      "name": "National Car Rental",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4757977,
+      "longitude": -87.1938407,
+      "rating": 4.3,
+      "reviews_count": 460,
+      "website": "https://www.nationalcar.com/en/car-rental-locations/us/fl/pensacola-international-airport-55pn.html?mcid=yext:245709",
+      "phone": "(844) 370-3976",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeSIU4DcqKqd-vVd-5CJUHeyNCXZ8Xv1iL4g_nyMWAS4oA5hAl-sODbu31OaorwNpM7QwRXc7nWrwFI347mIQY4egq6cPPyG5fjiPEHo1sSXNwmHUIGsFlPCsDtE_IU26Sdy0GGzOR6_Nt-OPdH4McK8X63BMDnUV-BUuzQHIvBzIUN-fc714CgxWV7lllU3WP4tf3_8MrRKQ32Yj2mCbMRHzNSe9SZw6f605cjr_7KJ8QEsesk-ddDxuhgstMSy5tAipR3wUQ1Wx3k6Db5gndHn63cATf76xj33ujwhQSxCQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpd_UVjRhfkWicFHVMHOzoXNKsFHYbOb_2B66rZS1uNfm6xta72iHQ2AXHChTs6pZcJkI6y-rAhap5st4vUbYuhLaDuDMNvlLi0JCbl3Wsoa0GaY7b_2F8c0hW-KCoqiGhZUtI5U_iP3klmk-CrIZEL2MqEojipNP6yF57UxdL-U9mdgA3G0dx1FwfrF6V0nt-Bs6rJUHehr6bh3U_UM3p_5FXrd0HIqk9R6McfMr5EY7DM1O_mtJodU2CF8d065-X5K9OUsQRvB-zBpc29gnqrR3HGWQJ1Dfsqi-CJh_zodvIUA3Z0HPq6Ha-Jt3513X1jJKfTukvgaNg1NV3lJmwHsSPVLfOcNRjZAbHDD2IVDmb6xhzvIJUoumhIum_l05AwRimVhplI7Sdoos-v-KD9ZNaPzDcdSMWtLZEAUoQk&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdgp1GhKpRtLMO3lVrUnZpRR0vJh9ymE0bdsY58rsKHS3L-AKiI3RRMj9_r5-xggfIZ8cJkVOMxZ8lN74bb9g-jLi9XOqdCuAJEyQ9cWpud0bh_pFBJa0oHb56SjYvAiuoTE8Rdsbw_2l1KZKXUEbHdZLRtKQM21RnTL0QioSGWQxeDCUjrqW8eybCnkO7OYRgJFgsHlK-J9cmOSJ5vukkfQOgzHObiojxydXL6KnYmbvrDBdpdTcVTUODVX00w_IYS9SuCD0Dudpetc-Eo7YL3_R2syVhYbmJyxsUwFz8g996TGvvyBLRNwBQoVQ-8-l0CSxgMGfuxo7gkdAZDCnJ0R5UWCsOVMobUDtxPBFC6ohV2cKq8IK_-cj40Dh6eY8VWMsQmayZvoCnvGTsUaueY1zbItcVY8a1rxbDuIsN6VQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcYOwVUrzPyegujur9u2HM0lRSDap8x3bImrjsfjpBZ3JUSxh1eae8SVJGhpa_xwyChfJ4A_sVcGN96sSRS19G6L8AewdHTUPbSIvQ9VraBMn50115AKjb4YXsClUt4KSMKsLw-bpWOiqRsxDkVEK8xp23ShqsJy_wGqrv7xefpE5To0IIYTmjdMg7ys-42c3pXynxKp9wj6RowsDzxPQY2obFcn5Utkn70_s6uNPHoS43-iqwlGd2laH9Ms16y0d3KYQKZ9Ugx4UyLpBsBSnqWlvaiICMEQr4vAPaV_8_n7yn92K1MCAucWaHGOWLWRRPzZW5YGCoy22sxoRHG5XpL54-PvFtegKxsflbygNDYmEc5fDGVacFccdPnmQuZ46EL6L4TiSb2KvsDtNiXh_XT7HM1BpUVwO8KzGqISilKqA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdE6AuORgemR5yR-BHOPVt4JXRs4o0Efjnp56iSS3hjNUJQWcr0inXjYd0_lbrfClY6lt2d3fpkvtjeVPqrT1cB1vF31o35TphC9_Z6EyQfU8dwmk4FoqXI38V5TAkB0HsM_IoX4aH6RpPS1xQA3V6vt35J3870MXY-ruujnPRHVQVf5EvegmT8IrNQ7p3Bv2UKepoaeDG0-eH88yINi4pl31WLRmojP0rM3DCdspz_4dx_lUSWTPZ38gQ2v1eTkKlGKgzrkqxrYJSEIemTO7VVL-SOQLMTP4oLAOriT3SO9Aljr0iYVOA8wByO08v98XvZqepKf_08FaRRkDQr_2-iRQlH2WftQaugxBzkXB43fCfKOMXIVT9L7E97cZUkUP5s74EwRzNE9k6C8-wEktBmGtiOUKf4ujpIur2K35GD0Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdHC6OcywH1EHIuL0ZYm0DUdLxVX_aO8RC1VRLcl2e17gCNDYlXaWT1tKnyMplakCNyLbZ92vClQc5OMPheFBafpVC-0d9eiXeI-N-S4Gvt5nhaOgAiC-YWRZIgJZGFwEyAiTLca8hY69C2XzsWE44G6mWFmrfcD3iOu4FDjFUb8jPVq68ISn4FmM11rTth1sKMRksMKP0QY3ZPjAE7dKvmMi5xvrHprU3Vjc-0te-L7DcR2k_mIYB_POq7m2jNHUmoiL_TxTbeUdn0J31XhLQwGtJuZ5EDxlmBMNd1mpBk6w&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdH_ywjKg48rHkRmP_IqleHjbM1FFFNXB9yJArjVi7FRSu758vrVSSxCjN4ASi4hMOZSo-nCm8aUrthkwJD_Ki-xjSHO9ExUAs5CRoiPreO6meERMfaoWo5Daw1N4CCvcyapS3hYUQqb0Da1Y-yBEFx2DXnIrFSRXsuYiWCtpd492LmO5D81HN7jEIHIjQ9L-KIQOaiKgmw295wKaBD6JyZWeBN4JQKUUrdLLKFDvRwksScvx9JNnBvw3EXvAlcZ_Ckntori3SkKcL_RdiCThOIz85Basx3TCCCniHCaSUz-1FkC5F5GoIRk8bE5tx7uUwsZbZkWoeJQKjC0G8MnxxCZgEa95731neWJcaqSmtHCPNg9eS4_WMRY8E7dhQWkez0Ooy6hZuGXExSp3ZAaboziY2ToQ06jdw2K0imQ-cg46gT&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfYw6sNoob2p2U0AHR7I9M4ZzTj_eOyfAzgdtmuRkTLNzgFSC1Y2dhTuFSkg43mJLtUohfPA3fiX8wIVVsRyVYHftFvjKHwU25TNeceUHU58mGDQNdIpbsTuuFzoacTON8pG9uizdLqkGvJM3vOOGiqDxKumpzrrTda7SahFb4lSl7yUiGA_A8qlCKc695Q9q-N5AfEGcE30T_4g3w7WIgf5sdr0MTClDCmnCe1OQkL9-xsKWDrH5jNtpeLC52Ta-FxDF4807VHF6XFlCayfQxpRozeD9w2FqfNYYpzjw0y120dLvmJjg4iUGz57MZRsqTMM_qL8Y5biMx0WFHUF1qoFtepltVXiUl_Y_ZU7E821HYKPHzZlHDZMu9rfiLPyg1H9lEVbwihb9mKaqo1XsWmNGscaafdUxXXBw8uAtA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdzvgiOjElxPlJLr7Al1ZaOEpvtTubsHXs5E32AH73XgSiHDuIsSxzJSfWKA6iMH2CW4o9sQysSyQj8E7pzuqhAb2r0krvCs0m5uvwWSZy8D7-8_TWlIV1LdOObfJxB7H_thC3f9J2H9Jlzqtiyu8xk6A9rIM7Y5LNWm4Gjg3fKUH7DrzGm_5UMEsc4SHGTxs0IP9sMwVeWTAeorFGifX4LcdB4V3upCvwtv2gefuItPLnspNmHiPQXpMFEWw8z8Ag_zMKiPUzy4GNi-o1mQR2GWlZsFHMZ6bDcJt9ldPFOhg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdnFmMi0tgI-eGfhbSVqvfcaT-vSxGeUvt6BLItlCP7rXdbEh7dOB8vlHElfwutY707aqZ9L_w-Gtg-uSoFLPdW1zpF-CA0WQRLnZOMN83OZghxZwGH5zm2bzuuF1uYKXMEMWCAi4r8_6WR-4k7D8z2KhZ6S90cFautkBrK-Y1Q8d3BTvNTOnbZP-BgGZGDUhgOpYXO1UDuouEbtqbCKWpLXlDW77jcQu5XDLlE0Hm7s9Bqn-O-nnpkv95wSn2SedeVGcJmc_0_Xpd0BS4PvjitDklk8nIa_Vpnlj6HP8R3uw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 7:00 AM – 12:00 AM",
+        "Tuesday: 7:00 AM – 12:00 AM",
+        "Wednesday: 7:00 AM – 12:00 AM",
+        "Thursday: 7:00 AM – 12:00 AM",
+        "Friday: 7:00 AM – 12:00 AM",
+        "Saturday: 7:00 AM – 12:00 AM",
+        "Sunday: 7:00 AM – 12:00 AM"
+      ],
+      "created_at": "2025-08-28T22:23:36.327Z",
+      "updated_at": "2025-08-28T22:23:36.327Z"
+    },
+    {
+      "name": "Enterprise Rent-A-Car",
+      "category": "car_rental",
+      "address": "6223 N 9th Ave, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.487443,
+      "longitude": -87.1986446,
+      "rating": 4.2,
+      "reviews_count": 377,
+      "website": "https://www.enterprise.com/en/car-rental-locations/us/fl/pensacola-9th-ave-555a.html?mcid=yext:245709",
+      "phone": "(850) 476-0536",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcD2AO8ETQZJxjyxwDwnGmbEddJufliLaX-df3IWn7a0mCl8K55tdtTROsAO5v9XI3VBv1k54ZcEJqx7zT1O_poHi1gN9c9Wg-xY9BNcXSkyX6otD7pKkK845jSX0qwktPyd56OHAYJlhKffrpmM2NkRTS7hZcFrLcj-DhoFgueDd1OHor7Drtb_79YyM7WkNfRQHoDtaoB626-taSWxuyRwoWorGTAan8EBxBwVqAnJMcIy9eFGmubm0qsAp_yHcoZGkXxIx8JSoFl3RHl4DexDFf4hy05GDGhfEaG1-8&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpd3kNRBXHNx7qeQqlLC9EpuCLTaO-S42Av3_zDxhP6dsVqoMQQt-O5Rmc2dh2cMwPHVNlHzYS_YB-DmfKdZcTX6GnvOuEy7UyAfkKAZEeZydHtRiAXS8gL3OGm_5B_6J84LvMr2MAlqMakEoTczEiHGc958uSCRpuvRiVzC9AMcIdqPGkQuwIkEQ7-abui_AQUyqtT_oURTXhdMm81qNHP0i0mAF1vv__EqxR1BCyTSS8ZlaqMVuUPDlkR1frJ5LuLXI9yOMBzsPQIRoI1Z_4qE0hWtILJPQD_xcUf-iiUfPcEmS8luctEaahAHg_zVGHz1Qd5c91bmPz5pKXFlbIj-FJ4VXWWN8Ha2kI7rBIUP17JUK31SjJYWJM6ZGx5Kl9nEYKF47iYtvyg7gsS-6nVymYnhg6XeuwZ05ZMp1l6stA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpd2SXETYBanQLoS-GmrYVAyVuTwHmqPPf8mSUbOGokn23OFAAZKEyMH6RolyJFWpcFy39V0VvLdbPd4E7yfoyyMvQjvTnrbD-17rugn0HKhjNDH7M3sgRKiDT7Xpbat8bE-py-DC1q01nQCSCX5dMwAgwiNi-zSNC6-tThwT-d36kCJupCXDxpLz3r7X7qKxqlN32FT839rnl00jxYxby9-jQeVBum5Xe0Cjux2mX9wOkhuEleUHoDiDQIQnqUCcH2H9Tak11SN5mMmHEUWiJA65UNJQ0FtRmBb_6oAAnhy9aM8se3PuKTYdfJG8ylCGKO0Xdwf0sWIJf3-t-m9IP3ptRjjEQyzMlpQMNahWKH3pMC-hjW037vL3jaYTN3t0TyGtA2JBsDLNVrYfJHfqb9zXSLIhLbr5urafmbWiRYjgQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcmDMx-c6mdkdWXVN_iC-VxB4jikr14Ln28qEmWGuDCIZQxAFsdDVEUxCH15W_fWltmLg6Hjk23jjsilJnXoZsczgcjzzhtwjgWtyAaINnLEl017P0g4VcqtxpQuuX5t47WUDWMTF_hHHdpGRapKXqgIbTf52EQSO4blm0ScP3BU7P_MAy0MYC9oHbaWLp3FYjxD67SDrhNkfWWgyG5vgL_EILipJi65YhLuM-BjWjyz2bDEcNXClb5UNsZkNPcZeDz0O25wzntTQiqgeW07i9HMnbiX_UrUVZ5txoewts1A79O7gKyTN9Mjv5PJYejghXEjVMz2cDtI2GPhPcQaVT7WzISi-2dTSQ3zqs9dlnr0z1EUryRSn_EL18QiyTWjkh2clv5s-HK2THfsoypW4h41kx69V0dmCUFQyur-Aj9bw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdGOvVazF_nKMngJs_dPge2NVg4E9_DGTn-BerbkJ2aBkV-ZLVfwGQQ7K9UDBpB2bva705KCfKvWVHk0gI62odzW0eYxSWfQXOZUFcptHdv1FBOyAOT2QC4DJS6jJu_MElZKLEdmGXR09-pgnc0Wcr0Upn3S-TERODJ6XAgKaHupGHgk4vaxix8q9Gmv0rp07CmXSKUtbua9thbKHjCV7UeYr3C53Jd-_3XqXxCYQCjd4naTmdBP73QAAJGhleZxQgbm_A__0ze-faVQcPpdDBam_eaOBzSBUyF2UFiJboO7lVXScPQIIS37hO6Frr1jTwvrc8mqYQSyt7M-JHelQEVXKKgG5LogvYwYY07D8ZnwRHCguPHKKXvCl4IFGwOK82lv3ECHMhmGCg_io85CIJzvHgs9e6jHW34sJBD8853lnNRTexwdYBwXE_CQEDv&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpczNE7gcc178ULr1UVRQm-rWKPJyBvtHlgZCuxVOtKhx30w250O5aTq0ycse5VEm2lw2c2MkU4wVmAOPfAjhpf2rYTxfgg3dq47pAaTBVzdpF-Wzbp05lfoy7dqoeDVq_zBYpA3pHxWP-S1HTElZ-hW0JQRmRefi4e5a_plE433STtegq1y-3rp6bp_mIPuxZ0Nlf_vGo3-6qPh7axkzCrcWBVCfD-eQl1-u-oMAs_cziUbzAEuxwm5W4kmfRDyXd0GmhD-HWLrTalbjRO01rYrLvTIrEXlU3fFqFPG3Mju7pcHrjdVPHJc1dV_vXevNRX4Fc2OgN4VtoW4L8P_iOQPF8VptzC86vxJMSPiclqoqVOPr5PefC80NrA-DooD00HgrLEK0Lastan-dPO6v0YLMqKWWDbZ_qHpfqdDhYW8CeEJ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeOSFVAL96eUEPblSdaKXTzWztFhGVpEknMdzP9xKAtzalgLYnqegO2rkFS4RmFK1yLe2bJqjC8_JixXxncXeD8ssH0a1qSsn7uirGoQNakzXJ5cum6GK67k-gLutmOd5julOl8mTIe9s-ekOA-bNCnDpap1UYWyRub6SH5msJ5F442Gpj5sbxYpQPYdQoKwCvty3QMtqXpEmSGDv6nIQJ4r4RbesltwhA661ZH-bO2ZSJ6GNSARvsUmBSop3fiJ0fuUNOGoPYnLHd2XIJcfr1SSsjKCFshMGZT6xTr7smE-8B1VYDIUeJ8ynY7yd6Mn9d2oqMDzfnli5czY9apBWhzf-wKGzWdeFlNV8zQ_TSPHK9bJe_3zSggLlEA9lDwIr-INVgOEv1FRKLHjz_0ptYLrPa3iV8AqfkbghN_Mbn7-AKT&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcHP7rYLAMGUOfuMf6o8yLJm-qCk2JgqjNb5WRvSsvM_zUep5dWsSnCvp7j4ItqIr7BC-Vxfxu9e5e51xMJhj7eZ8r7jAbmR5yqi9IAWA6vatmpnjeae2PM66gMmUWVpmKiiy8ggb9BVuboSI7LfM32JSFbEfcKYuROqanJY2iFe4P__OfZl8Pss21eyqXFP7lepC_ACE1s_LKeyhE8edIAdwuZPxcLI8NsmLRubx2xEA7OOKCUrFJw_WLsMQp3Qy7VVKNpqpRMkiJVopI0nOvcq5ufzIboN5sAwx2UsBLPgOSayTyPY23TPktiiXIhNu0C1HYXNv1x3Ao6K05Dtg2ig-XvJZzuyH9AugibRKbwK43OAKRrYiKsLUT8anaevdwQJGoAy3R04urNZj9LWbu4wWsPkDVAv5-3qxoXtPZ_t3odKzPFWWTqUPNkL2vS&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdHkrYtdnj-_zTZQwd0eNVrB4-J4ShoAcaG9bldp-SvlBSmTrc6ltVBJLjpyRNmwyNUJs-KaNtuPwZ3yIdQX9U_laKnTpIUQZSQjHLmijkRgkw_9AtmPzW5Yy-jPbZyL3udsmWSa6JZZri-MBew1rT8K66XaJt6HPtrHXfosBzyvR-xpePmQt-PwpOt3bYaqjhcCG7LsHdCXAeNJZwb962YyD-HymlS4XGysYkUycaP7-OY5hi5QVlMdshi35WGXMlRJZhFSBO3bIBDX4t7XKMQHVRgkk2y1ZcpXYU4dYK-OK1alxtlHXJna6wsUVsG0pItTepSs_7NvYZOMHjtqmMhDWOkERuIf_EUwRjANWCslznQRbLwrp8ZedCgb6YuIt-ECjpYJkC8YkJshcWJ2apNnrXryC_vgbtDYx1CLuBR4A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpewPv8_iNPrOQ69eBYUS-YTRCusYRUaFJJh44NuXZgAryXFMdRgRm4Z5RTF_D35V3z3y9FKNtcJnFrObiTha5ubFQCrqb2nZT_nRcSRP1hGxc84NrQ325ZChM2CMYwjojPdhquIw4R9_L3Q5H9mJLGgrZKYtLKcMqfN74e7emuCKzmQifM-vq_zFsiGqV90wgRboeByInULlUwilrXvHugoWz6Ee6erYGcSL3BPQj0G1iIGdfa6BgDcT6oR-rT8ahY4Ww3eRzJRLeJB3fAbbDfE5GJfVkW2HKS0OjGMZ7k&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 9:00 AM – 12:00 PM",
+        "Sunday: Closed"
+      ],
+      "created_at": "2025-08-28T22:23:36.658Z",
+      "updated_at": "2025-08-28T22:23:36.658Z"
+    },
+    {
+      "name": "Enterprise Rent-A-Car",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4758088,
+      "longitude": -87.1938955,
+      "rating": 4.2,
+      "reviews_count": 1035,
+      "website": "https://www.enterprise.com/en/car-rental-locations/us/fl/pensacola-international-airport-55pc.html?mcid=yext:245709",
+      "phone": "(833) 740-1721",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcTx0Q4gCktYqm8sxM1VYvWBNX4_IwaINB77WWeJCcGV5ngcw97jjsC3o8lts-856qDiyvC6fltlYTFkNcQAtzah8rpcBGUunL7nIr46O8F4Dkm4Mub7TaYzXlzPnODc5TwSpsbU80pNEkdmfYNLda6FI8xTA6HyRl-ub1jpH2D0u_-vOAt4zjXKzJU9EHCVnP_-UMYB-I7qQp5C5UE-JyaSSKgxl51lH80GFjC8Fcf_TkuQiFTAiPGyBb1zKXGy-9V5nQeh3cKNPzntvCsKP1iA2S95Rq_YsJd0WMqlFTQEhFVbYhrnNGdj8ztG1d3-qMC5cWLipNS9YI3RGJ8FVFNc2QZ_BBytxGlBIMMMyfZ-uBEoVGM6rYjKlYEqLdl9_JnOjduLOmzhy4XCL3qEgQaiuQkse3NeEoRXRzKU95_3JYt&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdIW726GrrTaIKukhyH9Y_vIxB73brBWUETDYg_hPYBHHmB9AoEav5INS4amrWIBSgGfPP-z1hmWH0iZO162hHjhgEAJ1UpUCErLJ6fVBZoCXZM4bL6wfE6Rocrf_009c8OAoz0It1yCPujzSaPrXpQN3jK98rkAReSLKdn1bdIeziFS3pGf3quzOnKAuI6T1fxHztXmoX0ZB531nLP1H3KpjcsqIo-XtcohmxNxPOUFkkTRsm1Yisy6p9cRzmVaN1FL-3SY2KdPTDLDv8gnFTPBnFVrHJyuWQOr_MPq07_xA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcL8XmnqWJqioygT9MUOKJZmAuxagOygzMwIUJX9fQbSzfYF36PYfDS77Ze8DE1Wwf68ZAJA2A44ufcVVQ-_iVvBe_0dUGh2BwWWgcDadBa3Pfti83d6KbceawfKLCTeVWQ2MFpqU3mHxrB80I_A7plByxsAo8Gk5Jrexl2cS20NsRXNZOtlbQgTdwFJ3Quj4XRCB839swoqw5Kof9heRC7_6e_HPN_4xWg-ZRX_uuAi88tchXd9Lna7ra-bVU6kF7UnHHJTUETlVbqikmxgYSytmfsKZSddGb5hOaIlulbccHJCkt0-YLLEcY8TCPexdgiI-xsV2603TdB3gD7-R9UZpQmi4Z0Vs-xRHzgkIuPjwcHgJb6cPct2aRElwiyXMG3I8ZoB5_isbtebMid9eZvBPkTTsyCRP8QlrrqzJHsGrQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeOGIpbSymrVbyEPSCtDCbHT1tuybdHBarchURsAW3CQo3pju1Yrewn5Lli9xWDAc5_H2uKbF0spPlW3UsLPQNSOw-jrHaKz8x17-GyZHMPj8_BVfI3VSYlLfcEDvUVQvZoC0mgrsk5q7e5eNPIlGx8Dn3RdvMbiSYbA6shsDwF52Qgde_J0XGafWdxhEGB-n74gKXEtWadSByhlcyhMFUds-TB3OEfwK8vP43WalV-61qIPbTEbzNIdCBjxHt8zZYvu3YMcC2lfog3Das4cZlA0j6aAefcoNixoPOqATropHdmDPC1tdaGEHK0H_IyK3a5e_L4jtydk15VKGS-4RobDm4PrUTwK1BuSXKlohhOi6GDLd5vyTXOgFYWHs5E58HghZSniksdzqPINgNpSDSGwiOUEn1o9PFI4U9pK0akVQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfMXggpY8jMa4V3nhBFVr4RMWckUnGQ6xtFb3Q9LOBmmPqWZzWqFAJPe3LkgzFVptnubfmHE51w80eN6nXi-6huQ3MR9WocqPL4scHQAqy_cz4--007BnVWaBSEPlgUa7fi3US6LsYSZf95yKZZ1rmN3bBdZLe2kgzSrQIHDX4mBdwFVHoNcgA2CNXzaZx-EJsBnqb4r696ny_H3zn9HMQyflEEKAosEs8O6s0MdF57zEzj0m0Ql6_o6EuUnnfjqLLIoW3eFLx4QTPV1SxJjkFglWBs_esbNkckhJsJgmiq4J8YBc6Smh8d1BA2cSTTdHWw8_NMBvxhpSGToH93xo5yi4c4b4JU3qQb7XDNslM0vaiuqDWM_s-6aBkQZyiG3Z8tDm9fLu4E9LITOE_HA_FQuSAlhbZaXA4i8pBuG1KdqA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpduJ0jTqZHK1YQYyKfO_5FXDtTgow4M8_yu37dZfdWQTWUAyZ5uWw5QAWkMy0I0nld3VvnolscXTgzFo_Cs9VQBMNZ3Bu9ECW_T_ZJd88Z5x0lNxjpY7COzODXkXO2yYLgRn2ZpA7PjCvYPOh0UaSvVihIyPhbQL6COgfhH3pYfuMGVp-R_pESK3I-nmxdQwtL43NxyyMA73kneXaHXNTWTH8Z3Ar_ZW0_8xiVazY5Yqc2E62WxttWXETdk46pmFOnT4HHcFg_hFYb0el6cxeTCxGqxVrulO9IZ6EgFnZcz5ccAt-G0zulCX8CND_upAWruijGv2O_pYC5gAAxBx6wDt6Taa6mVZbeGv7HP6TKugtK8uyvMIcboPTiOULMAYHrrf17_JPqMQp3GKK_uEnxC398ZHyecO5Rq1q8oaT1BO1ZQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdIpPkEjcxm0t0xcsOSgmVX6PM144WbqXCk1_rLN23PSyj_KDbxe4bo9KHwJDdQ5zAIxju_snwywTmnJNH2-Lmg0aJcdYoNxGsz-DejgtPdXojWK-4RHpvOHNECIQlb04CCldEOa2JC-E82Vdge1k4bQb3gLqlot-mvI2VDyk7cBfhIRUIPk-PjWD641Qag74UVGosqG4RELDYkAvHfLowkTsQS9pU29MIE8RKX4GFggEx4aVO1LqIhEiK9wJwW_WQI3-zE2VJdhd8Y_L196WO3_F_7Z43Umv4I0lNtATVqqWs1XaEZtJwut99awgBSabo2WAQqX8NUUFdkW0qufKE-mTm3sKr77U7vbAN_3A-228pjMqhmRJ8j2quKxjq7Rusehpa-Y_yd6y8kXkQYtVxoTaKsulIuYtyI4puZ-_s&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeZ-ELNZVaoESzor5Mek7TmmqLGuQEsjYCCO0kD8s5TheuWmic7Zz8YN6CiPD9VCyWSWbwpZG6YNEn68kxJ8o9Q4x4pFmsGD2KWUThoQxpd-HtRbJNl5H0Lw2ytQXMmvtGSrfb7SFhSErmcjW-EDaDDtYfTaicRiOFuvEbKVmerrLnFaoLts-FTjlXn67FM8qOwy5WYtL0UsFR9M-6qfUYuVeiREc0vS9q51MKvdDlckJxQ8YcTC0MLq5eVn5vJsKM4ItzrbpDUIjBHTEB5RMNwVPHH-KSlARAnysS0jGLj04zp_sQn4XZo5VDikWiKhu4Vc7rEffF2IJUpBtrWKlQetiHerBSNPSZN1Z8Xhf0T5ReSn0NKQ-5AYmv6MT3Iw-Lk4yreyFL5sb3dADT7bmN2fkV6NoIHogumcTNIyA_6SA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdsYiGZtLaPWOXY5l0LOjFSo8rsLh_NjqFL-8RNYacN3SpLlyoTGXU7W670Jq5eBfKPjqZTNlvCX5aPiMAFjYnL-lgvLLU9wl1JAdx3VKOQRrYsVS77FjahQ1t17xLUEufmRiLyuW7KmjDkmfXaHbmOs8eZ-q1Of4lK_FOIb1KG4xBzDE5i-oQrPbKd0lPWIh0ekEZFofpI2AIXssu_5y8neY6039He49EugRQFo1r9MNzcVtrmoP1C1GV3-wGbMOZ5bEu-1qHoZD2hHphr7ia4QmQ_-P0db13n9WSuufGrIb794IeMovULjtt9hO_8ONQPzJhPJ5RRIz3pOTPq7Mcx7lMOAatTKktREExCETCSChQXaLu8F3Ma6kxWH9pQ9mp3UvPA8AQ2KnjabPsa7ttOmAaNIY1IsOEu2YUVpJHylg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfkRU5Eqy8bhFWDODCiZNhud78fY32P61Y7GdHH0exuGl5IgQZRaaN-9Iq9gSAKxoWvC8YdIpGlUT5tzS5K0KRG8TQfH83p7FqpIKO4bt8AAjjMZYTv4LkSk4koBzpHGVYRYg6RAGnmADMmiKqtwRxroJ9bNDlnn36j9TiZl6ukl1DvTHr-BopluZuMJ55xzEOmCY6bZ9yfC40zX5UXuCh_G3iKEqeJAm7buDtVGfJpRUrCOo4MtiwlY_4PwO79ZmNkzt-61zsomBKd0uf6EO9C7fefcoHRE2JSn7gX5nmt-8mnvKnR9vu46yFGdvTiUoQNQMYtSpX0_tm1-hPjGn4adOun57XyKYdULcpWUAZajJFof9qUZyuX4ExsgWUBghPv8NVpaN-ysnFHKL1yDGtPcwCssDT2ikEDy7wFICMe-9w&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 7:00 AM – 12:00 AM",
+        "Tuesday: 7:00 AM – 12:00 AM",
+        "Wednesday: 7:00 AM – 12:00 AM",
+        "Thursday: 7:00 AM – 12:00 AM",
+        "Friday: 7:00 AM – 12:00 AM",
+        "Saturday: 7:00 AM – 12:00 AM",
+        "Sunday: 7:00 AM – 12:00 AM"
+      ],
+      "created_at": "2025-08-28T22:23:36.990Z",
+      "updated_at": "2025-08-28T22:23:36.990Z"
+    },
+    {
+      "name": "Alamo Rent A Car",
+      "category": "car_rental",
+      "address": "2430 Airport Blvd, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4757514,
+      "longitude": -87.19373350000001,
+      "rating": 4.2,
+      "reviews_count": 326,
+      "website": "https://www.alamo.com/en/car-rental-locations/us/fl/pensacola-international-airport-55pq.html?mcid=yext:245709",
+      "phone": "(844) 370-3977",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcPrQSgBoF3bEsHYbHFpjd-bjgQEqDByVFsLVz6uQ14CuDYAuD9lrauoqmziIYn0MWLnHfIoXKWqrsi5elGBorVLHpEqUWPrpbhl6B6x6JliNGapLlZ5ywhz29-3M4uggMxee8XdGBkkBuL8Q1-aFT-gCQL4VF5FIusAVLrnWzvOBCRyX-VsStz8c2DjvAWxPDs7fZGah9hbZXYM79dU9m9SNBf9cy9a-3R9zjvewSV0kTt7U2WP3Pr4teHKxYqOAFNJDV0Mzs0gCnjBhILEUE2xOySjrutAWBdDaef5Ru91sDdiK7eW96yODJ1DPnpQIfNUAMAeMm_9qt2TBU2bVOg_peE9jsscx9IIObbIMuz1hXi_VNcNjdLiGoBbwNCFFSEl5EhN6SS9hSBVtap3nFwmMimkdLM5TQpCwnno-B50Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdO_IvP132WUxAPlI-xWxQOS54C6Yevob5vD1TxMtHgjSrX8bffgsjEwslcFAFOSYRiqLh1_RxjQ61clNBgjaUau2xM3bNn7xD0fw9t2i1XdT0ETegH6Kg4UeXDHrikR0CT2yrH5nonnoUYixS23wh_k65_2aU3ap7mgjenXCLv8WThQWK8jrY_px2iYU8Dugw3qGoRHlwyHzhnUvx-nxbJCoN5p2zxmi_Sc1TDh33EB-gRH97Xn39_dAoUeVPSOj55UmL8lQE1rK3TSVcNYKfNfyOnvKfSZRsspATBsHZqSQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfXTPTIbmqtUgnqbd8huh_wxNavKGln0wz6D0RbM9ugKiKwI5xaUiTRz7dOggoAxV6hZsA17lpDvj04HGyuYjpFP-A-tCA8IRTv07aSTON7-1_kb6QpOaJ9z4nM75AHmUttRfhduiUOm6Uu1OVo4VfwRhyyVa3vTiL0HG6t639aA0owNYAr6xuyW6RYrgoC4zmcXnDZ1dd5ap-xwntp9B-Y33wrcq_FSRbMoXOxttmSnHuwlqkV0aTwgXyPmfuplEhEBKN4_LLdyM6jAyPXssWJxhba-lLTnkx1Rgqttn2FzA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcKLou0BLGa3ewS1eSSQMIvJL-rYjXqfeq5uFcQwHSggxIOp7NF8nTPK91u7AatXGey83WaDt7yKuIwmT8xloAYTzASFWKLyXxzeeG7kPMEybuRSzSNywXsyP90V_-AkVGbxwiMWkcbBKRl0LXF34NtVIJ5Yuf-sm4I_Nn05b2QxAzhDmZW9cDz8XxCVsSF92kPegMF7wdXMhdVSfk-ZGCpPkVlGoWCGJwLgo971FkfBHjWYQza_UOMMrKcFvYmyGl1oDD2zz7gL1qHn8UZBbbM47vTcPTN6qYYgIWHXZY1XCR6obyGjXALaUSYwVM-qFTVVdGW8u8TQi-AljQ_joRgghcN6cUFSff5XX1u3gzNhn-LMNZhBvis8Dik26sYGQnAKXJH1qpfiDHQq5YiwLIMFC2VTXiIQ8ZKoBRhp-nOLmgQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeoxmQ7IWuXKqGV15yLgAbWcOo1Gbn6kOnIjryQloS0tzPg5qniq9f9qJBl9GMtgwvFg3uVMxDUCCSQRbbqvhYpITEDK8fp_KRwBrY9pR02-_f1boTNFbxdex7WLedqjGdf4bwCElfGNJKtn81kTD5sGwOcOxKAgK62eExdAMuvUZHyd2M2Hqmv9Kkdb2t7nFaTviT9oHQ2JFWAVS90ms9ZknEu87yBSAxHA475mDxBCOtkZQLJgM-61qs9jjUEgOiOk27XFusNNNovmq186L3DeQD1EkurbqIBuproOfqgvZF8K112yNLf_M0XddgP1Xi1uEatJz63ubStXwTIzz0EZK8nAWEwP3vAiHKHCDJrF6mF2lAmK_fjRsOW7KY3YYX9hZAbNuwXf--9NdqGJssPYIGjLftmLPNVPv7tVWLHtc4&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeYQIECx8WajKqB6Uu-zB05-lTiZ82pmJxYmq07OLIex8yFbhjXWvypGv4e3Olbplua78DMTcMN8Xan1o3hmpsGogI2cR2KoJo-xqHfVtnCkKjnEW4IaXAxtJiRAs41nOZ8xNR4iTQnqCh3mhGX2lkbGqU7D3x3Cv9PgDc2E-oTB3NM_vHLeDr_m8obVCPdpO3s7qu19uj-4LO16vsSR1sgX6MI7dyZd18DvaWI2T-fmwI0z3QDayOP7bcAY37eHCSytOXNw1TjZ56Kt3ULC1wIibGkrzxNfPxORDQYBQHn93cj5lfdxu8-ZsHfo02WeguPj_6TsmPzVnSizc2e5vAiyZ-EI1cj5J3U44dtFq0mBKCp2pVwRyFRT7SXjiV35wpc7G6gJ9vjiMsh6HSUYrkQC8KvZyy2pnkdahw3HnZ9Zg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf7neROYJ671qCE8fLGsYBm4I3pb3PunluoUt8m73MHQ_n2bIDVgm3nbAECccNd_-U4wLHNnRSX5TCwPoXzKL3jDMpXix-H9tIbn_bx7cz4X4qzeYIinaZaIXtFCD5i2SvKlV6XMFIId-joeUqBEVcA0GBCH7NpKZiptnW5CLOsAlPHBYBKIcLy3ZjbYFf8LBubDsBiFCi9vPWgm81fu-UXmD4cTsWuy19J0H7kr5YRPx9yfoW_ApsPNektlyJaimzNfEeN0yyjjdcG2MEqZH4eMdqelrOxq27Xq2C37wrB7g&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpezKexpsLPKdpK51JIKRINTutrR0-WewCiNEV4868-eUm9RegpK9zd1Zy0q76nN46c8kYAvkfc3WoKlqv_-hl7b7Wu017yUs2TpfuNAZjcLN0tCVtibkJuTKBslZV-evJxw-SsJJyiC5gVwZ5FSiWHkGY4yxFX1gvRR3ytexxSD7ITYTrg4I4IQwSFKZeJ-3gPqfqjyqj7eufyfAr0z_zupkwd33Sy8JGASd2yMLLIQ3I-bv-OfeLKrjCtCpxYPA7Y4_K9XbHlzIae7Mg8rgcyrcLd1oFsZr5uCeEdR9gYYz1i8js3djnKLyUanXJI9movWEtPj7ZP_xrr5Lq08bwF7T5pOPqIgeJ-ynowercmer98oMlKhCxPW1rOfeTZ_58CRgBrulMBHxgzbBwMyX8gitku3Ktp8tgO3YKDU5Wg4Tw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfqJclOCR78s_Jslt7MLRD79WiTXnxFmPTslfaO1dU7qfOpIjM5J2q9lTCr4T0VmAqolxZoMbxU1IyswnxntWsWKKcifbUfyCccIcgsTBnKjTzBA7J4D-9FM1ABgZSJHiej0FTJXHA4B7sIggYBzx1ZlbpvxmDT20xgSTJiRdtgLlLn1IwZKxyBRs0VJWy5LZathZqGtJKWF805U172FNoqAXh9Rj0bQexJAy6HEarmJQQlQhjqfp3oY3hNEtsuwW3A8XTqmcRh_AY6bKs93O7iMbIP5UOBZgFKCGKx8AmQ6Td9MEwxynuj9RI0LI9iIu4w1O0SqCx8t6lNqechfQXBoCsfQ4HI8-frpBdgjwehWBrEgQmnZHBhH12uC7FkK0KpicNdcFsRA9Mq6U9pw0XPGF3xt8Svp3tCxyjKhfyQcA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcrvFdNfrZWSdxTQYPsrl-lHFPsFkAO5WhlEMgz2IyHw9LpoG8I3c6mowqHHgcEKm2rtfJK3wSZ1JWv93myRkVBV3kIX4DDeCKc0jLE7FvQxcZs5bZhCAspEqxgytIaf8Pb5krIEKPJa4MDagQxvA9fDVy9BNRwfYNkvxQymHHD2wb8wIG-pU1tOoM7T08qrEjd-5tGsXmPBkFfngpVKydJtiVFlbP-PpdCtXQLiKfiQgERH-SqgrZD6aX2UvkEqOefvc7QJoN4sBb3Zybcn57b21iYDDBaaEkpSaJoMr6gI9XBvQuN9PIBaGWyGeqTKLicECvVF00iG22gP048NHM8G1D1SgSGT0GqF_GvddgJhgxuPPI0yyzbwm-bWMZLcF2HX9CAPESNWG1Q7F5lMaq05pSFMMTsIA0hAJ_CCjjOpZ4&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 7:00 AM – 12:00 AM",
+        "Tuesday: 7:00 AM – 12:00 AM",
+        "Wednesday: 7:00 AM – 12:00 AM",
+        "Thursday: 7:00 AM – 12:00 AM",
+        "Friday: 7:00 AM – 12:00 AM",
+        "Saturday: 7:00 AM – 12:00 AM",
+        "Sunday: 7:00 AM – 12:00 AM"
+      ],
+      "created_at": "2025-08-28T22:23:37.321Z",
+      "updated_at": "2025-08-28T22:23:37.321Z"
+    },
+    {
+      "name": "Enterprise Rent-A-Car",
+      "category": "car_rental",
+      "address": "6320 Pensacola Blvd, Pensacola, FL 32505, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4790482,
+      "longitude": -87.2519232,
+      "rating": 3.9,
+      "reviews_count": 1025,
+      "website": "https://www.enterprise.com/en/car-rental-locations/us/fl/pensacola-car-city-5551.html?mcid=yext:245709",
+      "phone": "(850) 477-1352",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcsV-l_1TyNZz9ZEMAWfpUh4gL_jCA83e2lSEIpmIYf3nkGAG4b8d5QBbCv9ASi-5HodR8qlin9sa8cXDrvKcH-rc1HPXpHj3GR5t-4W3zQNgHspA2QfXi0hLsXn8BiWbaoLNVQ-XM3e7wbriN602rPDY8f0fbSqXvd6PWGbxPNGCGdqZxqJGqHq3tsztQB55LHbqs6mREfZlQwvQOKszSgOCYmeWgo63imSI-vVA5l6mEetqpgZ1VKBdYyDSvF1br9FKFsoskzJ1PuH6IeMZ31B2LzScGldmFj11teNOvAJEHgnHOPAzkSkwIzM1tFGjROzmV-Mf-J3_lvZUsLGwFxg2I8DLH50u-o6zT8z3b4TkzR3bQ5IWXbWjTITgnQlYsauJHeUDupajOYlJFZv9coHVuQ_D5rKzR4eOtRxq5FqA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfurby5quP4xbLdoza6hCdW-Gnjlo4Bca8nU8jnY3rExuZHcrff3-KDzFundoJ9LbDWcT_kJWImd2n1AgNSZKumRJM0QteqZvoadAFqnVbeNvFkzzasWjzqXsHSzwW_uoXeDJCXRTbWCU-eCiIaV2I9wxwd0U4LO8dzNnz4a-JWSqhauulxdD9iP5kspVxA1_Dyh2sglINVLSKJXs5KzypOZNwoDKzjjWpbQjQy8prmaF2lxdMDHud-rZTrSmViikLAjAYWw_ONMRrIFgUJjnH92Y42lHx017DJBtb7IXIEaiE2ssryBQAIWfuSFy8nx5rIxQCPoPNXlTkNMWoA1eUd1g0D601EYQ7q2GokwJUzQasPsTIDxRFMB4qkgYOOddOMCBIIhkOTVVlNtQeGkiUIW0WJ2FF3zapzBdEfNWPR05dm&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfGDZ1tBleVFQadsxUGehSKywrHDWpVXTRxNgcaeqSDYwnstbhYdoJVc2KsDeM0I3idARcl5oZGJn3Pn3Y0EfCMVxLKTDwDrZMbUg7uGufkZQeW6rXJfWBBJTWBC-ueVOhSWOaBEObQWyXcprapxzcF8G9W0FEg9gPzl90ClrDCg6kbb-5ldw6U-Nm1iHqCOA1PG5HPvGmVvzAmNW9ZQtRqeuu1XXsxLLxy32iQKl5Z7o3LEBGDlYREj-6R7Fvnwau6ni7cyBfOZkT2ajB9Q8qzqnNsKnw_49o8FaREw_ygTH3bZgifwSRylPccdqZ0Ze2E6c_b02O_2DB2TNR7OWcO3IKTmWXme3gWZjj4JUzRTDUXyFRLn_hhB-UIHIiaxWJzQ22VWLZdDUxSBcs2_KYgt1pjR4tRRV-F_VmT_HOG7Wem&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdZLYY5RWjv_Q53vsNFlZlGmBHdjCOOPvsBBhtjRnKqkZQJ2IadWd5TV9vGGQONxGyZ-KBzuDVcPATedNf0WoeibbccA9vxNaNG5JBH2vearRrP5sv-VDQ3tjiC5EK6JBVkKbStVC3XHWOFBikwjTutchqZMb8gtCEMqJ2Kwsypk5K0Csj47WUI0zvGxXSoAuzKujblGy0bAPdgy_bFW_YTfwdKzniUO3NKCfU356CGGlAhAfkkW8-qZ8myAJ6VyyVpI6ICOWIkrVddoak2auZpCsjIQh2vUhUGpNQTjrqJLOwpfGpxWRO8SibyBiSW7MiNTSHWY7AnGuC5OCF5xLRMk3FIU9dQPfcF4stdIGxiBVn93snJeajzuSpf4tdB_XwybxhsyYAT9DATqgS_GDilO1wWYL5doW-KMEgTdTLM5ITz&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfgoJFcPx18hzF-73Z803r30uLatcAW7YlcrmVurI7AoVVpT01qr7bDChpJ7E4BLCwUlj8qobsWB3SdlRbgW8F2ztkwO30DTEywv_JDUGv-zzSllzK0vPHvuITsnFOVltn2wqtnLUaQZ--4nCTEsPobPsPjqjqhn6eGTKKWdWqeIdTXfUP_oJ7_zXVstYAVeNThKys3pKrvb1iDGvtzX5tlH0H4wrxqSANQP2dTlglNqkGHTMNXfjORWb7eEDqpBKXBd0tbHQKyIn6rZKxEeiF-99bI7TmLCCOQfndF61H50pnlw4rQW8ZTiQZ7iUROOcO9rtLWTPiN8sa2qhshSGblyVtV6NC2Uqhmyc8-Gs3lWNdzzOwmku8-r-9N4OoCF0rf_JdmUiwF-nNxdvynB_hqAsUQ-42PCE7GiThl72exxKSR&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdbyuLzwfedUAZx4sWRXHvcj09BDMO57n36SkJk8d9EI55XvPi7BrfFBYGj5tTgWZZsovwCt4JNjLjbjV62qCZ1BqNmfbk4YvNTmMki9r9KmrRMTwKO3PGQOipW1aHlkBekVNqcbMe3DtHE2FsFs7Ai3DxwZqrkjseZwVzeHoChh2BLa9ZvzNW2ndw3ntmdaSKqYkz1ujCXF1SJKp0thFxQAFPsWoCmtzDbAc7UFW7Tbj5JLIcHrv_8DSnbLCp0JkPqZutdJsCUOLh_Ajvw2TC2BbSuxYxHuRv-CtFVUqpDDF7oAWq4Caw1QgHxNTigA6uTfng7cdzCGJF6z0QTXZ2MG3Bt7QwdLvfq9eLDmeTh6h0MG_a_FCFCILWJHH1K7tiSRtkojvj4paRX0hzgjyEXPM5YG3tSd4o3izOJFHhOQMM&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc-2SJmi0JKDpag7AZ7H5QgS9kMS_OSrHzI1DD1nCbDSgIdk_xJ1zrGMZOwtyWDeThTxm87rvMMy_yQwWiLD5Vsk5eJb5j7SoUDtVpcfIiMkHr1EEiAZ1hPd3Y440Ep5wfJy5yCoatxU1zyEf-g10mhZvww3Z8a1SdDHywi_gbTN0WzEbfdridTl7Vzca_vb824Y0hDLRc3SyjReFgXFpk-womSSadrrU6e2UknH61JMi8LkuaxkPRHjF4wgzcIVcYYnST6dXZPzg_cJ_WWTr56ZmewOUSQIL09nRQdOtr9_2OH7gHx8QycIXoQCuXBOXqJuZt68gdIJSwCuuMANdqnLFosqm-uFHLqp72ZoXi5wdXyKb5vZuv6QOA3_mda5jjRmE8SClwPKEYbgFXw0N3KOztLf_ezJKToyvRSNT1KTO-p&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcsFW6y4gWA0C1r2wX9pD4aiBU3Uym8QcCoHa-xMnycNGmVNzeVX3H28T38PEwTkya_ry9Cd3RB8e0Jc4mIQHr9mDVxA4bxXbyEc7XXE6PlQnUyuBWRfc6_dyIrOEb2Jvci-iFhLbNOPSd7K-qt5qPVJ1vQ_pWMu5ZgdFHg7hhNimio25Jf73gZAZmmTBbQUaD_BwbymAUimRD-pVV9r41AM9TOOclr-_fz6_Z3VBFTiC3gLqpyqgsEt0FEKNZCOss37qT33tJLxkhVpuBvMfa0okIwJ-q1WYGavMvzd4ngmJ1HpSrwgN-OK8ffdL4DiJo_uFXfFMt-ambl_dZVwUjitPaCg2CI8yZXi6dKc1uDzwbhKbfRJpIJqmVoS4AAqKj8QbOM05n6F7tdrOeUoEtpzEJ9Oqw5G9s11KxegUZpXQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpddrfKDFEiYwY5z4x_DVMFBS89YRBeB8CH7vz1LMX15hwtqGXx3UAO4bEAWXPOMcv5x82Xc6CT9SZtyB0zE7DPkenH8pIqA2KwB3FbtK9cbcKWz14mg2RxAB80bdRe0OvbKswFwmuRiY3iy_u22bGzxgH2-2rUVVyYIe7x_cvvYgEGa1U-MZ7IHcRUJ4vla77QyIk2b81-m4QhWt3MxiiG2SPDOs69L9SC0qUIMBgxHKPKY_nU3ZYzOi9-o3b9ENYQoyEdblWcdlpxNHx_2evLtKMhuLyiBxrynB4FnRWE&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpefbA_k_8F5Qip1ipwST-1gFVaOTuiNOi_F08rJ3R04SxPQKd_SXWvLJMza6kvRSR3oiKZmvUBU0DRWpAsU4Ds_Pv2FIuQdsQwIfdXTbkjb7pbJt1FjWdSrCBv_mapcTNK4siBVEEbSMQJQhkRMl0E8_Y3X0ii0hiVxB-VlAG-ecUjawYkr12x4YfZM5rCtAeV-Urq0qqLWrNSzaSR5HRTNvaFb-L0EG9ESZPG_vj_vFkRRxMz5b3FbCJ1ctnJWdW36Y1FghA9v_vpBw3Kfm3jQKcYggj8CFAY2FQcGvwViAFY9KZj1ZKeBt5msRmAASR-wOLpgUZiihjSKzAhGyOGr3C7Dpb2BRtvCh7gqkBMi1ZGHogw3bkqZshpEhHh5y3Qy6PcpPTkA3Ksyn7s7zUgIbX8Aqvvut3EEJT5FOjs04bhj&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 9:00 AM – 12:00 PM",
+        "Sunday: 12:00 – 3:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:37.629Z",
+      "updated_at": "2025-08-28T22:23:37.629Z"
+    }
+  ],
+  "timestamp": "2025-08-28T22:23:38.351Z"
+}

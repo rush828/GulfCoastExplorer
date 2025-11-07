@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Gulf Coast Tourist Directory Team
+Contact: info@gulfcoastdirectory.com
+From: Gulf Coast, USA
+
+/* SITE */
+Last update: 2024
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Next.js, React, TypeScript, Tailwind CSS
+Software: Node.js, npm
+
+Gulf Coast Tourist Directory is your complete guide to coastal destinations
+

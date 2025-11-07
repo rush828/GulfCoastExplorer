@@ -1,0 +1,215 @@
+[
+  {
+    "id": "mg5iuy100lyem1kqert",
+    "timestamp": "2025-09-29T19:28:55.236Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mg6rkuo5io3szcu8qim",
+    "timestamp": "2025-09-30T16:20:47.045Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rkv90uqr9hgmiet",
+    "timestamp": "2025-09-30T16:20:47.796Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rl6gdoz13pdu8v7r",
+    "timestamp": "2025-09-30T16:21:02.317Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rm3opkwa1iuvnj88",
+    "timestamp": "2025-09-30T16:21:45.385Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rmic68icbab531yp",
+    "timestamp": "2025-09-30T16:22:04.374Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rot8jvuxrc4sb6l",
+    "timestamp": "2025-09-30T16:23:51.811Z",
+    "action": "admin_login_failed",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "failure",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mg6rr8yt486jzvuzssm",
+    "timestamp": "2025-09-30T16:25:45.509Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mg6vmrp2kyq558cs24c",
+    "timestamp": "2025-09-30T18:14:14.966Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mg6yzpzuyxuwcy6rgim",
+    "timestamp": "2025-09-30T19:48:18.138Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mg8dr6bulatg1wrz4m",
+    "timestamp": "2025-10-01T19:29:19.818Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mg8gfvr2isradnvtjh9",
+    "timestamp": "2025-10-01T20:44:31.742Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mggxnk7eihnxptudrdo",
+    "timestamp": "2025-10-07T19:08:32.906Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mggzm3qtxqh464pjly",
+    "timestamp": "2025-10-07T20:03:24.149Z",
+    "action": "business_created",
+    "resource": "business_data",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "details": {
+      "businessId": "pensacola_coffee_shop_pro_2a_solutions_llc_of_louisiana_400100993",
+      "businessName": "Pro 2a Solutions, LLC of Louisiana",
+      "city": "Pensacola",
+      "state": "Florida",
+      "category": "coffee_shop",
+      "hasImage": true
+    },
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mggzop1qpbbkkdfkdz",
+    "timestamp": "2025-10-07T20:05:25.070Z",
+    "action": "business_deleted",
+    "resource": "business_data",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "details": {
+      "businessId": "pensacola_coffee_shop_pro_2a_solutions_llc_of_louisiana_400100993",
+      "businessName": "Pro 2a Solutions, LLC of Louisiana",
+      "city": "Pensacola",
+      "state": "Florida",
+      "category": "coffee_shop"
+    },
+    "result": "success",
+    "riskLevel": "high"
+  },
+  {
+    "id": "mgto4cvbl6gylx4a72",
+    "timestamp": "2025-10-16T17:02:40.679Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mhnwmoqlshzbe4uw429",
+    "timestamp": "2025-11-06T20:53:58.077Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  },
+  {
+    "id": "mhnwoilt3wse8lt31w4",
+    "timestamp": "2025-11-06T20:55:23.441Z",
+    "action": "admin_login_success",
+    "resource": "admin_auth",
+    "userId": "admin",
+    "userIP": "unknown",
+    "userAgent": "unknown",
+    "result": "success",
+    "riskLevel": "medium"
+  }
+]

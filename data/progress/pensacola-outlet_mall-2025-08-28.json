@@ -1,0 +1,135 @@
+{
+  "category": "outlet_mall",
+  "businesses": [
+    {
+      "name": "Cordova Mall",
+      "category": "outlet_mall",
+      "address": "5100 N 9th Ave, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4751138,
+      "longitude": -87.2072414,
+      "rating": 4.4,
+      "reviews_count": 11108,
+      "website": "https://www.simon.com/mall/cordova-mall",
+      "phone": "(850) 477-5355",
+      "description": "Typical indoor shopping center with a familiar mix of retail stores & a large food court.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfz2DY-WSoyIL95woZINojUWLlzK9wo-JRos-6VA9QE05T4PAJsd9-d057lvlhJzKlOO_b2gYj45xe7poYhbF6yKTOM945sHMDVLpLYBugbFk6qEPSPxIZHqCzwGJTkdGia9B1Nze0dmQi4QuuOzUDm-9O85bwf_y6A-gf0JH8cjrXLMKx0mqOERacgiwYDDRKikkTGl_aCgddzu6M9StkwYcXyzRHKWsvVtk6T-zJzq9oBmHa8_mRb9WVhgsmfq-BAzHFyC4qfLHnzWpSw982QpSBkWET3opBzzmvNf-hx_Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc7mD9mETlYN1LGz5ehegMKIZtUX_eTUouF7I2dWPXog6IsfFKXSvbvk4_jHicoUY8wXCNHXforHjbU54UFjFZj_k7Dv6tVCyvuaVLOx_cZ2ECQ-wIy4XhrMECodj3ll2GdGyf7UWhbMlHPF3pihoozPsZJTo9afxic8asOe3e63-tTVK-xxnlWVMl8viNdiTSPCamMQ3D8sVK5iJEijyM6unEfp2e7AveK1jaKsgMP6P0exkNTPURwXVbw0caM7bUB6INlrH_PpPxxpbWqjq9Af_Dt6XF2SfWDKQj8IumbOA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfTou5Tc-VpdFRAYCE5n59kSO0jcQvgyK-EZnor220zxiDU2UGvZUMUgJrcod0slueYR05HOU5ZWakpAypkdiXveBMLwJgmfcxqLiYFSBlSO-P7zejmAuAyHCwx2JW1gunm1M0SzULIvPOexMtMHNnLwQNwLL22PFJ7gNc8ItYpBlT5qBCemMT0i7u0trs_24A32C0ez_McKVrRxHBHjF06S9CzfTgx4hDHLMdZtHghMJwlYB4-s-I1OjyaoZzhPFTa3PXOW1ZZc4NfbDCNS4cpJOmAHekHJui6q65AS9FaILaUwGWJnzUfK3zBjLtninf1I-wWlv_DgRLY9kJUQWlB-1JrPUMejLTtQxjabVBrfvv70VrL5f3JTOqo7PWhBcOl3mWkALzDmH452STfoUuOH9pym65DL5PZZISsg4bYBV0&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcCLlsE0ZLzatUHusvwTnrIY5felJeg0skvPmNhiNlq29F091sw_wKGypJ6iuw9wHd_hxt74UN4C5LoGVc5SCQUwdkhi_fKEhcM7r3MeGmMYe8w7BHZM1JjL7cvg8tKqOEH4HSf3P01wPuoq_NT3EmLaW8NyI5Ew-fevSJGSGEzIyCSpGPtT1RCJQjdfINxBAAj2FQuf8AC6Hg0tGYbJwPkGa-JOMgbtsEfVCE_BmFjQ0N4UWrQKXkUQBVj6qzHVIFqjhkILXAPZbHzBbg1xh9gu43UVBWY0Y5-xEV7H87zdPcDfziTVLIzUST2dq-PetqoamXRii3k6_Xb_OaB7dgKCHloPvkZ0h4p_0U1yaoAnAu4TnuhlEQx6yt1kYB1Wn224NpsAw-880tx7_gP5Mt8CGlmoSnzeSHqUQuqTNcFRw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfv9_EOpbK3Rnae2PcQrvi-HLQx3VWO-brG-cyIEr-_L52upaW5WjYFrv1qZzsBMQw7oTK6WwzaDTlPGea63N_wD3ano3GPbw_W1nZFBW4-lAtplw1qOUjqlVczbh0dAO4vRWMbJDW5l1I5faKxaKMZIRR8r9ub_Q_9a-nkOm9PgcJXxqulAM6JYtMWJgk-I1ajPfiCoxylLwuLmWX_1roDYWJyFnvqVLJML06Pltl1GI0WBjVwv4ITBhTzZ0ZbxbvX0BF6faL98V8qr79xfSj-9gIQ8NGSHgFXLdomguCtUDGUjgqrnifUVLStNMQ3J9nuOaatk3sokTgFgdojy_H6pb0SHmHb-c__H3S1HjOa7AJMDYEsWuEvBIe6sik9YtMNwLfuVi4EXgYbvKi3RHnwqlphs8dvRWYOrod3SKUSDMOf&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpePjL-m2JKY6bFW1VL4W7Ntu_3vIxBaJ8bI1Vgbt2tCmNmCRqiuptWJcx757PDpplrYgnuIhI-Gm0oA9QnlPIasA410gzxpEFWTvyF951UOzabK1xYK4HJ1uZiMhzDv0MNw7inWaGiuMcZdmOenw4XacuwhoFSiMEqS0ZBXBUfvPcEz9V-D4SHCV96ORAS6Z31we3NQXc-qic__iS988vMh6hG70Umr6nw0Saymx3uxn-aUr3_z-UhUi3A5h32TCR9_UZR42g7AQPQ_qpnRSn8_QuLpobb-2z6tFYENcJgHuvRw-YnlWyFdDbYt3acUF0KUyF5z4ZAPVhOMUI9-WT6kN_xWHFvZm83mwtZVb33gwieob0dvL4aWRRyBBqevC1T7FPMDIpteh9GY1LiOFBmvRLBdxjQUyJ43xKoXEgg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeZ4-_Wy195pjlS7boJbv29fryn4BgIzr_VVVD0Mr1ZPENs8o5yY6JvcOh-Zvn4vc9K0UBg6-xEXMCNkmrZnIb5O5btcT1S2o74TsGAWx-9ebJPYUQmyZz9YM3iinQ1wLXtu_TRmnvQyHz1E1huAVmfL3bkK7ZxzxqFpDm6pbjlyQxwB3ApvDHL7LHDNBe0EuWT1DAck5Ld5zgBZ7nzl97nO6llECOeCL7hcy45uxcSVKqNy3MURCgVjKXk-6o6S-MI1_eiwj53-sSpl8oJtPusdqMPU3eQXQ3oEI66hHLvDBSRn3T9xIBg8ywej1NGp8lAhJyTJGaUQpiNJnfrV0iJuLjGCso8wk_T5tJXTIUKYCXeQGmRwu0kxiONjHb1cppon7WqsW6wG9PSYQYMmPL2HXgYGzdkmWcniNtcaFYY6A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdtFlXRY2C13J1kqWKRUPirDGWIadKzzm39OEcbxYLdC4mGb-cqyD4_yiw1q6HUWAUHJDrZMf-Sh4bZLWgXK8xfJg0y3mMaTsu5gJ7NK-VmGnvVrEdXtKD2Fx6KSfXoS0Q3MGSS2ntyizxZHE6jV5zD5XFHyYi_-9IWBZ66NUxeDbGSbF7MQNmEqOoJogmpoKHqFs9Z0IgYIQvp060umwmd7j5cL9YqPJFkZqO1epZ_1VFhci2h2Tjylih9o6sobOZHvVTgtr_pMVrpCMBl1lzSj_HDXCYzLTBT4hv1sQufLSTIe6JzYJNtmwJ_46PWgt1Xp3mb-jppHv4KaaIJUIagm8L5sa23pX5hzjzIEIQhmK7guk6-NrmpcgRiWuKxZ-aO7XWGc09me5QtIJLx-7e33rDupyeT2SimRgQIniz_qA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdRLKHyQ20WbnTI5QKJUzSZgTlLi4DIwiidG5N5WiqSWUDhpl--YxiiSMoP-aAE4FbJQqN6Rm20X3gnukrJiE5BBkWhgIUJA9zfEn442xLl9N8j-yKxfLKd4euFawDK01frZH8wUNHohnutyKC_xW0rlq8at-m8IlFsKPYodBfSpyX1FYlS9Hui6c9Y7iJu3q00LGPrtghcyb2xy0vGfkWa12i5frQdpyAf_0D8w4u8rPxpq9iC_K_53RZRRky06kApf4RE921cOAwFAcVelN2fmBgu-FgsO0DsF-kEklvvgFfM9p4T1f7HiQk-LOwkhxbscaki5sqKpMp6eB2vsayCqJANM_h0TA7PBYRuIGe8_SHIGwGTpo_ZrmnpQWYi24ieLylvlkmttV87_59tavQylNnr0kA_8v60y7sUgU0qoqqv&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcvI1lfXCagt8YBmq5lbcvRtvOWjvka0nsXEo2AMp76pH-srLqRkOo8Ecdg03j4qSWku1a7t03HWt3_ctuMZzZ_Ac1Y57kK7Q7ovvY2ntACx2mLuMS6YZqDeqe0dEokwyI7I256BhgfTk5Hvs4-x_tQuJuyJMVNoUa0r6VPI02wM1oy-IX3JaEa-cbiuMLnOA5E3PGj8RPnB3fJbvIwds-6y0XMu0UE8NDiQqfdsGivqCln8v-tdZg6w0VNVmfB7wrWKb24bwmrmhczOtglg-jJcTq-p0vbjrR0d6_5LiVoNtVTiMc8njKmg_gsc_sxC_Y6pyXbU9CXBjqjTTKXXlYlXm_DzivIxiClTWisPicSCpy8w642fxBM4K5FTxMPQuNN7E-eWQGz_ENxYNJG9Ge2oVuDo6pzLwd_pwI9XRFStBk&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "shopping_mall"
+      ],
+      "opening_hours": [
+        "Monday: 10:00 AM – 8:00 PM",
+        "Tuesday: 10:00 AM – 8:00 PM",
+        "Wednesday: 10:00 AM – 8:00 PM",
+        "Thursday: 10:00 AM – 8:00 PM",
+        "Friday: 10:00 AM – 9:00 PM",
+        "Saturday: 10:00 AM – 9:00 PM",
+        "Sunday: 12:00 – 6:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:33.383Z",
+      "updated_at": "2025-08-28T22:23:33.383Z"
+    },
+    {
+      "name": "Cordova Commons",
+      "category": "outlet_mall",
+      "address": "1670 Airport Blvd #1650, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4810811,
+      "longitude": -87.2083227,
+      "rating": 4.4,
+      "reviews_count": 2353,
+      "website": "https://google.com/url?q=https://business.google.com/website_shared/launch_bw.html?f=https://amzn.to/44mvDvC",
+      "phone": "(877) 225-5337",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeKN3dyJ9tEm2YZK4F7k74Ueiymwdu46oMXjEXAiXEYJNahYHHPikGIbHhI21UqNnXAkQuc2atxg-t_s8w5okChoP70F0nO3I6O1TPQ6TYlb2IP-FMOb3qW-fnJtd7nPvD7hL0HQgvFuORIqa8TfOww2vbj7aMBCsS9-pX5B1kLkwt85Sr0HkuBNAJo9NhWehnqrjX7TXg52Vc8FOa44bzAVEYpzPLDN9hjmEgN0Xr1-cPm-PFcLehLBYQ03qxUBTuRGoPQBPGX4-qCSGrhUge12RfUoUZBJBh22c82CwfQk94TwKiKxJgDy4w1V88aPXYX3YaonEWJGeer3ARn1to34MucQ8nur0wsWQEgKZeuZ_fwnGjcIfArUOAaiw-CdUj_6aq3yHQ-yu8b6WtSEWzHFU7jP3MY-sM5DTtw5-oVfctf&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeGSuv3LbsJI-RieVgjFa1NOVCrzG2QHM3kT7esXSlgrWzUCa6cbcu3UueiBfk0y1yOEbvOdar3TungX9WewQWWCgBMa-BzQe1OJYp77hv2cF0sCq-FhslI46awvvCj5RVzPy0z1Ab3DHjYOXhyj9NvwRyYsFbuWRdpJsJnzmTrm63h348ffbMXJPc6rTMEXC46UiSRnBZM7DZzBt9ePC-4iRnEClC6yRW9yznNUFQboWzFqiQPrghfhlMFCU44l3pHepiI1rESomfa_bQZK8IRSzvhE5-9msem7wIVn3JPmw6zevmRfTt-jhnVVv-OILuAq_W4mnhfapglIlFtOYBkN0qxRedo4X5r1GxvEc3jfXncPsNiYQ0ccx3NoCLE9zxAw52cU0uAlA3K3UoQAknCjaGHWzs2bFDGgh3WV56-aSfInPgmpbKqm6NeNWFG&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpePF6GWbahLv9mAOmTjaNgZrzuq8ycFzLlyk0Lr0ip0rI8dG4sEjXcwbp36aoh8ZhLfiwYViao-L9J1jxm80odrGc4maFeOsPMhWXYlaR_wvVleKyxU53LDpKfwKb2nfDkCzP-h13OapJicFkMZRiR_Oxz6mr_xDP0-jKo71hjRuurr8rffR5mIDdnLtOCTAve74CYc4XgTzRsJMlERjFMlFOtNhZkcMwYBvtXFkoc8vAVNc3ssW825WRwKzc26dW5k1eOnauuPpEqxesWoT5JHPmIcoIFRIztFk9OPgR0QBlvst8CFrBlfG4pcKzCEWjQD7tzQlMch7rKAMQDKnHXqzB_DcSa0kmeOFfGcBgndamHnGknRWB8HKcJeh8RjhO2P4-puP5Va_gy21RlyF_RFr_iBKet366n7AuEZt8aO4A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfK5r8BSmJebbgsSrvQS9C4HYojTn_DfGzS56DTImAC8tK9qThjyMZcqocK-4_444kcsjojYIuri1F1EbJjvCeGAKO7wsYroH3g-f9Hy66tTOoqtxHwK25_HCxNV56O97GwVx3AVO6slZG6_jiLENu492qv6ru5TYqYApBc6UMFlitTlkPbAny5jTZNaKQzrL9sDLNJcFvZCTFKXUkkfjDW5Y4OO5NQmMxKPiZjlY0z4c_026i9Ei83y0QTUZsMubZw9wzEJobyF9gylqCI3MYUx0G9c1ePOY4Z4AYNyhtl4RuAQUyarBqJ-jTBG8QdDehgD9iix7U3ZApoZu8V5SAGNPwOUR_RuOSnrn8VKNrihDUo258mWlTeyiCHkGCJ7Np_kvji1dV9ETcJBSoO8DNj_fLxEYsyff-UAO5BTwtfBg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcz2eg0EAVaRg6L9EF8yLhLDORQrQn1QZFezKQHpQEi0URsBoln44drw2Kxjpceh-3BC2HfeotnIWrb0JlL4CBbYw4AeBamG6NJIzgvTRH5v2yR5gtVCc52nofBMpBKH1auBwXQ1EFxyS3CRunF0A-DFJWu3Ag-n-od4LmkJBQobE72AEDiBlzxsDR2aGoBZ7ZytiE-V6ZWBnWH4eH40b8r4o42roGgu9bwvEZYznKgZ9a3PyeflWepk87-sls7HmGPBrb6GQv4xlB9Cisj3bM_g3B8ZhPiOkgbNZ7P51fM0rcOZzB29cnlrgR7loLC6jLB7D9BLn1fawle3S9ZT09E41nhIgfHXjV4vRwBsgGf3B7QSVs8gdUiRq-jdBwolLJDiXaVeN1zwfDe1PnelWLV_t2gKomM-vCDRcLg03w9NVC0&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe75NTuetsZpPwM9huNzQZyA_t_B2JnKW5yPtfYPpZ4R0tKdGhlukU-C9aLWx0xYaufa3vSLFGfqPGjnEnr0LPBIk8n_Cou1uDobGi8cvLNucJCjB0WuBXYdTLQ1JsIuQkxvTmx9JJzImdDY8f-91PvJlat59VnipjhavDnKZU7s5qU_VMsq-9CMVLSopi_Tf1NBOW4Ps0g0olgVSemDqoL3xSNqnKiOpk2clJCJEQH9oCJkG9y56MR9aYHX3KJ56W_oGm5aFugE-D5waS0SqGdvhaxajMvTuiv94VP37q6SpH9xiPBQJW38Lk-CCbLFtbfWmPYTKuTvyeuoy2S1KkZnBZ5oKP8X2aHFnqbNdvRXKQPt0kL9QZTgxZDzOuqJUh_4KQ-GFoQNcwzlVdAi8LheO9AtQg9ZRfJjPv_hvc&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfr_Eh6SY5LIk7xdPtZKIRxxRANgY7No1MLgVJ2hbW3Ia_BM4Sf3p1Xpq9m0fL7ISlNf3zk2TlYfzTBQb79Ewr3xRSTLAuGWX4Mj68xzQr3t_P4Te0cpsKMNOaauSl-4gP7MBaBLLwIrlz8y979wm6gf4E81DCeySlL2lbfbqcIwc2NjyWp4NhRdsOziaP0KlRUD5kGfh_sOFrXiaqx4SesTaU5HhRUXhVkcDlBC89KuJ2cRmhDrqDpfAW1yFgL-vf-T3UUfWWtbLAaj1lcGJ-uReYEiQEahhea6kANPCBhCwzBtBepcc6e7tqK6zeq4ObFU7ycFK5pplYG38MHCnsWgLSx753rO0atohNo2DPL_2DKfrmqwfV0TgBkG7emd6RgFZgtxhlzUSWMJrAA4wSlv7kKGxNu52dS1GK_gCweoxZp&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcurTKUGxPthWS88tuosOHXbPs4eowGXBhHZQXk0FxAaxyYsuaXoznjjbV0uElQ0XURYQ_9Y8p6jSdoBuZrElMX1wMr94aHZKcQLx5olG_vpn-hPEgQnVJnFHuHn9m1oq7doduAsvMK8rUkHUEF1w8FgjTOb1mLgTc5YN_Qd5g11EMd4gzVEazoAQUqnv0dUgfm6iSYzxf4Vcs5r5UZULn5GEwftcQjjYwfSoxUk8NL8EO1xBupRkTECt0U09gOgzIyU7SZrnDVfwGCtfV8Mj0zri0q9NZQJUsasAK3jZkjxRC4aRzqAG4Noi2tGTwYOw73PMYQMveoisGtgeH8eD5NQjosXmWiaD9aE3if6P-4m_l06YQMlKvVWAEafrf6I_L1X8ivvxacGMjZtEfu6G2wAw72ua4v2Sd-iLTu00PxZDo&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcOaQveHObz4U7GCwXdKeKx5V3K3SaqVZrXUdo9GOekHkGb6gOrTZdJF3WjC9vJ7rfSrGKYU2t3HvFB8_NWiYgcYFl0TPkio9XaTSNnjLfq0BoRcCKPLwkNaH-2QDstvpePAK7ezujVDdsCVlwhYZgeiWgj96tbMTksAjRz9BN-31P1fa6J5XPfQR69-h-KVALUT-Kfz8SVHX1lbXDzqRpRVyZP94ftLTzDRJ6xvlmR59h6xthd65VZ5NsZvM9Y0fpA_lH2b2Obah6b5_DWoTebgvt5I2bP8gZ9M6UnZHFZhqBsWJcpzlLI1V7Hb4OSOl2Nhy4-KfZqReZXmcN6TZxnbziOIaikekg_7V8e75gmLIpUjT-CjSI_t-YzxdvhZSXmytiJ7zWAFisD7mXVuEyCEoZcheMjrY5sQPo0uyxLgqI&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdWb1zb_5DgGVHjymojGtsnWO3QQaadA6-4_h1qfWM0N9pVjmTMP5-AkiGUTBMjH_uHKEu5GJpzhau0uOTZTkJZiyrWOBfgIsqCwPruipJJvEJpjnRO4vI4_kcNfFZkpceXT2XV6uvq163TGe3V-fQb_N4iE9BesHeDIWVGYh73u3MTTCh82T31gcOjRCyg6kIP3TMvsaVv8_j6_ltff6W_MyWVdAhNHER_pyt657XXsqB46coHdaXN9PaKe8I_HvMYV7oDSmq3TsocvfB5U74eN-aLnLsyFlNvVy_YaipN_n9YVzjDWbT26a0sRBAGXdnyhLLl0yRNKF9vhVS1rOJ3cCkuhiVlTXevixNN1fJuXus-piroIsKgoy6Mq8YPAag15ix51FoTfrHlg_SYnsm1zJFgXkRPWDuBYyJ_fTnsbM0&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "shopping_mall"
+      ],
+      "opening_hours": [
+        "Monday: 8:00 AM – 9:00 PM",
+        "Tuesday: 8:00 AM – 9:00 PM",
+        "Wednesday: 8:00 AM – 9:00 PM",
+        "Thursday: 8:00 AM – 9:00 PM",
+        "Friday: 8:00 AM – 9:00 PM",
+        "Saturday: 8:00 AM – 9:00 PM",
+        "Sunday: 8:00 AM – 9:00 PM"
+      ],
+      "created_at": "2025-08-28T22:23:33.693Z",
+      "updated_at": "2025-08-28T22:23:33.693Z"
+    },
+    {
+      "name": "Pensacola Square",
+      "category": "outlet_mall",
+      "address": "6235 N Davis Hwy, Pensacola, FL 32504, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4883311,
+      "longitude": -87.22487489999999,
+      "rating": 4.4,
+      "reviews_count": 1324,
+      "website": "https://google.com/url?q=https://business.google.com/website_shared/launch_bw.html?f=https://amzn.to/3QCfTMH",
+      "phone": "(850) 244-3676",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdoNjrTKTU27dyubK1tvCzqVz3zv2CZq7ciU__-4AGBbR9vkvEhBLUNeQvvH8ik2LFJ38rKPzS42aFbOg3OP715s3--4HWOucC-L2rF_8G8s9CTkCvgCZZc5gvU3Qn9vFW7TvWM8vmgvzcUTMFuTkG7NwglmyGvqW6p9nxw2HGBMcleiljLUtAIbCQjACVcZubzNVcq-U2z_aST41qSu1sNxkW_Yje3BT69JevsXFRRp9ZSYzC39J_PqPEkWFllCn1yb99OFF1MLToKIXVxG6HA7k3KYhDUJkoK9ydMWBaJizf0G3g38MaPu5Aa5vBjmPvJ1JzEvkAd5ljpGGKLIOtpcrKrN93-YDsRXDp5BO1SS5q0USz8gCkMVINLEBPdwlzM7tYm2QfStrO3G9yC-4DtIORYgsDucg9-deqnDgElqXet&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfc6KFNLRk2UeG1hSWnFtIjfMSVFTEU5PX5WkXz7IXFPvjU_4yaWWwJM72Cdq0DgLhgUJ_WDF7RfO8cYwTv0f90wepKB1o7Gf6Zdy_FvWJwWlRJ8HEBU2pDpe6iDRbq-GJoPom2SX_YnfDYEcb9AtlpGDbWOFz0wktUHcYNQdsqje4rjKUvRHC0lUyLxQ0I6pBTyydBFUkmpPw5NNIbnrSSRKwpPn5BgSQPhAS3sjdVXWnOAL9DiRmn2XOsp8mDHdGeAiHbtKnj7-uabV5Vzs_7W99Zos_ZiUXgMdV3Rv_540T0hddsiOi6YuzEV_levinbrt_H9rrVSYf8jYzJa8CvluoBu9EOx2SU3VqCw8wCROuu1WnbVYhTwQOWZbPWYQmvwKca3TS1vj6EZ2jM8vnKu_9FR6tK4PMOtt6yazU&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc2NXYVTlsh9iYr2hLC01mLnVjzFuGfVBs8J88ijp3-hmdUhHpLb1_5BfL8X74ENYyJegegkjhVDLEQ0vHFEp9M5w5_23avUmmPSVhV5qMnkMpHVBcH5XPAAfAT49m8XtYZRfAkOdbezVfXgg0ytYVHiguVnzO1WPw2Uytf5TgZNzUjx_HoFQ2tFeybLDhb7ULzDryFTqJJamiErNj77sLxEexzUvrEM61b0DWAstiSrNT8Gg2dth08F3wxBxcobxz7WpqAHfgicoEUmkLuXDwo29ybpcdN6ouKCHh8XPMhKB5TS2ul8QO_j2LLScB5NSfuej8kaNzQx561_KGrZcsK__Zxrz9CFf1Nfg9Ivu0p8mrevhbQ3IhR-ol4gfSVkgw8oCrE4kjHWE6N2MHed3YS5g86qvHN--rGj62yxDsZKJUv&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfqFXq0oE_tmz0c8LUC3PRgYTjpsCUPe9PzMg9eN9flspjrn9UrOV0YnWT8jxup7E4_WJ2YDKATVKCFqmZ_9TCNhpFWb17IIf9r3wC6CI0Jj5FPacFRp1ILNYsN-BpG0mhf1a3YFYGs1zXo9_RbCuuf945e4B-4X0U3IuNWQ-aVE6bWhhPwDq735KrzdsZb_hUVCAfG6IABxqf96sT3UBd-ZSeKVjBU5CqctZ5ykzUpu-n-4beGhefb7D6WPDCqhNiz9xJrCQuD1dRVcGOySmyT4NxuWfufV1vKRzm6F_OpPxAWqzKCtw0OLeUnbttSeS8IgI0HuIFnO1pqYkKm6qkewGoSHwzRXjnoyTvYh5JNXTlCvEdBYoO7LCcLAbqyhNJQY1sxQwjq3NHhR895i3C1Pg-67EU7AhHgTqPDA67OR9c&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeeE5hldc7HN3DjtRSFmcUc2W9RLf9EqiQwfY0FsryHWaHUVazhInRya297Ih9n6eteYZQSP3tX0-DDtYvYEbsJhj_852ZprJxj36L9UrCn0BwyatgNjxJEXDtAzBPHCdwR0ENzc3Itrn2CInKhXVe9h5GDrtEbWpTTBDG9JrAKGB8iP7iy2kx01aJ5Fd7sUkBMaj_LxEAcaas11Opdhqtj4TJPIqEzhSa3MRGzkSblWU9OIdrXw3ld-Jj9P8zv7nw3VDTM11pg5-f3ao63tB-0eDPO70jrvpjUJCbGaDjZe53L773zcFEOtMGvJ7njYu5tjUVSIFfq286z6JCgl_FDWwlAxZ42K-FnpFfBLb6jQtiMs8baHxCmBRs3aj7JJGe0GB15dymM_fuDu5a3SfQMg-KAqqIPA7PgmQFQLIFDK6w&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcvis5juZuIte6YU6Hx6FM8Hpph1K327DZLIJYvVAr-yRh9n-6LgysQlQuekoglmylOaYUDag8mVoZ2BvryziKHiI60szkgCQ6oP6NZmMN4uFsXFwRKbALjd71V1nAP2oIfZsVZxDkCc5JQg-kU7m0PZEkhGfxn3emJrVCkqkxFdURTOWRkDcx8Y9czPr0npgcK6bVbMj9aBiSzm-ozoh01FEDbeVlefF1TzGLvtAyzH-rZStRAVYvlRCTCCg94jHdj-Ay3Rzu3KzpNqFxwk4vQKl2zkmhsdHFxAGmzuEK8vf4jjHwyXzSJymuiVFXVH3lmFVP03XlWJFF_GXlXwbsfyV2-8LL88ORhHemBQL5UVGFlWeRsxrBXphPZkLR5v671U770VrwsTyeNwS9zTT3tdbYkz5AAUlGaLvoOe3E&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfkdI9V8nduWLouxO4zlINPBrQAeVTvY-0JnMGDm6x4gVLnFxPVhXjnz8yKsHy94ada5DCc6WqG4icjQDxnT1hTDGZOAtoQdqHNK3xYqw350w9LnUng9hg8P2umdnHf5rFjWqOVPRnQG5w2lQbhnK_PG8P0W53M5SltRbJzgJhLzleXRluXCiHBGVv1hozYO2P3FDqHT2vhzaWV-Ga0f0bDJTDolmv47OF99KDD5NOtLc0k1VzwhDqqRFaJW6SQFDttmFEJUXTjwokQJpJLc4xeBdJAQm9XvzSH0Z_-XfjSN5anvV_x3zp148hDunLgqAxbcYwhbjK8Lss4rzSgwfB78lNrIKiDw4A4ql2OH776Fx-LHOdP9wHutmGcFkJ_Ey3QsVknTQYQbVd_TDFh4lpQ9Hd_5MUux9DyDj6WxrgxXoRw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf-wIVqbLyP-ejILYcNKtT6-2loQuZVUtbGg2BJqouPDvNvH6iuxvcszA67aXh3j0DPsqrsziAtn-M0g6JD9j-xu9mUeQ6wRQdQmsULnYqYBHRNW2ztA-FVHUrBbsMTwFIGPhGQtqch8VJc0Z_5MOEuCzK1wk1bv8fpBe-4Yg7mSMjEAml1ATePFZ7sjBnXVNFK3ZRrmIKjZ0mlvjCs1o7-XyobL5sAhfMtYYrM-yqZlW9feWtuFT05yQC6o0LEIhYog7Qr6bqQsvo7Dx_kQKqMZ5vrlr78Nc2nwKxHt-MDVZkOnro44GVYAEBSWcOWWwLQ_VYyCOttF3u1KMkv_F1T2hcvyyloHD5mf6AaZDdRZ_xw8RR1RmRqNKoYQfVBLKXJSpPPjsdqx92nhL7Qc0diRI6QN3-RyphnMd5XxJPH0q9f&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpey9D0J3eaTRO3FPSqTkDcGlYO0BWBryTYHTIUehFOtcK5-0mSdn_WJUy_NgYhp-24uFC_MmRm9hATrCOIbtWnQBUvtOh59e8ed1rgxHrd16PaC4TU-YI5b1k-az_niwQRrNHFl0cInMwUgRL1ZEjD6ixmPTxJ8IEhS-8CpZRfwjp4hEGxxc25epkxP9Pw49qS-ZUJO2xGqjWLEazSrfYR0wb4zYCrjsQWj2OOCLhBbwmWZEozJjDiI7ZM09mlz84e7LbQQRSWxSS32H7wUO3nmdx_THPnhGb5Xuadv9qEPYTLtEhJiFFzVdb4t04XReq124RX5foD47jhUX6SP40Mwrv8whChu4r3f1-Um259szXgxT1o-JkkvHwHs35jvM_WgrZLHXlTa1H7YwANwhrgxuGK7z5b3ja0gw4GkgIn1Yp8&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdbmgvICnq8At-IZPdsn6x2-Pi_j7vLc3bpbjwXScSgiV7ABbhm1ZfSMm3MKRfpT9s4ws6z5mqukLxru4mp4BwFKrVnwg01hxC9l6q2okCVFaAG3O6HM6RLC4XY257gJ06_qWaxnQm5QXAzkwPNJG4KzC679F_Ir4kQRxwY2KFMmN0NtG0OnhZWf8HEk7TU020Ex1cEuYLYPAZ6Qt4EH6IPSQ0i5_bF1we-2WkTdwA_EsdcSxbYumirsXIXu6B5dksuDn-WrGW4Rqm1TOABZqCvKiU4ELk6Gsna5mcwxj0HHX_cW4lt1a9lzUM6_8q2pJ2kCosO7VVztcyzxtHsOWnTn3fRmANYeSj1YXkAWpkKYIoVMFcuR-i64VQ5eJ9Ikzajcd8JCwYxqHzx0M8iJwA3OgV3uSHmTkwhSoi4ZJxh9P2T&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "shopping_mall"
+      ],
+      "opening_hours": [
+        "Monday: 9:00 AM – 8:00 PM",
+        "Tuesday: 9:00 AM – 8:00 PM",
+        "Wednesday: 9:00 AM – 8:00 PM",
+        "Thursday: 9:00 AM – 8:00 PM",
+        "Friday: 9:00 AM – 8:00 PM",
+        "Saturday: 9:00 AM – 8:00 PM",
+        "Sunday: Closed"
+      ],
+      "created_at": "2025-08-28T22:23:33.976Z",
+      "updated_at": "2025-08-28T22:23:33.976Z"
+    }
+  ],
+  "timestamp": "2025-08-28T22:23:34.694Z"
+}

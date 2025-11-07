@@ -1,0 +1,17 @@
+
+GULF COAST DIRECTORY - COMPLETE DATA BACKUP
+==========================================
+Backup Date: 9/22/2025, 2:27:28 PM
+Timestamp: 2025-09-22T19-27-23.634Z
+
+Files Backed Up:
+- Main Data: businesses-fallback-complete-backup-2025-09-22T19-27-23.634Z.json
+- businesses-fallback.json: businesses-fallback-backup-2025-09-22T19-27-23.634Z.json
+- businesses-master.json: businesses-master-backup-2025-09-22T19-27-23.634Z.json
+- newsletter-subscribers.json: newsletter-subscribers-backup-2025-09-22T19-27-23.634Z.json
+- pensacola-new-data-2025-09-01T22-27-14-132Z.json: pensacola-new-data-2025-09-01T22-27-14-132Z-backup-2025-09-22T19-27-23.634Z.json
+
+Backup Location: X:\WebProjects\GulfCoastDirectory\src\data\backups
+
+This backup was created before consolidating water_sport and water-activities categories.
+All data has been safely preserved.

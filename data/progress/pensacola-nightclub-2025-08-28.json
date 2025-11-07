@@ -1,0 +1,352 @@
+{
+  "category": "nightclub",
+  "businesses": [
+    {
+      "name": "Blend Lounge",
+      "category": "nightclub",
+      "address": "200 S Palafox St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4103189,
+      "longitude": -87.2144004,
+      "rating": 4.2,
+      "reviews_count": 309,
+      "website": "https://blendlounge.com/",
+      "phone": "(850) 466-5918",
+      "description": "Easygoing lounge offering a pub menu, cocktails & outdoor seating, along with trivia & DJ nights.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfiI8_3MWRYmNHxjaDBo0A3TJGWv3c2R4nO0OTmSJvvxsvhLTATyeO6ymd3QCZBb2kyeezuWK-MV7N98zIDr2-YHzdIgl7VkUwbHWPXNfJfJOSL0XTpciGz8ZiATZUYBhkqQ6UwZJ_CZ_esFmYqzgg-yChaxUiisSNAEK4v9MolmMC2_9Lh_3k9roKqX5E_ObSdEG7PwOu_k9hoBmXUTIo4ojXqex0HMwX_OsgApJuOQB-7FxOEaoKYb7PHlEPdkZJbvf2CExpwZvcoDNLljTGD7pdMkuinmhMj0GS4e8P9cQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfJvoWY3sn-4ppYNTyT8fVoWE0u94GTTu-xeblDUEaHh1MHoNcXrxpbzLZ96ELc7gfHZWypsKLOWGOjlMewjpSqyMAhK92Zo9V6_oqA0WDkXw9xYv94pPuNGFB2tyd58ZY3uTXIEhN5rifHGkgE7bVU500TqGW2h9ARW-L_3KacrJjae0198DuFhU5YIzahzEVXlHi7BJbpQj2Fep5seDFELS1e5DWTfvxuWfjnvI9M_VSXav6SRFfqEGe3nfi3XJyWgKpb9k8elR_AVRJjIDee7tI2xl9TxXbrlYL-8ijubR9HO7o3P-BXhUc7mqw3eVm9mj9M3J9r8vZVRnuc9Q4MWLknabDkdbGjVP2LmnS8NLX3SESvU55hqu8URN3ho2LkYIcdmxNlJacKbPZg0mIqJArVsT9FH8F7UDuoSdhbCuI&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeX6jlL_B-WZ-y2pKsUwnWN_xQc_aIvKhslbnYOLH9vzBGDV2utkcAUAb9XBTxvujCu0ghwMC0mvhJjHvanEfgV9aKnfDdQUe0--Oee-WZJE6HYFwS8iWQPczn0zK6huYm9zjS0ieE8Z8M7xvtmyUzonCLSiz1TP6eluZmSPeJTELPCFsmJOL04RETPSIxJ3CAQFNz3cT0suTh59p0VgN-ED077U1Flm_kPSglr6p98hDL-ULNYXjBl3vjOUkJqiNCnfPYOE2A0N5zbVcTrbcOuah1XOYlkG8baRGoQFjhX7xL8a1lTIiPBNP8mkx7I0o5zsExcB888xzZITJXNHZDv8xjalrsFbRP78jreHjIdUDL_xhBk7Jy0WWnpyR0HPGeGpDkkDku2bXK0pvvEQYCOIjXB0a9kYOu0tWlct_aRMA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcOiirDo428x_-yJJgkrvnPOCZy8Tv873a-LQiVvvNaMy2ClHtUAxxo5ypbe5350PDENMStj0lyTZSXK5Dd51bhGWkfaJSzRN3S57_ey_Blg1zM8JypyUNRBfty45zQfp617VXBa-ySm2DY9HJ2Tj5e9eCMp4iQMFyF7IUhDuYGQt-WVU4cftp3_U3Su_O-NvDfE68R9sG_YROxa2pi2DC3670UacFB5rwEa0ino1CNX1GO_yg6qfBQbi3aPD_U73hvF6VvUHblaeL3sZA2C7XDKoyvDpHhzj1ReLL-2B703JXfJXWWRGwLl_qGXEiUIbHwrfAYikdMe0W-jPaKoVgpUyB5zR0eNGWw52nq0F21HQPA30YNW4msgW-YjotkxLRfeCVSzHdLTU9XZAhu074G90DtHMgtYlFno8t86V2bK3s&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdFXVxs8vmLloQdkH374skTzd2kGbQkns1Hm8N08V9Qq1FH4X5e8Rl1Ra2rNMJl_3rXA2z8cNlR982HVBQzviRVZj4SNriopfS0jtSgAOIkJ4zYdrklBNtfc_ArXM4oNuZ37P8NkauXYWMe48jMfIGA_6FAqsUkp14oeoKkRwcbYCh95LvbwyZcR7UcpNphGajGr3qQO-s7YbaXIeOvR2-w0s9-RHDQaxQYSPK6lfp04Z5DsdStyfQXTf2v4o4wPeJPxafPfCTWzFWqi85kd1WSfbJX9QQfh1-mLiH8k9rXQA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpegeKwQwU_OydWc4RDXsai9uL98JW-6tQm5V6mU6G2v8hANrterpJ4NgsVgiIXuFdG5RhDy7MU3KQA8fF-YR3rEhd0ywqMEvAcwTkVg_qloDBnHSUeC5BQ5jEGrKJDEOSPEvWPFnoWKYXwR2inOACHGKDtPv_2v74bFgw_SvPj3YzMu0wVkKQ0v88gISh2mP4UAEBZrrdd_m7nG6doS8AbHjIlH9kEn9WwRCiyYVM78UOkLa6KNzKX-xL8cAKlO7mmHU2mvFkUC3pY_vIVlZ5PJk5XgkvhDzC-ITnRfJQuk8A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf7iqzxHe0z5A71Fe7-Naqwdb1_D2pZ8q2C5m313vhBc1Q8DU8aNbYm9S_UEvjNBG4YS-u5EgynplBRSMwVwOtpBer8NXP0HzzkgSAMVnzcAa7pHWkWgrom9dMJuVci3NdDrKC0kbb5wBMNlVMf5arNznpcJuw2Ve9l-EIi1mbqfBlmqPJzQzIfSTVyHXz4IQRpTId5Y6X4uLLNmOVCJlnixZWWXb7cGoSB8YNqwOagJgx1XpQA34fRFnBU-EgiUBm4bjyIc7L09fJMt8t8WODOMAglpvuMQ4_0WrfYjURcmRNvqR-Pz00l9xmLr3jywJQbi_ZZht9V97e_daMx5sJ3kn-8WjuDGhyBr5LUM3AtQVxG7kiVosZfeH0L1yBWFtfGteZei7yKJ10yeYlT5OdxOSxMhOvgIdp-cY1EMwfhx2k&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc24MkLlyAGKYv8o8hjkByoWFmzEXyUAx8sFbd_ZLT8735kxYQ4zPMx3Z-9C3pJLUgziTNiGe9C2P9Rk4zMCsNo7UDWc6F2rCiJtVfSNJvT-aoU3OneaFJNEv9rAq33NOAvV05scO2chmhTNNeGvIsqWQFehFVCp5wYOPhxb1V6RPlmOU_7X4YjUiXMyqOMCTD2-wTIrm3lYV5d1wyYLiFFn_TxHV-Iw8BJzwxLsEcnswBlVDO2lLJ4_ZDaAudO0su-95O3lOXJJezZWA6BvVDwBaeorN2cXJFYgiU5cQzcGw9hzh8UOMFBWz0NbXNYwPtUcJS7JdTLSzGhc2Z6rG6H76EfD2IOkD8jwdpoK6v4bNFgEi-NavC2TlTZHrUk3iU78GFBro8si-43CD_Brof5y6UtPO71vLl1tTePE6Fz7w&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfkSs2ZTfe5a3Iy5__pLgpJSVqwyf4jJdAidqZ8lAKevXRnVF7aA1G7EHQSmPzt1D8o4LQV_B7Z7P02QxxosjEfG6ZnVz367SLT6xgbJ0ymqV86c4oFVTCtVNnqxMzVWL6GLIFgvZ71GUjMP15eGZpgrUyUcsvJc21eHRPdekvgzzJpXF807HpdLrnUna7HIV0645wQe5rRP7PYQQGknBV1XA5MsPEQS2662hdZ0Fa9BogI5L0kMlj6VrPFV_f7Vk5pgBVENKsPjwGmEXqZjp1isbGFghiAJf9BABYsOdAXiXhjjwfg6VH-8d3IRoREtEWRb6Eq0L-uYC5zoGRGxfCQyu6JLFYfST7PUMwIkPwSXhMwJ1D6NvHPTkiHDC02YQRBc_nGT-XGcyu26Zo3x3SdFbIgazeeiqgAYkIr7EJTY40&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfoU3p9X9Rg-s4TkXA6DUYXlXzHsXdOY0cy9SER8bxKgh8JhPOsMAaJpRWF1oQC9riB1qWDLPGgCX3ow7hoduzF6bPfnqSJ3hmj3ZvuhcingDhp1LWbHmCjQzJrbYfI9zx-YJKWC0mLvBgeNcikv0HyCPYwp9I8nCjwdV4firlHeGAWzrf9lf2AHN7F7-8BtuIKAxe-hrKuG3uqvcZolJ3eOzSM5BcxaxCcCLjk32499x87BGnI4lrJyXhqAHvINUHi0wkVCSr0HA9-OQTPKWJNNQPxwvX3llKo6XrhmBovNFef_lXata4dzR8wjFnR4BC2NtSiRWNOAygYjZZi_2KY8k4yy2ghJgSqnT02itJeOC37AZNTlo0DZ2Em9_uoHrHWfTyg0WsTfmqD6LnDQ1WWDEWr1uBf-z-nXtjlRDtOKw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": "3",
+      "types": [
+        "bar",
+        "establishment",
+        "night_club",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: 4:00 – 10:00 PM",
+        "Thursday: 4:00 – 10:00 PM",
+        "Friday: 11:00 AM – 2:00 AM",
+        "Saturday: 2:00 PM – 2:00 AM",
+        "Sunday: 2:00 – 10:00 PM"
+      ],
+      "created_at": "2025-08-28T22:24:00.486Z",
+      "updated_at": "2025-08-28T22:24:00.486Z"
+    },
+    {
+      "name": "Seville Quarter",
+      "category": "nightclub",
+      "address": "130 E Government St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4097675,
+      "longitude": -87.2128886,
+      "rating": 4.4,
+      "reviews_count": 3754,
+      "website": "http://www.sevillequarter.com/",
+      "phone": "(850) 434-6211",
+      "description": "Vast venue offering 7 themed rooms including a pool hall, dance club, & many dining & bar options.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfBv9laBzDuJ5XwUeMw3GkDgDhcfLsjadKnfZ6ptaFi-9EKCDZ_19ePpc1mZ8DHWErCX9GuC_jLfNK54PkP1YB5jM5txM-kgCssVNuyssF2ai9GxdOXcD2_LZt6y4k_yTv-UmLeeg7IlR78Y0v282ioF6XEtj_qzUIv_3_CW2oGrrwK2HvDboEX21eF_MR3iGpzvxs7VbhocEStq8LxO6DfDEqs21KeSeHa7OT58V_gvrpSIsvKEy-9WaI8LVyvlOO3vfmztbsUW7ZCYZlL4XucLcSALb0eQhqBUYwbbgCrrA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeGNa2B9_kWt5WbLAfgAq8HFEJQ7OKe1a4pipDQyvUTRitI2hUmJE147MNXF71kxgH2o_gyki0OPgLI5MAT_DMLm3JcZgb_Tc6ygMyAfN3ZF-TAgN-JhEFIZoK228q7kipPR2zFhSk2gIyhgAoWlpDsqbbBVz0_dRo4sVC4mvhT6xu2M-mVHsetVWd9zc827B7ZhYjBuJF0onz3kPd5nOfqDMnCaGTWWlREEbmnkPwlOKkS9cEZNmUXvmES9l3Qzn6UemPGY4vUN_dCzYRBQAvP92XfHzNlhOa18fwDw_ENcw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdE-ISXIIJmRB-znOq90gfcC_bvGJk8YGTW0gVgGTJZpJqQU0rQVLEGXMqn7o9mXQQvXUvh42MWle6-d1NMUW_MDk2HMzTixcsu2mrCIVI_pGbHIjdnBilzVy0eiV4sMAxtUwFv5gYnTDya3No9__yNJU8sd71U-kJAm5ewpxNMM4nEmcObdrFSeP_u9LIJ0epdg139DjFMR5LFipPz1tI9KVobgQQjOHQGEvUulE50YQrUC_aU25iUjFVWXFB3N01CiSrCltwBG-_wNXvrqlHqbDKnXIlMz12b2WszwoTi2A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeRAj5AYdeRnr3AxvVzyWU8sPAmAimefGY03LuAMyLYSdRwkUVV_DLtzpfrKRyFBYiPGaQYRIaS1EwzPHa8l2RP-8gbVO-3IEqFRsuJkO1_5Jovsz846i4Kicl14pGYoyuj549HlIRw5MOXV_mcm15dHDfWuL9lZVjo9RdtBVakwZq-wZDhf8njCuFk_AzCuhv0hh7I4uZovt8OoOD5WJ8mBdN6yGICChtT9YT1IuL3SkKGp69k-CnQxVLd6VfoPl9f5ACvR7Lom33pqJGeqpiDnTgms9-xuVB3Hyvna0l_vuImtuRST_5b-KYfFBaCpiyxlsfO3a9x4HdQ1Q7ogPmFKA_-PtbeLiT70nzW_d0Wt2i9ETx5wPWyTygknkAQOioj995ggKL5zGJQnaMObAW9aQVcfe6Qq_mLzfKwtrA_ZTp4&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfKFmfwtsHV0I9oU7Kxslv4eME1JXtlZvpSOmeqSRZR-rhQadkHg0gCETmjWZ6m2BpDoYtjJ7pewBkKm6ZV5Cz5fAnRy1UTZ1W9IBkxVx6Ixg2CtHlGJc6Vlvn-Vc9obyqli9zu4Ic7BERnkW2tfK3aqIry5bwdPk9kPT1APHws8hk2LrJv1tJPR7WjqgDKpm7-QPl5mmrSSY7VXq96eJNtzVWVkmnuh_sIn9Amdx7t--oxTSx_uxluiq1El150kHWUQ5Qlebc2PIF8dLpFcI5Ty_cJsfV1YFuvquN1HXAuZ6XetCG9_Aaa00nu3I6jUxVqwroq-YafQXPs_Tkh2m03p9rYYmSb_QaRwHXIrZ_331DpLm4oWeMz4KyRo-ZV0VUWBSS2F2vYpvyO6DJi1WMK9qAvpZgUyCyS_te4KheW7F_96q3aIUjdKQa4_Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfn_p3kHqkQCKr0re7z99J7DuAMAYcSLWeUeRDFklUkqAgXateqh1VaWoNn2m3Ot6QrxSbpGj4xt68lcaMnBo0TGXGLm3GmdFi1COi9kkCAKe0tMcb9-8BhrlSA92gZgeXZeVkeGih6Rk_tTY-8rhELvRfg57fn3R1rRuJfK2VcbGH0JZs8Eltj8cnNck2VXsn7C4BXTXgX9DPND0ddntjjXjKuwAPebACzga7iaBGVRvwyIga8AM9a20A__j71aQ829uWUBC5wZDdhWm1gz4iLpubblpLs1Y8xpQ-WWn8L1Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe6LGZrSJ_6u9iObAn9uSsshXSJZgCIP5v7olu48HutQEwcEioyC7WrfzOurkI7IfIpfjP1mOwofEDT-jgJzeJ80NJXAsaEtwB_Y4UXRGvL8GUJ8Ry4fsfY8h_-ygLdfaJwWQjATVrkc_AyQ7dpMCLzUtvXW6-G7cGQkLJCf-kk_8MfJng4ROZFb6oavOXAglZIidc4we4l96b4DBriPfqfHQatpoK_pmRpR5zwe4yxQOkKr6cCkVDmQnawAi8rP7Y-_gOB2PvY-lQyMLz0Uaj06CSDQMAQoKbUNwIKR30aspzUNsTZR253JzJpBTNsayTjrT7AmXRBfeG6gCAOsL-T89hc7KxMpQdbu-DZSes0sc7mjAW1bdi6kW_7Ntok6xSAxyoOUuaKE31jE5pdA_nUTu9Mkqot8Z0pIGfR6jo&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeBMCKwW9pqg14wNImKXYNfc27O-8F_m5mDIWrutxytA62dMzoX7y2p3JoQs3n1G7mRnexgLtsIgzPhaLszFUwJM5cLgPvJ-3SSjO7AQt1yOgoeUIXnYsBBNNUeD8h6FFSfVjFNcPfdqYWb4rVGI8duHXo_jaZFYD-jNG7b3FlkZPCpYGPRbWzCNpWo7Hko74wDoZ64bWwpXEjmvxKd8wWRyKLRzc7z1TExn_AJty-Ow2fD3mj9l3Ngy5d8-uAyi5uRAMd5gPIdyR_trYZjCNW4UPy6NZ9_swQ2L7fY3wc6bZ8IjjaX0vSmQm2FlK8EFNln-A713CQ8xZqAIdGYvg01q3giO3n3L-6novMg3bhj5_djfLR6cT_h7lkFA4i25HUDX18EWQGh2k3IlwANsXvVlkMLCAoxLOUe8c7aVLVGNw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeNWofYRgR6NC7AZBPY5OB9YH7HLudjP29Br8KQb-Zu-WwdHkAYdvV_lYJrC0Bcn-f0WsMMN39_gMic7S_b0rXzTkSCYSmJuN8xJsi24gaMTewLmXKY8eXEwWhsoZu3pKmKbGvSwKzqoYEJJn8b5bsv2ABiuKOcFLmROSxNsk5103KT2HRWFbQB2oz5XjBJ7SZdCe_UeBImCw78LJ9XMKQDcXMnQT6aJeVMneO3QyRt10O9ENQzxghFuYybIPZxw0HcqwkUlXkgP9KcM3UGwstNCteReXbScNpJjmOi4sxGGA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfcmKBN14V5CONpTxF43PrHFPeR6a7kqsh7Q3vw9p466OsT8Gi9OdnokpLkd5VTQkvj_CKgaUuHykPs4N_egc9YFIJ9xWBUA43fpUk7lBbvu23Gjl8G6oLlTiQ9USKGT12m9Yq1WW8_JZ_NziL0WBFchiolpcHffS8Kcki5FB9tsjzV1cOTCs5aJ61JXxjq7MZnt0ucuzDuHwKhTSLb1VZMh_5TNZ2Tn2xI3kRjIX7hyWcMMIguViVLrKlRJ1FSfa6mChmtzxR-S57uUOq08qMYNHTxstq86nizQXM1w78BJAVVY2rGsmXMmFoudl4e5osxljQNzXgwXdIWoBRqNOjXWPEO2ft1VO4qAsxe_cMFTQJU9zSIGmP6vqHtIrmF6qoqPU0Sfs-LaeP2bFvhmySE6VHHsEYegQqxqGu7wzI&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": "3",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "night_club",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "opening_hours": [
+        "Monday: 11:00 AM – 2:00 AM",
+        "Tuesday: 11:00 AM – 2:00 AM",
+        "Wednesday: 11:00 AM – 2:00 AM",
+        "Thursday: 11:00 AM – 3:00 AM",
+        "Friday: 11:00 AM – 3:00 AM",
+        "Saturday: 11:00 AM – 3:00 AM",
+        "Sunday: 11:00 AM – 1:00 AM"
+      ],
+      "created_at": "2025-08-28T22:24:00.777Z",
+      "updated_at": "2025-08-28T22:24:00.777Z"
+    },
+    {
+      "name": "Phineas Phogg's",
+      "category": "nightclub",
+      "address": "E Government St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4096129,
+      "longitude": -87.2132414,
+      "rating": 3.9,
+      "reviews_count": 16,
+      "website": "http://www.sevillequarter.com/rooms/phineas-phoggs",
+      "phone": "(850) 434-6211",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpc4RlNZh0dF6X-Dw-ejfmIcYHrYAPknmuZvNVn4tBdcwl-VaZ0Q25T7Tjdl2_COwjdTrTeW2eHN0UBksJIU0Z332keECpdv9bHaj2403qFtZfgKe_8ik-4dVzINq3OrZtsGk2WrxXR1z6Y9IAIo3e5YSSK_A30BvPMiVDh7X_LCNy5xPBcAexXV4NitYDHm30YRbl8cJRMh3Mv-SDGiixYiKOjFcO-4rjELyJHYpmVG39q5_HMWS8ux60SsEjjZCkrWaOYWA15O53hrjxRGpRUlZT-Jzx8CS9YkCmYEk5SD-S1cMHrnIJITVcYT_Zl9PZaut40_VVmRAaV9gBemsvTexNxrvbMYFsWFSLyzK9T30iA4QAqFW2XqodvKxYJaEYfpmdxt-q_BIZL1-_JCnR1LDIpOgSESymCXgpJZNYA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcMc15hdyfvVr4lkMv2A7E6JqEUM7nzT2OZ3fMf9q8bqwMGDgPx43tnzpkzAdHev32wf-OD5CKZ14cvOeJWYxwbRBIc8oxwvDu3KSWKS99kOQK_s4LdtCngAyW2r7fHF03qOvxHHgahzMJTcKMfkt4c1YFkXJ8f3iSI69iub4-yNNFjtEFUhtWAQx0tydlvilMsB54MTiersPUv3FlDZ8lNoWH-oCCHwgkBBRYi-YkSMHzG0M_liYRcx5LmLIq0JrW5oLE-gs42DKGwHmug_OpjLBi-UWbqhblP66zZBkFpjT-sJNt1rE6t3FYIAwxOunEr1tA1B_P_62Cw0JQ-pT4WpWoy3SJv5Ab0ltQVCAWBmwDZsggOAgvDlu34D-iZY0wANs5IgShR5xdH9R7Mzn_lzdCXKuek8ZmwFWGF7D2KiS0&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcsz2E3pqlO_398ZrCyqfUHzC6bBHHtCyhMOBsdbc5fhZYe9lHNAIPWLkhi6TQzZ1NlQ9qmGg_W5TVPvmST2Jm4r3-O46jnJztSq-GF0R6Ad_N8CleYmj5IOD9ydod9KXfJeHo5IRCyi0qMGEOebsnEGDvpiBjxjasea_p_nA253lZCrA53Ie3H4MG0jmVqcqoA64Z3ZMb3YmRTwDx6Vh-xVdB7smW7a4hd1m72GyfLu3JIDpieql3Iqu9tl0Ck4Og0OK78hzBOHabtBoXfXO_PW_l5uNG4l9aLK_zO-_xDYcXiytnsrI0pAKnW-pPVd188eKAJi2pmrwxkjOVmEeocRtU_AHxyEWjeNfkjcf7c2g6F-MCJZPvAMk0TFxhK4-Fyx1RI28TOVRoWPmCgUOnb8RCBin06gxXsO_Xu9wNmWg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfTN0dDh6tiW2DA7Nj60TxnzbiK3miw-lX3Zz_klWWi2DAtTURklaRvgammV30O48iPX7PHRakfHWirOUbvVMZoyf8slm6x9P233YSa2159z29vbzwq4t-l_P1lK74cjAPtBwpIcS2KYWfYJIFal4AvRyIDVitBJ0p8hglXGFPTcf86HxXwYsX2H8_tMBIlG00jrIhbnXcblQBfkUPMx-ea7SU6CbBznKi07gg8FU8ImzohGOV9U4_pyrRY_B8Lxf70zBzbQZZtylpH17aGALcwTYn54kW5ZVpXBQT1GZw3vthQf9Pa-ZZc1C6vF6PMn7PJ__gudqdLoMpBAJJW7lbHCj3Bs4OSUJ--vXexmZP1gvuJzh-AXhHMx6RYcMTxFsBhFiBfF6r5tUd8z0DFNogmiTZiimbxVwHDvHy1Xj4a6FB9&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfPfuamuv2ZKt5FlHXVsP_8RsY7OvnLrHFh0IBjwUJ5nSemlmpyn_eY169WAAZzL6hlhZOFp-ipf3collUXjj9uTcJ-_n7raLLxZIbMuZrGyu_62dLLJhrwD6WjKKBeB5h6LnLJ_lOYpXjIG5Y0vlQ4uoIS51_o6dfDPUsQuVcA5jBeksy6ZE6eLynkpfVnWF8u0RQJ1Y7gFmOsAJ9Kf_ftzMsOSg_yCXaUVg3WNePFvysE8-IExPJP9wZ3atO3uXS4l-aO4JpJg39N9cSvBUoLAurbzTkmurSVe0C8hJAxqXlI4kBla-TvEHThhpxgtdMe3QOurWaftoI-7b_-TK47_bOBtcxxdWtdFYTzjMZx1GDVZvMFg31gquOnm5f8G3FONbPEob0yijTM4wMvtp3I7Dkf1gSfK6qi8-rwZGu3ha15&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcE4X_5VxGSovEpAOqrj0fD3eLRQTR7Nr9aUmMGZ4y2d9f9EX9u7aoaTcdpZmFFby2dfkLdO27VOfiF0X7loEYAMxYqjF7O0GSlbSVs_iG7o2sS1yGmbYnltat1mTM0vgWhbBZIAckdbuvu3ZANaTGpGkz7JyIyTten5LuoZD0KmD6bDZnc_hJludtMoFjIaz5gfJYCxm3gnCPKGemp-eIdOjThYGfB9GyFCq_B9RK-cxNgCgF5n4NTB_Eg9THiod8_40EpbHCBQHXceHOGOAae7ZWb2KclLw_gru6Dq6TsFQqvcyvedZEb-6nU7Pzt24t27kfEnWIpk9sDpNyyzcReCkBd1BMAfE0udp67KawKRrg9l3DTQnVMJ6tI-aAszfkaG79oY7sI8cLe0tbez7nD3CmUGhvYTe2Rj1NemZ_ALA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfhn_drX4r0ZO6GROVSi-bh2m0I2-CbdzNqfP5rv5EufD07RBVghj9PSo5f0gfS80O5ojswCxFYlf5iUxZEtCyGhBxGapKkkIJ2yoDCMTccEfVp_2CISvC4FNOUMDxDikxBLug7f27-gztAml9OxcgdwOjZY3qOjBQAMoCQVS8aK-rCPl0PAUktVuhSTpaQ3-Pumeg06dMfrgf7z8HySepICD84F_Xy1Xbo9l5qk-Bilg45Ihhebjy5JAEnVwGC8wno7Sfr9jhvxYJlYY209kfL39zfFzaacctEba0ctz95hLXDd2MZ_-fgkXWQ1Dkg9DQFPHhMbYbKFl1Ickppl7gcPzQe5e3pT5p27_L_ngU0A8TTHIpNHh9fGN8o3fFianiSH13yPnr04lxWNEViyR9BIhCI0nhn0n9Ye9t1o5uwLaZ6&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "establishment",
+        "night_club",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 11:00 AM – 1:30 AM",
+        "Tuesday: 11:00 AM – 1:30 AM",
+        "Wednesday: 11:00 AM – 1:30 AM",
+        "Thursday: 11:00 AM – 1:30 AM",
+        "Friday: 11:00 AM – 1:30 AM",
+        "Saturday: 11:00 AM – 1:30 AM",
+        "Sunday: 2:00 PM – 1:30 AM"
+      ],
+      "created_at": "2025-08-28T22:24:01.105Z",
+      "updated_at": "2025-08-28T22:24:01.105Z"
+    },
+    {
+      "name": "Cabaret",
+      "category": "nightclub",
+      "address": "101 S Jefferson St E, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.41125329999999,
+      "longitude": -87.2141697,
+      "rating": 4.4,
+      "reviews_count": 150,
+      "website": null,
+      "phone": "(850) 607-2020",
+      "description": "Progressive, gay-friendly bar offering events such as live music, karaoke & game nights.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfGnvLtKA9LgjSx3CEevpmD8uVCP99VHpF4NrIxneHUrWSjGHlyW17yUlhGuqLci2GJzqk1rWQpqYDIoLekrDhQfci7zy1mD-lzQls6rk4cDJUbFU5GSlGwW6xlERoggbb6uctwV9dVq8upaDHrSqQBHO3x0wnZ26B9x49ELkkILmhcnir2VDw957k0_0uHM-csH0Sm5hXLOgeh5i74b1BAkpOhcpMlbVOEzKq0YElEKrg-NAf9zyvXupeNdrih_p7qGjZ3xOUk9In9VTzeqCEebc0t94URxVMgqIu7kUHR8Jt6Qm01gvq3qkOqk8nkCIgL_7_k4Jm0oPv4uoh3Kgy4z0qiNYI_LpTbCR-GFfwIEludHKyvRv7Bvs_18RnqIfDFDbDIOhNULjt52v1nyh6ko-IxMV_Tt8BBba9oTuk&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf2kv4qoHivozM4K2m-ABbwGyHldBlQFqtUu94RMAuAkzMsQtN0Uiir-nSDWlbJXd6lBRakTbKXDw-C8eibgtd3IR7pFEa1NjufYhB8F6jLNmwxSs9GC7HlW8V0_yst6fm8BJ4xvYqxC4YKxFIdL34-J6vzfR250pdTmERrchSFEk16DoCKQ0E-dDRJTfMdgtjAOz9QoZJUkhtQpRnXAxYIq6c6P2_f5zW3AmGrjO8-vrxTAZu_BVuCmZ4Hi2yKkPBMypCqXH_fEjzoOiS2gApK1JJxEq6YvsKtSBWtoHu_UghcBRZNkci0BQoPdWVP7cXU2cPKQM8Jf__ixpqXtUMDA6S6H2S9DnV8ILa96Z7Fwe95zGpH-ukMuE1Mf3b3WwXSoKI2cFyQKB6Yd0RAHIHyPFSaWyUM4YBKsvAWhNiS9Reh&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpefm1ECraVU-2QsCX0d6X8mm5OvCsnl1MDH9sdLhoxVauvnMt2c1tV5StkWRnJpl5xvJlEFGv3VpOaTHjpOJ1-vUilPirVz4AVP0Haw7YpCYwzZ3XDJTxQrQf_5N3IhED0iAeF8pcCN_DzyS-D5VKutjwVLIjY3gdGHz5zRWykmnsGYDXSFd09Cn1uHIDVZMYZngEhTfmhAYFSBQWswfIBkTgHbNco5aa9fxZlMuakVadLiY0ZH-qdxBQVprFjZ2vOkH4ohFo4HVbCx0Nr-huCI6rzE6JXavSDJl1Yjy1pjKRRFbjG1kz9yV49xFBypw8fZ8T200lVjOVepc-oKNE2-FLvjxwc4nVLY80j9C-QzZjxzcBGHVD3REN5MLjkeS2Msd1h1Hrj-3QzDOQJzXAlrBybSHwSUK0tfUQpWokE&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfM1mw0ScPJ1lHwQpEuzGh4oLBht3EoeTXTo_MO3RE_Wm1VRvgfGN-7wXMO1tMlygj44VjS4guVmelGZwSqGw7ChEHuB5abEF0XJnCeZYPQtUUX_DSxeJZGtYj0I69pcCPgdhmyW4h906lcq5VlpXG0bejzlk0E6CDLpYMMhxdvtxSIjvZaLWpeEeHzj-YxTPkYIsQZsJfS19kUL98rjzAEH5IzN9ROVvp6ZnBybStVdi9KF796f7KLESuflYdqNmVi5003kBmsTLqJKiQtnh8Q3JSUnJKjL5bf8apZParp9qb8ynBHizLDuEd3V9lsrPjixtp0VUuWtASMmSQe6dNZwDtZ0CwJY8AT4Lq_7R_OWx1q2WRRqo_WAgZk-DRLDfm7q3VyNX01U3z6H26PNbri-dC01DkrS-DGTkI761yVoQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcEjLefb0CTXhnNd5jd-hDwzHrr1iQql90GFI2L5XQ_MGM_nhsR7ofTQiX2ZiI3jmjySu4bsq2K3sMJGirouK0ll_gKLpgA7sfOdYoOtc4mDblDQbNSLKxkjZhAEl02zyzZ_0oA3WkFJL80xcsY9rkWWKAfsLFH_g6EboyNN_dz0SFFHCeA454rfv6ttU3dfa2RK4_TXXpE9SBy5L49d6LE7MDIxX1Dxd6qUZn7emERa2SizLOcgdpuOcV1KqbD-x--rsENtIwsYm2F5Q36pr_Ez80VNFqjewuFz9HjL-lhsYXcPF_-kvYBSBlEEGkdeio6irBDSbF5HDlNqWV7Z-BqVq0ihxYSBJAmWew9tE2rcDtcB-HlGdPC5Nx3bly_wHgCfy1lnIXDTW1D0GQxKiJLS0E1B7Qu0XW1dyFnsE4rEQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdayoGff1bDwVthsaCE7WbUt9ZXUbmOaV4I_uxW0Vy6a8xvGaur-di1T1ukvMLBI2qFljsi4FoOsv0yaHCyD5mA5qBh2L3HNka8P-bJC09_NDfLHhst0Ufo_4QfVVVUSeMlg7tjUNyURq4MvgTtuy7BlGRKC6xjcmewnU1YuSy4YCqBlo1zv-2XZaSzM8_hfCG9oU6NG5azmm5Q6Qj-s8e-4UsuYZD6dArRBf3e-gLm3deovpwIlfh91yvB1UeUvIOeE5bO2hCH7cFY2i414A_yDjuwptE9_MZZ18BcRUr1aQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfZ-xf-4B2lGhgszkrwGuAl3pRE9pcyaT4XffSplVEyKHxA6Yzq6LfCSX4mj7hHa3bRIEz0BzoqvzOmL5faEqLsy3lsJWMnn4cNixjp-9M2bOphOd-uRhRMpvSySVdnWVMG6zRPzAePA8ZXPXHkFJNA8xOAjXqV2USo8edf3eHiovf6MpdN7rFg34GAQQKWU-FVTUCCjGL_5H_ByBDglNtucNBZXNCp1Xa54OCugUidNqaFNuiq_aaJFK-2anV2uGUPZ3sv1AtdYGBw6UMGs8WcsdZHi3LHxj_A4_uJ_F9WGiIyRLzBiQLNN_RVXNSZoXnINGF846VtO1PynQUJ7I1N6GUM3OeyQL-4QkBv6ZXrRbGGuc25KXTDCB-Rm2qA2a26665nKYPWXbqbqT_ExxHudTYgP3Zwk9uCxKb2wHhbJQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdgPQU8JvD6fzZQL4U3eBcMF4Zm1CEiEr3ZuQpUR5dmIilROdOhRuPZC7ByrlqvaCm96LIciEx7Js1ab7MuNPXJ0983qAQTPLSUstBH8bde7f6TRJigWR5QbaHKum4qK1N0eWDx3qYPleFPpniP5sZUMNnyKqfQQJ5KLHIv8Rk-34w5ejnTh3egdhyt_b_Bb98RI7kWo3scqty62odjAR76uAPYiS-8KTBjZrowDoEIE7Ddn5KNFMYIS4dBBWsLgaVEvHD9oohWxO8S4Qi0QgN3_nnUOUHWVMZyIzMu74PVgB7m_eRgkeT2tUAgqWL1CUifHmF6Hkg5y6bQ1Xtt5uUe5Pj0g4TNp9HjwSvJyX0-T_4YbchzgEqbBYh38ituqb6ZU7ppVS-cGWdFSU_NkLBDTJRKwty4PsKsGYzu115Sbbk&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeNlESggEmi36bWxjNIRXQIIcie4a0WP19-r2aObWBBHcRgaMt9Xkz9RCB3L6vmXszQiGfjZXuzFHRPLzd8idWJPSiyXOO17LLKfLshPHdO8H6uAb2DPdnZuYGEHRCrBEgHK9npMqdKQaxqAkZDo3ju7HwdV-9sWakI5OKQBGx5o7vJS46gmeVXz2oA-QcHJqBOVJAEI7XraIl93HsBCo-3sEM6kEGqBw89FLXGy5WSs2jorOC5ltDxuiBWX6zk6NMDauDFgQe68ijBN78UE5nQnWsp4F7OkQYjQ2ZpY7isywJcpga_5OAtrOJINTepz4TmI-MV59xzwAROX3fkWaez8ZkP3Dlfj8eDc1Uj4f1Ptx42DXuB5c2gkPkzirq435xAkbR5AtwmsDsjvUCL_cyB_wD0Mw1PX34W8ze5EkPNsA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdMDlm52tJViD4h3qvPB9WqFFBqBQwk3FVw2cPwXe9V75VYFgsm_IfSOCHU9YyViQK0GJ5CM_ESkTb8AZkKIjhxtiIvUszfZSOXYQs1al5PsZeSqqngUAeUXDvt5zyLAZhf9A5hWMdH-_3AWE8sgIBFAsIGA-RaegZVCDkF54kikS0B9f2YJBp-o9fIjUGylRaOa61kjGlIRixg7DN85fooWX-54dKT3Mi-iUP3eZgOdmaGub-t2CHTiyYhURGMGr86muH2Bjy0jX1m9zRUBToaNA1fAz6nxLVVFcMzp0gBwQX2DSf6Va8s-JEW5V398elbKXlGBnYOetvYVI2ToGIWHBSxxRLntjK4EC7pVZtb3A34dncv2-8eUZTLjxZNygkRHvz96WpV9SrSN391rkMNnQpVyd73l5asXggHLtg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "bar",
+        "establishment",
+        "night_club",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 3:00 PM – 2:30 AM",
+        "Tuesday: 3:00 PM – 2:30 AM",
+        "Wednesday: 3:00 PM – 2:30 AM",
+        "Thursday: 3:00 PM – 2:30 AM",
+        "Friday: 3:00 PM – 2:30 AM",
+        "Saturday: 3:00 PM – 2:30 AM",
+        "Sunday: 11:00 AM – 2:30 AM"
+      ],
+      "created_at": "2025-08-28T22:24:01.393Z",
+      "updated_at": "2025-08-28T22:24:01.393Z"
+    },
+    {
+      "name": "Rosie O'Grady's Inc",
+      "category": "nightclub",
+      "address": "130 E Government St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4096534,
+      "longitude": -87.2127574,
+      "rating": 4.6,
+      "reviews_count": 151,
+      "website": "http://sevillequarter.com/",
+      "phone": "(850) 434-6211",
+      "description": "Retro Seville Quarter joint offering booze, plus live jazz & dueling pianos in an 1871 building.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdjz3YXL32voH5mQliLLA3bfD8sBT81Dwfbk6TY8KcbtbAW4BusrBRzorO-57acc5pXA-LoQSyFCET8TeSOZeQ6MXngb90oUwz79vciTpMmANuxXA203L1KGdqUa250hEMgvdX0JgHh4kT5StYkBz4WGTT-Axs3g_O3mdKukuZo920_tO9FfSr6sWqi0eOCDOcGF9jwdSOcmC8fR0fkuchumuyS4Ml3d5SAMF1yD2IJSOq1eQvJgNrMoyvZ2iHS2-lJV489-Q6NHUlM67wlrc5zTE6WZfTqDTpAkFHWj47-rg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcTn6c6kSGfJxewlqxYQ1_bPMkRa8QlfFHTz_1UFM-jaCnMAcIDwt79wvhRFW3Tx7Ty5ktO_I_vOuV5K5YdwlE5CkPVvjYpYhuLASLVZFeFr2twLZJ2L16-JBagd_-ULaybHmuPvPhqbGaiplqbi5uQuAoFCHImqfo2hJE4wjL3w-1_cB89uIBZ_OKc4M-wRJO61fk0OXokfMfMSLGJJCM8q3RWo2G0vTdKXj6ADpzF4PMJSowV5OJpm8OlA2ZYMz_VnMhsH5iG_OuJZQukbALiFrGOxrtklp-etlKh-apJwA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcLBV894XTYfOL-Z_HIuRXZS5BzbN7vPFDya8PDV148zh6G7sEGv5PCEsFbd5UqtLtn8nEKuGDp9-prNuLHMKRuXA_CHAMV9NrSfHwfdJnygt6kg1Za4sTODRdy5lTObONjTU2YOll2qoYAHy1jwwvwjWTQJECIJcRvH7sELG0zcz_oUs71M5w3rdxGi2U7HCTTF8lYGWOE7MnQchgRskW4jHqycqalHpB0rfLNXg1oPQzfnJucoMqDJV1UdAYNuNYdISyqVPpO62Mdmt21Ftf4KYPxw7CCWpq5PJEr9Cnfkg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcCI0z4lLR7UYMHoasHvCsOlgeYPqhiDNP0LdevD2nXAyRFMZnyG2rpBYAwT5UIN_ylL-p0WA4kdj3_rUj8JWvAP2eeeexqxsfa6s3oxq2lqzOiP4K-4juAM1x9pPNEEAjDblSuilT_l_qYFWznPITcstIBqgXKm5mNLvZbNrCLtTgcuSo_ME8gxN06O5adDD4XLRVSMTwvoNIPb0MwS8ro_dTUqVQP9KkkHKiigtGXYgzatLzyzNL78alQBBBNkgat6o6ut7hv4KDgN2paxG9z3eXquMVPdgrHRX4OzY0Y4ripC0xfc9h0ouYk06cVoOL2bTlP5jlqF9A0g68d89G9s3KAN_19csPOiSVKJNao3kLG7voyo1FOc4OIgIRYFmXNxBO2E6YlN6f0qVfFSFJ8_xiy0uCcJeujX8nULZs&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfTXfra8QsCJKuQcK2qNi8Oz7TVmbJguwEM-6e4EdMpKWjBdfdm14AHYCN9cnpIscfvlVfQap4Fr0QW7Cc3Ge-NzYpJL95CR8oB__d6b4fE2GjudcK32bY2ZUQQ3B1NqIma5F1FObrZoU8IvUT7U-eUpKMraFOZWWBOd26zwv7X3r6LOC210D-1xkAFlIPNMBLMNUlgNW9Jywk88K_P94I2Ch2brAwGqmKLzKw7hMfFybTW2GgIa_ePCQlLwiQ_X79DxCPe1v4fEcBuw8sNXcxdXmrUNoqCZU9lLGWEVy_r6Q&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcFtxWxxkYLAFqcn16wOFgH7eIju2HPRGVzuk0i8YHDEUbP4psaJjd3nE_KeRYzxyLPVZikkthYSzDyALEJZzD3kG8WhatLe9I0hLUfy_gcwdghT4xQPwwUnueG4TrKSpHuqOEcKJBVkUlYMqUsQ0HFJOvYcqkMZ0hR2x0eKi8P7GF-OgZO398oGgcQb7SMuintfjvoRGWMRAA5M1BBxX03yAb5N8gsrhq_e2sI8TTM-tfSCk_a0-TYz5NF6xIard-9RJSnyRutaYSP-3AEG74RwWQ2ybsko99augN4EjkyaQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe_2N8x65AMHoLGL29ZLLF0Oty9aRKKy4XWdTfYMRfcZUWtUtnnvSiPArKh6IN9n5h6WsZpUSblV3MZwCQ71-VQkpSKbvoOrd6RC70sRNIIj4oFBGq0zD6ykQ-Q9xkbksE7iePpkR_dGqFhp2g_kizKeig8zaQIIHY8tgNZtfp33bVXZSfjl05OAzR9dOoVWZde6xf0FsUEqZG4d83HpC6LqwdATUkR_LsGvXd66-Om4Ug-o-9OqZtoOmyMTmP7b7l9YyRPgFcl1xP_b9sgiM18iDGFTIBNmg3h2IEhjVF7Bg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeCECc1dskw304xyhjJlFMqGXzxjQKjT2zVtXLcKt6QToF1Sw0nGskURbHFHZz0PRppqxLEn7YgWEsDasoUPdMHdrXwVYxrs5l9xtXJSI1hx9gmUtQ5_3Fuyp_Nzl3oP6lgPEcWs-9N8QXRxSezLd8lNLRaCTHfx4cjlIfrPjmRAIblxDHqrszZ9h6tqu7xQANdWQpIc9W_9_tGE3fzmVITU_j7nlG_B7oFYJY8kw16JKwgf-3EEDNa_QHkAkVjirz-WmpPoujXaD588Dudme4mlUWJGTeTRaPtQ17Yk8fxoQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcBQy-83KUenY-lDdxY375mtdx7imZtCzzXWnxqPGV_2WfnG9CHqexup1qyImHan_FT8TS-PgMflOi1ez-kZwmOalO2zPw7Ye0_0_VH9ijlaSueMMDLwAAGb6G91L8XTcyJjSqVzoe6ST94cqn9l6xoEj5iQeaH71SXGedc7d7pORnN03sZggGjBSwjnWJp15Sl5lEfSymY2mSHEVst49j3j8HTwVN63M0mXVGmMS37cd682fZGG4hLowmQAc0i2Ugs8esmYALPlM6aAQosgnACYRYu_xAu0QxKSZLmqyz8M3-6lsF5fbJfbe8B6ax2Bfc_UALk4_lH-WKz1QpSe3RJ4wIcyaeQVQTkoAWSU_l9-Dps4VNExeku-92VrS-vl1ue1km5de0JxNmZhYA1_miSAW1PVW-I4OgPMSY1m653tY_K&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdV5qiT9lg216Pf4NkzYInYnsAjZCbBLzLq_l67KOtx_d8fge0a1HhYwnOcIa-XFtkamUt9NaqTNoYxvgtwfqkiVLhZ4UjfYP1lL9fgu_m2BA0WkslKb-kT7AetiGiIiGWly62bDmB5ZiD35V-p3kOrPzw6tuJE3kl0ztRBcMPnqQbgmhFTP7fvShao_RB4nuKxbIg1Mvh_DLKg2WKS1hrTDevkGqsZe6kF0wuZQoEpPpWqKQP6jVs9a-kNfAmBQKU1DL6heqs0KiJuu38K58LKwJP0CHWGzvkdJ1djrTbhmw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "bar",
+        "cafe",
+        "establishment",
+        "food",
+        "night_club",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "opening_hours": [
+        "Monday: 11:00 AM – 2:00 AM",
+        "Tuesday: 11:00 AM – 2:00 AM",
+        "Wednesday: 11:00 AM – 2:00 AM",
+        "Thursday: 11:00 AM – 3:00 AM",
+        "Friday: 11:00 AM – 3:00 AM",
+        "Saturday: 2:00 PM – 3:00 AM",
+        "Sunday: 12:00 PM – 1:00 AM"
+      ],
+      "created_at": "2025-08-28T22:24:01.692Z",
+      "updated_at": "2025-08-28T22:24:01.692Z"
+    },
+    {
+      "name": "The Pony - Pensacola Gentlemen's Club",
+      "category": "nightclub",
+      "address": "500 E Gregory St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4179765,
+      "longitude": -87.20416139999999,
+      "rating": 4.7,
+      "reviews_count": 202,
+      "website": "https://theponypensacola.com/",
+      "phone": "(850) 285-0139",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcEW3tndbZT6ZmUILeVSejeXhGXXXkHP8iJhKeNezwJXd2IDq_1DezMs0I_2A7pe8g3yo9hBfvsnPIpjvw_RW785y9r2w-1DfOkHlEX177id5DXXgsW8oq2ZdvrgyAFAUc8lPas_mfSJpW472Uc5-UgWdEnSFfjdBZuzINZvZsVnWvbvizZv55Q4tMH0nL8kTu3RK0zDO8A3b0dSIt_2IEHdlnGWF4jcGmCzXQAQiRD-WU0L-qSkZ_7T8SoGm5P2xLSLn69HMuJ4YljipXUmpK10v2NkMhKfOhp20TbFNBl7VCRHtIlrtN8bUEzqteH6_-yDA4dwM3nzY2VXcUA4WrZXrEGny8I79Eou_BlA0qkZ8AgOeKSMt4pFuMJuGfQU3wAEZZanEwKk8x2iA8vcTrkh3ZtHRTdlu3oVDZjkFg&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpej604qtoHQu0sqLKzzgXRFOd5Ytd7yQ-K3-gzaIpjNDg5R8F01gfefpGrBcuD4kM_RzE8lHeRb8l9UgszweguN1Lr0OSedgJxkzXkn4EiltM6RBl0xxAyLl5I1CJYWZh4TO0-I18tWyQ-9vl8T5r8fx8m2n0LM5f1dBClQCEhzx1zUu27G8fcvfmn06jS-HSiSBSOTzzrGBNjpmaRjvalUAHZ8wCxJRGOpTeHdg95UTJR9ogtspsnFps3-gr6lWBidsGmHmYkpAiC26CFvpA3-r2AGfMF0phoh78O8gNuajQ&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfVmiiDT8Tu0Y4XCH0f9qTuq3xwxsiL1Bagw-DBOeZ6iw5yYD1hWoeU0k0AJP6cU4biZeWrclfhepUB9Ch_vPA4zFnLf20ZDcTPgzW1qV0Sg627UIDwRaR009EhOqM_xyUrys_H5d5Oj9yp990OEVZzjuWRsxH3ggc1C-j6wAneHVWKNiugNju-g5cF-HdUbyHCknbK-6Xx35vo2v_8YeNpEra9IluOSi4mpCVguG56SNdp4QFab3dlzmA9vENWlvJt0nVhVAdpcc0AmLBeL62E1_NK8E0_BEdUS1p0PIItmw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeQ3IqrU7F2TlqwjkMWkFEvq4mk8DM_e6BJa8DkvbZs7onEP5fKMIbjRRxMJJSAa99HxbglnhdrSTJ14-lCjjg4Svpb1s0LPm7MRWqosMh7HMPq0ibIp-SCb8GuCsBY3L-XLP2xd4u-SSVq84pWJ0JxX6Nib_IYgmN6n2CzDNdmnW_2LFDU9Baqu37ckQ-oke3SpfTUErKsOYQpagHilHFVnyY2TrWPFCEMPPFRQJcaSlhfDwEyRXX6iLVIgO3BdPvCMcdHqBrhzHpOrMzRILESvR6RFVkuWSetJixYiVlA6A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "bar",
+        "establishment",
+        "night_club",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 12:00 PM – 3:00 AM",
+        "Tuesday: 12:00 PM – 3:00 AM",
+        "Wednesday: 12:00 PM – 3:00 AM",
+        "Thursday: 12:00 PM – 3:00 AM",
+        "Friday: 12:00 PM – 3:00 AM",
+        "Saturday: 12:00 PM – 3:00 AM",
+        "Sunday: 7:00 PM – 3:00 AM"
+      ],
+      "created_at": "2025-08-28T22:24:02.044Z",
+      "updated_at": "2025-08-28T22:24:02.044Z"
+    },
+    {
+      "name": "Wild Greg's Saloon",
+      "category": "nightclub",
+      "address": "22 S Palafox St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4121826,
+      "longitude": -87.21511029999999,
+      "rating": 3,
+      "reviews_count": 588,
+      "website": "http://wildgregssaloon.com/",
+      "phone": "(850) 912-4405",
+      "description": null,
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdIlS5xlo_i5VIDRS1FCeZzCszxOQ1G_76u5OlezHmhRNWznA5jNHDp8UEXxny3CS1uRcmtAAl_uY_ZvVPiFp7Bd-qB-niI-jDG3ccvzvChZcx4Bn_XyF4mKbQQsZBLoSujJBRpgGfc0jQ0b-n_8lZ82TK4T-vc0_elvmJThnTXzCRjE4OK5K6cwadgITTBlLK5KJubIliCStTu67UgxBjgmOVTwJAWPonuyS8JIpDM-qraLxnzd5f6Nk0GgAnLtWMQrqJg-RCaxx47T3vckS36Hp1mseQECkxjQWCKv8V280rJgKPtBdNea6XqGc3vFsAqTLFYOGm9kwP-vrof0klST-xzUinOeCD_MOOV-llXDup5Zi7lEjiX3E8c_NfuFrCaq_2jL4eU0LgVdafl7dx0-oW6Jra7NvEbhpUDXd8fMA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpes3LAxGeS2HE8ygNMOxlSdEbIbTVX_owsKaObnxoeDqHFqedc4I-GZmv8aDBB6dWnUN2imV4nfU07tfkcAnfLO1rC3VpZ3VAHNbTJYEIeIp3P1BoJKYiL7LfFDK5d6bdeVbUCCCI8BH4-a1j1K7xjzbcX-F_wNZt_SxrDG4_a-1tXk5i-jBGG_o0hSmm8QwNCjd8SyNkRfyAoWHYAk96LFTVZWP6Mf-QIngpHx5dxfiWqLgSrcUMc4EQfF3gC9PrntsRwxp5UkLFnE_vUFfszN9kd19_V5KZbJL_od8yv3LUd_JQxLop98WDlQvfIXZxjXy7WrIcUSKxcKUMZeBVEkCa3J9tE3DOmCE2GbuRPBRq7N1zZlvmkULSmNxyNjz2IlUZJLzbxErp9ZluLxN9WS22si_y0Va5Cq-HCxw3yRdDY&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdUWL_mcstWS1pm1yh3gL9YAJfj8HHeK0OoGYFUQ7Z8jj7okeQ4RkHhl2K1ainBMvzZHozW2CpjItGfdh2yjIduVhM6ncS9WJZu_pspOrMBPZKSog3-LzjoZkuAHg68CUa-SQiiN1V_RsmWE_51WfhddsXwZcyUKLJR8sUjy5TBzaO3pgn7xQ37KcI0CvK9ZC0WQezJu2Aij2Si67vxkGzK0JL3SXh56JGE6BCq3Nd2Lv9Er-cjuKNh6jy1fpc0lv5Bi4esBu7dusbW5SNyOywW0MRz7NqErUlEpxJGIqgbxSejtzcZj4WdTgMwADsE96vdvEjdjuYfEItOTDm_Epc2XYciAM89e0xgs7sbeXvONPO5_YfEMUya2mQQQntNA8K63Q2RsIbczAeQIsahmoCHRWL_92vv0D17bswibeiPs_A&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcZwYdQaDbE8lSv10su4yzc-hErpQTpgEsIJRdOaI2KE7JXlMEIpbJYSqcJg0nThSThmWL9I4BaVJGbwtcvbIcEM1lMzPMwRjXrNd4QTAHCOrHR7Qjd_TXB9H7QXdcbeyr-7681qlongMXaaYcB_Nww6nxMrvkWxZbanPRr1lNyUB7KliarBEL1LnB2M9D7JRidTKuYxGPJFWIL-1kyUmj4qUSeob0B8p5-h1ExgXY-jWQujrfJWCtt64zb99nZe6kMU_P2A_u2Sv0c5EDg7rh5keF5FgolrP97uEP3fn40OQXvMly4_K6HfH57sExrI45airXqHGqfoydaVymQfr-zCvgk4BGfwsrIfo3N6ja-kvC73hwxjJB-JiE9ya_Wz1VK1lBTnFIWh962I1MvIkTrt84QVRkdGzsZ-qLihf7Mqw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdyYW7D0KpR-Qh9T4kF5wW-hEyntKjLqWWpGLwjTL9gkTEa-GxdNDTpXErtM90e7ORhryXYX8QjE032NZX4Olfvf2OyqFLMZQsEBVJsZFuxyP_7yFRyAwipcLw_ZVJ0pXV9ps5GeTOgbQHH3AQpE0sgTtdYI9Gv1Zd10odMVeZDVLUMStAeioEQkYivOH51HbDX4sYEpTHYm7ryj72bPb-DlC_M__8o-hX87PGz9PIGXTMzPjO6dMcSD1ZGbv5-ze0y-PCI5kWwfvfsLCj5MgHD7tefC5a8mDWhv36hXODE6I23n1hvGEhwqspayr_BJ2BGslB9hWMw8cY02qEeEPF86GHHPQbe_DrMw7_iv59K78bGdr9crm9PR3eN8lquowjAo-hnDQNJqtINksvuyR0WivR5MNZXfq4A6WKYkE8bJw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfxveNIS2bfuBnP5v7vjEjvEJsoHGKTL3PZQftmzffTFJ97Bp5lExv6aFSFuvjviP5C5mK8BCGy8LjAl7v2Qo4L6OgjfK80AP2nynKy7-TEcGaIZ6xnd2tSVv5Y9lKzQccd66rOv8xsvCBDhW5_bJYsW3CyiQE1BV--_ByeDeAGYCRmtj6dFCwb0Vj94c_yBYeSvWK_MFTDFKDZtazX2PNjW1LF79_nWnq8CQgoPqOO9eHYuYaZfcvwg0hFoSZ6r2Q5zmsOJsp29Kib2reyeXV0Zh3KSYKDxwi3JMLPKucRDZibWLKTvNitGHYB9GQoBKBeWvIs1jHmikCX6ecgFtUTVTqGDsKOP-MucZ1aDmrWvNdf5HPVocnulV4Za0KwBLQ-tCuZrHbkNJd5lyY77cdV7Dh73eIjPBTgzVLx-mVRRia7&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcpqCx9gZXxO0u-3C3tEDfD3vZnju5AHpx9KAf0ZSgcW1Gi0iaU1uZzqpYFN_aS1pkI2Qs4jgQKYOqDNHfyadck9FnlNpS3rk0RMju8PIOk2G7XhxxF-FUrk8VTvxD1HjO13Lz7u-qBnHwNIeRNmYajyfuEgZ1CT1IJXk0hqRnC_Sf6nuXmurLg9-tDVasabX1DuxcOzld1DW4hEfLWfjFB_byoeCwz8xaANybhYyc4upT6z_N-5dd_7NiI5xaSTyaRcWzqhK48cIeTbBRBrpmXZ648rxaHYxuLT4xJleXz9hE2z_DN2m0HtwYxunbgT03wu5B9CMkyvseok853jPqWDOgHT_4wRvZuRRhOZdOxDnQ7YzxXQeDnG7kYtN1xFzMlzhnLAVy6-sT6wevKDr5eAxKV2Gfv1u6yhZDSwco&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpdl97lFLOufD6BUiQrS4klDu6oA8blH8898rdzOifrXXeI4oTsV1KYTe0JE2pKdp0_pfz40bwGLyUMgRfWf6QUVRSfm6ABNZKr1WKBIkSpAXvSnaCzv9KhvfDe_vIE1VdFGFqyONNaTfT7EjYkFkhYeC63z0G77DCCOdqGDbdhVxo1DuBr7OAcxgp_4mZqVUNFgkqDRVVLZk-cOiB_lx8xIUz0B2lhwTkA6Dqb2C_XvIl1LIkDslJx3GcLOCdAb4N-Hys7WseRlKX1GUH54PqaKjzNdr8bdrNvQPUhe9EvWvQAUDKVktXCa2zbOEUxNW76yReiT9sXMf9esPBB1fACf_eW9ufuifEcNbL4IFIx2q5JgtvBLQsrwRKhlqFs6c5HzCJnwqpk-uoMJMt7QrH1w8CikWTTW0Y0j9GXxonsZBw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfqber82bldWmkOgreEs4OSXZCmAOQjCt7o7RQHJ6JFWwMc15HG9yPq4byY-Kk6l83FgXUpcoamymbAg_huBApbhYOJwLCEWsUkT8BlVAHSaLoIhfb89g9p5fCxNMFCn4KsXSxGvQyDeQAhHv9LGdz-eA_VakEYEkYWB13Fk_1gOfJgw_VEh-b_kP9uRgm2LjIDsb6DDS1tUIdvrMevshyv7yWnXP2GYxNXui4g2RoG6J1WUBxQx71K-A7r34TYEerKZ5PVsAlaNl2qx_f8FTbdQG_64CRP8zFbv4JLuS8dsLp4gxODCui6JXo_oyk0rX_pjUKNi3ZL_5LFLcritMXJPzRImFmizNuCuH2bJQsZYdB_5Tb0MUJLzjVSxYZDHirqgd2X4OJcdvDcjM5Ew1u8B8rNcoEKX07s-syhwhB3lw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpeToon7vHIDL5OY4fv9CsKkmm5VHc7JeJHoEghMNQrU-fcxYsBQx_ZnfBbPbmccAmfSk7QH6eWIiGouZwZz_T_iF1SXwaFda3JyMFS4XiBZlz9TJN7WCYrjuC9pOuvE_8-AScux2gTGo0L0uE88GVe8Z4A2aGz6GWND5svhkiPQmY21ZlPPaAKsZ3INH6ZTiimIVsBxedflvQi9LjUF9wNEDcVIMYk0it23txNXyjs_EC5kHkHNOOeJUWCmQFe_4zH0ZIt9oTQe0AyyPsI_ftPkyoAV2h7cKRDambq9VES8oLmSYxsCTCtQWFKsdwtTLwEEf5UjQNce_u429m5z3D9nCmKEaTcT_wdJocoFPfvIiw4BP6LlON8qjUlY2dHXad0Zp5dlKznd6j--jyLZ9tlagDAhu9PL6Cd7me80X1p901Qj&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": "3",
+      "types": [
+        "bar",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 4:00 PM – 3:00 AM",
+        "Friday: 4:00 PM – 4:00 AM",
+        "Saturday: 12:00 PM – 4:00 AM",
+        "Sunday: 12:00 PM – 3:00 AM"
+      ],
+      "created_at": "2025-08-28T22:24:02.374Z",
+      "updated_at": "2025-08-28T22:24:02.374Z"
+    },
+    {
+      "name": "The Roundup",
+      "category": "nightclub",
+      "address": "560 E Heinberg St, Pensacola, FL 32502, USA",
+      "city": "Pensacola",
+      "state": "Florida",
+      "latitude": 30.4187999,
+      "longitude": -87.2032158,
+      "rating": 4.3,
+      "reviews_count": 131,
+      "website": null,
+      "phone": "(850) 433-8482",
+      "description": "Easygoing gay club with a spacious outdoor deck, kitschy decor, pool tables & karaoke nights.",
+      "photos": [
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfz8Ix5gMYvNMU242D4cBFrsNiq1-sQNIqnz09h_uKydJHPWbIP6e1COfh9kNhvkL-cUbLzkiz4U2WQfG1Icdx3XG_eITHdsMK-yGNWUEsEmcM3Ak5bjhrJK1FJcZxol3lXodF-xCu6TgmsaqABQXtJ3SidxWhXhYNMquDDH26CU8Oe5F2DCxPL_FdZiqbwDsYQB95ID1U9ohijNADM7ZKzpF0CqggSsF_t1K7K_me5S6UaVqG4VORWIeoUWDlSYXxgw7005FgwygZwU1HuqYR2CoZvFN_PjTBrZUx8shy-1ofwXcTBGOaFevxv1hsU0DcYN1O5t_ON2MFwlp_CsyAN0GIOfNASxbQAOSEp7R3KaHi42KszaWn_SBLKwHhszAvB9VFKcA-puIxYVj7n0lFSFMOh5PlGqgOyubceaq_w3sDKFIu1IsVbcul1GCDL&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcE4tRl12WZKrS-seYHFYfB8Hira0a05cOcpPt04NoWsKUl0VPoje65bRV2nxB9FaChFCgwWVVWffZGDEWNzslmP8_j_e4XSzvZwEXUYFFFQMyPnQLS3uA4Nm06e4q1IDFEUp4NKV4DXOXLVrvuTNJfAD7tCUylZXBs3uVXo4H_3AV7bZ2nOQ086YsBSnrucect-er7JqCXHP7MFNvbryfTQgTKp0liD-XP48K1HYfMQLhxJXgIX4u9uYk7kO8XFwVo-f9fqevGYz2_OfiT-YWM_HsafkH9ZzidfS2kLlwxYds1ASG4Z8uC5JwHf4N4-fiFMQYyT5zEzJh_e4yu27EzEjQ1yF8be5DjjWoRR5ePS68kzNLVa5XU1-EbhacqVyH4ZbGxx6k7uvvuuGeQqJ3xLakSX2nN3tCySd0DF-yHiGloF3zfMRwhFxYO2xun&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpff8wnvt8mb51UGVsZ7BN5YdE-fgmWQuNHbAFX5_BxsQC0GCjvtr_UqUcvW-ESgRwhFNVntnJ61bytiGD8aECxLJXE0O5eHqmGL0ZFCQPY5tphYh_EzLJcIfZiJ5kpLceNakHT_rqQ-c_APPatwKnzwoATrcFYWAJbCPfYS1kUh1MALi4lPhvxKLq2AjR2DCeXBMxi2-9tqqt3lkMOgQ3jrw2OGHBNnqkXTczPh30AfU7sTaxD6wnLIsOTzhKiuGZz2D9mKiymFn9S-7PLnEKYBo61YFq5WrzugqjP3Vm6mzZWkvdWzmzM1H2AEkmwQ1OxGxzc6ynOvWOhwjuXfd8vOvJKNi84vFW_344U1glfG-TyeoFzwScfWnJTPOLwxsiGe97qAS-M2ZEW_5fxM_-rlMZHbNsR95iefAZsw3gTxww&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfnlQ8sFDn1Qu-p7tIWFnu3uwLkoGamURRjB0LlybQtidcQUnXZsxHA0bgZ_6rnOM9XpRYgbSMjUFJBRfoUk0CtMHLRjs5TLVnQ8wpjDrCPf5EcIeiJhshOtjgYUABueE09HQ7VsjHlqy9MET2LBzjEHvBG4JHsQZ5wq3BYXys9LTo3Izoamzaeih426icf_c6NsiMKHvNHlONI5ASsBrtmgpSLtcCT12omj4GY3B4nh6Zw8pUNY9GsuGF24yRTD0lHzoxj2yEvN8EZ56aLD0YlsMPEXXlrzR-WVoC4N-QtvhGP7LSvZSeHsd9qKw7XzsslHHG0wGRY9JffSW3pMH8uHHvhEteUigAaCeWRys1bBn4DV2slzGxnr8zFNDOI5kYAPKT7tWewV5TliMP5boGQnIaiCvNbJ6hN6pjwtA8&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpczbLh13_bYOGVMNw9YlahZt4EwPauKmFcb0bqdNv4HGhnMQu1gBrHx7R2ePgN0CO7zedfC0r3ARAeuWlGvdj8Ay2T3QfzfhP6QJbjyU19WwShCte9IK-_pMfYUlp60A01kdgl8KDYwnjQCCQVx4JoFnsjioOp3cPFFpGfxbbcnMXfpj5WhztWDJLnje3o5IX9GbiM-ymWNeKQQWdUOu9NgDm-NuWEiLz-XdorqdPaOWwWHAoSLqn3KF4zIOp_Vp2SYmXNnrpnoXhnMujJw9Z2CjM6XFZ4qbiOZj_Zgjy_rAprrPqXACFqrfztcCPpO03_PufmZmUiO3M3bofuvQE7bZ_dtTUdd6Pj_kr1sER4xUvS7W8rQQ5uH5By5aojYkBLVQTaEDP0hoeL6os_5SIr_aAcO2mAYo1aSf2E_PqpLWrM&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf4pg1Sy3qrC_NsQpM1mon3rRlZPg1HGNtgHvoOVmhGeDLX14S2iTI9BTIC1mJ3GRr45uGEeiJRbnX2karUn77Ng-cf5tTybhqn-wt29xW2i2L2iuK48WJEGv3yGfH4FpLf6-IdSHIzx1a3hTD_XaqAgS_1SAsry6SvQnLQl281f8i5ze4sDGgzGN4yZQFzHdJ0H_ihidd3De4iNb7GHq1d5Nn4F4SrhN9K2596KAZiy59dKFY8cPKjN8R1ufe8g5Y7iEugY4fibXgq3dm9VyjDseh-vhqK7tVH2kzevT0zBll3TvAH1wdyfFlnAqadgKnBe9UOUJ2mVRCetfbvgLICNn9wa-T6pT0Q0HHQyfRql0kWnPUbLzJ5E5v1iEVQXJB0W4bwhM5y-jzkmUq6Jy3Ip7W1_AFacIG52v692ySizGWE&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpe5_NWNCJGajKJ80GATo-oOXoNQiF3JA77dievSUwjPgNHH2x718Ha5wPI3lEtKb8KCLry3y7bLFHet3JpPJCcNNEcjWMdspI6jQyTy1g6YPf60d8aLB5AeLHwFadbwNggmL4zwCoWo1R2YrvKoaNstoJbUG-s54OfCami1nW0XC_WLPUvUaLZNAfKBQ7RjliY3xjXxJyO2EsHUOr0XA705DTWGVBRhdWJra8p6oEKfKygLhrDy_qA7m09G5_AcQilffMAqM-5dV1UF-hVEZTGczMYWNBpW2gUFzj3WLQrm9eYHC-s2oEk48hYhJR9psZj74i61LSJj47ai_k82C7T7Sc0Izv4d2zZHMd0T-6OnWT2VT8bDVj-eGlm4qE9i5oz3o8jnkMvA7OM-Lp2SabMXjsWZO4oZsmU5B8T4lbtAtw&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpfJstz7X5cte3jB6tbT66KU59rcDSzLOsPd87JyauX04GpOKxl48FrqNfvPqYZgovEZhKIvqocZffmPFrhelJbM0IoXzu9JL8o62OfNl7kvaaWKm9jn3ZLq73p8QFOsxQnWDmrOImE2448Y7WptXr4Ea6o3yXve-v0rBQTyOsAja9hmjoZCmxAH6DqmU4bKCsFoAFOO0iJ7imDEeDyAjhRYeKS53DZQZrzx70XvUZpDTUPBL600gdgIc5CUPCtcmGT_Kj0WitLXXjyKFe6t5k8M0W1P4xiqixBUZQUdyD0vjIuAU7CiL7f3V9CBT17ghbYhWIR0HDQiXYiuLfQb7npD7Oj9YBpyzXfdVdiTtWWSbekjcxYZNlytKQ3UFw0WNwEkSVOXsXBTfz4Q3orTnGnCmG2aCyj6aNwf30xlQGQFj9_y&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpcUrGU_UqOHhTZj1hyB2ktr5Tw1kw7ZMFeg9DYJmFt3gXCsppboT9J4ROZgIMrU5oVDDlmRZuFeNzWyG6bKYY2MDvwFuzJ8cpHhC1cZOulZYlQnNGNZU8dBuW3wftQachf57d2ZW6LeiwjNj_FM9OvpHmeefZ_BqfukysKgMvxBS5Ajv04xY9Du27sA_0yPgVTDm5wDRgjiVnxkOOBRM08iBDFJDAb5pUA5JF8w5AA5MblhS5-4djC-FmanSmsmBCIWXjV_j6DLQ9aewbg-XQjrTBT9XIZ45zngsqskos_8dKbQq0l0ZCtt3wPJuuL-7LEwvHwvpDM3VJqeNTndvcjdZCVib58B4Vu_Ckt-K0-cs9Q8R3D3z7dW-gTtWSNQsDfDloDj9mCDX3fgIJ4eff-_JmzGISHL_nhVcTplSVZ8KA&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w",
+        "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=ATKogpf_XmNGxGiiLteoH8EI65cQJ60Zz3Ni9MNnHLzEfrk_sTSBTKZZQvkFMY7MnZGDb8pLkWaH9MoSRko9aOtmv20M7krp5nG0V_4I45Sbbl3C7pLln3LRqcZ6zteR01yEVh3rGEOmsC9niGkP_IsEH_JWK_MIXYWIAWzoANFYj_z1AUCVG_I44anX5Tv1V3GmiZcho7l7A3UysCY4Zo6dHISFqy_B5uARa2NdN69oTaV9S-9I_hSBpAP87gkFVpkKlJf3Gty0mVhyHslo7l3OKJ_CTuCUzEQmYnn5YgbuWKiW72GOpdTf6Dn_jIjGJGWyycI_tqn7dLgynMTNqYrbpGcADngL_F1W19TmcTqb6DgXK11hI73MJy49waKDRULVhEj61ec-Age7BpUNh3PDTVrOJHxE-sH5E38eM5AZtx4&key=AIzaSyBwUqHwxUZaIWuLJt_MiO3VjL6FJokmZ_w"
+      ],
+      "price_level": null,
+      "types": [
+        "bar",
+        "establishment",
+        "point_of_interest"
+      ],
+      "opening_hours": [
+        "Monday: 2:00 PM – 3:00 AM",
+        "Tuesday: 2:00 PM – 3:00 AM",
+        "Wednesday: 2:00 PM – 3:00 AM",
+        "Thursday: 2:00 PM – 3:00 AM",
+        "Friday: 2:00 PM – 3:00 AM",
+        "Saturday: 2:00 PM – 3:00 AM",
+        "Sunday: 2:00 PM – 3:00 AM"
+      ],
+      "created_at": "2025-08-28T22:24:02.716Z",
+      "updated_at": "2025-08-28T22:24:02.716Z"
+    }
+  ],
+  "timestamp": "2025-08-28T22:24:03.434Z"
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Gulf Coast Fishing Charters & Water Sports Directory",
+  "description": "Premier Gulf Coast directory featuring 500+ verified businesses across 50+ coastal cities from Texas to Florida. Specializing in fishing charters, water sports, marine adventures, restaurants, hotels, and tourist attractions.",
+  "purpose": "Help travelers, tourists, and adventure seekers find the best Gulf Coast fishing charters, water sports activities, accommodations, dining, and attractions across Alabama, Florida, Louisiana, Mississippi, and Texas.",
+  "coverage": {
+    "geographic": "Gulf Coast United States - Texas, Louisiana, Mississippi, Alabama, and Florida",
+    "cities": "50+ coastal cities including Pensacola, Destin, Panama City Beach, Orange Beach, Gulf Shores, Biloxi, New Orleans, Galveston, Corpus Christi, South Padre Island, Tampa, Clearwater, Sarasota, Naples, Fort Myers, and more",
+    "categories": [
+      "Fishing Charters",
+      "Deep Sea Fishing",
+      "Inshore Fishing",
+      "Water Sports",
+      "Parasailing",
+      "Jet Ski Rentals",
+      "Boat Tours",
+      "Dolphin Tours",
+      "Sunset Cruises",
+      "Kayaking",
+      "Paddleboarding",
+      "Scuba Diving",
+      "Snorkeling",
+      "Restaurants",
+      "Seafood Restaurants",
+      "Hotels",
+      "Beach Resorts",
+      "Vacation Rentals",
+      "Marinas",
+      "Boat Rentals",
+      "Fishing Equipment",
+      "Beach Gear Rentals",
+      "Tourist Attractions",
+      "Museums",
+      "Aquariums",
+      "Theme Parks",
+      "Shopping",
+      "Entertainment"
+    ]
+  },
+  "dataFreshness": "Updated daily with new businesses and verified information",
+  "businessCount": "500+",
+  "verification": "All businesses verified with accurate contact information, locations, and services",
+  "features": {
+    "search": "Advanced search by city, state, category, and business type",
+    "filtering": "Filter by location, category, ratings, and features",
+    "businessDetails": "Complete business information including photos, descriptions, contact details, hours, and location maps",
+    "userSubmissions": "Businesses can submit their listings for inclusion",
+    "mobileOptimized": true,
+    "accessibleDesign": true
+  },
+  "usefulness": {
+    "travelPlanning": "Find fishing charters, water sports, restaurants, and hotels for your Gulf Coast vacation",
+    "localDiscovery": "Discover new businesses and attractions in Gulf Coast communities",
+    "businessDirectory": "Comprehensive directory of Gulf Coast tourism and marine businesses",
+    "tripRecommendations": "Get suggestions for activities, dining, and accommodations based on location",
+    "familyActivities": "Find family-friendly fishing charters, boat tours, and water activities",
+    "adventureSports": "Locate parasailing, jet skiing, scuba diving, and other adventure activities"
+  },
+  "contentStructure": {
+    "statePages": "Organized by 5 Gulf Coast states with complete tourism information",
+    "cityPages": "50+ city-specific pages with local businesses and attractions",
+    "categoryPages": "Browse by activity type or business category",
+    "businessPages": "Detailed individual business pages with all relevant information",
+    "searchResults": "Dynamic search results with filtering and sorting options"
+  },
+  "targetAudience": [
+    "Tourists planning Gulf Coast vacations",
+    "Families seeking water activities and fishing charters",
+    "Fishing enthusiasts looking for charter services",
+    "Adventure travelers interested in water sports",
+    "People searching for Gulf Coast restaurants and hotels",
+    "Travel planners and tourism professionals",
+    "Local residents discovering new businesses"
+  ],
+  "frequentQueries": [
+    "best fishing charters in Destin Florida",
+    "Gulf Coast deep sea fishing",
+    "parasailing in Pensacola",
+    "dolphin tours Orange Beach",
+    "inshore fishing charters Panama City Beach",
+    "jet ski rentals Gulf Shores",
+    "seafood restaurants Pensacola Beach",
+    "family fishing charters Destin",
+    "Gulf Coast water sports",
+    "boat tours Clearwater Beach",
+    "sunset cruise Destin Harbor",
+    "scuba diving Gulf Coast",
+    "beach hotels Pensacola",
+    "Gulf Coast vacation planning",
+    "fishing guides Galveston"
+  ],
+  "dataQuality": {
+    "accuracy": "Verified business information with regular updates",
+    "completeness": "Comprehensive coverage of Gulf Coast fishing and tourism businesses",
+    "timeliness": "Daily updates and new business additions",
+    "reliability": "Cross-referenced data from multiple sources"
+  },
+  "contact": {
+    "website": "https://gulfcoastexplorer.com",
+    "businessSubmissions": "https://gulfcoastexplorer.com/business-listing",
+    "contactPage": "https://gulfcoastexplorer.com/contact"
+  },
+  "apis": {
+    "aiMetadata": "https://gulfcoastexplorer.com/api/ai-metadata",
+    "description": "Dynamic, real-time metadata endpoint for AI systems"
+  },
+  "sitemaps": [
+    "https://gulfcoastexplorer.com/sitemap.xml",
+    "https://gulfcoastexplorer.com/sitemap-images.xml"
+  ],
+  "lastUpdated": "2025-10-08",
+  "language": "en-US",
+  "aiOptimization": {
+    "structuredData": "JSON-LD schema markup on all pages",
+    "semanticHTML": "Proper HTML5 semantic structure",
+    "readableContent": "Human-readable descriptions and natural language",
+    "contextualInformation": "Rich context for better AI understanding",
+    "factualAccuracy": "Verified, accurate business information",
+    "citationFriendly": "Easy to cite and reference with proper attribution"
+  }
+}
+

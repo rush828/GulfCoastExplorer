@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "total": 35,
+    "downloaded": 11,
+    "skipped": 24,
+    "errors": 0,
+    "cost": 0.077
+  },
+  "results": [
+    {
+      "id": "swampman_rv_paradise_llc_dulac_water_sports",
+      "name": "Swampman RV Paradise LLC",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "four_point_landing_dulac_marina",
+      "name": "Four Point Landing",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "channel_side_marina_and_boat_launch_dulac_marina",
+      "name": "Channel Side Marina and Boat launch",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "dulac_marina_bourg_marine_&_supply_893",
+      "name": "Bourg Marine & Supply",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "dulac_community_center_dulac_entertainment",
+      "name": "Dulac Community Center",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "atchafalaya_basin_backwater_adventure_swamp_tour_dulac_tour_agency",
+      "name": "Atchafalaya basin backwater adventure swamp tour",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "inshore_addiction_guide_service_llc_dulac_tour_agency",
+      "name": "Inshore Addiction Guide Service LLC",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "cactus_lounge_dulac_bar",
+      "name": "Cactus Lounge",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "3rd_base_sports_bar_dulac_bar",
+      "name": "3rd Base Sports Bar",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "grand_caillou_recreation_center_dulac_entertainment",
+      "name": "Grand Caillou Recreation Center",
+      "city": "Dulac",
+      "status": "downloaded"
+    },
+    {
+      "id": "daisy_s_hall_rental_dulac_entertainment",
+      "name": "Daisy's Hall Rental",
+      "city": "Dulac",
+      "status": "downloaded"
+    }
+  ]
+}

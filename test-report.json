@@ -1,0 +1,917 @@
+{
+  "summary": {
+    "passed": 84,
+    "failed": 11,
+    "warnings": 13,
+    "total": 108,
+    "timestamp": "2025-09-05T18:45:14.982Z"
+  },
+  "resultsByDevice": {
+    "Desktop Chrome": {
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "fail": null,
+      "pass": null,
+      "warning": null
+    },
+    "Desktop Firefox": {
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "pass": null,
+      "warning": null,
+      "fail": null
+    },
+    "iPad": {
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "pass": null,
+      "warning": null,
+      "fail": null
+    },
+    "iPhone 12": {
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "pass": null,
+      "fail": null,
+      "warning": null
+    },
+    "Samsung Galaxy": {
+      "passed": 0,
+      "failed": 0,
+      "warnings": 0,
+      "pass": null,
+      "fail": null,
+      "warning": null
+    }
+  },
+  "detailedResults": [
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Homepage",
+      "status": "fail",
+      "message": "Error loading /: Navigation timeout of 10000 ms exceeded",
+      "details": {},
+      "timestamp": "2025-09-05T18:41:59.319Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Alabama State Page",
+      "status": "fail",
+      "message": "Error loading /states/alabama: Navigation timeout of 10000 ms exceeded",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:09.329Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Florida State Page",
+      "status": "fail",
+      "message": "Error loading /states/florida: Navigation timeout of 10000 ms exceeded",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:19.335Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Dauphin Island City Page",
+      "status": "fail",
+      "message": "Error loading /alabama/dauphin-island: Navigation timeout of 10000 ms exceeded",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:29.339Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Dauphin Island (with space)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Dauphin Island",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:32.990Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Orange Beach (URL encoded)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Orange%20Beach",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:35.111Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Bay St. Louis (with period)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/mississippi/bay-st.-louis",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:37.161Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Search Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:42.382Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "URL Access - Search with Category",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:44.603Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Navigation Visibility",
+      "status": "pass",
+      "message": "Navigation is visible",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:44.631Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Back Link Styling",
+      "status": "pass",
+      "message": "Found 1 back links with proper styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:44.645Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Business Card Styling",
+      "status": "pass",
+      "message": "Found 20 business listing cards",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:46.676Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Search Form",
+      "status": "pass",
+      "message": "Search form found",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:48.824Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Category Dropdown",
+      "status": "pass",
+      "message": "Category dropdown found",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:48.830Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Search Results Display",
+      "status": "pass",
+      "message": "Found 20 search results",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:48.899Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Pagination",
+      "status": "warning",
+      "message": "No pagination detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:48.901Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Back Link Href",
+      "status": "pass",
+      "message": "Back link href: /states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:50.906Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Back Link Click",
+      "status": "pass",
+      "message": "Back link click successful",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:51.143Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Phone Number Links",
+      "status": "pass",
+      "message": "Found 38 phone number links",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:53.925Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Phone Link Styling",
+      "status": "warning",
+      "message": "Phone links may need styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:42:53.926Z"
+    },
+    {
+      "device": "Desktop Chrome",
+      "testName": "Console Errors",
+      "status": "fail",
+      "message": "Found 5 console errors",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:00.073Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Homepage",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:01.372Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Alabama State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:02.562Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Florida State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:04.233Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Dauphin Island City Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/dauphin-island",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:06.119Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Dauphin Island (with space)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Dauphin Island",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:08.132Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Orange Beach (URL encoded)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Orange%20Beach",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:10.144Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Bay St. Louis (with period)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/mississippi/bay-st.-louis",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:12.270Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Search Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:15.217Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "URL Access - Search with Category",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:18.296Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Navigation Visibility",
+      "status": "pass",
+      "message": "Navigation is visible",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:18.346Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Back Link Styling",
+      "status": "pass",
+      "message": "Found 1 back links with proper styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:18.362Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Business Card Styling",
+      "status": "pass",
+      "message": "Found 20 business listing cards",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:20.397Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Search Form",
+      "status": "pass",
+      "message": "Search form found",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:22.879Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Category Dropdown",
+      "status": "pass",
+      "message": "Category dropdown found",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:22.886Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Search Results Display",
+      "status": "pass",
+      "message": "Found 20 search results",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:22.943Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Pagination",
+      "status": "warning",
+      "message": "No pagination detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:22.945Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Back Link Href",
+      "status": "pass",
+      "message": "Back link href: /states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:25.237Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Back Link Click",
+      "status": "pass",
+      "message": "Back link click successful",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:25.461Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Phone Number Links",
+      "status": "pass",
+      "message": "Found 38 phone number links",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:27.716Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Phone Link Styling",
+      "status": "warning",
+      "message": "Phone links may need styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:27.718Z"
+    },
+    {
+      "device": "Desktop Firefox",
+      "testName": "Console Errors",
+      "status": "fail",
+      "message": "Found 5 console errors",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:34.639Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Homepage",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:37.034Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Alabama State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:38.166Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Florida State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:39.322Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Dauphin Island City Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/dauphin-island",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:42.178Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Dauphin Island (with space)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Dauphin Island",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:44.393Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Orange Beach (URL encoded)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Orange%20Beach",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:46.454Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Bay St. Louis (with period)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/mississippi/bay-st.-louis",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:48.357Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Search Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:50.578Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "URL Access - Search with Category",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:52.950Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Navigation Visibility",
+      "status": "pass",
+      "message": "Navigation is visible",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:52.983Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Back Link Styling",
+      "status": "pass",
+      "message": "Found 1 back links with proper styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:52.997Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Business Card Styling",
+      "status": "pass",
+      "message": "Found 20 business listing cards",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:55.023Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Mobile Menu",
+      "status": "warning",
+      "message": "No mobile menu detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:55.025Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Search Form",
+      "status": "pass",
+      "message": "Search form found",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:57.401Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Category Dropdown",
+      "status": "pass",
+      "message": "Category dropdown found",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:57.407Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Search Results Display",
+      "status": "pass",
+      "message": "Found 20 search results",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:57.445Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Pagination",
+      "status": "warning",
+      "message": "No pagination detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:57.446Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Back Link Href",
+      "status": "pass",
+      "message": "Back link href: /states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:43:59.901Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Back Link Click",
+      "status": "pass",
+      "message": "Back link click successful",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:00.137Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Phone Number Links",
+      "status": "pass",
+      "message": "Found 38 phone number links",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:02.436Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Phone Link Styling",
+      "status": "warning",
+      "message": "Phone links may need styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:02.438Z"
+    },
+    {
+      "device": "iPad",
+      "testName": "Console Errors",
+      "status": "fail",
+      "message": "Found 5 console errors",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:09.217Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Homepage",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:10.938Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Alabama State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:12.104Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Florida State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:13.221Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Dauphin Island City Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/dauphin-island",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:15.231Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Dauphin Island (with space)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Dauphin Island",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:16.962Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Orange Beach (URL encoded)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Orange%20Beach",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:18.976Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Bay St. Louis (with period)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/mississippi/bay-st.-louis",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:20.997Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Search Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:23.097Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "URL Access - Search with Category",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:25.265Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Navigation Visibility",
+      "status": "fail",
+      "message": "Navigation is not visible",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:25.290Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Back Link Styling",
+      "status": "pass",
+      "message": "Found 1 back links with proper styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:25.302Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Business Card Styling",
+      "status": "pass",
+      "message": "Found 20 business listing cards",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:27.318Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Mobile Menu",
+      "status": "warning",
+      "message": "No mobile menu detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:27.319Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Search Form",
+      "status": "pass",
+      "message": "Search form found",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:29.755Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Category Dropdown",
+      "status": "pass",
+      "message": "Category dropdown found",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:29.760Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Search Results Display",
+      "status": "pass",
+      "message": "Found 20 search results",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:29.801Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Pagination",
+      "status": "warning",
+      "message": "No pagination detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:29.803Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Back Link Href",
+      "status": "pass",
+      "message": "Back link href: /states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:32.284Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Back Link Click",
+      "status": "pass",
+      "message": "Back link click successful",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:32.535Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Phone Number Links",
+      "status": "pass",
+      "message": "Found 38 phone number links",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:34.935Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Phone Link Styling",
+      "status": "warning",
+      "message": "Phone links may need styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:34.937Z"
+    },
+    {
+      "device": "iPhone 12",
+      "testName": "Console Errors",
+      "status": "fail",
+      "message": "Found 5 console errors",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:41.179Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Homepage",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:43.425Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Alabama State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:44.559Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Florida State Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/states/florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:45.714Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Dauphin Island City Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/dauphin-island",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:47.649Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Dauphin Island (with space)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Dauphin Island",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:49.666Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Orange Beach (URL encoded)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/alabama/Orange%20Beach",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:51.676Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Bay St. Louis (with period)",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/mississippi/bay-st.-louis",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:53.596Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Search Page",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:55.776Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "URL Access - Search with Category",
+      "status": "pass",
+      "message": "Successfully loaded http://localhost:3000/search?category=restaurant&city=Pensacola&state=florida",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:58.089Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Navigation Visibility",
+      "status": "fail",
+      "message": "Navigation is not visible",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:58.109Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Back Link Styling",
+      "status": "pass",
+      "message": "Found 1 back links with proper styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:44:58.120Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Business Card Styling",
+      "status": "pass",
+      "message": "Found 20 business listing cards",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:00.165Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Mobile Menu",
+      "status": "warning",
+      "message": "No mobile menu detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:00.168Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Search Form",
+      "status": "pass",
+      "message": "Search form found",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:02.376Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Category Dropdown",
+      "status": "pass",
+      "message": "Category dropdown found",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:02.380Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Search Results Display",
+      "status": "pass",
+      "message": "Found 20 search results",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:02.425Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Pagination",
+      "status": "warning",
+      "message": "No pagination detected",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:02.428Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Back Link Href",
+      "status": "pass",
+      "message": "Back link href: /states/alabama",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:04.473Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Back Link Click",
+      "status": "pass",
+      "message": "Back link click successful",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:04.748Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Phone Number Links",
+      "status": "pass",
+      "message": "Found 38 phone number links",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:07.229Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Phone Link Styling",
+      "status": "warning",
+      "message": "Phone links may need styling",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:07.231Z"
+    },
+    {
+      "device": "Samsung Galaxy",
+      "testName": "Console Errors",
+      "status": "fail",
+      "message": "Found 5 console errors",
+      "details": {},
+      "timestamp": "2025-09-05T18:45:14.400Z"
+    }
+  ]
+}

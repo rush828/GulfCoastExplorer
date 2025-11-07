@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-26T18:14:55.602Z",
+  "excel_file": "businesses-dataset-manual.xlsx",
+  "backup_file": "data\\businesses-backup-before-excel-import-2025-09-26T18-14-51-120Z.json",
+  "summary": {
+    "excel_businesses": 4967,
+    "database_businesses_before": 4970,
+    "database_businesses_after": 4967,
+    "businesses_processed": 4967,
+    "categories_fixed": 1,
+    "issues_found": 0
+  },
+  "changes": {
+    "businesses_deleted": 3,
+    "primary_categories_updated": "Counted during processing",
+    "categories_arrays_updated": "Counted during processing"
+  },
+  "issues": [],
+  "success": true
+}

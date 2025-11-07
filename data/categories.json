@@ -1,0 +1,117 @@
+{
+  "restaurants": {
+    "name": "restaurants",
+    "description": "restaurants in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.559Z"
+  },
+  "hotels": {
+    "name": "hotels",
+    "description": "hotels in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "attractions": {
+    "name": "attractions",
+    "description": "attractions in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "shopping": {
+    "name": "shopping",
+    "description": "shopping in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "entertainment": {
+    "name": "entertainment",
+    "description": "entertainment in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "outdoor_activities": {
+    "name": "outdoor_activities",
+    "description": "outdoor activities in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "beaches": {
+    "name": "beaches",
+    "description": "beaches in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "parks": {
+    "name": "parks",
+    "description": "parks in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "museums": {
+    "name": "museums",
+    "description": "museums in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "casinos": {
+    "name": "casinos",
+    "description": "casinos in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "fishing": {
+    "name": "fishing",
+    "description": "fishing in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "boating": {
+    "name": "boating",
+    "description": "boating in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "water_sports": {
+    "name": "water_sports",
+    "description": "water sports in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "golf": {
+    "name": "golf",
+    "description": "golf in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "spas": {
+    "name": "spas",
+    "description": "spas in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "nightlife": {
+    "name": "nightlife",
+    "description": "nightlife in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "family_activities": {
+    "name": "family_activities",
+    "description": "family activities in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "historical_sites": {
+    "name": "historical_sites",
+    "description": "historical sites in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "tours": {
+    "name": "tours",
+    "description": "tours in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "transportation": {
+    "name": "transportation",
+    "description": "transportation in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "services": {
+    "name": "services",
+    "description": "services in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "healthcare": {
+    "name": "healthcare",
+    "description": "healthcare in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  },
+  "education": {
+    "name": "education",
+    "description": "education in the Gulf Coast",
+    "created_at": "2025-08-28T15:29:05.561Z"
+  }
+}

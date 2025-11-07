@@ -1,0 +1,605 @@
+{
+  "consolidation_date": "2025-08-29T14:20:50.031Z",
+  "total_businesses": 3297,
+  "cities_processed": 53,
+  "categories_mapped": 37,
+  "city_breakdown": {
+    "apalachicola": {
+      "name": "Apalachicola",
+      "state": "Florida",
+      "business_count": 63,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 15
+      }
+    },
+    "bay_st_louis": {
+      "name": "Bay St. Louis",
+      "state": "Mississippi",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "biloxi": {
+      "name": "Biloxi",
+      "state": "Mississippi",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "bolivar_peninsula": {
+      "name": "Bolivar Peninsula",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "bon_secour": {
+      "name": "Bon Secour",
+      "state": "Alabama",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "captiva_island": {
+      "name": "Captiva Island",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "cedar_key": {
+      "name": "Cedar Key",
+      "state": "Florida",
+      "business_count": 59,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 3,
+        "water-activities": 16
+      }
+    },
+    "cocodrie": {
+      "name": "Cocodrie",
+      "state": "Louisiana",
+      "business_count": 58,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 20,
+        "beaches-outdoors": 8,
+        "water-activities": 15
+      }
+    },
+    "corpus_christi": {
+      "name": "Corpus Christi",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "crystal_beach": {
+      "name": "Crystal Beach",
+      "state": "Texas",
+      "business_count": 47,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 13,
+        "beaches-outdoors": 8,
+        "water-activities": 11
+      }
+    },
+    "cut_off": {
+      "name": "Cut Off",
+      "state": "Louisiana",
+      "business_count": 51,
+      "categories": {
+        "accommodations": 2,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "dauphin_island": {
+      "name": "Dauphin Island",
+      "state": "Alabama",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "destin": {
+      "name": "Destin",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "diamondhead": {
+      "name": "Diamondhead",
+      "state": "Mississippi",
+      "business_count": 42,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 21,
+        "beaches-outdoors": 8,
+        "water-activities": 12
+      }
+    },
+    "dulac": {
+      "name": "Dulac",
+      "state": "Louisiana",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "elberta": {
+      "name": "Elberta",
+      "state": "Alabama",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "everglades_city": {
+      "name": "Everglades City",
+      "state": "Florida",
+      "business_count": 63,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 24,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "fairhope": {
+      "name": "Fairhope",
+      "state": "Alabama",
+      "business_count": 59,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 11
+      }
+    },
+    "fort_myers_beach": {
+      "name": "Fort Myers Beach",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "fort_walton_beach": {
+      "name": "Fort Walton Beach",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "galliano": {
+      "name": "Galliano",
+      "state": "Louisiana",
+      "business_count": 45,
+      "categories": {
+        "accommodations": 2,
+        "food-dining": 19,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "galveston": {
+      "name": "Galveston",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "golden_meadow": {
+      "name": "Golden Meadow",
+      "state": "Louisiana",
+      "business_count": 47,
+      "categories": {
+        "accommodations": 1,
+        "food-dining": 25,
+        "beaches-outdoors": 5,
+        "water-activities": 16
+      }
+    },
+    "grand_isle": {
+      "name": "Grand Isle",
+      "state": "Louisiana",
+      "business_count": 62,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 23,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "gulfport": {
+      "name": "Gulfport",
+      "state": "Mississippi",
+      "business_count": 63,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 15
+      }
+    },
+    "gulf_shores": {
+      "name": "Gulf Shores",
+      "state": "Alabama",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "gulf_state_park": {
+      "name": "Gulf State Park",
+      "state": "Alabama",
+      "business_count": 58,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 2,
+        "water-activities": 16
+      }
+    },
+    "key_west": {
+      "name": "Key West",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "lafitte": {
+      "name": "Lafitte",
+      "state": "Louisiana",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "lillian": {
+      "name": "Lillian",
+      "state": "Alabama",
+      "business_count": 56,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 2,
+        "water-activities": 14
+      }
+    },
+    "long_beach": {
+      "name": "Long Beach",
+      "state": "Mississippi",
+      "business_count": 61,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 13
+      }
+    },
+    "marco_island": {
+      "name": "Marco Island",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "montegut": {
+      "name": "Montegut",
+      "state": "Louisiana",
+      "business_count": 53,
+      "categories": {
+        "accommodations": 8,
+        "food-dining": 25,
+        "beaches-outdoors": 4,
+        "water-activities": 16
+      }
+    },
+    "moss_point": {
+      "name": "Moss Point",
+      "state": "Mississippi",
+      "business_count": 60,
+      "categories": {
+        "accommodations": 11,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "naples": {
+      "name": "Naples",
+      "state": "Florida",
+      "business_count": 63,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 15
+      }
+    },
+    "navarre_beach": {
+      "name": "Navarre Beach",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "new_orleans": {
+      "name": "New Orleans",
+      "state": "Louisiana",
+      "business_count": 184,
+      "categories": {
+        "accommodations": 25,
+        "food-dining": 60,
+        "beaches-outdoors": 2,
+        "water-activities": 32,
+        "shopping-retail": 8,
+        "tours-adventures": 10,
+        "history-culture": 15,
+        "nightlife-entertainment": 32
+      }
+    },
+    "ocean_springs": {
+      "name": "Ocean Springs",
+      "state": "Mississippi",
+      "business_count": 60,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 4,
+        "water-activities": 16
+      }
+    },
+    "orange_beach": {
+      "name": "Orange Beach",
+      "state": "Alabama",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "panama_city_beach": {
+      "name": "Panama City Beach",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "pascagoula": {
+      "name": "Pascagoula",
+      "state": "Mississippi",
+      "business_count": 63,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 7,
+        "water-activities": 16
+      }
+    },
+    "pass_christian": {
+      "name": "Pass Christian",
+      "state": "Mississippi",
+      "business_count": 55,
+      "categories": {
+        "accommodations": 6,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "perdido_key": {
+      "name": "Perdido Key",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "port_aransas": {
+      "name": "Port Aransas",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "port_fourchon": {
+      "name": "Port Fourchon",
+      "state": "Louisiana",
+      "business_count": 43,
+      "categories": {
+        "accommodations": 9,
+        "food-dining": 15,
+        "beaches-outdoors": 3,
+        "water-activities": 16
+      }
+    },
+    "port_lavaca": {
+      "name": "Port Lavaca",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "rockport": {
+      "name": "Rockport",
+      "state": "Texas",
+      "business_count": 59,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 3,
+        "water-activities": 16
+      }
+    },
+    "sanibel_island": {
+      "name": "Sanibel Island",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "sarasota": {
+      "name": "Sarasota",
+      "state": "Florida",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "south_padre": {
+      "name": "South Padre Island",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "st_george_island": {
+      "name": "St. George Island",
+      "state": "Florida",
+      "business_count": 54,
+      "categories": {
+        "accommodations": 9,
+        "food-dining": 21,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "surfside_beach": {
+      "name": "Surfside Beach",
+      "state": "Texas",
+      "business_count": 64,
+      "categories": {
+        "accommodations": 15,
+        "food-dining": 25,
+        "beaches-outdoors": 8,
+        "water-activities": 16
+      }
+    },
+    "waveland": {
+      "name": "Waveland",
+      "state": "Mississippi",
+      "business_count": 41,
+      "categories": {
+        "accommodations": 3,
+        "food-dining": 17,
+        "beaches-outdoors": 8,
+        "water-activities": 13
+      }
+    }
+  },
+  "category_breakdown": {
+    "accommodations": 76,
+    "food-dining": 101,
+    "beaches-outdoors": 54,
+    "water-activities": 136,
+    "shopping-retail": 8,
+    "tours-adventures": 10,
+    "history-culture": 15,
+    "nightlife-entertainment": 32
+  }
+}
