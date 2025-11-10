@@ -30,11 +30,11 @@ interface BusinessListingsProps {
   limit?: number
 }
 
-// Helper function to get local thumbnail URL
-function getLocalThumbnailUrl(businessId: string) {
-  // Clean the business ID to match our filename format
-  const cleanId = businessId.replace(/[<>:"/\\|?*]/g, '_');
-  return `/images/thumbnails/${cleanId}.jpg`;
+// Helper function to get Cloudinary thumbnail URL
+function getCloudinaryThumbnailUrl(businessId: string) {
+  // Get Cloudinary URL with auto-optimization
+  const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'dajhqvtxe';
+  return `https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/gulf-coast-directory/thumbnails/${businessId}.jpg`;
 }
 
 // Helper function to get category fallback image URL
@@ -201,16 +201,11 @@ export default function BusinessListings({ city, state, category, limit = 6 }: B
         return (
           <article key={business.id} className="business-listing-card">
             <div className="w-full h-48 relative">
-              <Image
-                src={getLocalThumbnailUrl(business.id)} 
+              <img
+                src={getCloudinaryThumbnailUrl(business.id)} 
                 alt={`${business.name} - ${primaryCategory}`}
-                width={400}
-                height={300}
                 className="w-full h-48 object-cover rounded-t-lg"
-                priority={index < 3} // Prioritize first 3 images
                 loading={index < 3 ? "eager" : "lazy"}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 onError={(e) => {
                   // First fallback: try category image
                   const target = e.currentTarget as HTMLImageElement;

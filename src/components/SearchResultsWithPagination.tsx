@@ -110,11 +110,11 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
   const [hasPrevPage, setHasPrevPage] = useState(false)
   const [resultsPerPage, setResultsPerPage] = useState(20)
 
-  // Helper function to get local thumbnail URL
-  const getLocalThumbnailUrl = (businessId: string) => {
-    // Clean the business ID to match our filename format
-    const cleanId = businessId.replace(/[<>:"/\\|?*]/g, '_');
-    return `/images/thumbnails/${cleanId}.jpg`;
+  // Helper function to get Cloudinary thumbnail URL
+  const getCloudinaryThumbnailUrl = (businessId: string) => {
+    // Get Cloudinary URL with auto-optimization
+    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'dajhqvtxe';
+    return `https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/gulf-coast-directory/thumbnails/${businessId}.jpg`;
   }
 
   // Helper function to get category fallback image URL
@@ -583,7 +583,7 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 rounded-xl overflow-hidden shadow-md">
                     <img 
-                      src={getLocalThumbnailUrl(business.id)} 
+                      src={getCloudinaryThumbnailUrl(business.id)} 
                       alt={`${business.name}`}
                       className="w-full h-full object-cover"
                       onError={(e) => {

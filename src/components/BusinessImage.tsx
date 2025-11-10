@@ -11,12 +11,16 @@ interface BusinessImageProps {
   className?: string
 }
 
-// Helper function to get local thumbnail URL
-function getLocalThumbnailUrl(businessId: string) {
+// Helper function to get Cloudinary thumbnail URL
+function getCloudinaryThumbnailUrl(businessId: string) {
   // Decode the business ID first (in case it comes URL-encoded from the URL)
-  // Then use as-is to match the actual filename
   const decodedId = decodeURIComponent(businessId);
-  return `/images/thumbnails/${decodedId}.jpg`;
+  
+  // Cloudinary URL pattern: https://res.cloudinary.com/{cloud_name}/image/upload/{transformations}/{folder}/{public_id}.{format}
+  const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'dajhqvtxe';
+  
+  // Auto-optimize quality and format
+  return `https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/gulf-coast-directory/thumbnails/${decodedId}.jpg`;
 }
 
 // Helper function to get category fallback image URL
@@ -87,11 +91,11 @@ export default function BusinessImage({
     switch (imageState) {
       case 'loading':
       case 'thumbnail':
-        return getLocalThumbnailUrl(businessId)
+        return getCloudinaryThumbnailUrl(businessId)
       case 'category':
         return getCategoryFallbackUrl(businessCategory)
       default:
-        return getLocalThumbnailUrl(businessId) // This won't be used when showIcon is true
+        return getCloudinaryThumbnailUrl(businessId) // This won't be used when showIcon is true
     }
   }
   

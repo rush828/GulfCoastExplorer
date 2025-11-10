@@ -1,11 +1,22 @@
 /**
  * Image Upload and Optimization Utility
  * Handles business image uploads with automatic optimization and unique ID generation
+ * Images are uploaded to Cloudinary for production use
  */
 
 import { promises as fs } from 'fs'
 import path from 'path'
 import sharp from 'sharp'
+import { v2 as cloudinary } from 'cloudinary'
+
+// Configure Cloudinary (only if credentials are available)
+if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET) {
+  cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+  })
+}
 
 export interface ImageUploadResult {
   success: boolean
@@ -36,7 +47,7 @@ export function generateBusinessId(businessName: string, city: string, primaryCa
 }
 
 /**
- * Optimize and save uploaded image
+ * Optimize and save uploaded image to Cloudinary
  */
 export async function optimizeAndSaveImage(
   imageBuffer: Buffer,
@@ -57,14 +68,9 @@ export async function optimizeAndSaveImage(
 
     // Create filename with business ID
     const fileName = `${businessId}.jpg`
-    const thumbnailsDir = path.join(process.cwd(), 'public', 'images', 'thumbnails')
-    const filePath = path.join(thumbnailsDir, fileName)
-
-    // Ensure thumbnails directory exists
-    await fs.mkdir(thumbnailsDir, { recursive: true })
 
     // Optimize image using Sharp
-    await sharp(imageBuffer)
+    const optimizedBuffer = await sharp(imageBuffer)
       .resize({
         width: 400,
         height: 300,
@@ -75,7 +81,41 @@ export async function optimizeAndSaveImage(
         quality: 85,
         progressive: true
       })
-      .toFile(filePath)
+      .toBuffer()
+
+    // Upload to Cloudinary if configured
+    if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET) {
+      try {
+        // Convert buffer to base64 for Cloudinary upload
+        const base64Image = `data:image/jpeg;base64,${optimizedBuffer.toString('base64')}`
+        
+        const result = await cloudinary.uploader.upload(base64Image, {
+          folder: 'gulf-coast-directory/thumbnails',
+          public_id: businessId,
+          overwrite: true,
+          resource_type: 'image'
+        })
+
+        console.log(`✅ Uploaded to Cloudinary: ${businessId}`)
+        
+        return {
+          success: true,
+          filePath: result.secure_url,
+          fileName: businessId
+        }
+      } catch (cloudinaryError) {
+        console.error('Cloudinary upload error:', cloudinaryError)
+        // Fall back to local storage if Cloudinary fails
+      }
+    }
+
+    // Fallback: Save locally (for development or if Cloudinary not configured)
+    const thumbnailsDir = path.join(process.cwd(), 'public', 'images', 'thumbnails')
+    const filePath = path.join(thumbnailsDir, fileName)
+    await fs.mkdir(thumbnailsDir, { recursive: true })
+    await fs.writeFile(filePath, optimizedBuffer)
+
+    console.log(`ℹ️ Saved locally (Cloudinary not configured): ${businessId}`)
 
     return {
       success: true,
@@ -92,22 +132,34 @@ export async function optimizeAndSaveImage(
 }
 
 /**
- * Delete business image
+ * Delete business image from Cloudinary and local storage
  */
 export async function deleteBusinessImage(businessId: string): Promise<boolean> {
   try {
+    // Try to delete from Cloudinary if configured
+    if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET) {
+      try {
+        await cloudinary.uploader.destroy(`gulf-coast-directory/thumbnails/${businessId}`)
+        console.log(`✅ Deleted from Cloudinary: ${businessId}`)
+      } catch (cloudinaryError) {
+        console.error('Cloudinary delete error:', cloudinaryError)
+        // Continue to try local delete even if Cloudinary fails
+      }
+    }
+
+    // Also try to delete from local storage (if it exists)
     const fileName = `${businessId}.jpg`
     const filePath = path.join(process.cwd(), 'public', 'images', 'thumbnails', fileName)
     
-    // Check if file exists before attempting to delete
     try {
       await fs.access(filePath)
       await fs.unlink(filePath)
-      return true
+      console.log(`✅ Deleted locally: ${businessId}`)
     } catch (error) {
-      // File doesn't exist, which is fine
-      return true
+      // File doesn't exist locally, which is fine
     }
+    
+    return true
   } catch (error) {
     console.error('Error deleting image:', error)
     return false

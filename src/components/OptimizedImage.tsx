@@ -82,9 +82,9 @@ export default function OptimizedImage({
   const getImageSrc = () => {
     switch (imageState) {
       case 'thumbnail':
-        // Clean the business ID for filename
-        const cleanId = businessId.replace(/[<>:"/\\|?*]/g, '_')
-        return `/images/thumbnails/${encodeURIComponent(cleanId)}.jpg`
+        // Get Cloudinary URL with auto-optimization
+        const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'dajhqvtxe';
+        return `https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/gulf-coast-directory/thumbnails/${businessId}.jpg`
       case 'category':
         return getCategoryFallbackImage(primaryCategory)
       default:

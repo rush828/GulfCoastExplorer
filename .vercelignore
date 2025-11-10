@@ -1,0 +1,77 @@
+# Exclude large thumbnail folder (images served from Cloudinary)
+public/images/thumbnails/
+
+# Exclude backup files
+data/businesses-backup-*.json
+data/businesses-consolidated-*.json
+data/businesses-from-excel-final.json
+data/businesses-from-excel-corrected.json
+data/businesses-from-excel.json
+data/businesses-from-excel-fixed.json
+data/consolidated-businesses.json
+data/businesses-fallback-backup-*.json
+data/businesses-from-excel-corrected-ids-backup-*.json
+data/businesses-fallback.json
+data/*.xlsx
+data/duplicate-analysis-report.json
+data/database-businesses.json
+data/excel-database-comparison-report.json
+data/progress/*.json
+data/pensacola-comprehensive.json
+
+# Exclude data archive
+data/DATA ARCHIVE/
+
+# Exclude development scripts
+upload-thumbnails-to-cloudinary.js
+upload-thumbnails-to-blob.js
+download-*.js
+fix-*.js
+test-*.js
+check-*.js
+analyze-*.js
+export-*.js
+find-*.js
+remove-*.js
+update-*.js
+automated-testing-script.js
+clear-category-cache.js
+read-reference-format.js
+
+# Exclude documentation/notes
+*.md
+!README.md
+
+# Exclude logs
+logs/
+*.log
+
+# Exclude test files
+test-report.html
+test-report.json
+test-search.html
+test_cedar_key.json
+manual-testing-checklist.md
+
+# Exclude download progress files
+download-progress.json
+*-download-results.json
+
+# Exclude backups directory
+backups/
+
+# Exclude environment template files
+ENV_TEMPLATE.txt
+PRODUCTION_ENV_*.txt
+GET_YOUR_REAL_KEYS.md
+
+# Exclude local development files
+.env.local
+.env*.local
+vercel-import.env
+vercel-env-upload.env
+
+# Exclude IDE files
+.vscode/
+.idea/
+

@@ -33,6 +33,7 @@ yarn-error.log*
 .env.production.local
 .env.production
 vercel-env-upload.env
+vercel-import.env
 
 # vercel
 .vercel
@@ -90,4 +91,11 @@ data/pensacola-comprehensive.json
 
 # Keep only the main data file
 !data/businesses-from-excel-corrected-ids.json
+
+# Thumbnails (240MB) - exclude from deployment, images served from Cloudinary
+public/images/thumbnails/
+
+# Cloudinary upload script (not needed in production)
+upload-thumbnails-to-cloudinary.js
+upload-thumbnails-to-blob.js
 
