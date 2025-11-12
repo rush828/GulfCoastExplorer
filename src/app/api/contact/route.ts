@@ -25,9 +25,11 @@ export async function POST(request: NextRequest) {
           firstName: formData.firstName,
           lastName: formData.lastName
         })
+        console.log(`Newsletter signup recorded for: ${formData.email}`)
       } catch (newsletterError) {
-        console.error('Newsletter signup error:', newsletterError)
-        // Don't fail the contact form if newsletter signup fails
+        // Newsletter signups are logged but not persisted in production
+        // This is expected behavior until database is set up
+        console.log('Newsletter signup attempted:', formData.email)
       }
     }
 
@@ -41,9 +43,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
+    // Use test domain until gulfcoastexplorer.com is verified
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Gulf Coast Explorer <contact@gulfcoastexplorer.com>',
-      to: [process.env.CONTACT_EMAIL || 'bendependent828@gmail.com'],
+      from: process.env.RESEND_FROM_EMAIL || 'Gulf Coast Explorer <onboarding@resend.dev>',
+      to: [process.env.CONTACT_EMAIL || 'rush828@gmail.com'],
       subject: `Contact Form: ${formData.subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

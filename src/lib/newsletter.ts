@@ -1,76 +1,108 @@
-import { promises as fs } from 'fs'
-import path from 'path'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 export interface NewsletterSubscriber {
   id: string
   email: string
   firstName: string
   lastName: string
-  subscribedAt: string
+  subscribedAt: Date
   isActive: boolean
   unsubscribeToken: string
 }
 
-const SUBSCRIBERS_FILE = path.join(process.cwd(), 'src/data/newsletter-subscribers.json')
-
 export async function getSubscribers(): Promise<NewsletterSubscriber[]> {
   try {
-    const data = await fs.readFile(SUBSCRIBERS_FILE, 'utf8')
-    return JSON.parse(data)
+    const subscribers = await prisma.newsletterSubscriber.findMany({
+      orderBy: { subscribedAt: 'desc' }
+    })
+    return subscribers.map(sub => ({
+      ...sub,
+      subscribedAt: sub.subscribedAt
+    }))
   } catch (error) {
+    console.error('Error fetching subscribers:', error)
     return []
   }
 }
 
 export async function addSubscriber(subscriber: Omit<NewsletterSubscriber, 'id' | 'subscribedAt' | 'isActive' | 'unsubscribeToken'>): Promise<NewsletterSubscriber> {
-  const subscribers = await getSubscribers()
-  
-  // Check if email already exists
-  const existingSubscriber = subscribers.find(s => s.email === subscriber.email)
-  if (existingSubscriber) {
-    // Reactivate if previously unsubscribed
-    if (!existingSubscriber.isActive) {
-      existingSubscriber.isActive = true
-      existingSubscriber.subscribedAt = new Date().toISOString()
-      await saveSubscribers(subscribers)
+  try {
+    // Check if subscriber already exists
+    const existing = await prisma.newsletterSubscriber.findUnique({
+      where: { email: subscriber.email }
+    })
+
+    if (existing) {
+      // If they previously unsubscribed, reactivate them
+      if (!existing.isActive) {
+        const updated = await prisma.newsletterSubscriber.update({
+          where: { email: subscriber.email },
+          data: {
+            isActive: true,
+            subscribedAt: new Date()
+          }
+        })
+        console.log('Newsletter: Reactivated subscriber:', subscriber.email)
+        return updated as NewsletterSubscriber
+      }
+      console.log('Newsletter: Subscriber already exists:', subscriber.email)
+      return existing as NewsletterSubscriber
     }
-    return existingSubscriber
-  }
 
-  const newSubscriber: NewsletterSubscriber = {
-    ...subscriber,
-    id: generateId(),
-    subscribedAt: new Date().toISOString(),
-    isActive: true,
-    unsubscribeToken: generateUnsubscribeToken()
-  }
+    // Create new subscriber
+    const newSubscriber = await prisma.newsletterSubscriber.create({
+      data: {
+        email: subscriber.email,
+        firstName: subscriber.firstName,
+        lastName: subscriber.lastName,
+        unsubscribeToken: generateUnsubscribeToken()
+      }
+    })
 
-  subscribers.push(newSubscriber)
-  await saveSubscribers(subscribers)
-  
-  return newSubscriber
+    console.log('Newsletter: New subscriber added:', subscriber.email)
+    return newSubscriber as NewsletterSubscriber
+  } catch (error) {
+    console.error('Error adding subscriber:', error)
+    throw error
+  }
 }
 
 export async function unsubscribeByToken(token: string): Promise<boolean> {
-  const subscribers = await getSubscribers()
-  const subscriber = subscribers.find(s => s.unsubscribeToken === token)
-  
-  if (subscriber) {
-    subscriber.isActive = false
-    await saveSubscribers(subscribers)
+  try {
+    const subscriber = await prisma.newsletterSubscriber.findUnique({
+      where: { unsubscribeToken: token }
+    })
+
+    if (!subscriber) {
+      return false
+    }
+
+    await prisma.newsletterSubscriber.update({
+      where: { unsubscribeToken: token },
+      data: { isActive: false }
+    })
+
+    console.log('Newsletter: Unsubscribed:', subscriber.email)
     return true
+  } catch (error) {
+    console.error('Error unsubscribing:', error)
+    return false
   }
-  
-  return false
 }
 
 export async function getActiveSubscribers(): Promise<NewsletterSubscriber[]> {
-  const subscribers = await getSubscribers()
-  return subscribers.filter(s => s.isActive)
-}
-
-async function saveSubscribers(subscribers: NewsletterSubscriber[]): Promise<void> {
-  await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2))
+  try {
+    const subscribers = await prisma.newsletterSubscriber.findMany({
+      where: { isActive: true },
+      orderBy: { subscribedAt: 'desc' }
+    })
+    return subscribers as NewsletterSubscriber[]
+  } catch (error) {
+    console.error('Error fetching active subscribers:', error)
+    return []
+  }
 }
 
 function generateId(): string {
