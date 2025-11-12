@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
         const personalizedHtml = newsletterHtml.replace('{{UNSUBSCRIBE_TOKEN}}', subscriber.unsubscribeToken)
         
         const { data, error } = await resend.emails.send({
-          from: 'Gulf Coast Explorer <onboarding@resend.dev>',
+          from: process.env.RESEND_FROM_EMAIL || 'Gulf Coast Explorer <newsletter@gulfcoastexplorer.com>',
           to: [subscriber.email],
           subject: subject,
           html: personalizedHtml,
