@@ -25,8 +25,8 @@ export default function BusinessListingForm() {
   const [isValidating, setIsValidating] = useState(false)
   const [csrfToken, setCsrfToken] = useState('')
   
-  // Development mode - set to false for production
-  const isDevelopment = process.env.NODE_ENV === 'development' || true
+  // Check if PayPal is in production mode
+  const isDevelopment = process.env.NEXT_PUBLIC_PAYPAL_ENVIRONMENT !== 'production'
 
   // Get CSRF token on component mount
   useEffect(() => {
