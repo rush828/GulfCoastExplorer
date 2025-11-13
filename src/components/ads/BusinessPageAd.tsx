@@ -22,7 +22,7 @@ export default function BusinessPageAd({ position }: BusinessPageAdProps) {
       <div className="hidden lg:block sticky top-4">
         <div className="text-xs text-gray-400 text-center mb-2">Advertisement</div>
         <GoogleAd 
-          slot="YOUR_SIDEBAR_SLOT_ID" 
+          slot="BUSINESS_PAGE_SIDEBAR_AD_SLOT_ID" 
           format="rectangle"
           responsive
           className="max-w-sm"
@@ -36,7 +36,7 @@ export default function BusinessPageAd({ position }: BusinessPageAdProps) {
     <div className="my-8">
       <div className="text-xs text-gray-400 text-center mb-2">Advertisement</div>
       <GoogleAd 
-        slot="YOUR_BOTTOM_SLOT_ID" 
+        slot="BUSINESS_PAGE_BOTTOM_AD_SLOT_ID" 
         format="auto"
         responsive
         className="max-w-3xl mx-auto"

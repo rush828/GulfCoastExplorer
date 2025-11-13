@@ -16,7 +16,7 @@ export default function SearchResultsAd() {
     <div className="my-6">
       <div className="text-xs text-gray-400 text-center mb-2">Advertisement</div>
       <GoogleAd 
-        slot="YOUR_SLOT_ID_HERE" 
+        slot="SEARCH_RESULTS_INFEED_AD_SLOT_ID" 
         format="fluid"
         responsive
         className="max-w-4xl mx-auto"
