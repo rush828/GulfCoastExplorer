@@ -64,23 +64,46 @@ model Category {
 }
 
 model Listing {
-  id          String        @id @default(cuid())
-  name        String
-  slug        String        @unique
-  description String?
-  address     String
-  city        String
-  state       String
-  zipCode     String?
-  phone       String?
-  website     String?
-  email       String?
-  latitude    Float?
-  longitude   Float?
-  placeId     String? // Google Places ID
-  status      ListingStatus @default(DRAFT)
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
+  id              String        @id @default(cuid())
+  name            String
+  slug            String        @unique
+  description     String?
+  address         String
+  city            String
+  state           String
+  zipCode         String?
+  phone           String?
+  website         String?
+  email           String?
+  latitude        Float?
+  longitude       Float?
+  placeId         String? // Google Places ID
+  status          ListingStatus @default(PUBLISHED)
+  
+  // Business categorization
+  primaryCategory String        @map("primary_category")
+  
+  // Business metrics
+  rating          Float?
+  reviewsCount    Int?          @map("reviews_count")
+  
+  // Priority and featured listings
+  priorityTier    Int           @default(1) @map("priority_tier")
+  featuredUntil   DateTime?     @map("featured_until")
+  
+  // Google integration
+  googleTypes     String[]      @default(["establishment"]) @map("google_types")
+  
+  // Images (Cloudinary URLs)
+  thumbnails      String[]      @default([])
+  
+  // Private contact information (not displayed publicly)
+  contactName     String?       @map("contact_name")
+  contactEmail    String?       @map("contact_email")
+  contactPhone    String?       @map("contact_phone")
+  
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
 
   categories ListingCategory[]
   media      Media[]

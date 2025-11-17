@@ -1,34 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { promises as fs } from 'fs'
-import path from 'path'
+import { PrismaClient } from '@prisma/client'
 import { generateBusinessId, optimizeAndSaveImage, deleteBusinessImage, validateImageFile } from '@/lib/image-upload'
 import { withCSRFProtection } from '@/lib/csrf'
 import { auditLogger, getUserInfo } from '@/lib/audit-log'
 
-// Business interface matching your current structure
-interface Business {
-  name: string
-  primary_category: string
-  categories: string[]
-  categories_array: string[]
-  address: string
-  city: string
-  state: string
-  latitude?: number
-  longitude?: number
-  rating?: number
-  reviews_count?: number
-  website?: string
-  phone?: string
-  description?: string
-  priority_tier?: number
-  featured_until?: string
-  google_types?: string[]
-  thumbnails?: string[]
-  // Contact information (private - not displayed publicly)
-  contact_name?: string
-  contact_email?: string
-  contact_phone?: string
+const prisma = new PrismaClient()
+
+// Helper function to generate URL-friendly slug
+function generateSlug(name: string, city: string): string {
+  const baseSlug = `${city}_${name}`
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_|_$/g, '')
+  
+  // Add timestamp to ensure uniqueness
+  const timestamp = Date.now().toString().slice(-6)
+  return `${baseSlug}_${timestamp}`
 }
 
 // GET - Fetch all businesses (for editing)
@@ -53,12 +42,12 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const data = JSON.parse(await fs.readFile(dataFile, 'utf-8'))
-
     if (businessId) {
       // Return specific business
-      const business = data.businesses[businessId]
+      const business = await prisma.listing.findUnique({
+        where: { id: businessId }
+      })
+      
       if (!business) {
         return NextResponse.json(
           { success: false, error: 'Business not found' },
@@ -66,21 +55,70 @@ export async function GET(request: NextRequest) {
         )
       }
 
+      // Transform to match expected format
       return NextResponse.json({
         success: true,
-        business: { ...business, id: businessId }
+        business: {
+          id: business.id,
+          name: business.name,
+          primary_category: business.primaryCategory,
+          categories: [], // Will be populated from categories relation if needed
+          categories_array: [],
+          address: business.address,
+          city: business.city,
+          state: business.state,
+          latitude: business.latitude,
+          longitude: business.longitude,
+          rating: business.rating,
+          reviews_count: business.reviewsCount,
+          website: business.website,
+          phone: business.phone,
+          description: business.description,
+          priority_tier: business.priorityTier,
+          featured_until: business.featuredUntil?.toISOString(),
+          google_types: business.googleTypes,
+          thumbnails: business.thumbnails,
+          contact_name: business.contactName,
+          contact_email: business.contactEmail,
+          contact_phone: business.contactPhone
+        }
       })
     } else {
       // Return all businesses for listing
-      const businesses = Object.entries(data.businesses).map(([id, business]) => ({
-        ...(business as any),
-        id: id
+      const businesses = await prisma.listing.findMany({
+        orderBy: { createdAt: 'desc' }
+      })
+
+      // Transform to match expected format
+      const transformedBusinesses = businesses.map(business => ({
+        id: business.id,
+        name: business.name,
+        primary_category: business.primaryCategory,
+        categories: [],
+        categories_array: [],
+        address: business.address,
+        city: business.city,
+        state: business.state,
+        latitude: business.latitude,
+        longitude: business.longitude,
+        rating: business.rating,
+        reviews_count: business.reviewsCount,
+        website: business.website,
+        phone: business.phone,
+        description: business.description,
+        priority_tier: business.priorityTier,
+        featured_until: business.featuredUntil?.toISOString(),
+        google_types: business.googleTypes,
+        thumbnails: business.thumbnails,
+        contact_name: business.contactName,
+        contact_email: business.contactEmail,
+        contact_phone: business.contactPhone
       }))
 
       return NextResponse.json({
         success: true,
-        businesses,
-        total: businesses.length
+        businesses: transformedBusinesses,
+        total: transformedBusinesses.length
       })
     }
   } catch (error) {
@@ -116,44 +154,28 @@ async function createBusinessHandler(request: NextRequest) {
     const formData = await request.formData()
     
     // Extract business data
-    const businessData: Business = {
-      name: formData.get('name') as string,
-      primary_category: formData.get('primary_category') as string,
-      categories: JSON.parse(formData.get('categories') as string || '[]'),
-      categories_array: JSON.parse(formData.get('categories_array') as string || '[]'),
-      address: formData.get('address') as string,
-      city: formData.get('city') as string,
-      state: formData.get('state') as string,
-      latitude: formData.get('latitude') ? parseFloat(formData.get('latitude') as string) : undefined,
-      longitude: formData.get('longitude') ? parseFloat(formData.get('longitude') as string) : undefined,
-      rating: formData.get('rating') ? parseFloat(formData.get('rating') as string) : undefined,
-      reviews_count: formData.get('reviews_count') ? parseInt(formData.get('reviews_count') as string) : undefined,
-      website: formData.get('website') as string || undefined,
-      phone: formData.get('phone') as string || undefined,
-      description: formData.get('description') as string || undefined,
-      priority_tier: formData.get('priority_tier') ? parseInt(formData.get('priority_tier') as string) : 1,
-      featured_until: formData.get('featured_until') as string || undefined,
-      google_types: JSON.parse(formData.get('google_types') as string || '["establishment"]'),
-      // Contact information (private)
-      contact_name: formData.get('contact_name') as string || undefined,
-      contact_email: formData.get('contact_email') as string || undefined,
-      contact_phone: formData.get('contact_phone') as string || undefined,
-    }
+    const name = formData.get('name') as string
+    const primaryCategory = formData.get('primary_category') as string
+    const city = formData.get('city') as string
+    const state = formData.get('state') as string
+    const address = formData.get('address') as string
 
     // Validate required fields
-    if (!businessData.name || !businessData.primary_category || !businessData.city || !businessData.state) {
+    if (!name || !primaryCategory || !city || !state) {
       return NextResponse.json(
         { success: false, error: 'Missing required fields: name, primary_category, city, state' },
         { status: 400 }
       )
     }
 
-    // Generate unique business ID
-    const businessId = generateBusinessId(businessData.name, businessData.city, businessData.primary_category)
+    // Generate unique business ID and slug
+    const businessId = generateBusinessId(name, city, primaryCategory)
+    const slug = generateSlug(name, city)
 
     // Handle image upload if provided
+    let thumbnails: string[] = []
     const imageFile = formData.get('image') as File | null
-    if (imageFile) {
+    if (imageFile && imageFile.size > 0) {
       const validation = validateImageFile(imageFile)
       if (!validation.valid) {
         return NextResponse.json(
@@ -172,25 +194,36 @@ async function createBusinessHandler(request: NextRequest) {
         )
       }
 
-      // Add thumbnail path to business data
-      businessData.thumbnails = [imageResult.filePath!]
+      thumbnails = [imageResult.filePath!]
     }
 
-    // Load current data
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const data = JSON.parse(await fs.readFile(dataFile, 'utf-8'))
-
-    // Create backup
-    const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
-    await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
-
-    // Add new business
-    data.businesses[businessId] = businessData
-    data.metadata.total_businesses = Object.keys(data.businesses).length
-    data.metadata.updated_at = new Date().toISOString()
-
-    // Save updated data
-    await fs.writeFile(dataFile, JSON.stringify(data, null, 2), 'utf-8')
+    // Create business in database
+    const business = await prisma.listing.create({
+      data: {
+        id: businessId,
+        name,
+        slug,
+        primaryCategory,
+        address: address || '',
+        city,
+        state,
+        latitude: formData.get('latitude') ? parseFloat(formData.get('latitude') as string) : undefined,
+        longitude: formData.get('longitude') ? parseFloat(formData.get('longitude') as string) : undefined,
+        rating: formData.get('rating') ? parseFloat(formData.get('rating') as string) : undefined,
+        reviewsCount: formData.get('reviews_count') ? parseInt(formData.get('reviews_count') as string) : undefined,
+        website: (formData.get('website') as string) || undefined,
+        phone: (formData.get('phone') as string) || undefined,
+        description: (formData.get('description') as string) || undefined,
+        priorityTier: formData.get('priority_tier') ? parseInt(formData.get('priority_tier') as string) : 1,
+        featuredUntil: formData.get('featured_until') ? new Date(formData.get('featured_until') as string) : undefined,
+        googleTypes: JSON.parse(formData.get('google_types') as string || '["establishment"]'),
+        thumbnails,
+        contactName: (formData.get('contact_name') as string) || undefined,
+        contactEmail: (formData.get('contact_email') as string) || undefined,
+        contactPhone: (formData.get('contact_phone') as string) || undefined,
+        status: 'PUBLISHED'
+      }
+    })
 
     // Log the action
     auditLogger.log({
@@ -198,12 +231,12 @@ async function createBusinessHandler(request: NextRequest) {
       resource: 'business_data',
       ...userInfo,
       details: {
-        businessId: businessId,
-        businessName: businessData.name,
-        city: businessData.city,
-        state: businessData.state,
-        category: businessData.primary_category,
-        hasImage: !!imageFile
+        businessId: business.id,
+        businessName: business.name,
+        city: business.city,
+        state: business.state,
+        category: business.primaryCategory,
+        hasImage: thumbnails.length > 0
       },
       result: 'success',
       riskLevel: 'medium'
@@ -211,15 +244,25 @@ async function createBusinessHandler(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      businessId,
-      business: { ...businessData, id: businessId },
+      businessId: business.id,
+      business: {
+        id: business.id,
+        name: business.name,
+        primary_category: business.primaryCategory,
+        categories: [],
+        categories_array: [],
+        address: business.address,
+        city: business.city,
+        state: business.state,
+        thumbnails: business.thumbnails
+      },
       message: 'Business created successfully'
     })
 
   } catch (error) {
     console.error('Error creating business:', error)
     return NextResponse.json(
-      { success: false, error: 'Failed to create business' },
+      { success: false, error: 'Failed to create business', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     )
   }
@@ -256,45 +299,20 @@ async function updateBusinessHandler(request: NextRequest) {
       )
     }
 
-    // Load current data
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const data = JSON.parse(await fs.readFile(dataFile, 'utf-8'))
+    // Check if business exists
+    const existingBusiness = await prisma.listing.findUnique({
+      where: { id: businessId }
+    })
 
-    if (!data.businesses[businessId]) {
+    if (!existingBusiness) {
       return NextResponse.json(
         { success: false, error: 'Business not found' },
         { status: 404 }
       )
     }
 
-    // Extract updated business data
-    const updatedBusiness: Business = {
-      name: formData.get('name') as string,
-      primary_category: formData.get('primary_category') as string,
-      categories: JSON.parse(formData.get('categories') as string || '[]'),
-      categories_array: JSON.parse(formData.get('categories_array') as string || '[]'),
-      address: formData.get('address') as string,
-      city: formData.get('city') as string,
-      state: formData.get('state') as string,
-      latitude: formData.get('latitude') ? parseFloat(formData.get('latitude') as string) : undefined,
-      longitude: formData.get('longitude') ? parseFloat(formData.get('longitude') as string) : undefined,
-      rating: formData.get('rating') ? parseFloat(formData.get('rating') as string) : undefined,
-      reviews_count: formData.get('reviews_count') ? parseInt(formData.get('reviews_count') as string) : undefined,
-      website: formData.get('website') as string || undefined,
-      phone: formData.get('phone') as string || undefined,
-      description: formData.get('description') as string || undefined,
-      priority_tier: formData.get('priority_tier') ? parseInt(formData.get('priority_tier') as string) : 1,
-      featured_until: formData.get('featured_until') as string || undefined,
-      google_types: JSON.parse(formData.get('google_types') as string || '["establishment"]'),
-      // Contact information (private)
-      contact_name: formData.get('contact_name') as string || undefined,
-      contact_email: formData.get('contact_email') as string || undefined,
-      contact_phone: formData.get('contact_phone') as string || undefined,
-      // Preserve existing thumbnails
-      thumbnails: data.businesses[businessId].thumbnails || []
-    }
-
     // Handle new image upload if provided
+    let thumbnails = existingBusiness.thumbnails
     const imageFile = formData.get('image') as File | null
     if (imageFile && imageFile.size > 0) {
       const validation = validateImageFile(imageFile)
@@ -318,20 +336,34 @@ async function updateBusinessHandler(request: NextRequest) {
         )
       }
 
-      // Update thumbnail path
-      updatedBusiness.thumbnails = [imageResult.filePath!]
+      thumbnails = [imageResult.filePath!]
     }
 
-    // Create backup
-    const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
-    await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
-
-    // Update business
-    data.businesses[businessId] = updatedBusiness
-    data.metadata.updated_at = new Date().toISOString()
-
-    // Save updated data
-    await fs.writeFile(dataFile, JSON.stringify(data, null, 2), 'utf-8')
+    // Update business in database
+    const updatedBusiness = await prisma.listing.update({
+      where: { id: businessId },
+      data: {
+        name: formData.get('name') as string,
+        primaryCategory: formData.get('primary_category') as string,
+        address: formData.get('address') as string,
+        city: formData.get('city') as string,
+        state: formData.get('state') as string,
+        latitude: formData.get('latitude') ? parseFloat(formData.get('latitude') as string) : undefined,
+        longitude: formData.get('longitude') ? parseFloat(formData.get('longitude') as string) : undefined,
+        rating: formData.get('rating') ? parseFloat(formData.get('rating') as string) : undefined,
+        reviewsCount: formData.get('reviews_count') ? parseInt(formData.get('reviews_count') as string) : undefined,
+        website: (formData.get('website') as string) || undefined,
+        phone: (formData.get('phone') as string) || undefined,
+        description: (formData.get('description') as string) || undefined,
+        priorityTier: formData.get('priority_tier') ? parseInt(formData.get('priority_tier') as string) : 1,
+        featuredUntil: formData.get('featured_until') ? new Date(formData.get('featured_until') as string) : undefined,
+        googleTypes: JSON.parse(formData.get('google_types') as string || '["establishment"]'),
+        thumbnails,
+        contactName: (formData.get('contact_name') as string) || undefined,
+        contactEmail: (formData.get('contact_email') as string) || undefined,
+        contactPhone: (formData.get('contact_phone') as string) || undefined
+      }
+    })
 
     // Log the action
     auditLogger.log({
@@ -339,11 +371,11 @@ async function updateBusinessHandler(request: NextRequest) {
       resource: 'business_data',
       ...userInfo,
       details: {
-        businessId: businessId,
+        businessId: updatedBusiness.id,
         businessName: updatedBusiness.name,
         city: updatedBusiness.city,
         state: updatedBusiness.state,
-        category: updatedBusiness.primary_category,
+        category: updatedBusiness.primaryCategory,
         hasNewImage: !!imageFile
       },
       result: 'success',
@@ -352,7 +384,14 @@ async function updateBusinessHandler(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      business: { ...updatedBusiness, id: businessId },
+      business: {
+        id: updatedBusiness.id,
+        name: updatedBusiness.name,
+        primary_category: updatedBusiness.primaryCategory,
+        address: updatedBusiness.address,
+        city: updatedBusiness.city,
+        state: updatedBusiness.state
+      },
       message: 'Business updated successfully'
     })
 
@@ -396,33 +435,25 @@ async function deleteBusinessHandler(request: NextRequest) {
       )
     }
 
-    // Load current data
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const data = JSON.parse(await fs.readFile(dataFile, 'utf-8'))
+    // Get business for logging before deletion
+    const business = await prisma.listing.findUnique({
+      where: { id: businessId }
+    })
 
-    if (!data.businesses[businessId]) {
+    if (!business) {
       return NextResponse.json(
         { success: false, error: 'Business not found' },
         { status: 404 }
       )
     }
 
-    const businessToDelete = data.businesses[businessId]
-
-    // Create backup
-    const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
-    await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
-
     // Delete associated image
     await deleteBusinessImage(businessId)
 
-    // Remove business from data
-    delete data.businesses[businessId]
-    data.metadata.total_businesses = Object.keys(data.businesses).length
-    data.metadata.updated_at = new Date().toISOString()
-
-    // Save updated data
-    await fs.writeFile(dataFile, JSON.stringify(data, null, 2), 'utf-8')
+    // Delete business from database
+    await prisma.listing.delete({
+      where: { id: businessId }
+    })
 
     // Log the action
     auditLogger.log({
@@ -430,11 +461,11 @@ async function deleteBusinessHandler(request: NextRequest) {
       resource: 'business_data',
       ...userInfo,
       details: {
-        businessId: businessId,
-        businessName: businessToDelete.name,
-        city: businessToDelete.city,
-        state: businessToDelete.state,
-        category: businessToDelete.primary_category
+        businessId: business.id,
+        businessName: business.name,
+        city: business.city,
+        state: business.state,
+        category: business.primaryCategory
       },
       result: 'success',
       riskLevel: 'high'
