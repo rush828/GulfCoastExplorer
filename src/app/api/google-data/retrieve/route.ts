@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { PrismaClient } from '@prisma/client';
 import { cache, generateCacheKey } from '@/lib/cache';
 import rateLimiter from '@/lib/rate-limit';
+
+const prisma = new PrismaClient();
 
 export async function GET(request: NextRequest) {
   try {
@@ -52,14 +53,40 @@ export async function GET(request: NextRequest) {
 
 
     try {
-      // Read from the Excel-converted dataset with corrected IDs
-      const existingDataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json');
-      const existingContent = await fs.readFile(existingDataFile, 'utf-8');
-      const existingData = JSON.parse(existingContent);
+      // Fetch businesses from database
+      const businesses = await prisma.listing.findMany({
+        where: {
+          status: 'PUBLISHED'
+        },
+        orderBy: [
+          { priorityTier: 'desc' },
+          { rating: 'desc' }
+        ]
+      });
 
+      // Transform database results to expected format
+      const businessesData = businesses.map(b => ({
+        id: b.id,
+        name: b.name,
+        primary_category: b.primaryCategory,
+        categories_array: [], // Will be populated from relations if needed
+        address: b.address,
+        city: b.city,
+        state: b.state,
+        latitude: b.latitude,
+        longitude: b.longitude,
+        rating: b.rating,
+        reviews_count: b.reviewsCount,
+        website: b.website,
+        phone: b.phone,
+        description: b.description,
+        priority_tier: b.priorityTier,
+        featured_until: b.featuredUntil?.toISOString(),
+        thumbnails: b.thumbnails
+      }));
 
-      // Transform existing data to match Google data format
-      const transformedData = transformExistingData(existingData, location, category, state, search, page, limit);
+      // Transform data to match Google data format
+      const transformedData = transformExistingData({ businesses: businessesData }, location, category, state, search, page, limit);
 
       const responseData = {
         success: true,
