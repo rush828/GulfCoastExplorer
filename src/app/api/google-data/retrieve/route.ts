@@ -69,7 +69,7 @@ export async function GET(request: NextRequest) {
         id: b.id,
         name: b.name,
         primary_category: b.primaryCategory,
-        categories_array: [], // Will be populated from relations if needed
+        categories_array: b.categoriesArray || [],
         address: b.address,
         city: b.city,
         state: b.state,

@@ -29,7 +29,7 @@ export async function GET(request: NextRequest) {
       id: b.id,
       name: b.name,
       primary_category: b.primaryCategory,
-      categories_array: [],
+      categories_array: b.categoriesArray || [],
       address: b.address,
       city: b.city,
       state: b.state,
@@ -80,6 +80,7 @@ export async function PUT(request: NextRequest) {
     
     // Only update fields that are provided
     if (business.primary_category !== undefined) updateData.primaryCategory = business.primary_category
+    if (business.categories_array !== undefined) updateData.categoriesArray = business.categories_array
     if (business.priority_tier !== undefined) updateData.priorityTier = business.priority_tier
     if (business.name !== undefined) updateData.name = business.name
     if (business.address !== undefined) updateData.address = business.address
@@ -104,7 +105,7 @@ export async function PUT(request: NextRequest) {
         id: updatedBusiness.id,
         name: updatedBusiness.name,
         primary_category: updatedBusiness.primaryCategory,
-        categories_array: [],
+        categories_array: updatedBusiness.categoriesArray || [],
         updated_at: updatedBusiness.updatedAt.toISOString()
       }
     })

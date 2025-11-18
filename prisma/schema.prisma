@@ -82,6 +82,7 @@ model Listing {
   
   // Business categorization
   primaryCategory String        @map("primary_category")
+  categoriesArray String[]      @default([]) @map("categories_array") // Additional categories
   
   // Business metrics
   rating          Float?

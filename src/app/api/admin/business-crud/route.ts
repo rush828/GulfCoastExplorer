@@ -204,6 +204,7 @@ async function createBusinessHandler(request: NextRequest) {
         name,
         slug,
         primaryCategory,
+        categoriesArray: JSON.parse(formData.get('categories_array') as string || '[]'),
         address: address || '',
         city,
         state,
