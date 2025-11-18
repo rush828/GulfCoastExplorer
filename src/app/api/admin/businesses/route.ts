@@ -115,9 +115,11 @@ export async function PUT(request: NextRequest) {
       updated_at: new Date().toISOString()
     }
 
-    // Create backup before saving
-    const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
-    await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
+    // Skip backup in production (Vercel filesystem is read-only)
+    if (process.env.NODE_ENV !== 'production') {
+      const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
+      await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
+    }
 
     // Update the data structure - preserve original format
     if (isObjectFormat) {

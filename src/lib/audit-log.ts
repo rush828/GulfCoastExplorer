@@ -38,18 +38,20 @@ class AuditLogger {
     }
 
     try {
-      const logs = this.readLogs()
-      logs.push(logEntry)
+      // In production (Vercel), only log to console - filesystem is read-only
+      if (process.env.NODE_ENV === 'production') {
+        console.log(`[AUDIT] ${entry.action} - ${entry.result} - ${entry.riskLevel}`, JSON.stringify(logEntry))
+      } else {
+        // In development, write to file
+        const logs = this.readLogs()
+        logs.push(logEntry)
 
-      // Keep only last 1000 entries
-      if (logs.length > 1000) {
-        logs.splice(0, logs.length - 1000)
-      }
+        // Keep only last 1000 entries
+        if (logs.length > 1000) {
+          logs.splice(0, logs.length - 1000)
+        }
 
-      writeFileSync(this.logFile, JSON.stringify(logs, null, 2))
-
-      // Log to console in development
-      if (process.env.NODE_ENV === 'development') {
+        writeFileSync(this.logFile, JSON.stringify(logs, null, 2))
         console.log(`[AUDIT] ${entry.action} - ${entry.result} - ${entry.riskLevel}`)
       }
 
