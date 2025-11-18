@@ -1,9 +1,10 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { promises as fs } from 'fs'
-import path from 'path'
+import { PrismaClient } from '@prisma/client'
 import GoogleMap from '../../../components/GoogleMap'
 import ContextualNavigation from '../../../components/ContextualNavigation'
+
+const prisma = new PrismaClient()
 
 interface Business {
   id: string
@@ -96,50 +97,42 @@ export async function generateMetadata({ params }: BusinessPageProps): Promise<M
 
 async function getBusiness(id: string): Promise<Business | null> {
   try {
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const content = await fs.readFile(dataFile, 'utf-8')
-    const data = JSON.parse(content)
-    
     // Decode the ID in case it was URL encoded
     const decodedId = decodeURIComponent(id)
-    let business: any = null
     
-    // Handle both object and array formats
-    if (data.businesses) {
-      if (Array.isArray(data.businesses)) {
-        business = data.businesses.find((b: any) => b.id === id || b.id === decodedId)
-      } else if (typeof data.businesses === 'object') {
-        // For object format, the ID is the key
-        business = data.businesses[id] || data.businesses[decodedId]
-        if (business) {
-          business.id = id // Add the ID to the business object
-        }
+    // Fetch from database
+    const listing = await prisma.listing.findFirst({
+      where: {
+        OR: [
+          { id: id },
+          { id: decodedId },
+          { slug: id },
+          { slug: decodedId }
+        ]
       }
-    } else if (Array.isArray(data)) {
-      business = data.find((b: any) => b.id === id || b.id === decodedId)
-    }
+    })
     
-    if (!business) return null
+    if (!listing) return null
     
     return {
-      id: business.id,
-      name: business.name || business.business_name,
-      category: business.primary_category || business.category || 'business',
-      categories: business.categories_array || business.categories || [business.primary_category || business.category || 'business'],
-      categories_array: business.categories_array || [],
-      primary_category: business.primary_category || business.category || 'business',
-      address: business.address || business.formatted_address || '',
-      city: business.city || '',
-      state: business.state || '',
-      rating: business.rating || 0,
-      reviews_count: business.reviews_count || business.user_ratings_total || 0,
-      website: business.website || business.website_url || '',
-      phone: business.phone || business.international_phone_number || '',
-      description: business.description || '',
-      photos: business.photos || business.photos_array || [],
-      latitude: business.latitude || business.geometry?.location?.lat,
-      longitude: business.longitude || business.geometry?.location?.lng,
-      types: business.types || [business.category || 'business']
+      id: listing.id,
+      name: listing.name,
+      category: listing.primaryCategory,
+      categories: [listing.primaryCategory],
+      categories_array: [],
+      primary_category: listing.primaryCategory,
+      address: listing.address,
+      city: listing.city,
+      state: listing.state,
+      rating: listing.rating || 0,
+      reviews_count: listing.reviewsCount || 0,
+      website: listing.website || '',
+      phone: listing.phone || '',
+      description: listing.description || '',
+      photos: listing.thumbnails || [],
+      latitude: listing.latitude || undefined,
+      longitude: listing.longitude || undefined,
+      types: listing.googleTypes || [listing.primaryCategory]
     }
   } catch (error) {
     console.error('Error loading business:', error)

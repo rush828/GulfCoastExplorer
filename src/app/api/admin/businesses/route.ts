@@ -74,13 +74,27 @@ export async function PUT(request: NextRequest) {
     }
 
     // Update business in database
+    const updateData: any = {
+      updatedAt: new Date()
+    }
+    
+    // Only update fields that are provided
+    if (business.primary_category !== undefined) updateData.primaryCategory = business.primary_category
+    if (business.priority_tier !== undefined) updateData.priorityTier = business.priority_tier
+    if (business.name !== undefined) updateData.name = business.name
+    if (business.address !== undefined) updateData.address = business.address
+    if (business.city !== undefined) updateData.city = business.city
+    if (business.state !== undefined) updateData.state = business.state
+    if (business.rating !== undefined) updateData.rating = business.rating
+    if (business.reviews_count !== undefined) updateData.reviewsCount = business.reviews_count
+    if (business.website !== undefined) updateData.website = business.website
+    if (business.phone !== undefined) updateData.phone = business.phone
+    if (business.description !== undefined) updateData.description = business.description
+    if (business.featured_until !== undefined) updateData.featuredUntil = business.featured_until ? new Date(business.featured_until) : null
+    
     const updatedBusiness = await prisma.listing.update({
       where: { id: business.id },
-      data: {
-        primaryCategory: business.primary_category,
-        // categories_array would be updated via the categories relation if needed
-        updatedAt: new Date()
-      }
+      data: updateData
     })
 
     return NextResponse.json({ 
