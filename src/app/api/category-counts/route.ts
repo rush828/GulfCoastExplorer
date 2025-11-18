@@ -34,7 +34,8 @@ export async function GET(request: NextRequest) {
     const businesses = await prisma.listing.findMany({
       where,
       select: {
-        primaryCategory: true
+        primaryCategory: true,
+        categoriesArray: true
       }
     })
     
@@ -83,13 +84,17 @@ export async function GET(request: NextRequest) {
         
         categoryCount = businesses.filter((business) => {
           const primaryCategory = business.primaryCategory?.toLowerCase().trim();
+          const categoriesArray = business.categoriesArray || [];
           
           // Check if primary category matches
           if (primaryCategory && categoriesToMatch.includes(primaryCategory)) {
             return true;
           }
           
-          return false;
+          // Check if any category in categories_array matches
+          return categoriesArray.some((cat: string) => 
+            categoriesToMatch.includes(cat.toLowerCase().trim())
+          );
         }).length;
         
         counts[categorySlug] = categoryCount;
