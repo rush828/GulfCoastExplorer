@@ -16,6 +16,9 @@ quick_start_guide.md
 
 
 
+X:\WebProjects\GulfCoastDirectory\data\businesses-dataset-manual.xlsx
+
+
 
 
 24_hours
