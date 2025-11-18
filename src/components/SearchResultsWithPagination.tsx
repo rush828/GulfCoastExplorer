@@ -691,6 +691,13 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                     {(() => {
                       // Remove "USA" from the end of the address
                       let formattedAddress = business.address;
+                      
+                      // If address doesn't include city/state, append them
+                      const hasCity = formattedAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
+                      if (!hasCity && business.city && business.state) {
+                        formattedAddress = `${formattedAddress}, ${business.city}, ${business.state}`;
+                      }
+                      
                       if (formattedAddress.endsWith(', USA')) {
                         formattedAddress = formattedAddress.replace(', USA', '');
                       }

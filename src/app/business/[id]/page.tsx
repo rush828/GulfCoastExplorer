@@ -501,10 +501,25 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                   <h1 className="text-xl sm:text-2xl md:text-[1.5rem] font-bold text-gray-900 mb-2">{business.name}</h1>
                   
                   <div className="text-gray-600">
-                    <p className="text-sm font-medium">{business.address.split(',')[0]}</p>
-                    <p className="text-sm font-medium">{business.address.split(',').slice(1).filter(part => 
-                      !part.trim().includes('USA')
-                    ).join(',').trim()}</p>
+                    {(() => {
+                      let fullAddress = business.address;
+                      // If address doesn't include city/state, append them
+                      const hasCity = fullAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
+                      if (!hasCity && business.city && business.state) {
+                        fullAddress = `${fullAddress}, ${business.city}, ${business.state}`;
+                      }
+                      
+                      const parts = fullAddress.split(',');
+                      const street = parts[0];
+                      const rest = parts.slice(1).filter(part => !part.trim().includes('USA')).join(',').trim();
+                      
+                      return (
+                        <>
+                          <p className="text-sm font-medium">{street}</p>
+                          {rest && <p className="text-sm font-medium">{rest}</p>}
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
                 
@@ -585,10 +600,25 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                         </svg>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className={`text-gray-700 font-medium truncate text-xs sm:text-sm`}>{business.address.split(',')[0]}</p>
-                        <p className={`text-gray-700 truncate text-xs sm:text-sm`}>{business.address.split(',').slice(1).filter(part => 
-                          !part.trim().includes('USA')
-                        ).join(',').trim()}</p>
+                        {(() => {
+                          let fullAddress = business.address;
+                          // If address doesn't include city/state, append them
+                          const hasCity = fullAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
+                          if (!hasCity && business.city && business.state) {
+                            fullAddress = `${fullAddress}, ${business.city}, ${business.state}`;
+                          }
+                          
+                          const parts = fullAddress.split(',');
+                          const street = parts[0];
+                          const rest = parts.slice(1).filter(part => !part.trim().includes('USA')).join(',').trim();
+                          
+                          return (
+                            <>
+                              <p className={`text-gray-700 font-medium truncate text-xs sm:text-sm`}>{street}</p>
+                              {rest && <p className={`text-gray-700 truncate text-xs sm:text-sm`}>{rest}</p>}
+                            </>
+                          );
+                        })()}
                       </div>
                     </div>
                   </div>
