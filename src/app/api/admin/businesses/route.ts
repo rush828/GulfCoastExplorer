@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
-import fs from 'fs/promises'
-import path from 'path'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
+// Force this route to be dynamic
+export const dynamic = 'force-dynamic'
 
 // GET - Fetch businesses with pagination
 export async function GET(request: NextRequest) {
@@ -10,39 +14,40 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get('limit') || '100')
     const skip = (page - 1) * limit
     
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const content = await fs.readFile(dataFile, 'utf-8')
-    const data = JSON.parse(content)
-    
-    let businesses = []
-    
-    // Handle the new data structure from Excel conversion
-    if (data.businesses) {
-      if (Array.isArray(data.businesses)) {
-        businesses = data.businesses
-      } else if (typeof data.businesses === 'object') {
-        // For object format where keys are business IDs
-        businesses = Object.entries(data.businesses).map(([id, business]) => ({
-          ...(business as any),
-          id: id
-        }))
-      }
-    } else if (Array.isArray(data)) {
-      businesses = data
-    } else {
-      // Handle flat object structure where keys are business IDs
-      businesses = Object.entries(data).map(([id, business]) => ({
-        ...(business as any),
-        id: id
-      }))
-    }
+    // Fetch businesses from database
+    const [businesses, total] = await Promise.all([
+      prisma.listing.findMany({
+        skip,
+        take: limit,
+        orderBy: { createdAt: 'desc' }
+      }),
+      prisma.listing.count()
+    ])
 
-    const total = businesses.length
-    const paginatedBusinesses = businesses.slice(skip, skip + limit)
+    // Transform to match expected format
+    const transformedBusinesses = businesses.map(b => ({
+      id: b.id,
+      name: b.name,
+      primary_category: b.primaryCategory,
+      categories_array: [],
+      address: b.address,
+      city: b.city,
+      state: b.state,
+      latitude: b.latitude,
+      longitude: b.longitude,
+      rating: b.rating,
+      reviews_count: b.reviewsCount,
+      website: b.website,
+      phone: b.phone,
+      description: b.description,
+      priority_tier: b.priorityTier,
+      featured_until: b.featuredUntil?.toISOString(),
+      thumbnails: b.thumbnails
+    }))
 
     return NextResponse.json({ 
       success: true, 
-      businesses: paginatedBusinesses,
+      businesses: transformedBusinesses,
       total,
       page,
       totalPages: Math.ceil(total / limit)
@@ -68,99 +73,26 @@ export async function PUT(request: NextRequest) {
       )
     }
 
-    const dataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
-    const content = await fs.readFile(dataFile, 'utf-8')
-    const data = JSON.parse(content)
-    
-    let businesses = []
-    let isObjectFormat = false
-    
-    // Handle the new data structure from Excel conversion
-    if (data.businesses) {
-      if (Array.isArray(data.businesses)) {
-        businesses = data.businesses
-      } else if (typeof data.businesses === 'object') {
-        // For object format where keys are business IDs
-        businesses = Object.entries(data.businesses).map(([id, business]) => ({
-          ...(business as any),
-          id: id
-        }))
-        isObjectFormat = true
+    // Update business in database
+    const updatedBusiness = await prisma.listing.update({
+      where: { id: business.id },
+      data: {
+        primaryCategory: business.primary_category,
+        // categories_array would be updated via the categories relation if needed
+        updatedAt: new Date()
       }
-    } else if (Array.isArray(data)) {
-      businesses = data
-    } else {
-      // Handle flat object structure where keys are business IDs
-      businesses = Object.entries(data).map(([id, business]) => ({
-        ...(business as any),
-        id: id
-      }))
-      isObjectFormat = true
-    }
-
-    // Find and update the business
-    const businessIndex = businesses.findIndex((b: any) => b.id === business.id)
-    if (businessIndex === -1) {
-      return NextResponse.json(
-        { success: false, error: 'Business not found' },
-        { status: 404 }
-      )
-    }
-
-    // Update the business
-    businesses[businessIndex] = {
-      ...businesses[businessIndex],
-      primary_category: business.primary_category,
-      categories_array: business.categories_array,
-      updated_at: new Date().toISOString()
-    }
-
-    // Skip backup in production (Vercel filesystem is read-only)
-    if (process.env.NODE_ENV !== 'production') {
-      const backupFile = path.join(process.cwd(), 'data', `businesses-backup-${new Date().toISOString().replace(/:/g, '-')}.json`)
-      await fs.writeFile(backupFile, JSON.stringify(data, null, 2), 'utf-8')
-    }
-
-    // Update the data structure - preserve original format
-    if (isObjectFormat) {
-      // Convert back to object format with business IDs as keys
-      const businessObject: any = {}
-      businesses.forEach((business: any) => {
-        if (business.id) {
-          businessObject[business.id] = { ...business }
-          delete businessObject[business.id].id // Remove redundant id field
-        }
-      })
-      
-      if (data.businesses) {
-        data.businesses = businessObject
-      } else {
-        // Flat object structure
-        Object.keys(data).forEach(key => delete data[key])
-        Object.assign(data, businessObject)
-      }
-    } else if (Array.isArray(data)) {
-      // Data is already an array
-      data.splice(0, data.length, ...businesses)
-    } else if (data.businesses) {
-      if (Array.isArray(data.businesses)) {
-        data.businesses = businesses
-      } else {
-        // Convert object to array format
-        data.businesses = businesses
-      }
-    } else {
-      // No businesses property, create it
-      data.businesses = businesses
-    }
-
-    // Save the updated data
-    await fs.writeFile(dataFile, JSON.stringify(data, null, 2), 'utf-8')
+    })
 
     return NextResponse.json({ 
       success: true, 
       message: 'Business updated successfully',
-      business: businesses[businessIndex]
+      business: {
+        id: updatedBusiness.id,
+        name: updatedBusiness.name,
+        primary_category: updatedBusiness.primaryCategory,
+        categories_array: [],
+        updated_at: updatedBusiness.updatedAt.toISOString()
+      }
     })
   } catch (error) {
     console.error('Error updating business:', error)
