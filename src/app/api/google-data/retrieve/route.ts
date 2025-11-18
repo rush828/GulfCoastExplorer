@@ -70,6 +70,7 @@ export async function GET(request: NextRequest) {
         name: b.name,
         primary_category: b.primaryCategory,
         categories_array: b.categoriesArray || [],
+        categories: b.categoriesArray || [], // Also add for UI compatibility
         address: b.address,
         city: b.city,
         state: b.state,
