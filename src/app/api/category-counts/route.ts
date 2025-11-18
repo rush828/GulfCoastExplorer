@@ -12,16 +12,22 @@ export async function GET(request: NextRequest) {
     const city = searchParams.get('city');
     const state = searchParams.get('state');
 
-    // Build where clause
+    // Build where clause with case-insensitive matching
     const where: any = {
       status: 'PUBLISHED'
     }
     
     if (city) {
-      where.city = city
+      where.city = {
+        equals: city,
+        mode: 'insensitive'
+      }
     }
     if (state) {
-      where.state = state
+      where.state = {
+        equals: state,
+        mode: 'insensitive'
+      }
     }
 
     // Fetch businesses from database
