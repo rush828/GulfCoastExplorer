@@ -5,6 +5,10 @@ import path from 'path'
 
 const prisma = new PrismaClient()
 
+// Force this route to be dynamic (not pre-rendered at build time)
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 // Helper function to generate URL-friendly slug
 function generateSlug(name: string, city: string): string {
   const baseSlug = `${city}_${name}`
