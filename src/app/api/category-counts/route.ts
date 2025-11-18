@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient()
+
+// Force this route to be dynamic
+export const dynamic = 'force-dynamic'
 
 export async function GET(request: NextRequest) {
   try {
@@ -8,91 +12,28 @@ export async function GET(request: NextRequest) {
     const city = searchParams.get('city');
     const state = searchParams.get('state');
 
-    // Read the data
-    const existingDataFile = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json');
-    const existingContent = await fs.readFile(existingDataFile, 'utf-8');
-    const existingData = JSON.parse(existingContent);
-    
-    // Handle both old array format and new object format
-    let businessArray: any[] = [];
-    
-    if (existingData.businesses) {
-      if (Array.isArray(existingData.businesses)) {
-        // Old format: { "businesses": [...] }
-        businessArray = existingData.businesses;
-      } else if (typeof existingData.businesses === 'object') {
-        // New format: { "businesses": { "id1": {...}, "id2": {...} } }
-        businessArray = Object.values(existingData.businesses);
-      }
-    } else if (Array.isArray(existingData)) {
-      // Direct array format
-      businessArray = existingData;
+    // Build where clause
+    const where: any = {
+      status: 'PUBLISHED'
     }
     
-    // Ensure we have an array of businesses
-    if (Array.isArray(businessArray) && businessArray.length > 0) {
-      let filteredBusinesses = businessArray;
-      
-      // FIRST: Filter by state (this should happen FIRST to limit scope)
-      // If no state is specified, default to Gulf Coast states only
-      const gulfCoastStates = ['florida', 'alabama', 'mississippi', 'louisiana', 'texas'];
-      let stateFilter = state;
-      
-      if (!stateFilter) {
-        // Default to Gulf Coast states when no state is specified
-        stateFilter = gulfCoastStates.join(',');
+    if (city) {
+      where.city = city
+    }
+    if (state) {
+      where.state = state
+    }
+
+    // Fetch businesses from database
+    const businesses = await prisma.listing.findMany({
+      where,
+      select: {
+        primaryCategory: true
       }
-      
-      if (stateFilter) {
-        // Handle multiple states (comma-separated)
-        const stateList = stateFilter.split(',').map(s => s.trim().toLowerCase());
-        
-        filteredBusinesses = filteredBusinesses.filter((business: any) => {
-          const businessState = business.state?.toLowerCase().trim();
-          
-          // Check if business state matches any of the requested states
-          const stateMatch = stateList.includes(businessState);
-          
-          return stateMatch;
-        });
-      }
-      
-      // SECOND: Filter by city/location (after state filtering)
-      let cityFilter = city;
-      
-      // CRITICAL FIX: ALWAYS apply city filtering when we have a city parameter
-      if (cityFilter && cityFilter.trim()) {
-        // Normalize city filter to handle both hyphen and space formats, and remove periods
-        const normalizedCityFilter = cityFilter.toLowerCase().trim().replace(/-/g, ' ').replace(/\./g, '');
-        
-        filteredBusinesses = filteredBusinesses.filter((business: any) => {
-          // Normalize business city to handle periods and hyphens
-          const businessCity = business.city?.toLowerCase().trim().replace(/\./g, '');
-          
-          // Check for exact match first
-          let cityMatch = businessCity === normalizedCityFilter;
-          
-          // If no exact match, try fuzzy matching for common variations
-          if (!cityMatch) {
-            // Handle common city name variations
-            const cityVariations = [
-              normalizedCityFilter,
-              normalizedCityFilter.replace(/\s+/g, '-'), // space to hyphen
-              normalizedCityFilter.replace(/-/g, ' '),   // hyphen to space
-              normalizedCityFilter.replace(/\s+/g, ''),  // remove spaces
-            ];
-            
-            cityMatch = cityVariations.some(variation => 
-              businessCity === variation || 
-              businessCity?.includes(variation) ||
-              variation.includes(businessCity || '')
-            );
-          }
-          
-          return cityMatch;
-        });
-      }
-      
+    })
+    
+    // Count businesses by category
+    if (businesses.length > 0) {
       // Now count businesses for each category using the EXACT same logic as search API
       // NOTE: These keys must match the slugs used in the city page categories
       const counts = {
@@ -134,19 +75,15 @@ export async function GET(request: NextRequest) {
         
         const categoriesToMatch = categoryMappings[categorySlug] || [categorySlug];
         
-        categoryCount = filteredBusinesses.filter((business: any) => {
-          const primaryCategory = business.primary_category?.toLowerCase().trim();
-          const categoriesArray = business.categories_array || [];
+        categoryCount = businesses.filter((business) => {
+          const primaryCategory = business.primaryCategory?.toLowerCase().trim();
           
           // Check if primary category matches
           if (primaryCategory && categoriesToMatch.includes(primaryCategory)) {
             return true;
           }
           
-          // Check if any category in categories_array matches
-          return categoriesArray.some((cat: string) => 
-            categoriesToMatch.includes(cat.toLowerCase().trim())
-          );
+          return false;
         }).length;
         
         counts[categorySlug] = categoryCount;
@@ -155,7 +92,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({
         success: true,
         counts: counts,
-        total: filteredBusinesses.length,
+        total: businesses.length,
         city: city || null,
         state: state || null,
         timestamp: new Date().toISOString()
