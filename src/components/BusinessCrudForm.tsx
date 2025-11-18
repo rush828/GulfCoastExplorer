@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { validateBusinessForm, validateField, type BusinessFormData } from '@/lib/validation'
+import { statesAndCities } from '@/data/cities'
 
 interface Business {
   id?: string
@@ -81,6 +82,11 @@ export default function BusinessCrudForm({ business, onSuccess, onCancel, isEdit
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [csrfToken, setCsrfToken] = useState('')
   const fileInputRef = useRef<HTMLInputElement>(null)
+
+  // Get cities for selected state
+  const availableCities = formData.state 
+    ? statesAndCities.find(s => s.name === formData.state)?.cities || []
+    : []
 
   // Initialize form with business data if editing
   useEffect(() => {
@@ -368,27 +374,16 @@ export default function BusinessCrudForm({ business, onSuccess, onCancel, isEdit
           <div className="grid grid-cols-2 gap-3">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                City *
-              </label>
-              <input
-                type="text"
-                name="city"
-                value={formData.city}
-                onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-              {errors.city && <p className="text-red-500 text-sm mt-1">{errors.city}</p>}
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
                 State *
               </label>
               <select
                 name="state"
                 value={formData.state}
-                onChange={handleInputChange}
+                onChange={(e) => {
+                  // Clear city when state changes
+                  handleInputChange(e)
+                  setFormData(prev => ({ ...prev, city: '' }))
+                }}
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               >
@@ -400,6 +395,28 @@ export default function BusinessCrudForm({ business, onSuccess, onCancel, isEdit
                 ))}
               </select>
               {errors.state && <p className="text-red-500 text-sm mt-1">{errors.state}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                City * {!formData.state && <span className="text-gray-400 text-xs">(Select state first)</span>}
+              </label>
+              <select
+                name="city"
+                value={formData.city}
+                onChange={handleInputChange}
+                disabled={!formData.state || availableCities.length === 0}
+                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                required
+              >
+                <option value="">{!formData.state ? 'Select state first' : 'Select City'}</option>
+                {availableCities.map(city => (
+                  <option key={city.slug} value={city.name}>
+                    {city.name}
+                  </option>
+                ))}
+              </select>
+              {errors.city && <p className="text-red-500 text-sm mt-1">{errors.city}</p>}
             </div>
           </div>
         </div>
