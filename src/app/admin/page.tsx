@@ -369,7 +369,13 @@ export default function AdminPage() {
               <div className="flex justify-between items-start">
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{business.name}</h3>
-                  <p className="text-gray-600 mb-2">{business.address}</p>
+                  <p className="text-gray-600 mb-2">
+                    {(() => {
+                      // Extract street address only (first part before first comma)
+                      const streetAddress = business.address.split(',')[0].trim()
+                      return streetAddress
+                    })()}
+                  </p>
                   <p className="text-sm text-gray-500 mb-3">{business.city}, {business.state}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-3">
