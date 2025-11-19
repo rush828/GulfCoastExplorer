@@ -42,7 +42,9 @@ export async function GET(request: NextRequest) {
       description: b.description,
       priority_tier: b.priorityTier,
       featured_until: b.featuredUntil?.toISOString(),
-      thumbnails: b.thumbnails
+      thumbnails: b.thumbnails,
+      placeId: b.placeId,
+      createdAt: b.createdAt.toISOString()
     }))
 
     return NextResponse.json({ 

@@ -18,6 +18,8 @@ interface Business {
   phone?: string
   description?: string
   photos?: string[]
+  placeId?: string | null
+  createdAt?: string
 }
 
 const CATEGORY_OPTIONS = [
@@ -63,6 +65,7 @@ export default function AdminPage() {
   const [selectedState, setSelectedState] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedPrimaryCategory, setSelectedPrimaryCategory] = useState('')
+  const [sourceFilter, setSourceFilter] = useState<'all' | 'manual' | 'imported'>('all')
   const [editingBusiness, setEditingBusiness] = useState<Business | null>(null)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
@@ -110,9 +113,16 @@ export default function AdminPage() {
       )
     }
 
+    // Filter by source (manually added vs imported)
+    if (sourceFilter === 'manual') {
+      filtered = filtered.filter(business => !business.placeId)
+    } else if (sourceFilter === 'imported') {
+      filtered = filtered.filter(business => business.placeId)
+    }
+
     setFilteredBusinesses(filtered)
     setCurrentPage(1)
-  }, [businesses, searchTerm, selectedCity, selectedState, selectedCategory, selectedPrimaryCategory])
+  }, [businesses, searchTerm, selectedCity, selectedState, selectedCategory, selectedPrimaryCategory, sourceFilter])
 
   const loadBusinesses = async () => {
     try {
@@ -245,7 +255,7 @@ export default function AdminPage() {
         {/* Filters */}
         <div className="bg-white rounded-lg shadow-sm border p-6 mb-6">
           <h2 className="text-lg font-semibold mb-4">Search & Filter</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Search</label>
               <input
@@ -308,6 +318,18 @@ export default function AdminPage() {
                 ))}
               </select>
             </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Source</label>
+              <select
+                value={sourceFilter}
+                onChange={(e) => setSourceFilter(e.target.value as 'all' | 'manual' | 'imported')}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="all">All Sources</option>
+                <option value="manual">✏️ Manually Added</option>
+                <option value="imported">📥 Imported</option>
+              </select>
+            </div>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             <button
@@ -317,6 +339,7 @@ export default function AdminPage() {
                 setSelectedState('')
                 setSelectedCategory('')
                 setSelectedPrimaryCategory('')
+                setSourceFilter('all')
               }}
               className="px-4 py-2 text-sm bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
             >
@@ -331,7 +354,7 @@ export default function AdminPage() {
             Showing {currentBusinesses.length} of {filteredBusinesses.length} businesses
             {filteredBusinesses.length !== businesses.length && ` (filtered from ${businesses.length} total)`}
           </p>
-          {(searchTerm || selectedCity || selectedState || selectedCategory || selectedPrimaryCategory) && (
+          {(searchTerm || selectedCity || selectedState || selectedCategory || selectedPrimaryCategory || sourceFilter !== 'all') && (
             <div className="mt-2 flex flex-wrap gap-2">
               {searchTerm && (
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
@@ -358,6 +381,16 @@ export default function AdminPage() {
                   Has: {selectedCategory}
                 </span>
               )}
+              {sourceFilter === 'manual' && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                  ✏️ Manually Added
+                </span>
+              )}
+              {sourceFilter === 'imported' && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-teal-100 text-teal-800">
+                  📥 Imported
+                </span>
+              )}
             </div>
           )}
         </div>
@@ -368,7 +401,14 @@ export default function AdminPage() {
             <div key={business.id} className="bg-white rounded-lg shadow-sm border p-6">
               <div className="flex justify-between items-start">
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{business.name}</h3>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold text-gray-900">{business.name}</h3>
+                    {!business.placeId && (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 border border-purple-200">
+                        ✏️ Manually Added
+                      </span>
+                    )}
+                  </div>
                   <p className="text-gray-600 mb-2">
                     {(() => {
                       // Extract street address only (first part before first comma)
