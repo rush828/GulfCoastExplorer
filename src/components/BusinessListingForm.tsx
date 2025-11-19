@@ -27,6 +27,17 @@ export default function BusinessListingForm() {
   
   // Check if PayPal is in production mode
   const isDevelopment = process.env.NEXT_PUBLIC_PAYPAL_ENVIRONMENT !== 'production'
+  
+  // Debug: Log PayPal config on mount (only in development)
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('PayPal Config Check:', {
+        businessEmail: process.env.NEXT_PUBLIC_PAYPAL_BUSINESS_EMAIL ? 'Set' : 'Missing',
+        environment: process.env.NEXT_PUBLIC_PAYPAL_ENVIRONMENT || 'Not set',
+        isDevelopment
+      })
+    }
+  }, [isDevelopment])
 
   // Get CSRF token on component mount
   useEffect(() => {
@@ -46,29 +57,32 @@ export default function BusinessListingForm() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target
-    let processedValue = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
+    let processedValue: any = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
     
-    // Sanitize input for security
+    // Don't sanitize during typing - it interferes with normal input (especially spaces)
+    // Sanitization will happen on form submit for security
+    // Only apply formatters for specific fields that need formatting
     if (typeof processedValue === 'string') {
-      processedValue = sanitizeInput(processedValue)
-      
-      // Apply formatters
+      // Apply formatters only for fields that need them
+      // Phone and zipCode formatters remove non-digits, which is expected
+      // Website formatter should only run when user finishes typing (not on every keystroke)
       if (name === 'phone') {
         processedValue = formatters.phone(processedValue)
       } else if (name === 'zipCode') {
         processedValue = formatters.zipCode(processedValue)
-      } else if (name === 'website') {
-        processedValue = formatters.website(processedValue)
       }
+      // Don't apply website formatter during typing - it interferes with spaces
+      // Website formatting will happen on blur or submit
+      // For all other fields (including website), use the value as-is to preserve spaces
     }
     
-    // Update form data
+    // Update form data immediately with the raw or formatted value
     setFormData(prev => ({
       ...prev,
       [name]: processedValue
     }))
     
-    // Real-time validation
+    // Real-time validation (doesn't modify the value, just checks it)
     if (typeof processedValue === 'string') {
       const error = validateField(name as keyof BusinessFormData, processedValue)
       setFieldErrors(prev => ({
@@ -78,17 +92,45 @@ export default function BusinessListingForm() {
     }
   }
 
+  // Handle website field blur to format URL properly
+  const handleWebsiteBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const value = e.target.value.trim()
+    if (value && !value.startsWith('http')) {
+      setFormData(prev => ({
+        ...prev,
+        website: `https://${value}`
+      }))
+    }
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    console.log('Form submitted', { formData, agreeToTerms: formData.agreeToTerms })
+    
+    // Check if terms are agreed
+    if (!formData.agreeToTerms) {
+      alert('Please agree to the terms and conditions to continue.')
+      return
+    }
+    
     setIsSubmitting(true)
     setIsValidating(true)
 
     try {
       // Comprehensive form validation
+      console.log('Validating form data...', formData)
       const validation = await validateBusinessForm(formData as BusinessFormData)
+      console.log('Validation result:', validation)
       
       if (!validation.isValid) {
+        console.log('Validation failed:', validation.errors)
         setFieldErrors(validation.errors)
+        
+        // Show alert with first error
+        const firstError = Object.values(validation.errors)[0]
+        if (firstError) {
+          alert(`Please fix the following error: ${firstError}`)
+        }
         
         // Focus on first error field
         const firstErrorField = Object.keys(validation.errors)[0]
@@ -105,6 +147,7 @@ export default function BusinessListingForm() {
       
       // Clear any previous errors
       setFieldErrors({})
+      console.log('Validation passed, proceeding to PayPal...')
 
       // Here you would typically send the form data to your backend
       // For now, we'll simulate the process and redirect to PayPal
@@ -129,6 +172,13 @@ export default function BusinessListingForm() {
         return
       }
 
+      console.log('PayPal Configuration:', {
+        businessEmail: paypalBusinessEmail,
+        isDevelopment,
+        amount,
+        listingType: formData.listingType
+      })
+
       // PayPal subscription parameters
       const paypalParams = new URLSearchParams({
         cmd: '_xclick-subscriptions',
@@ -139,6 +189,8 @@ export default function BusinessListingForm() {
         t3: 'Y',
         src: '1',
         currency_code: 'USD',
+        no_note: '1',
+        no_shipping: '1',
         cn: isDevelopment ? 'Gulf Coast Directory (Test)' : 'Gulf Coast Directory',
         return: `${window.location.origin}/business-listing/success`,
         cancel_return: `${window.location.origin}/business-listing/cancel`,
@@ -158,19 +210,46 @@ export default function BusinessListingForm() {
         : 'https://www.paypal.com/cgi-bin/webscr'
       
       const paypalUrl = `${paypalBaseUrl}?${paypalParams.toString()}`
+      
+      console.log('Redirecting to PayPal:', paypalUrl)
 
       // Redirect to PayPal
+      console.log('Redirecting to PayPal URL:', paypalUrl)
       window.location.href = paypalUrl
 
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('An error occurred while processing your request. Please try again.')
+      alert(`An error occurred while processing your request: ${error instanceof Error ? error.message : 'Unknown error'}. Please try again.`)
       setIsSubmitting(false)
+      setIsValidating(false)
     }
   }
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* General Error Display */}
+      {Object.keys(fieldErrors).length > 0 && (
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-red-800">
+                Please fix the following errors:
+              </h3>
+              <ul className="mt-2 text-sm text-red-700 list-disc list-inside">
+                {Object.entries(fieldErrors).map(([field, error]) => (
+                  <li key={field}>{error}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+      
       {isDevelopment && (
         <div className="mb-6 p-4 bg-yellow-100 border border-yellow-400 rounded-lg">
           <div className="flex">
@@ -373,6 +452,7 @@ export default function BusinessListingForm() {
             name="website"
             value={formData.website}
             onChange={handleChange}
+            onBlur={handleWebsiteBlur}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="https://yourwebsite.com"
           />
@@ -455,13 +535,29 @@ export default function BusinessListingForm() {
           <button
             type="submit"
             disabled={isSubmitting || !formData.agreeToTerms}
-            className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 transform hover:scale-105 disabled:transform-none"
+            onClick={(e) => {
+              // Backup handler in case form submission doesn't trigger
+              if (!formData.agreeToTerms) {
+                e.preventDefault()
+                alert('Please agree to the terms and conditions to continue.')
+                return
+              }
+              // Let the form's onSubmit handle it
+            }}
+            className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 transform hover:scale-105 disabled:transform-none disabled:hover:scale-100"
           >
             {isSubmitting ? 'Processing...' : `Pay with PayPal - $${formData.listingType === 'basic' ? '149' : '399'}`}
           </button>
-          <p className="text-sm text-gray-500 mt-2">
-            You'll be redirected to PayPal to set up your secure subscription
-          </p>
+          {!formData.agreeToTerms && (
+            <p className="text-sm text-red-500 mt-2">
+              Please check the agreement checkbox above to enable payment
+            </p>
+          )}
+          {formData.agreeToTerms && (
+            <p className="text-sm text-gray-500 mt-2">
+              You'll be redirected to PayPal to set up your secure subscription
+            </p>
+          )}
         </div>
       </form>
     </div>
