@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
     const page = parseInt(searchParams.get('page') || '1')
-    const limit = parseInt(searchParams.get('limit') || '100')
+    const limit = parseInt(searchParams.get('limit') || '10000') // Increased to load all businesses
     const skip = (page - 1) * limit
     
     // Fetch businesses from database
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
       prisma.listing.findMany({
         skip,
         take: limit,
-        orderBy: { createdAt: 'desc' }
+        orderBy: { name: 'asc' } // Sort by name for easier searching
       }),
       prisma.listing.count()
     ])
