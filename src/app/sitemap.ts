@@ -2,6 +2,11 @@ import { MetadataRoute } from 'next';
 import { statesAndCities } from '../data/cities';
 import { categories } from '../data/categories';
 
+// Helper function to escape XML entities in URLs
+function escapeXmlUrl(url: string): string {
+  return url.replace(/&/g, '&amp;');
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gulfcoastexplorer.com';
   const currentDate = new Date();
@@ -119,7 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Category pages with medium priority
   const categoryPages = categories.map((category) => ({
-    url: `${baseUrl}/search?category=${category.slug}`,
+    url: escapeXmlUrl(`${baseUrl}/search?category=${category.slug}`),
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.6,
@@ -128,7 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Subcategory pages with medium priority
   const subcategoryPages = categories.flatMap((category) =>
     (category.subcategories || []).map((sub) => ({
-      url: `${baseUrl}/search?category=${category.slug}&subcategory=${sub.slug}`,
+      url: escapeXmlUrl(`${baseUrl}/search?category=${category.slug}&subcategory=${sub.slug}`),
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.5,
@@ -138,7 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // State-specific category pages (high value for SEO)
   const stateCategoryPages = statesAndCities.flatMap((state) =>
     categories.map((category) => ({
-      url: `${baseUrl}/search?state=${state.slug}&category=${category.slug}`,
+      url: escapeXmlUrl(`${baseUrl}/search?state=${state.slug}&category=${category.slug}`),
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.6,
@@ -156,7 +161,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
         
         return {
-          url: `${baseUrl}/search?city=${city.slug}&state=${state.slug}&category=${category.slug}`,
+          url: escapeXmlUrl(`${baseUrl}/search?city=${city.slug}&state=${state.slug}&category=${category.slug}`),
           lastModified: currentDate,
           changeFrequency: 'weekly' as const,
           priority: priority,
@@ -169,38 +174,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const fishingWaterSportsPages = [
     // Fishing charter searches for top destinations
     {
-      url: `${baseUrl}/search?category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.95,
     },
     {
-      url: `${baseUrl}/search?state=florida&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?state=florida&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?state=alabama&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?state=alabama&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     // Water activities searches
     {
-      url: `${baseUrl}/search?category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?state=florida&category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?state=florida&category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/search?state=alabama&category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?state=alabama&category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.85,
@@ -211,81 +216,81 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityWaterSportsPages = [
     // Top 3 destinations with highest priority
     {
-      url: `${baseUrl}/search?city=orange-beach&state=alabama&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=orange-beach&state=alabama&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.97,
     },
     {
-      url: `${baseUrl}/search?city=pensacola&state=florida&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=pensacola&state=florida&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.97,
     },
     {
-      url: `${baseUrl}/search?city=destin&state=florida&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=destin&state=florida&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.97,
     },
     // Other major fishing destinations
     {
-      url: `${baseUrl}/search?city=gulf-shores&state=alabama&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=gulf-shores&state=alabama&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.92,
     },
     {
-      url: `${baseUrl}/search?city=fort-walton-beach&state=florida&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=fort-walton-beach&state=florida&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.92,
     },
     {
-      url: `${baseUrl}/search?city=panama-city-beach&state=florida&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=panama-city-beach&state=florida&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?city=galveston&state=texas&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=galveston&state=texas&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?city=grand-isle&state=louisiana&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=grand-isle&state=louisiana&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.88,
     },
     {
-      url: `${baseUrl}/search?city=biloxi&state=mississippi&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=biloxi&state=mississippi&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.88,
     },
     {
-      url: `${baseUrl}/search?city=south-padre-island&state=texas&category=fishing-charter`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=south-padre-island&state=texas&category=fishing-charter`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.85,
     },
     // City + water activities combinations
     {
-      url: `${baseUrl}/search?city=orange-beach&state=alabama&category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=orange-beach&state=alabama&category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?city=pensacola&state=florida&category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=pensacola&state=florida&category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/search?city=destin&state=florida&category=water-activities`,
+      url: escapeXmlUrl(`${baseUrl}/search?city=destin&state=florida&category=water-activities`),
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.9,
