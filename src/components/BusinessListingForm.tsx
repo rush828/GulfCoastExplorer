@@ -82,19 +82,23 @@ export default function BusinessListingForm() {
       [name]: processedValue
     }))
     
-    // Real-time validation (doesn't modify the value, just checks it)
-    if (typeof processedValue === 'string') {
-      const error = validateField(name as keyof BusinessFormData, processedValue)
-      setFieldErrors(prev => ({
-        ...prev,
-        [name]: error || ''
-      }))
+    // Clear error for this field when user starts typing (they're fixing it)
+    if (fieldErrors[name]) {
+      setFieldErrors(prev => {
+        const newErrors = { ...prev }
+        delete newErrors[name]
+        return newErrors
+      })
     }
+    
+    // Don't validate while typing - only validate on submit
+    // This prevents annoying error messages while the user is still entering data
   }
 
   // Handle website field blur to format URL properly
   const handleWebsiteBlur = (e: React.FocusEvent<HTMLInputElement>) => {
     const value = e.target.value.trim()
+    // Format URL if needed (only format, don't validate)
     if (value && !value.startsWith('http')) {
       setFormData(prev => ({
         ...prev,
@@ -365,10 +369,10 @@ export default function BusinessListingForm() {
             id="phone"
             name="phone"
             value={formData.phone}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="(555) 123-4567"
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="(555) 123-4567"
           />
         </div>
 
@@ -382,10 +386,10 @@ export default function BusinessListingForm() {
             id="address"
             name="address"
             value={formData.address}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="123 Main Street"
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="123 Main Street"
           />
         </div>
 
@@ -466,10 +470,10 @@ export default function BusinessListingForm() {
             id="description"
             name="description"
             value={formData.description}
-            onChange={handleChange}
-            rows={4}
-            required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              onChange={handleChange}
+              rows={4}
+              required
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Describe your business, what makes it special, and why travelers should visit..."
           />
         </div>
