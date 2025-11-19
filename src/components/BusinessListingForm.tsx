@@ -119,10 +119,20 @@ export default function BusinessListingForm() {
         parseFloat(amount)
       )
       
+      // Check if PayPal business email is configured
+      const paypalBusinessEmail = process.env.NEXT_PUBLIC_PAYPAL_BUSINESS_EMAIL
+      if (!paypalBusinessEmail || paypalBusinessEmail === 'your-paypal-email@example.com') {
+        alert('PayPal is not configured. Please contact support or check your environment variables.')
+        console.error('NEXT_PUBLIC_PAYPAL_BUSINESS_EMAIL is not set in environment variables')
+        setIsSubmitting(false)
+        setIsValidating(false)
+        return
+      }
+
       // PayPal subscription parameters
       const paypalParams = new URLSearchParams({
         cmd: '_xclick-subscriptions',
-        business: process.env.NEXT_PUBLIC_PAYPAL_BUSINESS_EMAIL || 'your-paypal-email@example.com', // PayPal business email from environment
+        business: paypalBusinessEmail,
         item_name: itemName,
         a3: amount,
         p3: '1',

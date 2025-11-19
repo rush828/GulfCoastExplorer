@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import BusinessListingForm from '../../components/BusinessListingForm'
+import PricingButtons from '../../components/PricingButtons'
 
 export const metadata: Metadata = {
   title: 'Business Listing - Gulf Coast Tourist Directory',
@@ -173,11 +174,7 @@ export default function BusinessListingPage() {
                 </ul>
 
                                  <div className="text-center">
-                   <button 
-                     className="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-                   >
-                     Select Basic Listing
-                   </button>
+                   <PricingButtons listingType="basic" />
                  </div>
               </div>
 
@@ -230,11 +227,7 @@ export default function BusinessListingPage() {
                 </ul>
 
                                  <div className="text-center">
-                   <button 
-                     className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-                   >
-                     Select Featured Listing
-                   </button>
+                   <PricingButtons listingType="featured" />
                  </div>
               </div>
             </div>
