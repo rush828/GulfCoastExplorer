@@ -151,10 +151,40 @@ export default function BusinessListingForm() {
       
       // Clear any previous errors
       setFieldErrors({})
-      console.log('Validation passed, proceeding to PayPal...')
+      console.log('Validation passed, saving business listing...')
 
-      // Here you would typically send the form data to your backend
-      // For now, we'll simulate the process and redirect to PayPal
+      // Save business listing to database before redirecting to PayPal
+      const submitFormData = new FormData()
+      submitFormData.append('businessName', formData.businessName)
+      submitFormData.append('businessType', formData.businessType)
+      submitFormData.append('contactName', formData.contactName)
+      submitFormData.append('email', formData.email)
+      submitFormData.append('phone', formData.phone)
+      submitFormData.append('address', formData.address)
+      submitFormData.append('city', formData.city)
+      submitFormData.append('state', formData.state)
+      submitFormData.append('zipCode', formData.zipCode)
+      submitFormData.append('website', formData.website || '')
+      submitFormData.append('description', formData.description)
+      submitFormData.append('listingType', formData.listingType)
+      submitFormData.append('csrfToken', csrfToken)
+
+      const saveResponse = await fetch('/api/business-listing/submit', {
+        method: 'POST',
+        body: submitFormData,
+        credentials: 'include'
+      })
+
+      const saveData = await saveResponse.json()
+
+      if (!saveData.success) {
+        alert(`Failed to save business listing: ${saveData.error || 'Unknown error'}. Please try again.`)
+        setIsSubmitting(false)
+        setIsValidating(false)
+        return
+      }
+
+      console.log('Business listing saved:', saveData)
       
       // Create PayPal subscription URL
       const amount = formData.listingType === 'basic' ? '149.00' : '399.00'
@@ -180,10 +210,12 @@ export default function BusinessListingForm() {
         businessEmail: paypalBusinessEmail,
         isDevelopment,
         amount,
-        listingType: formData.listingType
+        listingType: formData.listingType,
+        businessId: saveData.businessId
       })
 
       // PayPal subscription parameters
+      // Pass business ID in custom field so webhook can link subscription to business
       const paypalParams = new URLSearchParams({
         cmd: '_xclick-subscriptions',
         business: paypalBusinessEmail,
@@ -195,9 +227,10 @@ export default function BusinessListingForm() {
         currency_code: 'USD',
         no_note: '1',
         no_shipping: '1',
+        custom: saveData.businessId, // Pass business ID to PayPal
         cn: isDevelopment ? 'Gulf Coast Directory (Test)' : 'Gulf Coast Directory',
-        return: `${window.location.origin}/business-listing/success`,
-        cancel_return: `${window.location.origin}/business-listing/cancel`,
+        return: `${window.location.origin}/business-listing/success?businessId=${saveData.businessId}&plan=${formData.listingType}`,
+        cancel_return: `${window.location.origin}/business-listing/cancel?businessId=${saveData.businessId}`,
         notify_url: `${window.location.origin}/api/paypal/webhook`
       })
       

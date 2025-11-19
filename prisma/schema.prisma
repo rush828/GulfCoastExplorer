@@ -12,8 +12,21 @@ datasource db {
 
 enum ListingStatus {
   DRAFT
+  PENDING
   PUBLISHED
   ARCHIVED
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELED
+  EXPIRED
+  SUSPENDED
+}
+
+enum SubscriptionPlan {
+  BASIC
+  FEATURED
 }
 
 model State {
@@ -108,6 +121,7 @@ model Listing {
 
   categories ListingCategory[]
   media      Media[]
+  subscription Subscription?
 
   @@map("listings")
 }
@@ -150,4 +164,28 @@ model NewsletterSubscriber {
   updatedAt         DateTime @updatedAt
 
   @@map("newsletter_subscribers")
+}
+
+model Subscription {
+  id                String            @id @default(cuid())
+  paypalSubscriptionId String         @unique @map("paypal_subscription_id")
+  businessId       String             @unique @map("business_id")
+  businessName     String             @map("business_name")
+  email            String
+  status           SubscriptionStatus @default(ACTIVE)
+  plan             SubscriptionPlan   @default(BASIC)
+  amount           Float
+  startDate        DateTime           @map("start_date")
+  endDate          DateTime           @map("end_date")
+  nextBillingDate  DateTime           @map("next_billing_date")
+  lastPaymentDate  DateTime?          @map("last_payment_date")
+  canceledDate     DateTime?          @map("canceled_date")
+  autoRenew        Boolean            @default(true) @map("auto_renew")
+  paypalCustomerId String?            @map("paypal_customer_id")
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+
+  business Listing @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  @@map("subscriptions")
 }

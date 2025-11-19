@@ -3,7 +3,8 @@
  * Handles subscription events and business listing management
  */
 
-import { subscriptionManager } from './subscription-management'
+import { subscriptionDB } from './subscription-db'
+import { SubscriptionStatus, SubscriptionPlan } from '@prisma/client'
 import { auditLogger, getUserInfo } from './audit-log'
 
 export interface PayPalWebhookEvent {
@@ -94,26 +95,73 @@ export async function processPayPalWebhook(event: PayPalWebhookEvent, request: a
 async function handleSubscriptionCreated(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  // Extract subscription details
-  const subscriptionData = {
-    businessId: generateBusinessId(),
-    businessName: resource.custom || 'Unknown Business',
-    email: resource.subscriber?.email_address || '',
-    subscriptionId: resource.id,
-    status: 'active' as const,
-    plan: resource.plan_id?.includes('basic') ? 'basic' as const : 'featured' as const,
-    amount: resource.plan_id?.includes('basic') ? 149 : 399,
-    startDate: resource.create_time,
-    endDate: calculateEndDate(resource.create_time),
-    nextBillingDate: resource.billing_info?.next_billing_time || calculateNextBilling(resource.create_time),
-    autoRenew: true
+  // Log the resource structure for debugging
+  console.log('PayPal subscription created webhook resource:', JSON.stringify(resource, null, 2))
+  
+  // Get business ID from PayPal custom field (passed from form)
+  // PayPal subscription buttons pass custom field in the resource
+  const businessId = resource.custom_id || 
+                     resource.custom || 
+                     resource.plan?.custom_id ||
+                     null
+  
+  if (!businessId) {
+    console.error('No business ID found in PayPal webhook. Resource keys:', Object.keys(resource))
+    console.error('Full resource:', JSON.stringify(resource, null, 2))
+    return {
+      success: false,
+      message: 'Business ID not found in webhook custom field',
+      action: 'subscription_created'
+    }
+  }
+  
+  console.log(`Processing subscription for business ID: ${businessId}`)
+
+  // Determine plan and amount from item name or plan ID
+  const itemName = resource.plan_id || resource.name || ''
+  const isBasic = itemName.toLowerCase().includes('basic') || 
+                  (resource.billing_cycle_sequence === 1 && resource.amount?.value === '149.00')
+  const plan = isBasic ? SubscriptionPlan.BASIC : SubscriptionPlan.FEATURED
+  const amount = isBasic ? 149 : 399
+
+  // Get business details from database
+  const { PrismaClient } = await import('@prisma/client')
+  const prisma = new PrismaClient()
+  
+  const business = await prisma.listing.findUnique({
+    where: { id: businessId }
+  })
+
+  if (!business) {
+    console.error(`Business not found: ${businessId}`)
+    return {
+      success: false,
+      message: `Business not found: ${businessId}`,
+      action: 'subscription_created'
+    }
   }
 
-  await subscriptionManager.addSubscription(subscriptionData)
+  // Create subscription in database
+  const subscription = await subscriptionDB.createSubscription({
+    paypalSubscriptionId: resource.id,
+    businessId: business.id,
+    businessName: business.name,
+    email: business.contactEmail || resource.subscriber?.email_address || '',
+    status: SubscriptionStatus.ACTIVE,
+    plan,
+    amount,
+    startDate: new Date(resource.create_time || resource.start_time || new Date()),
+    endDate: calculateEndDate(resource.create_time || resource.start_time || new Date().toISOString()),
+    nextBillingDate: new Date(resource.billing_info?.next_billing_time || calculateNextBilling(resource.create_time || new Date().toISOString())),
+    paypalCustomerId: resource.subscriber?.payer_id
+  })
+
+  // Activate the business (change status from PENDING to PUBLISHED)
+  await subscriptionDB.activateBusiness(businessId)
 
   return {
     success: true,
-    message: 'Subscription created successfully',
+    message: 'Subscription created and business activated successfully',
     action: 'subscription_created'
   }
 }
@@ -124,14 +172,29 @@ async function handleSubscriptionCreated(event: PayPalWebhookEvent) {
 async function handleSubscriptionActivated(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  const updated = await subscriptionManager.updateSubscription(resource.id, {
-    status: 'active',
-    lastPaymentDate: new Date().toISOString()
+  const subscription = await subscriptionDB.getSubscriptionByPaypalId(resource.id)
+  
+  if (!subscription) {
+    return {
+      success: false,
+      message: 'Subscription not found',
+      action: 'subscription_activated'
+    }
+  }
+
+  await subscriptionDB.updateSubscription(resource.id, {
+    status: SubscriptionStatus.ACTIVE,
+    lastPaymentDate: new Date()
   })
 
+  // Activate the business if it's still pending
+  if (subscription.business.status === 'PENDING') {
+    await subscriptionDB.activateBusiness(subscription.businessId)
+  }
+
   return {
-    success: updated,
-    message: updated ? 'Subscription activated' : 'Subscription not found',
+    success: true,
+    message: 'Subscription activated and business published',
     action: 'subscription_activated'
   }
 }
@@ -142,11 +205,14 @@ async function handleSubscriptionActivated(event: PayPalWebhookEvent) {
 async function handleSubscriptionCancelled(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  const updated = await subscriptionManager.cancelSubscription(resource.id)
+  const result = await subscriptionDB.updateSubscription(resource.id, {
+    status: SubscriptionStatus.CANCELED,
+    canceledDate: new Date()
+  })
 
   return {
-    success: updated,
-    message: updated ? 'Subscription cancelled' : 'Subscription not found',
+    success: result.count > 0,
+    message: result.count > 0 ? 'Subscription cancelled' : 'Subscription not found',
     action: 'subscription_cancelled'
   }
 }
@@ -157,13 +223,13 @@ async function handleSubscriptionCancelled(event: PayPalWebhookEvent) {
 async function handleSubscriptionSuspended(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  const updated = await subscriptionManager.updateSubscription(resource.id, {
-    status: 'suspended'
+  const result = await subscriptionDB.updateSubscription(resource.id, {
+    status: SubscriptionStatus.SUSPENDED
   })
 
   return {
-    success: updated,
-    message: updated ? 'Subscription suspended' : 'Subscription not found',
+    success: result.count > 0,
+    message: result.count > 0 ? 'Subscription suspended' : 'Subscription not found',
     action: 'subscription_suspended'
   }
 }
@@ -174,13 +240,13 @@ async function handleSubscriptionSuspended(event: PayPalWebhookEvent) {
 async function handleSubscriptionExpired(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  const updated = await subscriptionManager.updateSubscription(resource.id, {
-    status: 'expired'
+  const result = await subscriptionDB.updateSubscription(resource.id, {
+    status: SubscriptionStatus.EXPIRED
   })
 
   return {
-    success: updated,
-    message: updated ? 'Subscription expired' : 'Subscription not found',
+    success: result.count > 0,
+    message: result.count > 0 ? 'Subscription expired' : 'Subscription not found',
     action: 'subscription_expired'
   }
 }
@@ -191,15 +257,26 @@ async function handleSubscriptionExpired(event: PayPalWebhookEvent) {
 async function handlePaymentCompleted(event: PayPalWebhookEvent) {
   const resource = event.resource
   
-  // Update last payment date
-  const updated = await subscriptionManager.updateSubscription(resource.billing_agreement_id, {
-    lastPaymentDate: resource.create_time,
-    nextBillingDate: calculateNextBilling(resource.create_time)
+  // Find subscription by PayPal subscription ID
+  const subscription = await subscriptionDB.getSubscriptionByPaypalId(resource.billing_agreement_id || resource.subscription_id)
+  
+  if (!subscription) {
+    return {
+      success: false,
+      message: 'Subscription not found for payment',
+      action: 'payment_completed'
+    }
+  }
+
+  // Update last payment date and next billing date
+  await subscriptionDB.updateSubscription(subscription.paypalSubscriptionId, {
+    lastPaymentDate: new Date(resource.create_time || new Date()),
+    nextBillingDate: new Date(calculateNextBilling(resource.create_time || new Date().toISOString()))
   })
 
   return {
-    success: updated,
-    message: updated ? 'Payment recorded' : 'Subscription not found',
+    success: true,
+    message: 'Payment recorded',
     action: 'payment_completed'
   }
 }
@@ -211,22 +288,15 @@ async function handlePaymentDenied(event: PayPalWebhookEvent) {
   const resource = event.resource
   
   // Suspend subscription due to payment failure
-  const updated = await subscriptionManager.updateSubscription(resource.billing_agreement_id, {
-    status: 'suspended'
+  const result = await subscriptionDB.updateSubscription(resource.billing_agreement_id || resource.subscription_id, {
+    status: SubscriptionStatus.SUSPENDED
   })
 
   return {
-    success: updated,
-    message: updated ? 'Subscription suspended due to payment failure' : 'Subscription not found',
+    success: result.count > 0,
+    message: result.count > 0 ? 'Subscription suspended due to payment failure' : 'Subscription not found',
     action: 'payment_denied'
   }
-}
-
-/**
- * Generate unique business ID
- */
-function generateBusinessId(): string {
-  return 'biz_' + Date.now().toString(36) + Math.random().toString(36).substr(2)
 }
 
 /**
