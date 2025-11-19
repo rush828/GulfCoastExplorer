@@ -447,22 +447,22 @@ export default function RootLayout({
           }}
         />
 
-        {/* Review and Rating Schema */}
+        {/* Organization with Aggregate Rating Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "AggregateRating",
-              "itemReviewed": {
-                "@type": "WebSite",
-                "name": "Gulf Coast Tourist Directory",
-                "url": "https://gulfcoastdirectory.com"
-              },
-              "ratingValue": "4.8",
-              "reviewCount": "500",
-              "bestRating": "5",
-              "worstRating": "1"
+              "@type": "Organization",
+              "name": "Gulf Coast Tourist Directory",
+              "url": "https://gulfcoastexplorer.com",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "500",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
             })
           }}
         />
