@@ -79,8 +79,12 @@ export async function POST(request: NextRequest) {
 
     if (error) {
       console.error('Resend error:', error)
+      const errorMessage = error instanceof Error ? error.message : JSON.stringify(error)
       return NextResponse.json(
-        { error: 'Failed to send email' },
+        { 
+          error: 'Failed to send email',
+          details: process.env.NODE_ENV === 'development' ? errorMessage : undefined
+        },
         { status: 500 }
       )
     }
@@ -94,8 +98,10 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Contact form error:', error)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    const errorDetails = process.env.NODE_ENV === 'development' ? errorMessage : 'Internal server error'
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: errorDetails, details: process.env.NODE_ENV === 'development' ? (error instanceof Error ? error.stack : String(error)) : undefined },
       { status: 500 }
     )
   }
