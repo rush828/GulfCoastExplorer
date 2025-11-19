@@ -20,6 +20,9 @@ interface Business {
   photos?: string[]
   placeId?: string | null
   createdAt?: string
+  contactName?: string | null
+  contactEmail?: string | null
+  contactPhone?: string | null
 }
 
 const CATEGORY_OPTIONS = [
@@ -403,7 +406,7 @@ export default function AdminPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-lg font-semibold text-gray-900">{business.name}</h3>
-                    {!business.placeId && (
+                    {!business.placeId && (business.contactName || business.contactEmail || business.contactPhone) && (
                       <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 border border-purple-200">
                         ✏️ Manually Added
                       </span>

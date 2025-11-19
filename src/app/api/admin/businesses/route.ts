@@ -44,7 +44,10 @@ export async function GET(request: NextRequest) {
       featured_until: b.featuredUntil?.toISOString(),
       thumbnails: b.thumbnails,
       placeId: b.placeId,
-      createdAt: b.createdAt.toISOString()
+      createdAt: b.createdAt.toISOString(),
+      contactName: b.contactName,
+      contactEmail: b.contactEmail,
+      contactPhone: b.contactPhone
     }))
 
     return NextResponse.json({ 
