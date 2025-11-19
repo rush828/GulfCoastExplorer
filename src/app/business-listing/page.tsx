@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Business Listing - Gulf Coast Tourist Directory',
     description: 'Get your business listed in the Gulf Coast Tourist Directory. Choose between basic and featured listings with excellent SEO optimization.',
-    url: 'https://gulfcoastdirectory.com/business-listing',
+    url: 'https://gulfcoastexplorer.com/business-listing',
     siteName: 'Gulf Coast Tourist Directory',
     images: [
       {
@@ -52,7 +52,7 @@ export default function BusinessListingPage() {
             "@type": "WebPage",
             "name": "Business Listing - Gulf Coast Tourist Directory",
             "description": "Get your business listed in the Gulf Coast Tourist Directory with excellent SEO optimization",
-            "url": "https://gulfcoastdirectory.com/business-listing",
+            "url": "https://gulfcoastexplorer.com/business-listing",
             "mainEntity": {
               "@type": "Service",
               "name": "Business Directory Listing",

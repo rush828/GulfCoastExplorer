@@ -226,7 +226,7 @@ export default function RootLayout({
               "name": "Gulf Coast Fishing Charters & Water Sports Directory",
               "description": "Premier Gulf Coast fishing charters and water sports directory featuring 500+ verified marine recreation businesses across 50+ coastal cities from Texas to Florida. Specializing in deep sea fishing, inshore fishing charters, parasailing, jet ski rentals, boat tours, and water sports adventures.",
               "url": "https://gulfcoastexplorer.com",
-              "logo": "https://gulfcoastdirectory.com/logo.png",
+              "logo": "https://gulfcoastexplorer.com/logo.png",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "US",
@@ -265,9 +265,9 @@ export default function RootLayout({
                 }
               ],
               "sameAs": [
-                "https://www.facebook.com/gulfcoastdirectory",
-                "https://www.twitter.com/gulfcoastdir",
-                "https://www.instagram.com/gulfcoastdirectory"
+                "https://www.facebook.com/gulfcoastexplorer",
+                "https://www.twitter.com/gulfcoastexplorer",
+                "https://www.instagram.com/gulfcoastexplorer"
               ]
             })
           }}

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - Gulf Coast Tourist Directory',
     description: 'Get in touch with the Gulf Coast Tourist Directory team. We\'re here to help with questions, suggestions, or partnership opportunities.',
-    url: 'https://gulfcoastdirectory.com/contact',
+    url: 'https://gulfcoastexplorer.com/contact',
     siteName: 'Gulf Coast Tourist Directory',
     images: [
       {
@@ -51,7 +51,7 @@ export default function ContactPage() {
             "@type": "WebPage",
             "name": "Contact Us - Gulf Coast Tourist Directory",
             "description": "Get in touch with the Gulf Coast Tourist Directory team for questions, suggestions, or partnership opportunities",
-            "url": "https://gulfcoastdirectory.com/contact",
+            "url": "https://gulfcoastexplorer.com/contact",
             "mainEntity": {
               "@type": "ContactPage",
               "name": "Contact Gulf Coast Tourist Directory",

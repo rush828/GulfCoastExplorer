@@ -96,7 +96,7 @@ export default function SeasonalPage() {
             },
             "datePublished": "2025-01-01",
             "dateModified": "2025-01-01",
-            "mainEntityOfPage": "https://gulfcoastdirectory.com/seasonal"
+            "mainEntityOfPage": "https://gulfcoastexplorer.com/seasonal"
           })
         }}
       />

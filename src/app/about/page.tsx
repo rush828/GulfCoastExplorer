@@ -41,14 +41,14 @@ export default function AboutPage() {
             "@type": "AboutPage",
             "name": "About Gulf Coast Tourist Directory",
             "description": "Learn about our mission to provide comprehensive Gulf Coast travel guidance",
-            "url": "https://gulfcoastdirectory.com/about",
+            "url": "https://gulfcoastexplorer.com/about",
             "mainEntity": {
               "@type": "Organization",
               "name": "Gulf Coast Tourist Directory",
               "description": "Expert-curated travel guide for Gulf Coast destinations from Texas to Florida",
               "foundingDate": "2015",
-              "url": "https://gulfcoastdirectory.com",
-              "logo": "https://gulfcoastdirectory.com/logo.png",
+              "url": "https://gulfcoastexplorer.com",
+              "logo": "https://gulfcoastexplorer.com/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+1-800-GULF-COAST",

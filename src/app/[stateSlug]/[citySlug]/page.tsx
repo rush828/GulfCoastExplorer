@@ -160,7 +160,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     openGraph: {
       title: createOptimizedTitle(),
       description: createOptimizedDescription(),
-      url: `https://gulfcoastdirectory.com/${state.slug}/${normalizedCitySlug}`,
+      url: `https://gulfcoastexplorer.com/${state.slug}/${normalizedCitySlug}`,
       siteName: 'Gulf Coast Tourist Directory',
       images: [
         {
@@ -225,7 +225,7 @@ export default function CityPage({ params }: CityPageProps) {
             "@type": "WebPage",
             "name": `${city.name}, ${state.name} - Gulf Coast Tourist Destination`,
             "description": `${city.description} Discover hotels, restaurants, beaches, and attractions in ${city.name}, ${state.name}.`,
-            "url": `https://gulfcoastdirectory.com/${state.slug}/${normalizedCitySlug}`,
+            "url": `https://gulfcoastexplorer.com/${state.slug}/${normalizedCitySlug}`,
             "mainEntity": {
               "@type": isMajorWaterSportsDestination ? "TouristDestination" : "City",
               "name": city.name,
@@ -286,25 +286,25 @@ export default function CityPage({ params }: CityPageProps) {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://gulfcoastdirectory.com"
+                  "item": "https://gulfcoastexplorer.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "States",
-                  "item": "https://gulfcoastdirectory.com/states"
+                  "item": "https://gulfcoastexplorer.com/states"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": `${state.name} Gulf Coast`,
-                  "item": `https://gulfcoastdirectory.com/states/${state.slug}`
+                  "item": `https://gulfcoastexplorer.com/states/${state.slug}`
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "name": city.name,
-                  "item": `https://gulfcoastdirectory.com/${state.slug}/${city.slug}`
+                  "item": `https://gulfcoastexplorer.com/${state.slug}/${city.slug}`
                 }
               ]
             }
@@ -321,7 +321,7 @@ export default function CityPage({ params }: CityPageProps) {
             "@type": "LocalBusiness",
             "name": `${city.name} Gulf Coast Tourism Directory`,
             "description": `Complete directory of ${city.name}, ${state.name} businesses, attractions, and services`,
-            "url": `https://gulfcoastdirectory.com/${state.slug}/${city.slug}`,
+            "url": `https://gulfcoastexplorer.com/${state.slug}/${city.slug}`,
             "telephone": "+1-800-GULF-COAST",
             "address": {
               "@type": "PostalAddress",

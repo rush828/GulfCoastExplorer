@@ -1,6 +1,6 @@
 /* TEAM */
 Developer: Gulf Coast Tourist Directory Team
-Contact: info@gulfcoastdirectory.com
+Contact: contact@gulfcoastexplorer.com
 From: Gulf Coast, USA
 
 /* SITE */

@@ -420,7 +420,7 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                 "@type": "ListItem",
                 "position": 2,
                 "name": "States",
-                "item": "https://gulfcoastdirectory.com/states"
+                "item": "https://gulfcoastexplorer.com/states"
               },
               {
                 "@type": "ListItem",

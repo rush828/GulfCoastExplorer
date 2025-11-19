@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
     openGraph: {
       title: `${state.name} Gulf Coast - Complete Coastal Guide`,
       description: `Explore ${state.name}'s Gulf Coast with ${state.cities.length} coastal cities, beaches, fishing, and tourist attractions.`,
-      url: `https://gulfcoastdirectory.com/states/${state.slug}`,
+      url: `https://gulfcoastexplorer.com/states/${state.slug}`,
       siteName: 'Gulf Coast Tourist Directory',
       images: [
         {
@@ -116,7 +116,7 @@ export default function StatePage({ params }: StatePageProps) {
             "@type": "WebPage",
             "name": `${state.name} Gulf Coast - Complete Coastal Guide`,
             "description": `Explore ${state.name}'s Gulf Coast with ${state.cities.length} coastal cities, beaches, fishing, and tourist attractions.`,
-            "url": `https://gulfcoastdirectory.com/states/${state.slug}`,
+            "url": `https://gulfcoastexplorer.com/states/${state.slug}`,
             "mainEntity": {
               "@type": "State",
               "name": `${state.name} Gulf Coast`,
@@ -125,7 +125,7 @@ export default function StatePage({ params }: StatePageProps) {
                 "@type": "City",
                 "name": city.name,
                 "description": city.description,
-                "url": `https://gulfcoastdirectory.com/${state.slug}/${city.slug}`,
+                "url": `https://gulfcoastexplorer.com/${state.slug}/${city.slug}`,
                 "position": index + 1,
                 "geo": {
                   "@type": "GeoCoordinates",
@@ -146,19 +146,19 @@ export default function StatePage({ params }: StatePageProps) {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://gulfcoastdirectory.com"
+                  "item": "https://gulfcoastexplorer.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "States",
-                  "item": "https://gulfcoastdirectory.com/states"
+                  "item": "https://gulfcoastexplorer.com/states"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": `${state.name} Gulf Coast`,
-                  "item": `https://gulfcoastdirectory.com/states/${state.slug}`
+                  "item": `https://gulfcoastexplorer.com/states/${state.slug}`
                 }
               ]
             }
@@ -175,7 +175,7 @@ export default function StatePage({ params }: StatePageProps) {
             "@type": "LocalBusiness",
             "name": `${state.name} Gulf Coast Tourism Directory`,
             "description": `Comprehensive directory of ${state.name} Gulf Coast businesses, attractions, and services`,
-            "url": `https://gulfcoastdirectory.com/states/${state.slug}`,
+            "url": `https://gulfcoastexplorer.com/states/${state.slug}`,
             "telephone": "+1-800-GULF-COAST",
             "address": {
               "@type": "PostalAddress",

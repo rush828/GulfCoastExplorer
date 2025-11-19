@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { statesAndCities } from '../data/cities';
 
 export default function sitemapImages(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://gulfcoastdirectory.com';
+  const baseUrl = 'https://gulfcoastexplorer.com';
   const currentDate = new Date();
   
   // Hero images for each state
