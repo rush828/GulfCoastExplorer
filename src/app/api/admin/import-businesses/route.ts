@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
-import fs from 'fs/promises'
-import path from 'path'
 import { read, utils } from 'xlsx'
+import { PrismaClient } from '@prisma/client'
 import { transformGoogleBusiness, validateBusiness, type GoogleBusinessData, type TransformedBusiness } from '@/lib/import-transformer'
 import { batchDetectDuplicates, type DuplicateMatch } from '@/lib/duplicate-detector'
-import { downloadAndOptimizeBusinessImage } from '@/lib/google-image-downloader'
+import { uploadImageToCloudinary } from '@/lib/cloudinary-uploader'
 import { generateBusinessId } from '@/lib/image-upload'
+import { formatPhoneNumber } from '@/lib/format-utils'
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'businesses-from-excel-corrected-ids.json')
+const prisma = new PrismaClient()
+
+// Force this route to be dynamic
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 interface ImportPreviewResponse {
   success: boolean
@@ -56,12 +60,35 @@ export async function POST(request: NextRequest) {
     
     console.log(`Parsed ${googleData.length} businesses from Excel`)
     
-    // Load existing businesses for duplicate detection
-    const dataContent = await fs.readFile(DATA_FILE, 'utf-8')
-    const data = JSON.parse(dataContent)
-    const existingBusinesses = data.businesses || {}
+    // Load existing businesses from database for duplicate detection
+    const existingListings = await prisma.listing.findMany({
+      select: {
+        id: true,
+        name: true,
+        address: true,
+        city: true,
+        state: true,
+        phone: true,
+        primaryCategory: true,
+        categoriesArray: true
+      }
+    })
     
-    console.log(`Loaded ${Object.keys(existingBusinesses).length} existing businesses`)
+    // Transform to match expected format for duplicate detector
+    const existingBusinesses: Record<string, any> = {}
+    existingListings.forEach(listing => {
+      existingBusinesses[listing.id] = {
+        name: listing.name,
+        address: listing.address,
+        city: listing.city,
+        state: listing.state,
+        phone: listing.phone,
+        primary_category: listing.primaryCategory,
+        categories_array: listing.categoriesArray || []
+      }
+    })
+    
+    console.log(`Loaded ${Object.keys(existingBusinesses).length} existing businesses from database`)
     
     // Transform and validate each business
     const transformedBusinesses: (TransformedBusiness | null)[] = []
@@ -161,21 +188,8 @@ export async function PUT(request: NextRequest) {
       console.log(`${biz.name}: primary=${biz.primary_category}, categories=[${biz.categories_array?.join(', ')}], categories_legacy=[${biz.categories?.join(', ')}]`)
     })
     
-    // Load current data
-    const dataContent = await fs.readFile(DATA_FILE, 'utf-8')
-    const data = JSON.parse(dataContent)
-    
-    // Create backup
-    const backupFile = path.join(
-      process.cwd(), 
-      'data', 
-      `businesses-backup-import-${Date.now()}.json`
-    )
-    await fs.writeFile(backupFile, dataContent)
-    console.log(`✅ Created backup: ${path.basename(backupFile)}`)
-    
     let addedCount = 0
-    let imageDownloadCount = 0
+    let imageUploadCount = 0
     const imageErrors: string[] = []
     
     // Process each approved business
@@ -183,55 +197,85 @@ export async function PUT(request: NextRequest) {
       // Generate unique business ID
       const businessId = generateBusinessId(business.name, business.city, business.primary_category)
       
-      // Download and optimize image if available
+      // Generate slug
+      const slug = `${business.city}_${business.name}`
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, '_')
+        .replace(/_+/g, '_')
+        .replace(/^_|_$/g, '')
+        + `_${Date.now().toString().slice(-6)}`
+      
+      // Upload image to Cloudinary if available
+      let thumbnails: string[] = []
       if (business.google_photo_url) {
-        console.log(`Downloading image for: ${business.name}`)
-        const imageResult = await downloadAndOptimizeBusinessImage(
+        console.log(`Uploading image to Cloudinary for: ${business.name}`)
+        const imageResult = await uploadImageToCloudinary(
           business.google_photo_url,
           businessId
         )
         
-        if (imageResult.success && imageResult.filePath) {
-          business.thumbnails = [imageResult.filePath]
-          imageDownloadCount++
-          console.log(`✅ Image saved: ${businessId}`)
+        if (imageResult.success && imageResult.url) {
+          thumbnails = [imageResult.url]
+          imageUploadCount++
+          console.log(`✅ Image uploaded: ${businessId}`)
         } else {
-          console.log(`⚠️  Image download failed for ${business.name}: ${imageResult.error}`)
+          console.log(`⚠️  Image upload failed for ${business.name}: ${imageResult.error}`)
           imageErrors.push(`${business.name}: ${imageResult.error}`)
         }
       }
       
-      // Remove google_photo_url from final data (temporary field)
-      delete business.google_photo_url
-      
-      // Add business to database
-      data.businesses[businessId] = business
-      addedCount++
+      // Create business in database
+      try {
+        await prisma.listing.create({
+          data: {
+            id: businessId,
+            name: business.name,
+            slug: slug,
+            description: business.description || null,
+            address: business.address || '',
+            city: business.city,
+            state: business.state,
+            zipCode: business.zip_code || null,
+            phone: business.phone ? formatPhoneNumber(business.phone) : null,
+            website: business.website || null,
+            email: business.email || null,
+            latitude: business.latitude || null,
+            longitude: business.longitude || null,
+            placeId: business.place_id || null,
+            status: 'PUBLISHED',
+            primaryCategory: business.primary_category,
+            categoriesArray: business.categories_array || [],
+            rating: business.rating || null,
+            reviewsCount: business.reviews_count || null,
+            priorityTier: business.priority_tier || 1,
+            featuredUntil: business.featured_until ? new Date(business.featured_until) : null,
+            googleTypes: business.google_types || ['establishment'],
+            thumbnails: thumbnails,
+            contactName: null,
+            contactEmail: null,
+            contactPhone: null
+          }
+        })
+        addedCount++
+        console.log(`✅ Added to database: ${business.name}`)
+      } catch (error) {
+        console.error(`❌ Failed to add ${business.name} to database:`, error)
+        imageErrors.push(`${business.name}: Database error - ${error instanceof Error ? error.message : 'Unknown error'}`)
+      }
     }
     
-    // Update metadata
-    data.metadata = data.metadata || {}
-    data.metadata.total_businesses = Object.keys(data.businesses).length
-    data.metadata.updated_at = new Date().toISOString()
-    data.metadata.last_import = {
-      timestamp: new Date().toISOString(),
-      added_count: addedCount,
-      images_downloaded: imageDownloadCount,
-      backup_file: path.basename(backupFile)
-    }
-    
-    // Save updated data
-    await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2), 'utf-8')
+    // Get total count
+    const totalBusinesses = await prisma.listing.count()
     console.log(`✅ Import complete: ${addedCount} businesses added`)
     
     return NextResponse.json({
       success: true,
       message: `Successfully imported ${addedCount} businesses`,
       added_count: addedCount,
-      images_downloaded: imageDownloadCount,
+      images_uploaded: imageUploadCount,
       image_errors: imageErrors.length > 0 ? imageErrors : undefined,
-      backup_file: path.basename(backupFile),
-      total_businesses: Object.keys(data.businesses).length
+      total_businesses: totalBusinesses
     })
     
   } catch (error) {

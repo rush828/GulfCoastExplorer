@@ -185,10 +185,9 @@ export default function ImportDataPage() {
         alert(
           `✅ Import successful!\n\n` +
           `• Added: ${data.added_count} businesses\n` +
-          `• Images downloaded: ${data.images_downloaded}\n` +
-          `• Total businesses: ${data.total_businesses}\n` +
-          `• Backup: ${data.backup_file}` +
-          (data.image_errors ? `\n\n⚠️  Some images failed to download` : '')
+          `• Images uploaded: ${data.images_uploaded || 0}\n` +
+          `• Total businesses: ${data.total_businesses}` +
+          (data.image_errors ? `\n\n⚠️  Some images failed to upload` : '')
         )
         // Reset form
         setFile(null)
