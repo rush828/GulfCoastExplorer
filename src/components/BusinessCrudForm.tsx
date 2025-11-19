@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { validateBusinessForm, validateField, type BusinessFormData } from '@/lib/validation'
 import { statesAndCities } from '@/data/cities'
+import { formatPhoneNumber, cleanPhoneNumber } from '@/lib/format-utils'
 
 interface Business {
   id?: string
@@ -464,10 +465,15 @@ export default function BusinessCrudForm({ business, onSuccess, onCancel, isEdit
                 type="tel"
                 name="phone"
                 value={formData.phone || ''}
-                onChange={handleInputChange}
-                placeholder="Public business phone"
+                onChange={(e) => {
+                  // Format phone number as user types
+                  const formatted = formatPhoneNumber(e.target.value)
+                  setFormData(prev => ({ ...prev, phone: formatted }))
+                }}
+                placeholder="(850) 555-1234"
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+              <p className="text-xs text-gray-500 mt-1">Format: (XXX) XXX-XXXX</p>
               {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
             </div>
 
@@ -529,8 +535,12 @@ export default function BusinessCrudForm({ business, onSuccess, onCancel, isEdit
                 type="tel"
                 name="contact_phone"
                 value={formData.contact_phone || ''}
-                onChange={handleInputChange}
-                placeholder="555-555-5555"
+                onChange={(e) => {
+                  // Format phone number as user types
+                  const formatted = formatPhoneNumber(e.target.value)
+                  setFormData(prev => ({ ...prev, contact_phone: formatted }))
+                }}
+                placeholder="(850) 555-1234"
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
               />
             </div>

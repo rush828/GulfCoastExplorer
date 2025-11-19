@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { getCategoryImageUrl } from '@/lib/category-image-mapping'
 import { api, networkUtils } from '@/lib/api-utils'
 import { trackSearch, trackBusinessView } from '@/lib/analytics'
+import { getStateAbbreviation, formatPhoneNumber } from '@/lib/format-utils'
 
 interface Business {
   id: string
@@ -689,32 +690,36 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                   {/* Address and Description */}
                   <div className="text-gray-600 text-xs sm:text-sm mb-3">
                     {(() => {
+                      // Get state abbreviation
+                      const stateAbbr = getStateAbbreviation(business.state);
+                      
                       // Remove "USA" from the end of the address
                       let formattedAddress = business.address;
                       
-                      // If address doesn't include city/state, append them
+                      // If address doesn't include city/state, append them with abbreviation
                       const hasCity = formattedAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
                       if (!hasCity && business.city && business.state) {
-                        formattedAddress = `${formattedAddress}, ${business.city}, ${business.state}`;
+                        formattedAddress = `${formattedAddress}, ${business.city}, ${stateAbbr}`;
                       }
                       
                       if (formattedAddress.endsWith(', USA')) {
                         formattedAddress = formattedAddress.replace(', USA', '');
                       }
                       
+                      // Replace full state names with abbreviations
+                      formattedAddress = formattedAddress
+                        .replace(/, Florida/gi, `, FL`)
+                        .replace(/, Alabama/gi, `, AL`)
+                        .replace(/, Mississippi/gi, `, MS`)
+                        .replace(/, Louisiana/gi, `, LA`)
+                        .replace(/, Texas/gi, `, TX`);
+                      
                       // Split address into parts for better formatting
                       const addressParts = formattedAddress.split(', ');
                       if (addressParts.length >= 3) {
                         // Format as: Street Address\nCity, State ZIP
                         const streetAddress = addressParts[0];
-                        // Filter out spelled-out state names to avoid duplication
-                        const cityStateZip = addressParts.slice(1).filter(part => 
-                          !part.trim().includes('Florida') && 
-                          !part.trim().includes('Alabama') && 
-                          !part.trim().includes('Mississippi') && 
-                          !part.trim().includes('Louisiana') && 
-                          !part.trim().includes('Texas')
-                        ).join(', ');
+                        const cityStateZip = addressParts.slice(1).join(', ');
                         return (
                           <div>
                             <div className="block sm:hidden">{streetAddress}, {cityStateZip}</div>
@@ -728,7 +733,7 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                                   href={`tel:${business.phone}`}
                                   className="font-medium text-blue-600 hover:text-blue-800 transition-colors text-xs sm:text-sm"
                                 >
-                                  {business.phone}
+                                  {formatPhoneNumber(business.phone)}
                                 </a>
                               </div>
                             )}
@@ -746,7 +751,7 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                                 href={`tel:${business.phone}`}
                                 className="font-medium text-blue-600 hover:text-blue-800 transition-colors text-xs sm:text-sm"
                               >
-                                {business.phone}
+                                {formatPhoneNumber(business.phone)}
                               </a>
                             </div>
                           )}

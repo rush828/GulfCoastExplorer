@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { PrismaClient } from '@prisma/client'
 import GoogleMap from '../../../components/GoogleMap'
 import ContextualNavigation from '../../../components/ContextualNavigation'
+import { getStateAbbreviation, formatPhoneNumber } from '@/lib/format-utils'
 
 const prisma = new PrismaClient()
 
@@ -502,12 +503,21 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                   
                   <div className="text-gray-600">
                     {(() => {
+                      const stateAbbr = getStateAbbreviation(business.state);
                       let fullAddress = business.address;
-                      // If address doesn't include city/state, append them
+                      // If address doesn't include city/state, append them with abbreviation
                       const hasCity = fullAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
                       if (!hasCity && business.city && business.state) {
-                        fullAddress = `${fullAddress}, ${business.city}, ${business.state}`;
+                        fullAddress = `${fullAddress}, ${business.city}, ${stateAbbr}`;
                       }
+                      
+                      // Replace full state names with abbreviations
+                      fullAddress = fullAddress
+                        .replace(/, Florida/gi, `, FL`)
+                        .replace(/, Alabama/gi, `, AL`)
+                        .replace(/, Mississippi/gi, `, MS`)
+                        .replace(/, Louisiana/gi, `, LA`)
+                        .replace(/, Texas/gi, `, TX`);
                       
                       const parts = fullAddress.split(',');
                       const street = parts[0];
@@ -601,12 +611,21 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                       </div>
                       <div className="flex-1 min-w-0">
                         {(() => {
+                          const stateAbbr = getStateAbbreviation(business.state);
                           let fullAddress = business.address;
-                          // If address doesn't include city/state, append them
+                          // If address doesn't include city/state, append them with abbreviation
                           const hasCity = fullAddress.toLowerCase().includes(business.city?.toLowerCase() || '');
                           if (!hasCity && business.city && business.state) {
-                            fullAddress = `${fullAddress}, ${business.city}, ${business.state}`;
+                            fullAddress = `${fullAddress}, ${business.city}, ${stateAbbr}`;
                           }
+                          
+                          // Replace full state names with abbreviations
+                          fullAddress = fullAddress
+                            .replace(/, Florida/gi, `, FL`)
+                            .replace(/, Alabama/gi, `, AL`)
+                            .replace(/, Mississippi/gi, `, MS`)
+                            .replace(/, Louisiana/gi, `, LA`)
+                            .replace(/, Texas/gi, `, TX`);
                           
                           const parts = fullAddress.split(',');
                           const street = parts[0];
@@ -636,7 +655,7 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className={`text-blue-600 font-semibold truncate hover:text-blue-800 transition-colors ${!business.description ? 'text-sm' : 'text-xs'}`}>
-                            {business.phone}
+                            {formatPhoneNumber(business.phone)}
                           </div>
                           <div className={`text-gray-500 ${!business.description ? 'text-xs' : 'text-xs'}`}>Tap to call</div>
                         </div>
