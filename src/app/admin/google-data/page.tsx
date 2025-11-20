@@ -16,10 +16,7 @@ interface GoogleDataStatus {
 }
 
 export default function GoogleDataAdminPage() {
-  const [apiKey, setApiKey] = useState('')
   const [status, setStatus] = useState<GoogleDataStatus | null>(null)
-  const [isCollecting, setIsCollecting] = useState(false)
-  const [selectedLocation, setSelectedLocation] = useState('')
   const [cacheStats, setCacheStats] = useState<CacheStats | null>(null)
 
   const gulfCoastLocations = [
@@ -31,12 +28,6 @@ export default function GoogleDataAdminPage() {
   ]
 
   useEffect(() => {
-    // Load API key from localStorage if available
-    const savedApiKey = localStorage.getItem('google_api_key')
-    if (savedApiKey) {
-      setApiKey(savedApiKey)
-    }
-    
     // Check initial status
     checkStatus()
   }, [])
@@ -60,57 +51,6 @@ export default function GoogleDataAdminPage() {
     }
   }
 
-  const handleAction = async (action: string, locationName?: string) => {
-    if (!apiKey) {
-      alert('Please enter your Google API key first')
-      return
-    }
-
-    setIsCollecting(true)
-    
-    try {
-      const payload: any = { action, apiKey }
-      if (locationName) {
-        payload.locationName = locationName
-      }
-
-      const response = await fetch('/api/google-data/collect', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      })
-
-      const data = await response.json()
-      
-      if (data.success) {
-        alert(data.message || 'Action completed successfully')
-        // Refresh status after action
-        setTimeout(checkStatus, 1000)
-      } else {
-        alert(`Error: ${data.error}`)
-      }
-    } catch (error) {
-      console.error('Error performing action:', error)
-      alert('An error occurred while performing the action')
-    } finally {
-      setIsCollecting(false)
-    }
-  }
-
-  const saveApiKey = () => {
-    if (apiKey) {
-      localStorage.setItem('google_api_key', apiKey)
-      alert('API key saved successfully')
-    }
-  }
-
-  const clearApiKey = () => {
-    localStorage.removeItem('google_api_key')
-    setApiKey('')
-    alert('API key cleared')
-  }
 
   return (
     <AdminLayout>
@@ -121,44 +61,6 @@ export default function GoogleDataAdminPage() {
             </h1>
             <p className="text-lg text-gray-600">
               View information about Google Places API integration (Data collection disabled in admin)
-            </p>
-          </div>
-
-          {/* API Key Management */}
-          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Google API Key Management</h2>
-            <div className="grid md:grid-cols-3 gap-4 items-end">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Google Places API Key
-                </label>
-                <input
-                  type="password"
-                  value={apiKey}
-                  onChange={(e) => setApiKey(e.target.value)}
-                  placeholder="Enter your Google API key"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <button
-                  onClick={saveApiKey}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
-                >
-                  Save API Key
-                </button>
-              </div>
-              <div>
-                <button
-                  onClick={clearApiKey}
-                  className="w-full bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
-                >
-                  Clear API Key
-                </button>
-              </div>
-            </div>
-            <p className="text-sm text-gray-500 mt-2">
-              Your API key is stored locally in your browser and used for search results retrieval.
             </p>
           </div>
 
