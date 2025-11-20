@@ -30,6 +30,8 @@ export default function NewsletterAdmin() {
   const [sending, setSending] = useState(false)
   const [sendResult, setSendResult] = useState<any>(null)
   const [deletingId, setDeletingId] = useState<string | null>(null)
+  const [error, setError] = useState<string | null>(null)
+  const [successMessage, setSuccessMessage] = useState<string | null>(null)
 
   // Calculate active subscribers count
   const activeSubscribersCount = subscribers.filter(s => s.isActive).length
@@ -40,13 +42,17 @@ export default function NewsletterAdmin() {
 
   const fetchSubscribers = async () => {
     try {
+      setError(null)
       const response = await fetch('/api/newsletter/subscribers?admin=true')
       const data = await response.json()
       if (data.success) {
         setSubscribers(data.subscribers)
+      } else {
+        setError(data.error || 'Failed to fetch subscribers')
       }
     } catch (error) {
       console.error('Error fetching subscribers:', error)
+      setError('Failed to load subscribers. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -69,6 +75,15 @@ export default function NewsletterAdmin() {
 
   const handleSaveEdit = async (id: string) => {
     try {
+      setError(null)
+      setSuccessMessage(null)
+      
+      // Validate form
+      if (!editForm.email || !editForm.firstName || !editForm.lastName) {
+        setError('Please fill in all required fields')
+        return
+      }
+
       const response = await fetch('/api/newsletter/subscribers', {
         method: 'PUT',
         headers: {
@@ -82,15 +97,17 @@ export default function NewsletterAdmin() {
 
       const data = await response.json()
       if (data.success) {
+        setSuccessMessage('Subscriber updated successfully')
         await fetchSubscribers()
         setEditingId(null)
         setEditForm({})
+        setTimeout(() => setSuccessMessage(null), 3000)
       } else {
-        alert(`Error: ${data.error}`)
+        setError(data.error || 'Failed to update subscriber')
       }
     } catch (error) {
       console.error('Error updating subscriber:', error)
-      alert('Failed to update subscriber')
+      setError('Failed to update subscriber. Please try again.')
     }
   }
 
@@ -100,6 +117,8 @@ export default function NewsletterAdmin() {
     }
 
     setDeletingId(id)
+    setError(null)
+    setSuccessMessage(null)
     try {
       const response = await fetch(`/api/newsletter/subscribers?id=${id}`, {
         method: 'DELETE',
@@ -107,13 +126,15 @@ export default function NewsletterAdmin() {
 
       const data = await response.json()
       if (data.success) {
+        setSuccessMessage('Subscriber deleted successfully')
         await fetchSubscribers()
+        setTimeout(() => setSuccessMessage(null), 3000)
       } else {
-        alert(`Error: ${data.error}`)
+        setError(data.error || 'Failed to delete subscriber')
       }
     } catch (error) {
       console.error('Error deleting subscriber:', error)
-      alert('Failed to delete subscriber')
+      setError('Failed to delete subscriber. Please try again.')
     } finally {
       setDeletingId(null)
     }
@@ -121,11 +142,13 @@ export default function NewsletterAdmin() {
 
   const sendNewsletter = async () => {
     if (!newsletterData.subject || !newsletterData.content) {
-      alert('Please fill in subject and content')
+      setError('Please fill in subject and content')
       return
     }
 
     setSending(true)
+    setError(null)
+    setSuccessMessage(null)
     try {
       const response = await fetch('/api/newsletter/send', {
         method: 'POST',
@@ -140,9 +163,17 @@ export default function NewsletterAdmin() {
       
       if (result.success) {
         setNewsletterData({ subject: '', content: '', previewText: '' })
+        setSuccessMessage(result.message || 'Newsletter sent successfully')
+        setTimeout(() => {
+          setSuccessMessage(null)
+          setSendResult(null)
+        }, 5000)
+      } else {
+        setError(result.error || 'Failed to send newsletter')
       }
     } catch (error) {
       console.error('Error sending newsletter:', error)
+      setError('Failed to send newsletter. Please try again.')
       setSendResult({ success: false, error: 'Failed to send newsletter' })
     } finally {
       setSending(false)
@@ -161,6 +192,59 @@ export default function NewsletterAdmin() {
     <AdminLayout>
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Newsletter Management</h1>
+        
+        {/* Error Message */}
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3 flex-1">
+                <h3 className="text-sm font-medium text-red-800">Error</h3>
+                <p className="mt-1 text-sm text-red-700">{error}</p>
+              </div>
+              <div className="ml-auto pl-3">
+                <button
+                  onClick={() => setError(null)}
+                  className="inline-flex text-red-400 hover:text-red-600"
+                >
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Success Message */}
+        {successMessage && (
+          <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3 flex-1">
+                <p className="text-sm font-medium text-green-800">{successMessage}</p>
+              </div>
+              <div className="ml-auto pl-3">
+                <button
+                  onClick={() => setSuccessMessage(null)}
+                  className="inline-flex text-green-400 hover:text-green-600"
+                >
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
         
         {/* Subscribers List */}
         <div className="bg-white rounded-lg shadow mb-8">
