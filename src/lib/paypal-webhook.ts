@@ -142,6 +142,9 @@ async function handleSubscriptionCreated(event: PayPalWebhookEvent) {
   }
 
   // Create subscription in database
+  const startDate = new Date(resource.create_time || resource.start_time || new Date())
+  const startDateString = startDate.toISOString()
+  
   const subscription = await subscriptionDB.createSubscription({
     paypalSubscriptionId: resource.id,
     businessId: business.id,
@@ -150,9 +153,9 @@ async function handleSubscriptionCreated(event: PayPalWebhookEvent) {
     status: SubscriptionStatus.ACTIVE,
     plan,
     amount,
-    startDate: new Date(resource.create_time || resource.start_time || new Date()),
-    endDate: calculateEndDate(resource.create_time || resource.start_time || new Date().toISOString()),
-    nextBillingDate: new Date(resource.billing_info?.next_billing_time || calculateNextBilling(resource.create_time || new Date().toISOString())),
+    startDate: startDate,
+    endDate: new Date(calculateEndDate(startDateString)),
+    nextBillingDate: new Date(resource.billing_info?.next_billing_time || calculateNextBilling(startDateString)),
     paypalCustomerId: resource.subscriber?.payer_id
   })
 
