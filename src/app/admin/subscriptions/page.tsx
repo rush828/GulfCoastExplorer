@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import AdminLayout from '@/components/AdminLayout'
 
 interface Subscription {
@@ -34,8 +35,8 @@ export default function SubscriptionsAdmin() {
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([])
   const [stats, setStats] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const [filter, setFilter] = useState<'all' | 'active' | 'canceled' | 'expired' | 'suspended'>('all')
-  const [view, setView] = useState<'list' | 'stats'>('list')
 
   useEffect(() => {
     loadSubscriptions()
@@ -44,23 +45,51 @@ export default function SubscriptionsAdmin() {
 
   const loadSubscriptions = async () => {
     try {
-      const response = await fetch(`/api/admin/subscriptions?action=${filter === 'all' ? 'all' : 'active'}`, {
+      setLoading(true)
+      // Always fetch all subscriptions, then filter client-side for better UX
+      const response = await fetch('/api/admin/subscriptions?action=all', {
         credentials: 'include'
       })
+      
+      if (!response.ok) {
+        if (response.status === 401) {
+          // Redirect to login if unauthorized
+          window.location.href = '/admin/login'
+          return
+        }
+        throw new Error(`Failed to load subscriptions: ${response.statusText}`)
+      }
+      
       const data = await response.json()
       
       if (data.success) {
         let subs = data.subscriptions || []
         
-        // Apply client-side filtering if needed
-        if (filter !== 'all' && filter !== 'active') {
-          subs = subs.filter((sub: Subscription) => sub.status === filter.toUpperCase())
+        // Apply filtering based on selected filter
+        if (filter === 'active') {
+          subs = subs.filter((sub: Subscription) => sub.status === 'ACTIVE')
+        } else if (filter === 'canceled') {
+          subs = subs.filter((sub: Subscription) => sub.status === 'CANCELED')
+        } else if (filter === 'expired') {
+          subs = subs.filter((sub: Subscription) => sub.status === 'EXPIRED')
+        } else if (filter === 'suspended') {
+          subs = subs.filter((sub: Subscription) => sub.status === 'SUSPENDED')
         }
+        // 'all' shows everything, no filtering needed
         
         setSubscriptions(subs)
+        setError(null)
+      } else {
+        const errorMsg = data.error || 'Failed to load subscriptions'
+        console.error('API returned error:', errorMsg)
+        setError(errorMsg)
+        setSubscriptions([])
       }
     } catch (error) {
+      const errorMsg = error instanceof Error ? error.message : 'Failed to load subscriptions'
       console.error('Failed to load subscriptions:', error)
+      setError(errorMsg)
+      setSubscriptions([])
     } finally {
       setLoading(false)
     }
@@ -71,9 +100,20 @@ export default function SubscriptionsAdmin() {
       const response = await fetch('/api/admin/subscriptions?action=stats', {
         credentials: 'include'
       })
+      
+      if (!response.ok) {
+        if (response.status === 401) {
+          window.location.href = '/admin/login'
+          return
+        }
+        throw new Error(`Failed to load stats: ${response.statusText}`)
+      }
+      
       const data = await response.json()
       if (data.success) {
         setStats(data.stats)
+      } else {
+        console.error('API returned error:', data.error)
       }
     } catch (error) {
       console.error('Failed to load stats:', error)
@@ -133,10 +173,40 @@ export default function SubscriptionsAdmin() {
   return (
     <AdminLayout>
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Subscriptions</h1>
-          <p className="text-gray-600">Manage business listing subscriptions and payments</p>
+        <div className="mb-8 flex justify-between items-start">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Subscriptions</h1>
+            <p className="text-gray-600">Manage business listing subscriptions and payments</p>
+          </div>
+          <button
+            onClick={() => {
+              setLoading(true)
+              loadSubscriptions()
+              loadStats()
+            }}
+            disabled={loading}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+          >
+            {loading ? 'Loading...' : 'Refresh'}
+          </button>
         </div>
+
+        {/* Error Message */}
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-medium text-red-800">Error</h3>
+                <p className="mt-1 text-sm text-red-700">{error}</p>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Stats Cards */}
         {stats && (
@@ -219,6 +289,9 @@ export default function SubscriptionsAdmin() {
                     Plan
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Subscription ID
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Status
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -238,8 +311,8 @@ export default function SubscriptionsAdmin() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {subscriptions.length === 0 ? (
                   <tr>
-                    <td colSpan={7} className="px-6 py-4 text-center text-gray-500">
-                      No subscriptions found
+                    <td colSpan={8} className="px-6 py-4 text-center text-gray-500">
+                      {loading ? 'Loading subscriptions...' : `No ${filter === 'all' ? '' : filter} subscriptions found`}
                     </td>
                   </tr>
                 ) : (
@@ -247,15 +320,35 @@ export default function SubscriptionsAdmin() {
                     <tr key={subscription.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div>
-                          <div className="text-sm font-medium text-gray-900">{subscription.businessName}</div>
-                          <div className="text-sm text-gray-500">
-                            {subscription.business.city}, {subscription.business.state}
+                          <div className="text-sm font-medium text-gray-900">
+                            {subscription.businessName}
+                            {subscription.business && (
+                              <Link 
+                                href={`/business/${subscription.business.id}`}
+                                className="ml-2 text-blue-600 hover:text-blue-800 text-xs"
+                                target="_blank"
+                              >
+                                (View)
+                              </Link>
+                            )}
                           </div>
+                          {subscription.business ? (
+                            <div className="text-sm text-gray-500">
+                              {subscription.business.city}, {subscription.business.state}
+                            </div>
+                          ) : (
+                            <div className="text-sm text-red-500 italic">Business not found</div>
+                          )}
                           <div className="text-xs text-gray-400">{subscription.email}</div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         {getPlanBadge(subscription.plan)}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="text-xs text-gray-500 font-mono">
+                          {subscription.paypalSubscriptionId.substring(0, 20)}...
+                        </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         {getStatusBadge(subscription.status)}

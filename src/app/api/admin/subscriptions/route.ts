@@ -2,8 +2,27 @@ import { NextRequest, NextResponse } from 'next/server'
 import { subscriptionDB } from '@/lib/subscription-db'
 import { SubscriptionStatus } from '@prisma/client'
 
+// Force this route to be dynamic
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: NextRequest) {
   try {
+    // Check admin authentication via cookies
+    const adminSession = request.cookies.get('admin-session')
+    const adminSecret = request.cookies.get('admin-secret')
+    const ADMIN_SECRET = process.env.ADMIN_SECRET
+    
+    if (!ADMIN_SECRET) {
+      throw new Error('ADMIN_SECRET environment variable must be set')
+    }
+    
+    if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized access' },
+        { status: 401 }
+      )
+    }
+
     const { searchParams } = new URL(request.url)
     const action = searchParams.get('action')
     
@@ -57,6 +76,22 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    // Check admin authentication via cookies
+    const adminSession = request.cookies.get('admin-session')
+    const adminSecret = request.cookies.get('admin-secret')
+    const ADMIN_SECRET = process.env.ADMIN_SECRET
+    
+    if (!ADMIN_SECRET) {
+      throw new Error('ADMIN_SECRET environment variable must be set')
+    }
+    
+    if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized access' },
+        { status: 401 }
+      )
+    }
+
     const data = await request.json()
     const { action, paypalSubscriptionId, updates } = data
     
