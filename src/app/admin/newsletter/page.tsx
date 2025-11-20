@@ -1,7 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import AdminLayout from '../../../components/AdminLayout'
+import 'react-quill/dist/quill.snow.css'
+
+// Dynamically import ReactQuill to avoid SSR issues
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false })
 
 interface Subscriber {
   id: string
@@ -322,15 +327,38 @@ export default function NewsletterAdmin() {
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Content (HTML)
+                  Content
                 </label>
-                <textarea
-                  value={newsletterData.content}
-                  onChange={(e) => setNewsletterData({...newsletterData, content: e.target.value})}
-                  rows={10}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter your newsletter content in HTML format..."
-                />
+                <div className="bg-white rounded-md border border-gray-300 overflow-hidden">
+                  <ReactQuill
+                    theme="snow"
+                    value={newsletterData.content}
+                    onChange={(value) => setNewsletterData({...newsletterData, content: value})}
+                    placeholder="Enter your newsletter content..."
+                    modules={{
+                      toolbar: [
+                        [{ 'header': [1, 2, 3, false] }],
+                        ['bold', 'italic', 'underline', 'strike'],
+                        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                        [{ 'color': [] }, { 'background': [] }],
+                        ['link', 'image'],
+                        [{ 'align': [] }],
+                        ['clean']
+                      ]
+                    }}
+                    formats={[
+                      'header',
+                      'bold', 'italic', 'underline', 'strike',
+                      'list', 'bullet',
+                      'color', 'background',
+                      'link', 'image',
+                      'align'
+                    ]}
+                  />
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  Use the toolbar above to format your content. The content will be sent as HTML.
+                </p>
               </div>
 
               <div>

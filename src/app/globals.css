@@ -429,3 +429,18 @@ section.py-12 {
 #states-hero-container {
   padding-top: 2rem !important;
 }
+
+/* Newsletter Editor Styles */
+.ql-container {
+  min-height: 300px;
+  font-size: 16px;
+}
+
+.ql-editor {
+  min-height: 300px;
+}
+
+.ql-editor.ql-blank::before {
+  color: #9ca3af;
+  font-style: normal;
+}
