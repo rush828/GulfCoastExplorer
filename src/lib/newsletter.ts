@@ -105,6 +105,36 @@ export async function getActiveSubscribers(): Promise<NewsletterSubscriber[]> {
   }
 }
 
+export async function updateSubscriber(
+  id: string,
+  data: Partial<Pick<NewsletterSubscriber, 'email' | 'firstName' | 'lastName' | 'isActive'>>
+): Promise<NewsletterSubscriber | null> {
+  try {
+    const updated = await prisma.newsletterSubscriber.update({
+      where: { id },
+      data
+    })
+    console.log('Newsletter: Updated subscriber:', updated.email)
+    return updated as NewsletterSubscriber
+  } catch (error) {
+    console.error('Error updating subscriber:', error)
+    return null
+  }
+}
+
+export async function deleteSubscriber(id: string): Promise<boolean> {
+  try {
+    await prisma.newsletterSubscriber.delete({
+      where: { id }
+    })
+    console.log('Newsletter: Deleted subscriber:', id)
+    return true
+  } catch (error) {
+    console.error('Error deleting subscriber:', error)
+    return false
+  }
+}
+
 function generateId(): string {
   return Math.random().toString(36).substr(2, 9)
 }
