@@ -26,6 +26,9 @@ export default function NewsletterAdmin() {
   const [sendResult, setSendResult] = useState<any>(null)
   const [deletingId, setDeletingId] = useState<string | null>(null)
 
+  // Calculate active subscribers count
+  const activeSubscribersCount = subscribers.filter(s => s.isActive).length
+
   useEffect(() => {
     fetchSubscribers()
   }, [])
@@ -345,10 +348,10 @@ export default function NewsletterAdmin() {
 
               <button
                 onClick={sendNewsletter}
-                disabled={sending || !newsletterData.subject || !newsletterData.content || subscribers.length === 0}
+                disabled={sending || !newsletterData.subject || !newsletterData.content || activeSubscribersCount === 0}
                 className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {sending ? 'Sending...' : `Send to ${subscribers.length} subscribers`}
+                {sending ? 'Sending...' : `Send to ${activeSubscribersCount} active subscriber${activeSubscribersCount !== 1 ? 's' : ''}`}
               </button>
             </div>
 

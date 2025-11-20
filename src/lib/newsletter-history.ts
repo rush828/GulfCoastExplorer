@@ -15,6 +15,11 @@ export interface NewsletterMessage {
 }
 
 async function ensureHistoryFile(): Promise<void> {
+  // Skip filesystem operations in production (Vercel is read-only)
+  if (process.env.NODE_ENV === 'production') {
+    return
+  }
+  
   try {
     await fs.access(HISTORY_FILE)
   } catch {
@@ -23,6 +28,12 @@ async function ensureHistoryFile(): Promise<void> {
 }
 
 export async function logNewsletterSend(message: Omit<NewsletterMessage, 'id'>): Promise<void> {
+  // Skip filesystem operations in production (Vercel is read-only)
+  if (process.env.NODE_ENV === 'production') {
+    console.log('Newsletter send logged (filesystem disabled in production):', message.subject)
+    return
+  }
+  
   await ensureHistoryFile()
   
   const history = await getNewsletterHistory()
@@ -42,6 +53,11 @@ export async function logNewsletterSend(message: Omit<NewsletterMessage, 'id'>):
 }
 
 export async function getNewsletterHistory(): Promise<NewsletterMessage[]> {
+  // Skip filesystem operations in production (Vercel is read-only)
+  if (process.env.NODE_ENV === 'production') {
+    return []
+  }
+  
   await ensureHistoryFile()
   
   try {

@@ -1,13 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { getActiveSubscribers } from '../../../../lib/newsletter'
-import { logNewsletterSend } from '../../../../lib/newsletter-history'
 
 // Initialize Resend only when needed to avoid build-time errors
 let resend: Resend | null = null
 
 export async function POST(request: NextRequest) {
   try {
+    // Check admin authentication
+    const adminSession = request.cookies.get('admin-session')
+    const adminSecret = request.cookies.get('admin-secret')
+    const ADMIN_SECRET = process.env.ADMIN_SECRET
+    
+    if (!ADMIN_SECRET) {
+      throw new Error('ADMIN_SECRET environment variable must be set')
+    }
+    
+    if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized access' },
+        { status: 401 }
+      )
+    }
+
     const { subject, content, previewText } = await request.json()
     
     if (!subject || !content) {
