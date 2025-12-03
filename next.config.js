@@ -123,6 +123,10 @@ const nextConfig = {
     ]
   },
 
+  // Trailing slash configuration - Next.js handles this automatically
+  // We ensure consistency by not adding trailing slashes in sitemap
+  trailingSlash: false,
+
   // API response caching
   async rewrites() {
     return [

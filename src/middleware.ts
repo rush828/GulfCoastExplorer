@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 
 // Simple admin authentication middleware
 export function middleware(request: NextRequest) {
+  // Allow search engine crawlers to access public pages without redirects
+  const userAgent = request.headers.get('user-agent') || ''
+  const isSearchEngineBot = /Googlebot|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|TelegramBot|Discordbot|PerplexityBot|GPTBot|ChatGPT-User|anthropic-ai|Claude-Web|ClaudeBot|Google-Extended|cohere-ai|Meta-ExternalAgent|FacebookBot|Grokbot|xAI-Grok|YouBot|CCBot|AI2Bot|Diffbot|Applebot-Extended|Amazonbot|Bytespider|brave-ai|Brave-Indexer/i.test(userAgent)
+  
   // Check if the request is for admin routes (but not login page)
   if (request.nextUrl.pathname.startsWith('/admin') && !request.nextUrl.pathname.startsWith('/admin/login')) {
     // Check for admin session
@@ -15,9 +19,19 @@ export function middleware(request: NextRequest) {
       throw new Error('ADMIN_SECRET environment variable must be set')
     }
     
-    if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
-      // Redirect to admin login
-      return NextResponse.redirect(new URL('/admin/login', request.url))
+    // Allow search engine bots to see 401 instead of redirect (prevents redirect loops)
+    if (isSearchEngineBot) {
+      if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
+        return NextResponse.json(
+          { error: 'Unauthorized' },
+          { status: 401 }
+        )
+      }
+    } else {
+      if (!adminSession || !adminSecret || adminSecret.value !== ADMIN_SECRET) {
+        // Redirect to admin login
+        return NextResponse.redirect(new URL('/admin/login', request.url))
+      }
     }
   }
 

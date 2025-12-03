@@ -613,12 +613,12 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                 {/* Business Content */}
                 <div className="flex-1 min-w-0">
                   {/* Header Row */}
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex items-start justify-between mb-2 gap-2">
                     <div className="flex-1 min-w-0">
                       <h3 className="text-lg font-bold text-gray-900 mb-1 transition-colors duration-200">
                         <Link 
                           href={getBusinessUrl(business.id, selectedCategory, city, selectedState)} 
-                          className="hover:text-blue-600"
+                          className="hover:text-blue-600 line-clamp-2"
                           onClick={() => trackBusinessView({
                             id: business.id,
                             name: business.name,
@@ -636,12 +636,12 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                       <div className="flex items-center justify-between mb-1 gap-2">
                         <div className="flex items-center gap-1 flex-1 min-w-0 overflow-hidden">
                           {/* Mobile: Show only primary category + more indicator */}
-                          <div className="flex items-center gap-1">
-                            <span className="inline-flex items-center px-2 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-800 whitespace-nowrap">
+                          <div className="flex items-center gap-1 min-w-0">
+                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs sm:text-sm font-semibold bg-blue-100 text-blue-800 whitespace-nowrap truncate max-w-[120px] sm:max-w-none">
                               {getCategoryName(displayCategories[0])}
                             </span>
                             {displayCategories.length > 1 && (
-                              <span className="text-xs text-gray-500 font-medium whitespace-nowrap">
+                              <span className="text-xs text-gray-500 font-medium whitespace-nowrap flex-shrink-0">
                                 +{displayCategories.length - 1} more
                               </span>
                             )}
@@ -688,7 +688,7 @@ export default function SearchResultsWithPagination({ searchTerm, selectedState,
                   </div>
                   
                   {/* Address and Description */}
-                  <div className="text-gray-600 text-xs sm:text-sm mb-3">
+                  <div className="text-gray-600 text-xs sm:text-sm mb-3 line-clamp-2 break-words">
                     {(() => {
                       // Get state abbreviation
                       const stateAbbr = getStateAbbreviation(business.state);
