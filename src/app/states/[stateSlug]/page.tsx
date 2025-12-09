@@ -5,13 +5,14 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 interface StatePageProps {
-  params: {
+  params: Promise<{
     stateSlug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: StatePageProps): Promise<Metadata> {
-  const state = statesAndCities.find(s => s.slug === params.stateSlug.toLowerCase());
+  const { stateSlug } = await params;
+  const state = statesAndCities.find(s => s.slug === stateSlug.toLowerCase());
   
   if (!state) {
     return {
@@ -95,8 +96,9 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
   };
 }
 
-export default function StatePage({ params }: StatePageProps) {
-  const state = statesAndCities.find(s => s.slug === params.stateSlug.toLowerCase());
+export default async function StatePage({ params }: StatePageProps) {
+  const { stateSlug } = await params;
+  const state = statesAndCities.find(s => s.slug === stateSlug.toLowerCase());
   
   if (!state) {
     notFound();

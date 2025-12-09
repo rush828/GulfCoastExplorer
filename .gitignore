@@ -12,6 +12,8 @@
 /.next/
 /out/
 .next/
+.next/**
+*.pack
 
 # production
 /build
@@ -42,6 +44,10 @@ vercel-import.env
 *.tsbuildinfo
 next-env.d.ts
 
+# Environment variables (NEVER commit these!)
+.env
+*.env
+.env.*
 # Environment variables (NEVER commit these!)
 .env
 *.env
@@ -98,4 +104,3 @@ public/images/thumbnails/
 # Cloudinary upload script (not needed in production)
 upload-thumbnails-to-cloudinary.js
 upload-thumbnails-to-blob.js
-

@@ -24,14 +24,14 @@ const categories = [
 ]
 
 interface CityPageProps {
-  params: {
+  params: Promise<{
     stateSlug: string
     citySlug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
-  const { stateSlug, citySlug } = params
+  const { stateSlug, citySlug } = await params
   
   // Normalize the city slug to lowercase and replace spaces with hyphens for case-insensitive matching
   // Also handle URL-encoded spaces (%20) and other URL encoding
@@ -193,8 +193,8 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
 
 
 
-export default function CityPage({ params }: CityPageProps) {
-  const { stateSlug, citySlug } = params
+export default async function CityPage({ params }: CityPageProps) {
+  const { stateSlug, citySlug } = await params
 
   // Normalize the city slug to lowercase and replace spaces with hyphens for case-insensitive matching
   // Also handle URL-encoded spaces (%20) and other URL encoding

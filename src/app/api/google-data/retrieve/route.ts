@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
     // Rate limiting - 60 requests per 15 minutes per IP
     const ip = request.headers.get('x-forwarded-for') || 
               request.headers.get('x-real-ip') || 
-              request.ip || 'unknown';
+              'unknown';
     const clientIP = Array.isArray(ip) ? ip[0] : ip;
 
     if (!rateLimiter.isAllowed(clientIP, 60, 15 * 60 * 1000)) {

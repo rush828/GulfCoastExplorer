@@ -29,9 +29,10 @@ interface Business {
 }
 
 interface BusinessPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 // Helper function to convert city name to slug
@@ -63,7 +64,8 @@ function getDefaultImageUrl() {
 
 export async function generateMetadata({ params }: BusinessPageProps): Promise<Metadata> {
   try {
-    const business = await getBusiness(params.id)
+    const { id } = await params;
+    const business = await getBusiness(id)
     
     if (!business) {
       return {
@@ -314,8 +316,10 @@ function BackButton({ searchParams, business }: { searchParams: { [key: string]:
   )
 }
 
-export default async function BusinessPage({ params, searchParams }: BusinessPageProps & { searchParams: { [key: string]: string | string[] | undefined } }) {
-  const business = await getBusiness(params.id)
+export default async function BusinessPage({ params, searchParams }: BusinessPageProps) {
+  const { id } = await params;
+  const resolvedSearchParams = await searchParams;
+  const business = await getBusiness(id)
   
   if (!business) {
     return (
@@ -452,14 +456,14 @@ export default async function BusinessPage({ params, searchParams }: BusinessPag
           businessName={business.name}
           cityName={business.city}
           stateName={business.state}
-          searchParams={searchParams}
+          searchParams={resolvedSearchParams}
         />
 
         {/* Back Button - Small and unobtrusive */}
         <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-30">
           <div className="container mx-auto px-4 sm:px-6 py-1">
             <div className="max-w-4xl mx-auto">
-              <BackButton searchParams={searchParams} business={business} />
+              <BackButton searchParams={resolvedSearchParams} business={business} />
             </div>
           </div>
         </div>
