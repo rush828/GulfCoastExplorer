@@ -45,8 +45,8 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     // Use test domain until gulfcoastexplorer.com is verified
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Gulf Coast Explorer <onboarding@resend.dev>',
-      to: [process.env.CONTACT_EMAIL || 'rush828@gmail.com'],
+      from: process.env.RESEND_FROM_EMAIL || 'Gulf Coast Explorer <noreply@gulfcoastexplorer.com>',
+      to: [process.env.CONTACT_EMAIL || 'contact@gulfcoastexplorer.com'],
       subject: `Contact Form: ${formData.subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
