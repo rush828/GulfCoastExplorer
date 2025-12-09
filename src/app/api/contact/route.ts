@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
           </div>
         </div>
       `,
-      replyTo: formData.email, // This allows you to reply directly to the sender
+      replyTo: process.env.CONTACT_EMAIL || 'contact@gulfcoastexplorer.com', // Replies go to your domain inbox
     })
 
     if (error) {
