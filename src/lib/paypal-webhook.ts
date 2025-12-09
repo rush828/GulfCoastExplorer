@@ -324,9 +324,9 @@ function calculateNextBilling(lastPayment: string): string {
  * Verify PayPal webhook signature (implement in production)
  */
 export function verifyWebhookSignature(
-  payload: string,
-  signature: string,
-  webhookId: string
+  _payload: string,
+  _signature: string,
+  _webhookId: string
 ): boolean {
   // In production, implement actual PayPal signature verification
   // https://developer.paypal.com/docs/api/webhooks/v1/#verify-webhook-signature
